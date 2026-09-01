@@ -1,0 +1,2 @@
+{"family":"hat","root":"(tile hat)(subtile 1 of F0)(subtile 0 of F0):(subtile 4 of F0)","radius":48,"rule":{"birth":36,"survival":36},"initial_cells":[0,1,2,3,4,5,6],"generations":8192,"outcome":{"Periodic":{"period":2,"detected_by":129}},"max_population":33,"note":"walker-sweep travel 23 (ball)"}
+{"family":"hat","root":"(tile hat)(subtile 0 of P)(subtile 2 of F0):(subtile 4 of F0)","radius":48,"rule":{"birth":4,"survival":68},"initial_cells":[1,2,3,4,5,6],"generations":8192,"outcome":{"Died":{"generation":78}},"max_population":27,"note":"walker-sweep travel 20 (ring)"}

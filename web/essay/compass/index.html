@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The survey — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The million-ring measurements: the clock, the lanes, and an exact compass law." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/compass/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The survey — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The million-ring measurements: the clock, the lanes, and an exact compass law." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/compass/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The survey</h1>
+    <p class="subtitle">the million-ring measurements: the clock, the lanes, and an exact compass law</p>
+
+    <p>
+      The instrument keeps three distances distinct. <em>Path length</em> —
+      hop-to-hop graph distance summed — is an upper bound on how far from
+      home. <em>Euclidean displacement</em> is the primary global metric:
+      consecutive windows share tiles by address, the shared tiles give the
+      exact rigid transform between frames, and the transforms compose in
+      double precision — residual ~10⁻¹³, every rotation landing on the
+      tiling's 30° orientation set to 0.0000°. <em>Effective rings</em>
+      convert displacement back to the origin-anchored radius through κ,
+      the substrate's rings-per-unit constant, fitted offset-free.
+      Headings are estimated twice — the settled heading (circular mean
+      over the flight's late half) and the net heading (bearing of the
+      total displacement) — and the two agree to under 0.01° on every
+      lane. What a million path-rings measured:
+    </p>
+
+    <table class="rule">
+      <tr><th>lane</th><th>settled heading</th><th>SE</th><th>gens / effective ring</th><th>tortuosity</th></tr>
+      <tr><td>hat A (s21)</td><td>225.523°</td><td>0.003°</td><td>1.998</td><td>1.013</td></tr>
+      <tr><td>hat B (s22)</td><td>225.523°</td><td>0.003°</td><td>1.998</td><td>1.013</td></tr>
+      <tr><td>hat C, lone lane (s23)</td><td>345.523°</td><td>0.011°</td><td>1.987</td><td>1.021</td></tr>
+      <tr><td>spectre (s33, 108° lane)</td><td>108.014°</td><td>0.006°</td><td>2.004</td><td>1.007</td></tr>
+      <tr><td>spectre (s33, 348° lane)</td><td>348.014°</td><td>0.007°</td><td>2.004</td><td>1.008</td></tr>
+    </table>
+
+    <p>
+      Three things in that table deserve a long look. The clock: every
+      lane on both substrates runs 1.99–2.00 generations per effective
+      ring, the universal relay pace, now held across a million rings.
+      The coincidence: hat A and hat B are unrelated genomes — different
+      rules, found by different runs — and their settled headings agree
+      to three decimal places. And the arithmetic: hat C's lane sits
+      <b>120.001°</b> from A's, and the spectre's twin lanes sit
+      <b>240.000°</b> apart. Exact multiples of sixty, from unrelated rules
+      whose only common ingredient is the board — the spacing must be the
+      substrate's, not the rules'.
+    </p>
+
+    <h2>The compass law</h2>
+    <p>
+      Fit one number per substrate — a fan of six spokes spaced exactly
+      60° apart, with a free offset — and every measured lane lands on a
+      spoke with residual ~0.000°, inside each lane's standard error:
+      <b>hat offset 45.523°</b>, <b>spectre offset 48.014°</b>. The
+      caveat, stated straight: the observed lanes are themselves
+      60°-multiples apart, so a single-offset fit is self-consistent
+      rather than overdetermined. The parameter-free content is the exact
+      120.001° and 240.000° separations, and the fact that one stable
+      offset per substrate drives every residual to zero — across
+      independent genomes, independent objects, and from 10⁵ to 10⁶
+      rings. The law inherits its exactness from the geometry: rotations
+      that land on the orientation set to 0.0000° leave nothing for
+      heading error to hide in.
+    </p>
+
+    <div id="roses"></div>
+
+    <h2>Filling the fan</h2>
+    <p>
+      Six spokes, five lanes — and a fair objection: every discovered
+      object was seeded at the <em>same</em> two tiles, so perhaps the
+      launch site, not the rule, picked the directions. Re-seeding
+      answers both halves. Sweeping each rule from an interior anchor of
+      every tile class, across every shared edge, in both orders: 89% of
+      188 arbitrary two-tile seedings launch a flat-population traveller
+      for hat A, 88% for hat B, 71% for the spectre — and across ~490
+      seedings of those three rules, not one death and not one trap.
+      (Hat C's 24% fits its wanderer-intermediate mechanism; the
+      screening label is a lower bound.) Ignition is a property of the
+      rules, not of the discovery site — and different sites launch
+      different <em>directions</em>. Picking launches from the sweep
+      filled every remaining spoke: four further flights per substrate,
+      each flown to 10⁵ path-rings, land on the fan to a few hundredths
+      of a degree:
+    </p>
+
+    <div id="roses-full"></div>
+
+    <h2>The lanes are the metric's fast axes</h2>
+    <p>
+      Where do the spokes point? Every trail figure ends at a corner of
+      the patch's pseudo-hexagonal outline, which suggested a hypothesis:
+      the lane directions <em>are</em> the corner directions of the
+      graph-metric ball — the directions in which one ring of graph
+      distance buys the most Euclidean ground. Measuring that is
+      delicate — the ball's corners turn out to be sharp, asymmetric
+      V-cusps, and smoothing-based estimators mislocate them (on the
+      spectre, by 2.6°) — but fitting the cusps as intersecting flank
+      lines puts <b>all twelve cusps on the lane directions</b>: hat
+      −0.13° ± 0.03°, spectre −0.11° ± 0.01°, residuals at the known
+      systematic floor of a radius-384 patch (the flights measured the
+      lanes on baselines 3,000× longer). And the rates agree: κ at the
+      cusp matches the flight κ to a few parts per thousand. The gliders
+      travel the substrate's fast axes at the substrate's rate. The
+      compass phase is a metric constant of the tiling.
+    </p>
+
+    <div id="ball-fan"></div>
+
+    <p>
+      Two footnotes from that measurement. First, do not confuse the
+      metric ball with the growth fronts of <em>The game on the
+      board</em>: the ball is far from round — κ varies ~15% with
+      direction on the hat, ~12% on the spectre — while chaotic growth
+      fronts are dynamically smoothed to within ~1% of circular. Two
+      different objects; the contrast is why the round fronts were
+      striking in the first place. Second, the spectre's cusps are
+      <em>chiral</em> — steep on one flank, shallow on the other, where
+      the hat's are symmetric to ~2% — the tiling's handedness, visible
+      in the shape of its metric ball.
+    </p>
+
+    <p>
+      What the survey does not explain is the offsets themselves. 45.523°
+      and 48.014° are measured constants, not derived ones; the question
+      they pose — the cusp directions of the BFS-ball limit shape, a pure
+      substrate-geometry object plausibly computable from the substitution
+      — appears to be new. The numbers are on the table for whoever
+      computes them. Meanwhile, a claim this clean deserves adversaries:
+      the next section is about the ways the search tried to cheat, and
+      the one that nearly worked.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/compass.ts"></script>
+</body>
+</html>

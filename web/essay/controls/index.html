@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Structural controls — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Every objective breeds its parasite; boundary sniffing, live." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/controls/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Structural controls — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Every objective breeds its parasite; boundary sniffing, live." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/controls/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Structural controls</h1>
+    <p class="subtitle">every objective breeds its parasite</p>
+
+    <p>
+      A genetic algorithm does not share your goals; it shares your
+      fitness function. Give it any objective with a weakness, and it
+      will find the weakness — not sometimes, reliably. This section collects the
+      full lineage of exploits the searches invented and the structural
+      controls each one forced, because the trustworthiness of everything
+      in this essay rests on them:
+    </p>
+
+    <table class="rule">
+      <tr><th>parasite</th><th>the exploit</th><th>the control it forced</th></tr>
+      <tr><td>unbounded growth</td><td>fill the patch, score the travel</td><td>the explosion cap (<code>Outcome::Unbounded</code>)</td></tr>
+      <tr><td>boundary gaming</td><td>a dying traveller "escapes" any board shorter than its lifespan</td><td>raw-distance fitness, no escape bonus</td></tr>
+      <tr><td>growth gaming</td><td>grow slowly enough to stay under the cap while crossing the board</td><td>cross-radius verification</td></tr>
+      <tr><td>slow growth</td><td>look flat across closely-spaced radii</td><td>multiplicative spacing — verify at r, 2r, 4r</td></tr>
+      <tr><td>in-patch lock</td><td>full fitness in the search patch, a trap or death beyond it</td><td>the full battery at 8–16× spans (caught P3's s13/s14 and the spectre looper)</td></tr>
+      <tr><td>boundary sniffing</td><td>detect the patch edge itself, at any radius</td><td>the causality filter</td></tr>
+    </table>
+
+    <h2>Cross-radius, in one frame</h2>
+    <p>
+      The battery's centrepiece deserves one picture. Below, the spectre
+      looper's whole lifetime, traced on the radius-192 board that
+      caught it: the verification radii drawn as pale bands at 48, 96
+      and 192, the wandering transient track in dim gold, and in amber
+      the two circuits where the story ends — one wanderer trapped
+      beside the seed at generation 92, the other captured at ring 189,
+      generation ~990, within sight of the finish line. A radius-48
+      search calls this object a glider; a radius-96 check agrees; the
+      radius-192 board tells the truth. That is what multiplicative
+      spacing is for — and if you have ten seconds, the button under
+      the figure replays the whole thing live.
+    </p>
+
+    <div id="crossradius"></div>
+
+    <h2>Boundary sniffing, live</h2>
+    <p>
+      The last parasite deserves its own exhibit, because it was the
+      first to defeat cross-radius verification. During the ablation
+      runs, one batch on <em>edge-adjacency</em> patches returned
+      "gliders" with travel 48 and max population 5 — at generation 1,
+      at every radius. The champion genome, in full:
+      <code>* | n₀ ≥ 3 → 0; * | otherwise → 1</code>. It propagates
+      nothing. On an empty board every interior tile has three or more
+      dead neighbours, so it stays dead — but the corner tiles of an
+      edge-adjacency patch have degree ≤ 2 and <em>cannot</em>, so they
+      ignite. The rule does not travel to the boundary; it <em>detects
+      the boundary</em>, and since every verification patch has one, the
+      exploit scales perfectly. Here it is, exactly as evolved:
+    </p>
+
+    <div id="sniffer"></div>
+
+    <p>
+      The fix is the <em>causality filter</em>: zero fitness for any run
+      whose activity leaves the seed's light cone — travel bounded by
+      seed extent plus generations × fan margin. In the panel above, the
+      cone is drawn: the faintly lightened disc around the seed is the
+      region physics can have reached, growing one ring per generation —
+      and the corner cells ignite hopelessly outside it. The sniffer
+      violates the filter 48-fold at generation 1. Structurally, the
+      exploit cannot exist on vertex patches (minimum vertex degree
+      exceeds the condition-threshold cap), and none of the committed
+      glider rules boundary-sniff — they are vacuum-stable, verified by
+      trajectory. For contrast, a genuine glider under the same overlay:
+    </p>
+
+    <div id="cone-glider"></div>
+
+    <p>
+      And one object in this menagerie <em>saturates</em> a cone. The
+      phoenix from the validation section, under a one-ring-per-generation
+      overlay — tighter than the filter's actual bound on P3, which is
+      three (a corner-hop there can shortcut up to three rings of edge
+      distance) — rides the rim exactly: reborn one ring further out
+      every generation, without fail. The survey's ballistic exponent of
+      1.0, drawn as an object surfing its own causal horizon:
+    </p>
+
+    <div id="cone-phoenix"></div>
+
+    <p>
+      The lineage stands at: explosion cap → cross-radius →
+      multiplicative spread → flatness → causality. No prior result was
+      touched by the sniffer's discovery.
+    </p>
+
+    <h2>The ablation</h2>
+    <p>
+      The hunt claimed two ingredients made the difference —
+      neighbour-visible states with conjunctions, and vertex adjacency.
+      A causal claim wants a 2×2 grid, so the two unexplored cells were
+      searched at the full calibrated budget (256 × 800, two independent
+      seeds × both families per cell, each cell driven by its native
+      machinery):
+    </p>
+
+    <table class="rule">
+      <tr><th></th><th>edge adjacency</th><th>vertex adjacency</th></tr>
+      <tr><td>Generations (k = 4)</td><td>mortal travellers, 43–58 rings, then death</td><td>mortal travellers, 45–58 rings, then death</td></tr>
+      <tr><td>table rules</td><td>mortal travellers and oscillators, 31–47 rings</td><td><b>gliders, routinely (4 of 6 runs)</b></td></tr>
+    </table>
+
+    <p>
+      Both axes are individually necessary at this budget; only the pair
+      suffices. Generations rules fail on either neighbourhood — the
+      neighbour-invisibility of their dying states limits them even with
+      the wider vertex fan. Table rules fail on edge adjacency —
+      neighbour-visible signalling is not enough without it. Two details
+      give the grid its weight. The Generations-edge cell ran at
+      <b>13×</b> the historic search budget, so the mortal era's null was
+      not underpowered after all. And all three null cells hit the
+      <em>same</em> ceiling — thirty to sixty rings of mortal travel,
+      then death or a trap — the exact wall that defined the era. Only
+      the (vertex, table) cell crosses from mortal to immortal. Caveats
+      as ever: four runs per cell at one budget is bounded evidence, not
+      proof, and the drivers are asymmetric by design.
+    </p>
+
+    <p>
+      That is the case for trusting the empirical claims: not that the
+      searches were honest, but that they were caught cheating in every
+      way they tried, and the controls that caught them are structural.
+      The final question is different in kind — what would it take to
+      need no trust at all? A glider that <em>provably</em> flies
+      forever. That is the last section but one.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/controls.ts"></script>
+</body>
+</html>

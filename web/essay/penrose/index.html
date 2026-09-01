@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validation on Penrose — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Reproducing the 2012 Penrose glider — including the printed table failing, live." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/penrose/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Validation on Penrose — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Reproducing the 2012 Penrose glider — including the printed table failing, live." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/penrose/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Validation on Penrose</h1>
+    <p class="subtitle">the control experiment: reproduce the one native glider</p>
+
+    <p>
+      One glider has been exhibited <em>natively</em> on an aperiodic
+      tiling: Goucher, 2012, on the Penrose rhombs — hand-engineered in the
+      <em>Ready</em> simulator community against Trevorrow's conjecture
+      that none could exist, and never found by automated search. (Bailey
+      and Lindsey took a different route, building automata on Penrose
+      tilings <a href="https://arxiv.org/abs/1708.09301" target="_blank"
+      rel="noopener">isomorphic to Life itself</a> — Life's glider imported
+      wholesale, not an object of the board's own physics.) Goucher's
+      glider lives
+      outside everything the last three sections swept, on precisely the
+      two axes this project fixed at the outset. Its neighbourhood is
+      <em>vertex</em> adjacency — tiles are neighbours if they share so
+      much as a corner; all our graphs were edge. And its rule is no
+      Generations rule: four states — ground, head, tail, wing — governed
+      by a priority-ordered table whose conditions read the tail and wing
+      counts and demand <em>conjunctions</em> (a birth requires n₁ ≥ 1
+      <em>and</em> n₂ ≥ 1). In Generations, non-firing states are
+      invisible to neighbours; here they are the signalling medium.
+    </p>
+    <p>
+      A negative result is worth only as much as the pipeline behind it.
+      So the method rule points at us: before "no glider on the monotiles"
+      can be trusted, the same pipeline must first <em>detect</em> the
+      known glider on its home board, and then <em>rediscover</em> one
+      blind. The machinery: Penrose P2 and P3 as substrate families;
+      vertex adjacency computed in tiling-core by bucketing the
+      exact-arithmetic placement vertices, no epsilon anywhere — the
+      engine still consumes a plain adjacency graph; and
+      <code>TableRule</code>, priority rows over per-state neighbour
+      counts, strictly containing the Generations family (pinned by an
+      encoding-equivalence test). The eventually-interior root machinery
+      of <em>The board</em> worked on the new tilings unchanged.
+    </p>
+
+    <h2>The table, as printed, cannot glide</h2>
+    <p>
+      Encoding Goucher's Table 1 literally produces a rule in which no
+      row ever outputs state 1. A head can move only by being
+      <em>reborn</em> ahead of itself; with no row producing heads, the
+      published seed dies at generation 4, in every orientation:
+    </p>
+
+    <div class="panel-row">
+      <div id="printed"></div>
+      <div id="corrected"></div>
+    </div>
+
+    <p>
+      Row 2's next-state is a typo — the printed 3 must be a 1, by
+      Goucher's own prose ("a new head is reborn ahead of the original
+      one") and by the <em>Ready</em> reference implementation, whose
+      kernel reads <code>n₁&gt;0 ∧ n₃≥2 → 1</code>. As printed, nothing
+      moves; with the 1 restored, everything in the rest of this section
+      runs.
+    </p>
+
+    <p>
+      Here is the corrected table in full — the priority-table shape of
+      <em>The game</em>, over four states (0 ground, 1 head, 2 tail, 3 wing;
+      n₁ = head neighbours, and so on). First matching row applies; no
+      match means ground. The repaired digit is bold:
+    </p>
+
+    <table class="rule">
+      <tr><th>own state</th><th>conditions</th><th>next state</th></tr>
+      <tr><td>0 ground</td><td>n₁ ≥ 1 ∧ n₂ ≥ 1</td><td>3</td></tr>
+      <tr><td>0 ground</td><td>n₁ ≥ 1 ∧ n₃ ≥ 2</td><td><b>1</b></td></tr>
+      <tr><td>1 head</td><td>n₃ ≥ 1</td><td>2</td></tr>
+      <tr><td>1 head</td><td>—</td><td>1</td></tr>
+      <tr><td>2 tail</td><td>—</td><td>3</td></tr>
+      <tr><td>*</td><td>—</td><td>0</td></tr>
+    </table>
+
+    <p>
+      Read it as a relay. A head beside wings becomes a tail; a tail
+      always becomes a wing; wings and everything else fade to ground —
+      and the two birth rows are where the geometry enters: ground
+      touching head <em>and</em> tail grows wing, ground touching head
+      <em>and</em> two wings grows the new head, one step further along
+      the ribbon. Every condition is a conjunction of two different
+      state-counts; nothing in the Generations family can say any row of
+      this.
+    </p>
+
+    <h2>Same rule, different tiling: the loopers</h2>
+    <p>
+      The glider's immortality is geometric: it rides a de Bruijn
+      <em>ribbon</em> — a chain of rhombi crossed edge-to-parallel-edge —
+      and because rhombi are parallelograms, progress along a ribbon is
+      monotone. No loops, ever. Kites and darts are not parallelograms,
+      so on P2 the identical rule turns every trajectory into a closed
+      orbit — and Goucher's paper publishes the exact periods, which makes P2
+      the perfect kill-condition for our classifier:
+    </p>
+
+    <div id="looper"></div>
+
+    <p>
+      Twenty seed orientations at five anchors reproduce
+      <code>Periodic{20}</code>, <code>Periodic{40}</code> — "the most
+      common eventuality", as Goucher puts it — and, at radius 64,
+      <code>Periodic{200}</code>, the second decagonal period of the
+      published sequence 40, 200, 1240 (which obeys 5·200 + 6·40 = 1240).
+      Brent-exact recurrences, not estimates. The level-1 detection
+      control passes end to end.
+    </p>
+
+    <h2>The blind rediscovery</h2>
+    <p>
+      Level 2 hands the <em>unmodified</em> search strategy the right
+      Penrose substrate and rule family and asks it to find a glider from
+      nothing: a GA over table-rule genomes (up to 8 priority rows, two
+      conditions each, k = 4), random initialisation, a
+      state-role-neutral seed bank, and the standard travel × flatness
+      objective. At the scale of the monotile searches it fails —
+      champions plateau at fitness 26–29 against an available 45. Seeding
+      one run with Goucher's rule (deliberately not blind) scores 45
+      immediately: the fitness landscape has the glider at its summit,
+      so what is being tested is purely whether the optimizer can climb
+      to it. Scaled to population 256 × 800 generations, it can: fitness
+      sat on a plateau near 15 for four hundred GA generations, then
+      jumped to 45 — ≈115,000 genome evaluations, ≈1.5 million classified
+      runs, into the search. And the needle it found was not the needle we
+      knew about: the discovered rule is a <em>new</em> glider, not
+      Goucher's.
+    </p>
+
+    <h2>A menagerie, not a miracle</h2>
+    <p>
+      Four of six independent scaled runs produced a cross-radius-verified
+      glider, and they are mechanically diverse — P3 hosts at least three
+      distinct classes:
+    </p>
+
+    <div class="panel-row">
+      <div id="phoenix"></div>
+      <div id="wanderer"></div>
+    </div>
+
+    <p>
+      The transport statistics separate the classes cleanly. The phoenix
+      is exactly ballistic — displacement ∝ time, 0.96–1.0 rings per
+      generation, twice the speed of Goucher's glider — because its rule grants states
+      1 and 2 no survival rows at all: every live cell dies each
+      generation and the pattern exists only by rebirth ahead of itself.
+      The wanderers are super-diffusive but sub-ballistic (exponents
+      0.58–0.84 against 0.5 for diffusion, 1.0 for ballistic), 31× faster
+      than a random walk over the same span — and two unrelated wanderer
+      rules with visibly different temperaments share the same transport
+      curve — suggesting the exponent is set by the board the two rules
+      share, not by either rule. The two runs that produced impostors were caught by
+      the standard battery: one locked into a period-145 orbit after 128
+      rings, one died at 48 — full fitness in-patch, exposed cross-radius.
+    </p>
+
+    <p>
+      And because a rule with no survival rows deserves a close look —
+      the phoenix at walking pace, crossing a radius-96 board:
+    </p>
+
+    <div id="phoenix-close"></div>
+
+    <h2>What the control bought</h2>
+    <p>
+      Two numbers and a fact. Rediscovering a glider cost ≈115,000 genome
+      evaluations; the hat and spectre searches of the last two sections
+      spent ≈15,000. Every monotile GA negative might therefore be
+      <em>search-power-bounded</em> — only the exhaustive 2-state census
+      is absolute within its family. And the fact: P3's gliders all
+      exploit its straight de Bruijn ribbons, while the hat and spectre
+      tilings have no straight-rail analogue and smaller vertex
+      neighbourhoods (degrees 6–7 against P3's 7–11). The question is now
+      sharp. The identical pipeline, at the budget rediscovery had just
+      priced, pointed at the monotiles: can directed transport exist
+      without rails?
+    </p>
+  </main>
+  <script type="module" src="/src/essay/penrose.ts"></script>
+</body>
+</html>

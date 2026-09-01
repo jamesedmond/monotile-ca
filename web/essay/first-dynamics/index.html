@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The game on the board — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Life on the hat, a census of every rule, and the first thing that moved." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/first-dynamics/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The game on the board — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Life on the hat, a census of every rule, and the first thing that moved." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/first-dynamics/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The game on the board</h1>
+    <p class="subtitle">the rule space gets its first census, and one rule moves</p>
+
+    <p>
+      Nothing in the engine changes for this section: to the engine, a hat
+      patch is an adjacency graph, just as the square grid was. What
+      changes is the texture of the world: neighbour counts now vary tile
+      by tile (five or six for a hat, always four for an anti-hat, four to
+      seven on spectres — counted across shared edges; the vertex flavour
+      returns later), the mix shifting from place to place with no
+      repeating rhythm, and beyond the patch edge every cell is
+      permanently dead. Here is Life's rule,
+      transplanted — the rule only; the neighbourhood is the board's own:
+    </p>
+
+    <div id="life-hat"></div>
+
+    <h2>A census of every rule</h2>
+    <p>
+      On a board with at most seven neighbours, the whole space of
+      birth/survival rules is small enough to enumerate: <b>8,192</b> rules
+      on the hat, <b>32,768</b> on the spectre (excluding birth-on-zero,
+      which sets the infinite vacuum strobing — behaviour a dead-boundary
+      patch cannot model).
+      Running all of them — three random soups each, 1,024 generations,
+      every outcome classified — takes under three seconds on a
+      laptop. It sorts as follows:
+    </p>
+
+    <table class="rule census">
+      <tr><th>outcome</th><th>hat (8,192 rules)</th><th>spectre (32,768)</th></tr>
+      <tr><td>died</td><td>221</td><td>856</td></tr>
+      <tr><td>froze into still lifes</td><td>1,143</td><td>4,191</td></tr>
+      <tr><td>oscillating, period 2–16</td><td>727</td><td>3,187</td></tr>
+      <tr><td>oscillating, period &gt; 16</td><td>54</td><td>224</td></tr>
+      <tr><td>reached the boundary</td><td>5,960 (72.8%)</td><td>23,994 (73.2%)</td></tr>
+      <tr><td>still active at generation 1,024</td><td>87</td><td>316</td></tr>
+    </table>
+
+    <p>
+      Nearly three quarters of each space is explosive — a strikingly similar
+      fraction on the two tilings — and this is what explosive looks like:
+    </p>
+
+    <div id="explosive"></div>
+
+    <p>
+      The census's texture matches the square-grid intuition in one way:
+      the rules still active after a thousand generations cluster in the
+      Life-adjacent corner, births on roughly half the neighbourhood. It
+      also poses a shape question. The patch is a graph-distance ball and
+      looks hexagonal — so what shape does growth take?
+    </p>
+
+    <div id="front"></div>
+
+    <h2>The bookmarks</h2>
+    <p>
+      Inside the oscillating buckets are some spectacular specimens. A
+      whole-patch soup on the hat recurs with global period <b>318</b> —
+      and 318 = 2·3·53, so somewhere in that patch a local oscillator with
+      period divisible by 53 is ticking. Grown from clean two-cell seeds
+      rather than soups, the small ones can be watched whole:
+    </p>
+
+    <div class="panel-row">
+      <div id="osc-hat"></div>
+      <div id="osc-spectre"></div>
+    </div>
+
+    <p>
+      One early rule earned a permanent bookmark by doing something no
+      oscillator does: growing with a direction. On the spectre tiling,
+      B2/S256 — ignited by one specific four-cell seed at one specific
+      anchor class; of ten classes and two seed shapes tried, exactly that
+      combination — grows a churning, quasi-one-dimensional streak that
+      holds a single compass bearing for thousands of generations.
+      Directed structure, on a board with no translational symmetry to
+      point the way.
+    </p>
+
+    <div id="filament"></div>
+
+    <h2>And one rule moved</h2>
+    <p>
+      Everything above stays where it was born, dies, or eats the world.
+      In the entire census, run from small seeds at an anchor of every tile
+      class, exactly one mechanism <em>travels</em>:
+    </p>
+
+    <div id="walker"></div>
+
+    <p>
+      That is first contact. A rule space three quarters explosive;
+      long-period oscillators everywhere; and between the traveller that
+      cannot survive and the filament that cannot travel, a gap exactly
+      the shape of a glider. The rest of this essay is about that gap.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/first-dynamics.ts"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>First searches — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The mortal era: seed sweeps, walker anatomy, richer rules, and a ceiling." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/first-searches/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="First searches — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The mortal era: seed sweeps, walker anatomy, richer rules, and a ceiling." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/first-searches/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>First searches</h1>
+    <p class="subtitle">the mortal era — five upgrades of expressiveness, and a ceiling</p>
+
+    <p>
+      Enumerating rules was never the hard part; the census ran in seconds.
+      The work is deciding what each run <em>was</em> — exact periods by
+      cycle detection, the explosion filter, and above all a way to tell a
+      glider from its imitations. This section is the story of that
+      machinery being forged, by a sequence of objects that each nearly
+      qualified.
+    </p>
+
+    <h2>A million runs before lunch</h2>
+    <p>
+      Soups are the wrong instrument for finding travellers; small seeds
+      are better. Any tile's address can serve as a patch root, so the
+      search re-roots at a representative cell of every tile class — 17 on
+      the hat, 10 on the spectre — and launches every B0-free rule from
+      ~10 small seeds each: the single cell, each cell-plus-neighbour
+      pair, the 1-ball, the ring. That is 1.2 million runs on the hat (21
+      seconds), 3.3 million on the spectre (49 seconds). Six runs were
+      flagged as glider candidates: population never above 64, exiting the
+      patch with all activity still outbound.
+    </p>
+
+    <h2>The bigger patch is the referee</h2>
+    <p>
+      Deciding a candidate costs one larger patch — regeneration from
+      (family, root, radius) is deterministic, so the identical run simply
+      replays with more room. Here is one flagged record, twice:
+    </p>
+
+    <div class="panel-row">
+      <div id="referee-small"></div>
+      <div id="referee-large"></div>
+    </div>
+
+    <p>
+      Four of the six flags failed exactly this way — slow expanders
+      unmasked by room to grow. The other two were something new: the
+      travellers.
+    </p>
+
+    <h2>Anatomy of the traveller</h2>
+
+    <div id="traveller"></div>
+
+    <p>
+      The traveller is a mechanism, and an isolated one. Of all 433 rules
+      within three bit-flips of B25/S25, only the two originals travel 20
+      rings at all; the nearest variants manage 15, 14, 13, 12 — and
+      several die into the <em>same</em> period-2 blinker, at the same
+      generation. Launch site matters as much as rule: from six of the 17
+      anchor classes it dies within 28 generations; from three it travels
+      11–23 rings first. Every run, everywhere, ends the same way — the
+      blinker calves off, anchors the reaction, and the traveller
+      evaporates around it.
+    </p>
+
+    <h2>Paying for distance with expressiveness</h2>
+    <p>
+      The blinker residue is one hat and one anti-hat, straddling both
+      colours of <em>The board</em>'s two-coloring — so the obvious upgrade, a
+      separate rule table per colour, cannot kill the residue while
+      keeping the traveller alive: a sweep of 2,950 two-table rules found
+      zero escapes, best travel 28 rings. Finer stratification — one
+      table per <em>tile class</em>, a ~2<sup>150</sup> rule space —
+      is beyond enumeration and needs evolutionary search (the next
+      section's subject). Its champion:
+    </p>
+
+    <div id="perclass"></div>
+
+    <p>
+      More states helped more. In the Generations family — Brian's
+      Brain's, from <em>The game</em> — a stranded reaction has somewhere to go
+      besides the period-2 blinker, and the universal trap finally broke:
+      k-state residues die, freeze, or oscillate at periods 3, 4, 9, 12.
+      The travel record climbed to ~82 rings. But not one escape:
+    </p>
+
+    <div id="kstate"></div>
+
+    <h2>The grower that fooled the referee</h2>
+    <p>
+      The strongest k-state object very nearly slipped through. Visually
+      it is a swarm of miniature gliders: each begins as a single bright
+      cell that splits to two, holds together for a few steps — sometimes
+      aided by a third head cell — then forks apart, the pair sharing a
+      wake a while longer. Across the whole swarm only 6–44 cells are
+      firing at any moment; everything else is ember wake.
+    </p>
+
+    <div class="panel-row">
+      <div id="grower-small"></div>
+      <div id="grower-large"></div>
+    </div>
+
+    <p>
+      Checked at radii 120 through 168 its peak population sat flat at
+      140 — bounded, apparently. Checked at 128, 256, 384 it read 140,
+      186, 280: growth, too slow for closely-spaced radii to see. The fix
+      is multiplicative spacing — verify at r, 2r, 4r — and it became
+      part of the standard battery. The grower itself was run to radius
+      1024 (3.6 million tiles) and never fizzled: where the single-front
+      traveller died at ring 23, the forker survives because a front lost
+      in hostile terrain is replaced by its siblings. What disqualifies
+      it as a glider — growth — is precisely what keeps it alive.
+    </p>
+
+    <h2>The ceiling</h2>
+    <p>
+      The travel record, by rule expressiveness: 23 rings uniform, 28 on
+      the spectre, 37 with the two-coloring, 58 and 65 per-class, ~82
+      with k states — monotone, flattening, and never an escape. The
+      era's verdict, exactly scoped: <em>no glider on either tiling by
+      any 2- to 5-state semi-totalistic rule, uniform or fully
+      class-stratified, within reach of these searches</em>. Three ways to
+      read it: the rule family is too weak; the searches were; or — the
+      pessimistic one — these tilings simply do not support gliders, and
+      no rule family will do. Nothing in the data could rule the third
+      out. We pressed on anyway: the next section pushes the search as
+      hard as it will go, and the one after tests the rule family against
+      the one published glider native to an aperiodic tiling.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/first-searches.ts"></script>
+</body>
+</html>

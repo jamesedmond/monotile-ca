@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The game — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Cellular automata from Life to any graph: neighbourhoods, Generations, rule tables." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/ca/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The game — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Cellular automata from Life to any graph: neighbourhoods, Generations, rule tables." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/ca/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The game</h1>
+    <p class="subtitle">cellular automata, before the board gets strange</p>
+
+    <p>
+      A cellular automaton is a universe reduced to three decisions: a set of
+      <em>cells</em>, each in one of a few <em>states</em>; a notion of
+      <em>neighbourhood</em>, saying which cells each cell can see; and a
+      <em>rule</em>, computing every cell's next state from what it sees.
+      Time advances in lockstep — every cell updates at once, then the world
+      repeats. Conway's Game of Life is the famous case: two states (alive,
+      dead), the eight surrounding squares as neighbours, and one rule — a
+      dead cell with exactly three live neighbours is born, a live cell with
+      two or three survives, everything else dies.
+    </p>
+
+    <div id="life-glider"></div>
+
+    <p>
+      Everything below runs in the same engine that produced this project's
+      results, because to that engine a square grid is nothing special: it
+      never sees squares, only a list of which cells neighbour which. Life is
+      rule B3/S23 in its bookkeeping, and the grid is a graph it was handed.
+    </p>
+
+    <h2>Anatomy of one step</h2>
+
+    <div id="one-step"></div>
+
+    <h2>The neighbourhood is part of the game</h2>
+    <p>
+      "The eight surrounding squares" was a choice. Count only the four
+      edge-sharing squares — the <em>von Neumann</em> neighbourhood — and
+      B3/S23 names a different universe with different physics. On tilings,
+      these two choices generalize exactly: neighbours that share an edge, or
+      neighbours that share at least a corner. The paper calls them edge and
+      vertex adjacency, and the distinction will turn out to matter.
+    </p>
+
+    <div class="panel-row">
+      <div id="nbr-vertex"></div>
+      <div id="nbr-edge"></div>
+    </div>
+
+    <p>
+      Is the four-neighbour world simply barren, then? No — it just is not
+      where B3/S23 lives. Each neighbourhood has its own physics, and rules
+      must be found for the world they inhabit. Under the parity rule, the
+      von Neumann neighbourhood does something Life never does:
+    </p>
+
+    <div id="replicator"></div>
+
+    <h2>More states: the Generations family</h2>
+    <p>
+      Life's cells die instantly. Give death a duration instead — states that
+      count down before the cell can rest — and you get the
+      <em>Generations</em> family: state 1 fires, states 2 to k−1 are dying
+      embers that no rule can see, and only firing neighbours are counted. The
+      simplest member is also the liveliest:
+    </p>
+
+    <div id="brain"></div>
+
+    <h2>Rules as tables</h2>
+    <p>
+      The descriptive power of the Generations rules can be limiting. The
+      general form used in this project
+      is a <em>priority table</em>: ordered rows, each demanding an own-state
+      and up to two per-state neighbour counts, first match wins, no match
+      means quiescence. Brian's Brain, rewritten:
+    </p>
+
+    <table class="rule">
+      <tr><th>own state</th><th>conditions</th><th>next state</th></tr>
+      <tr><td>0</td><td>n₁ ≥ 3</td><td>0</td></tr>
+      <tr><td>0</td><td>n₁ ≥ 2</td><td>1</td></tr>
+      <tr><td>1</td><td>—</td><td>2</td></tr>
+      <tr><td>*</td><td>—</td><td>0</td></tr>
+    </table>
+
+    <p>
+      The first two rows encode "exactly two" by descending thresholds: three
+      or more firing neighbours is caught first and does nothing, so the
+      second row fires only on exactly two. That trick makes tables strictly
+      more expressive than any B/S notation — and two of their extra powers,
+      <em>seeing</em> non-firing states and demanding two counts
+      <em>jointly</em>, are precisely what the hunt will eventually need.
+    </p>
+
+    <p>
+      Every rule above, from B3/S23 to the tables, shares one property: a
+      cell's fate depends only on <em>how many</em> neighbours are in each
+      state, never on <em>which</em> ones — the arrangement is invisible.
+      Rules of this kind are called <em>semi-totalistic</em>, and the next
+      section shows why, on the boards this essay is really about, there
+      is no other kind.
+    </p>
+
+    <p>
+      That is the entire game. Nothing above cared that the cells were
+      squares: the engine consumed a list of who neighbours whom and a rule
+      for what each cell does with what it sees. Hand it a different list —
+      one where the board is no longer the same everywhere — and the same
+      game begins to ask harder questions.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/ca.ts"></script>
+</body>
+</html>

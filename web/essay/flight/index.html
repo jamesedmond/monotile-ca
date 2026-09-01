@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiling on the fly — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The sliding window that follows a glider forever — the substrate as fog of war." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/flight/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tiling on the fly — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The sliding window that follows a glider forever — the substrate as fog of war." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/flight/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Tiling on the fly</h1>
+    <p class="subtitle">the window that follows the glider</p>
+
+    <p>
+      Monolithic verification tops out. The radius-768 boards of the hunt
+      were already luxurious; the largest patch run natively so far, radius
+      1024, holds 3.6 million tiles, takes 100 seconds to generate — and
+      the engine then steps every one of them each generation while a
+      dozen are alive. The costs scale as radius² for the board and
+      radius³ for the flight (r² tiles stepped for each of the ~2r
+      generations of the crossing). But a glider does not need a
+      million-ring board; it needs the few dozen rings around itself,
+      freshly tiled, forever.
+    </p>
+
+    <p>
+      Deterministic addressing — <em>The board</em>'s founding promise —
+      is what makes that possible. Any tile's address can root a patch,
+      so the instrument keeps a small window (radius 24 in the campaign)
+      centred near the glider, and when the glider nears the edge it
+      <em>hops</em>: pick a tile beneath the glider, take its address as
+      the new root, regenerate the window, carry the live states across,
+      and discard the old world entirely. Soundness is a margin
+      invariant, not a hope: a hop is triggered while the glider is
+      still far enough from the window edge that no cell the update rule
+      ever reads has a truncated neighbourhood. Memory is constant no
+      matter how far the flight goes; the hop cost grows only with the
+      length of the address — logarithmic in distance — and window
+      regeneration dominates, so the smallest sound window wins.
+    </p>
+
+    <p>
+      In miniature, with windows shrunk to 2-balls:
+    </p>
+
+    <div id="hop-figure"></div>
+
+    <p>
+      Two controls make it an instrument rather than a trick. First,
+      windowed flight against monolithic replay: the same glider flown
+      both ways agrees state for state along the whole path — the window
+      is not an approximation. Second, geometry: each hop places the new
+      window in the old one's frame by an exact rigid motion, and the
+      rotations land on the tilings' 30° orientation set to 0.0000° —
+      frames compose in double precision, so position and heading stay
+      exact at any distance, which the compass section will spend.
+    </p>
+
+    <p>
+      The picture to hold: the tiling <em>exists only where the glider
+      has been</em>. A launch window, a corridor of retired windows, and
+      beyond that — nothing. The rest of the tiling is fully determined
+      and computable, but never computed: the glider never needs it. Here is
+      hat glider A with its whole history kept:
+    </p>
+
+    <div id="corridor"></div>
+
+    <p>
+      This instrument flew every verified glider — and both lanes of the
+      spectre's pair — to <b>one million path-rings</b> each, roughly
+      1,300 times the deepest monolithic patch, at constant memory. The
+      essay's opening page is this exact machinery running live: keep it
+      running and you will see it never restart. What the million-ring
+      flights measured — the distances, the unbroken clock, and the
+      headings — fills the next two sections.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/flight.ts"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The gliders — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The atlas: every glider flying without end, and how far they have flown." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/gliders/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The gliders — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The atlas: every glider flying without end, and how far they have flown." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/gliders/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The gliders</h1>
+    <p class="subtitle">the atlas: every glider flying without end</p>
+
+    <p>
+      Four verified gliders, five lanes — hat C's launch emits three
+      gliders on two headings, and the spectre's seed emits a twin pair —
+      and each was flown under the sliding-window instrument to
+      <b>one million path-rings</b> (≈880,000 effective rings from
+      launch), at a constant ~112 MB, on a laptop. Every viewer below is
+      that instrument running live: the gliders fly for as long as you
+      keep them on screen, and they are going somewhere no simulation
+      has been.
+    </p>
+
+    <p>
+      On immortality, the honest ledger: the only late transition ever
+      observed remains the looper's capture at ring 189. Each of these
+      flights has put roughly <b>4,600×</b> that distance behind it with
+      max population flat the whole way. Not a proof — the certificate
+      section is about what proof would take — but the empirical margin
+      is now three and a half orders of magnitude.
+    </p>
+
+    <p>
+      Each entry: the glider in flight, the rule it obeys — rendered
+      directly from the committed record, dead rows and all, exactly as
+      the GA evolved it (first matching row applies; no match means
+      ground) — and its worldtube in space-time.
+    </p>
+
+    <h2>Hat A (run s21)</h2>
+    <div id="fly-hat-a"></div>
+    <div id="rule-hat-a"></div>
+    <div id="tube-hat-a"></div>
+
+    <h2>Hat B (run s22)</h2>
+    <div id="fly-hat-b"></div>
+    <div id="rule-hat-b"></div>
+    <div id="tube-hat-b"></div>
+
+    <h2>Hat C (run s23)</h2>
+    <div id="fly-hat-c"></div>
+    <div id="rule-hat-c"></div>
+    <div id="tube-hat-c"></div>
+
+    <h2>Spectre A (run s33)</h2>
+    <div id="fly-spectre-a"></div>
+    <div id="rule-spectre-a"></div>
+    <div id="tube-spectre-a"></div>
+
+    <p>
+      The numbers — how far each lane has flown, the universal clock, the
+      settled headings to three decimal places, and the startling
+      arithmetic between them — are the survey's business, one page on.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/gliders.ts"></script>
+</body>
+</html>

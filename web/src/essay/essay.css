@@ -1,0 +1,322 @@
+/* Shared styles for every essay section page. */
+:root {
+  --bg: #0b0d10;
+  --panel: #12151a;
+  --edge: #232830;
+  --text: #d6dae2;
+  --dim: #8b93a2;
+  --accent: #f0b24a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 Georgia, 'Times New Roman', serif;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 6rem; }
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 0.4rem; color: #fff; }
+h2 { font-size: 1.4rem; color: #fff; margin-top: 3rem; }
+.subtitle { color: var(--dim); margin: 0 0 2.5rem; font-style: italic; }
+p { margin: 1rem 0; }
+a { color: var(--accent); }
+.note {
+  border-left: 3px solid var(--edge);
+  padding: 0.2rem 1rem;
+  color: var(--dim);
+  font-size: 0.95rem;
+}
+footer {
+  margin-top: 4rem;
+  color: var(--dim);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--edge);
+  padding-top: 1rem;
+}
+
+/* --- navigation: side rail (wide), contents block (narrow), pager --- */
+.rail {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 16rem;
+  padding: 2.2rem 1.4rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--edge);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+@media (min-width: 80rem) { .rail { display: block; } }
+.rail-head {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.rail a {
+  display: block;
+  color: var(--dim);
+  text-decoration: none;
+  padding: 0.18rem 0.5rem;
+  border-left: 2px solid transparent;
+}
+.rail a:hover { color: var(--text); }
+.rail a.current {
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+.soon {
+  font: 10px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+  opacity: 0.7;
+  border: 1px solid var(--edge);
+  border-radius: 3px;
+  padding: 0 0.25rem;
+  vertical-align: 1px;
+}
+.toc {
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 80rem) { .toc { display: none; } }
+.toc summary { cursor: pointer; color: var(--dim); }
+.toc a { display: block; color: var(--dim); text-decoration: none; padding: 0.12rem 0; }
+.toc a.current { color: var(--text); }
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--edge);
+  padding-top: 1rem;
+  font-size: 0.95rem;
+}
+.pager a { text-decoration: none; }
+
+/* --- essay panel --- */
+.essay-panel {
+  margin: 2rem -1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (min-width: 50rem) { .essay-panel { margin: 2rem -2.5rem; } }
+.ep-stage { position: relative; aspect-ratio: 16 / 10; }
+.ep-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.st-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.ep-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--dim);
+  font: 14px ui-monospace, Menlo, monospace;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 50% { opacity: 0.45; } }
+.ep-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--edge);
+  font: 13px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+}
+.ep-bar button {
+  background: #1a1e25;
+  color: var(--text);
+  border: 1px solid var(--edge);
+  border-radius: 5px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font: inherit;
+}
+.ep-bar button:hover { border-color: var(--accent); }
+.ep-speedlabel, .fp-zoomlabel { display: flex; align-items: center; gap: 0.35rem; min-width: 0; }
+.ep-speed, .fp-zoom { width: 90px; min-width: 40px; flex: 1 1 auto; accent-color: var(--accent); }
+.ep-stats { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ep-stats b { color: var(--text); font-weight: 600; }
+.ep-spacer { flex: 1; }
+.ep-repro {
+  border-top: 1px solid var(--edge);
+  padding: 0.4rem 0.75rem;
+  font: 12px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+}
+.ep-repro pre { white-space: pre-wrap; word-break: break-all; margin: 0.4rem 0 0.2rem; color: var(--text); }
+.ep-repro summary { cursor: pointer; }
+.ep-caption {
+  padding: 0.7rem 1rem 0.9rem;
+  border-top: 1px solid var(--edge);
+  font-size: 0.92rem;
+  color: var(--dim);
+}
+.ep-caption b { color: var(--text); }
+
+/* Flight-panel odometer as an in-panel chip. */
+.essay-panel .fp-odometer {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.6rem;
+  font: 11px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+  background: rgba(11, 13, 16, 0.6);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  pointer-events: none;
+}
+.essay-panel .fp-odometer b { color: var(--text); font-weight: 600; }
+
+/* --- side-by-side panels --- */
+.panel-row { display: flex; gap: 1rem; margin: 2rem -1.25rem; }
+@media (min-width: 50rem) { .panel-row { margin: 2rem -2.5rem; } }
+.panel-row > div { flex: 1; min-width: 0; }
+.panel-row .essay-panel { margin: 0; }
+.panel-row .ep-speed { width: 56px; }
+/* Width-constrained side-by-side panels: the bar cannot fit counters on
+   the button row, so the stats get their own (permanent) second row —
+   permanent so the bar height never depends on the digit count. */
+.panel-row .ep-bar { flex-wrap: wrap; row-gap: 0.35rem; }
+.panel-row .ep-stats { flex-basis: 100%; order: 1; }
+
+/* --- the one-step anatomy panel --- */
+.step-panel {
+  margin: 2rem -1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (min-width: 50rem) { .step-panel { margin: 2rem -2.5rem; } }
+.sp-grid {
+  display: grid;
+  gap: 2px;
+  padding: 1rem;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+.sp-cell {
+  aspect-ratio: 1;
+  background: #171b21;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  font: 600 13px ui-monospace, Menlo, monospace;
+  color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+.sp-cell.alive { background: #f0b24a; }
+.sp-cell.nbr { outline: 2px solid #4a5566; outline-offset: -2px; }
+.sp-cell.hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+.sp-grid.counted .sp-cell { color: var(--dim); }
+.sp-grid.counted .sp-cell.alive { color: #4a3208; }
+.sp-grid.counted .sp-cell.born { color: #6fce87; }
+.sp-grid.counted .sp-cell.dies { color: #e06c75; }
+.sp-rule {
+  min-height: 1.4rem;
+  text-align: center;
+  font: 13px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+  padding: 0 1rem 0.6rem;
+}
+.sp-rule b { color: var(--text); }
+
+/* --- inline rule tables --- */
+table.rule {
+  border-collapse: collapse;
+  margin: 1.5rem auto;
+  font: 14px ui-monospace, Menlo, monospace;
+}
+table.rule th, table.rule td {
+  border: 1px solid var(--edge);
+  padding: 0.35rem 0.9rem;
+  text-align: center;
+  color: var(--text);
+}
+table.rule th { color: var(--dim); font-weight: 400; }
+.sp-grid.large { max-width: 32rem; gap: 1px; padding: 0.8rem; }
+.sp-grid.large .sp-cell { font-size: 9px; border-radius: 1px; }
+.xp-info {
+  border-top: 1px solid var(--edge);
+  padding: 0.45rem 0.75rem;
+  font: 12px ui-monospace, Menlo, monospace;
+  color: var(--dim);
+  word-break: break-all;
+}
+.xp-info b { color: var(--text); }
+.xp-info code { color: var(--accent); }
+.ep-bar select {
+  background: #1a1e25;
+  color: var(--text);
+  border: 1px solid var(--edge);
+  border-radius: 5px;
+  padding: 0.22rem 0.4rem;
+  font: inherit;
+}
+.xp-radius, .xp-level { width: 80px; accent-color: var(--accent); }
+.specimens {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.specimens figure { margin: 0; width: min(17rem, 44%); text-align: center; }
+.specimens svg { width: 100%; height: auto; }
+.specimens figcaption { font-size: 0.88rem; color: var(--dim); margin-top: 0.4rem; }
+.specimens figcaption b { color: var(--text); }
+#monotile-balls { display: flex; gap: 1rem; }
+#monotile-balls > div { flex: 1; }
+/* 2-balls span ~5/3 the tile-widths of the 1-balls above; wider figures
+   keep the individual tiles only slightly smaller. */
+#monotile-balls2 { display: flex; gap: 1rem; }
+#monotile-balls2 > div { flex: 1; }
+#monotile-balls2 figure { width: min(21rem, 88%); }
+
+/* Static stand-in for the heavy cross-radius exhibit. */
+.xr-static { margin: 1.5rem 0; }
+.xr-static img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.xr-static figcaption { font-size: 0.88rem; color: var(--dim); margin-top: 0.5rem; }
+.xr-static figcaption b { color: var(--text); }
+.xr-static button {
+  display: block;
+  margin: 0.8rem auto 0;
+  padding: 0.45rem 1.1rem;
+  background: #2a3040;
+  color: var(--text);
+  border: 1px solid #3a4152;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+}
+.xr-static button:hover { background: #343b4e; }
+
+/* Saturation timeline: full-width figure. */
+.sat-timeline { margin: 1.5rem 0; }
+.sat-timeline svg { width: 100%; height: auto; display: block; }
+.sat-timeline figcaption { font-size: 0.88rem; color: var(--dim); margin-top: 0.4rem; text-align: center; }
+
+/* Playground launcher. */
+.pg-open {
+  display: inline-block;
+  padding: 0.55rem 1.3rem;
+  background: #2a3040;
+  border: 1px solid #3a4152;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.pg-open:hover { background: #343b4e; }
+.pg-list { line-height: 1.9; }
+
+/* Solo specimen row: full-width caption under a centred figure. */
+.spec-solo figure { width: 100%; }
+.spec-solo svg { max-width: 23rem; display: block; margin: 0 auto; }

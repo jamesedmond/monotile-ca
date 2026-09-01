@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Towards a proof — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Situations, saturation, and closure: from a million rings to immortality." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/certificate/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Towards a proof — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Situations, saturation, and closure: from a million rings to immortality." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/certificate/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Towards a proof</h1>
+    <p class="subtitle">situations, saturation, and the closure that remains</p>
+
+    <p>
+      A million rings is a measurement, not a theorem. The question this
+      section poses is whether <em>verified to a million rings</em> can be
+      upgraded to <em>immortal on every legal tiling</em> — and two facts
+      make that conceivable rather than hopeless. A substitution tiling
+      has finite local complexity: up to isomorphism, only finitely many
+      neighbourhoods of any fixed size occur (<em>The board</em>'s
+      recurrence viewer was this fact in action). And one step of a
+      cellular automaton is strictly local. Together they reduce a proof
+      to bookkeeping — enumerate what the glider can encounter, and show
+      the set closes.
+    </p>
+
+    <p>
+      The bookkeeping unit is the <em>situation</em>: a snapshot of the
+      glider as the rule sees it — the non-quiescent cells together with
+      the substrate <em>collar</em> within a fixed graph radius of them,
+      tile classes, adjacencies and vertex degrees included, canonically
+      encoded so that two snapshots are equal exactly when their collared
+      neighbourhoods are isomorphic, wherever on the tiling they occur:
+    </p>
+
+    <div id="situation-figs"></div>
+
+    <p>
+      The step map reads only the collar — that is what "the rule is
+      local" means — but the <em>next</em> situation's collar reaches one
+      ring beyond the current one, into terrain the current situation
+      does not determine. Each legal way that fresh ring can be tiled is
+      a <em>collar extension</em>, and a certificate must show the
+      glider steps safely, with positive displacement, under every one
+      of them. That is the whole proof obligation: a finite set of
+      situations, closed under the step map, for every legal extension.
+      The figures form a ladder in collar radius: with no collar the
+      surroundings vary wildly; two rings in, the observed geometry is
+      already forced and only the hidden class labels differ; at the
+      certificate's radius 4, the step map itself is determined.
+    </p>
+
+    <h2>The vocabulary is finite, and it saturates hard</h2>
+
+    <p>
+      Finiteness of the situation set was guaranteed by finite local
+      complexity; the scientific content is its <em>size</em> and
+      <em>shape</em>. Counting distinct situations along hat A's flight
+      at the step-sufficient collar radius: <b>167</b>. The last new one
+      appears at generation 434, and novelty arrives in bursts —
+      hierarchical terrain, not a steady drip — separated by long dead
+      stretches:
+    </p>
+
+    <div id="saturation"></div>
+
+    <p>
+      The control is the doubled window: on a patch twice the radius,
+      <b>1,074 consecutive further generations of entirely fresh
+      terrain produce nothing new</b>. Branching — situations with more
+      than one observed continuation — is confined to <b>four</b>
+      situations with exactly two continuations each, and their
+      recurrence gaps carry additive structure (178, 288, and
+      466 = 178 + 288): the signature of a substitutive sequence. The
+      spectre glider gives the same picture with a vocabulary of 306.
+      One subtlety: vocabularies are <em>per-lane</em> — the
+      looper's captured trajectory shares not one situation with the
+      canonical glider's atlas even while visually indistinguishable
+      from it — so a certificate covers one rule–lane pair, and six
+      certificates cover a substrate.
+    </p>
+
+    <p>
+      The encoding itself is checked, not trusted. The same-radius
+      successor map is not forced to be deterministic even by a perfect
+      encoding (the next collar sees terrain the key does not), so the
+      soundness control is the forced map — from a larger collar to a
+      smaller successor — and all six such maps are deterministic on
+      every sampled generation. What remains as same-radius
+      "nondeterminism" is then pure collar-extension branching: exactly
+      the thing the certificate must close over.
+    </p>
+
+    <h2>What remains</h2>
+
+    <p>
+      The certificate is therefore no longer a conjecture about whether
+      a finite description exists — it measurably does — but a bounded
+      enumeration task: generate the legal collar continuations of the
+      observed situations from the substitution hierarchy, and verify
+      closure of the graph, attending to the four branch points. Two
+      scope notes on that set. The 167 is hat A's — one rule–lane pair
+      of the six a substrate carries. And the observed list is a size
+      estimate, not a precondition: the enumeration is self-completing —
+      any situation it uncovers simply joins the set under test — and
+      could in principle be seeded from a single mid-flight situation,
+      closure discovering everything reachable from it under every
+      legal extension, with the verified flight supplying the bridge
+      from launch to seed.
+    </p>
+
+    <p>
+      It is worth being equally precise about what the finished theorem
+      would say. It would prove that a glider, once <em>settled</em> —
+      once it has entered any situation of the closed set — keeps its
+      lane forever: the speed and the bearing become theorems. It would
+      not prove that every travelling object of this rule must ride
+      these lanes; the other five lanes need their own certificates,
+      and objects outside the atlas entirely — never observed, but
+      never excluded — are beyond its scope. Immortality of what we
+      have; silence about what we have not.
+    </p>
+
+    <p>
+      Two structural gifts make the task
+      tractable, and one hazard keeps it honest.
+      Over-approximation is safe in exactly one direction: proving
+      survival on a superset of the legal extensions proves survival on
+      the tiling, so the substitution hierarchy is needed only where lazy
+      enumeration fails — but an illegal extension can also manufacture
+      <em>phantom</em> situations that occur on no real tiling, and a
+      phantom dying is a false alarm, not a disproof. And the compass
+      reduces the terrain ahead to a corridor whose collar sequence is
+      itself substitutive, so the certificate should factor into the
+      glider's small phase machine crossed with a finite corridor
+      automaton — Goucher's ribbon proof reappearing as the one-letter
+      special case. Finally, one suspected symmetry could shrink the job
+      six-fold: the dynamics are blind to the tile classes the encoding
+      records, so under a class-blind encoding the six lanes' machines —
+      60° rotations of one another, with identical clocks and speeds —
+      may turn out to coincide, collapsing a substrate's six
+      certificates into one. Suspected, motivated, designated the first
+      step; not yet shown.
+    </p>
+
+    <p>
+      That is where this project stands: a glider that measurably
+      inhabits 167 situations, a step map that is deterministic wherever
+      it is forced to be, four branch points with substitutive structure,
+      and an enumeration nobody has yet run. The last section hands you
+      the instruments.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/certificate.ts"></script>
+</body>
+</html>

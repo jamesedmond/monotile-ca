@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playground — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The full interactive UI — your licence to deviate." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/playground/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Playground — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The full interactive UI — your licence to deviate." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/playground/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Playground</h1>
+    <p class="subtitle">the full instrument — your licence to deviate</p>
+
+    <p>
+      <!-- TODO at publication: clone instructions for the public repo
+         (git clone URL, wasm-pack + npm run dev, one verify command). -->
+      Everything in this essay replays in one tool, and this page hands it
+      over: the research UI itself, running entirely in your browser —
+      patch generation, both adjacencies, the engine, a multi-state paint
+      brush for seeding, replay of any committed record, and a direct
+      editor for the priority-table rules the gliders live in — the UI
+      flips between Generations/B·S mode and table mode to match
+      whatever you load.
+      Nothing you do leaves your machine.
+    </p>
+
+    <p>
+      <a class="pg-open" href="../../" target="_blank" rel="noopener">Open the playground →</a>
+    </p>
+
+    <h2>Start from a record</h2>
+    <p>
+      The curated menu replays the objects of this essay from their
+      committed records, or jump straight in:
+    </p>
+
+    <ul class="pg-list">
+      <li><a href="../../?curated=hat-a" target="_blank" rel="noopener">hat glider A</a> — the minimal relay; the essay's opening object</li>
+      <li><a href="../../?curated=hat-b" target="_blank" rel="noopener">hat glider B</a> — same lane, different rule</li>
+      <li><a href="../../?curated=hat-c" target="_blank" rel="noopener">hat glider C</a> — the wanderer that decays into three gliders</li>
+      <li><a href="../../?curated=spectre-a" target="_blank" rel="noopener">spectre glider A</a> — the twin launch, one firing cell per step</li>
+      <li><a href="../../?curated=looper" target="_blank" rel="noopener">the spectre looper</a> — reload it at radius 192 to watch the capture</li>
+      <li><a href="../../?curated=goucher" target="_blank" rel="noopener">Goucher's P3 glider</a> — the corrected table, riding its ribbon</li>
+      <li><a href="../../?curated=goucher-loopers" target="_blank" rel="noopener">the P2 loopers</a> — periods 40, 20 and 200, exactly</li>
+      <li><a href="../../?curated=phoenix" target="_blank" rel="noopener">the phoenix</a> — twice Goucher's speed, no survival rows</li>
+      <li><a href="../../?curated=gallery" target="_blank" rel="noopener">the early gallery</a> — the traveller, the filament, the oscillators</li>
+    </ul>
+
+    <h2>Write your own rule</h2>
+    <p>
+      The table-rule editor accepts the notation this essay has used
+      throughout — one priority row per line, first match wins, no match
+      means ground:
+    </p>
+
+    <table class="rule">
+      <tr><th>you write</th><th>it means</th></tr>
+      <tr><td><code>states 4</code></td><td>k = 4 states (0 = ground)</td></tr>
+      <tr><td><code>2 | n2&gt;=1 -&gt; 0</code></td><td>a state-2 cell with a state-2 neighbour becomes ground</td></tr>
+      <tr><td><code>* | n3&gt;=1 &amp; n2&gt;=1 -&gt; 1</code></td><td>any cell seeing state 3 and state 2 fires</td></tr>
+      <tr><td><code>* | otherwise -&gt; 3</code></td><td>a wildcard row with no conditions</td></tr>
+    </table>
+
+    <p>
+      The editor opens prefilled with hat glider A's rule, and one button
+      copies any loaded record's table into it. The suggested first
+      experiment is the ablation in miniature: load hat A, break one row,
+      and watch what a glider is made of. The suggested second is the one
+      nobody has run: find something we missed. Vertex adjacency, four
+      states, a two-cell seed — the space that took this project three
+      levers and a control experiment to reach is now one dropdown away.
+    </p>
+
+    <p>
+      Reports of anything interesting travel fastest as a downloaded
+      record. Good hunting.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/playground.ts"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The board — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The hat and spectre tilings, patches by address, and the cone-seed pitfall." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/tilings/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The board — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The hat and spectre tilings, patches by address, and the cone-seed pitfall." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/tilings/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The board</h1>
+    <p class="subtitle">tilings, and the fifty-year search for an unrepeatable one</p>
+
+    <p>
+      The square grid of the last section is itself a tiling of the plane —
+      just not an interesting one. One shape, meeting edge to edge, and above
+      all <em>periodic</em>: slide the whole plane one square over and it
+      lands exactly on itself. That slide is the whole of the glider's
+      immortality proof: four generations return it to its exact shape a
+      square away, on ground the symmetry guarantees identical — checked
+      once, it flies forever. The question of this essay is what happens
+      without the guarantee.
+    </p>
+    <p>
+      Tilings that <em>cannot</em> repeat took a long time to find. The first
+      aperiodic tile set, Berger's in 1966, needed <b>20,426</b> distinct
+      tiles — built by hand, before computers were involved in such things,
+      and yet born <em>from</em> computation: the tiles encode the steps of a
+      Turing machine, and their refusal to repeat is the undecidability of
+      the halting problem made geometric. Robinson got the count down to six
+      in 1971; Roger Penrose to two in 1974 — the kites and darts, and the
+      rhombs,
+      that a later section returns to.
+    </p>
+
+    <div id="penrose-tiles"></div>
+    <div id="penrose-ball"></div>
+
+    <p>
+      And there it stood. Whether a
+      <em>single</em> shape could force aperiodicity — the einstein problem,
+      <em>ein Stein</em>, one stone — stayed open for half a century, until
+      an amateur geometer, David Smith, found the 13-sided <b>hat</b> in
+      2023. It
+      needs mirrored copies; the <b>spectre</b>, found weeks later, does not.
+    </p>
+
+    <div id="monotiles"></div>
+    <div id="monotile-balls"><div id="hat-ball"></div><div id="spectre-ball"></div></div>
+
+    <p>
+      The natural unit of distance on these boards is the <em>ring</em>: a
+      tile's neighbours form its first ring, their neighbours the second,
+      and so on outward — steps counted across shared edges, not lengths.
+      Grown one ring further, the neighbourhoods above become:
+    </p>
+
+    <div id="monotile-balls2"><div id="hat-ball2"></div><div id="spectre-ball2"></div></div>
+
+    <p>
+      Rings — graph distance — are the yardstick for everything that
+      follows: every patch in this essay is a root tile grown <em>r</em>
+      rings out (its <em>radius</em>), and how far a pattern travels is
+      measured the same way.
+    </p>
+
+    <p>
+      Aperiodic does not mean nothing repeats. Any finite patch you can point
+      to — a tile and its ring, a whole neighbourhood — recurs infinitely
+      often across the plane; what never recurs is the arrangement as a
+      whole, and nothing ever tells you <em>where</em> the next occurrence
+      will be. This is <em>local isomorphism</em>, and for a glider it would
+      be the only footing on offer — familiar ground keeps arriving, on an
+      unpredictable schedule, and the pattern must survive whatever comes
+      between.
+    </p>
+
+    <div id="recurrence"></div>
+
+    <p>
+      What makes these boards usable for experiments at all is that every
+      tile has a <em>name</em>. Each tiling is built by substitution — small
+      tiles compose into supertiles, supertiles into supersupertiles, without
+      end — and a tile's address is simply the path upward: which slot of
+      which supertile, of which supersupertile, and so on. Switch the
+      explorer's lens to <em>hierarchy</em> and slide the level: the
+      supertiles materialize out of the chaos, level by level. Neighbourhood
+      is computable from addresses alone — a finite-state machine reads two
+      names and answers whether the tiles touch. The construction is Simon
+      Tatham's (<a href="https://arxiv.org/abs/2512.16595" target="_blank"
+      rel="noopener">paper</a>, <a
+      href="https://crates.io/crates/substitution-tiling-transducers"
+      target="_blank" rel="noopener">library</a>), and this whole project
+      stands on it. No geometry is consulted; the coordinates you see are
+      for your eyes only.
+    </p>
+
+    <div id="explorer"></div>
+
+    <h2>The seam</h2>
+    <p>
+      Addresses end in a repeating cycle — an infinite ancestry, pinning the
+      tile inside an infinite tiling. But not every legal-looking cycle pins
+      it inside the <em>plane</em>: if the cycle's slots hug their
+      supertiles' boundary forever, the union of ancestors covers only a
+      cone, glued edge to edge at a seam. Tiles look innocent; adjacency near
+      the seam is corrupted. Early in the project, every run was quietly
+      crossing one.
+    </p>
+
+    <div id="cone"></div>
+
+    <p>
+      The fix is chosen roots whose cycles are <em>eventually interior</em>,
+      and a flag on every generated patch listing any cell whose
+      neighbourhood touched degenerate glue. The paper states this in two
+      sentences; the red cells above are what the sentences are about.
+    </p>
+
+    <p>
+      One more thing to click for: neighbour counts. On the square grid every
+      cell had the same number of neighbours; here the count varies tile by
+      tile — four to six for hats under edge adjacency, four for every
+      anti-hat, up to seven on spectres. No rule can say "exactly my eight
+      neighbours" on a board like this. Rules must speak in counts —
+      semi-totalistic, as in the last section — and the game is ready to
+      begin.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/tilings.ts"></script>
+</body>
+</html>

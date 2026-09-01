@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The hunt — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="The same pipeline pointed at the monotiles: four gliders in six runs." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/hunt/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The hunt — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="The same pipeline pointed at the monotiles: four gliders in six runs." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/hunt/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>The hunt</h1>
+    <p class="subtitle">the identical pipeline, pointed home</p>
+
+    <p>
+      Everything validated on the Penrose tilings came home. The monotile search moved
+      into the new space — vertex adjacency (degrees 6–7 here, smaller
+      than P3's 7–11) and 4-state table rules — while the pipeline
+      itself was carried over untouched: the same GA, the same random
+      initialisation and seed bank, the same travel × flatness
+      objective, cap and cross-radius battery, at the calibrated scale
+      of 256 × 800. Neither substrate has any analogue of P3's straight
+      ribbons. Six independent runs. Four produced verified gliders —
+      three on the hat, one on the spectre:
+    </p>
+
+    <table class="rule">
+      <tr><th>run</th><th>family</th><th>max pop (flat)</th><th>pace</th><th>arrival at radius 768</th></tr>
+      <tr><td>s21 — hat A</td><td>hat</td><td>16</td><td>2.0 gen/ring</td><td>gen 1533</td></tr>
+      <tr><td>s22 — hat B</td><td>hat</td><td>14</td><td>2.0 gen/ring</td><td>gen 1533</td></tr>
+      <tr><td>s23 — hat C</td><td>hat</td><td>32</td><td>2.0 after a 62-gen transient</td><td>gen 1602</td></tr>
+      <tr><td>s33 — spectre A</td><td>spectre</td><td>12</td><td>2.0 gen/ring</td><td>gen 1534</td></tr>
+    </table>
+
+    <p>
+      Each is <code>ReachedBoundary</code> at radius 48, 96, 192, 384
+      <em>and</em> 768 — a 16× span, 765 rings of aperiodic terrain
+      survived — with max population exactly flat at every radius. These
+      are the first travelling objects beyond mortal wanderers and growers
+      ever observed on the aperiodic monotilings and, to our knowledge,
+      the first gliders on any substrate without straight rails. And where
+      P3 held out for ≈115,000 evaluations, the
+      hat gave up s21 at <b>GA generation 5</b> — about 1,300 evaluations.
+      Once the rule family and the neighbourhood were right, gliders were
+      not rare at all. Months of "no" had been aimed at the wrong
+      space.
+    </p>
+
+    <div id="first"></div>
+
+    <p>
+      Multi-glider births are typical. s21 opens with <em>two</em>
+      parallel gliders travelling together; at generation 42 one clips
+      the other's wake and dies, and the survivor settles onto its
+      lane. The spectre's s33 launches a clean pair separating at ~120°:
+    </p>
+
+    <div id="spectre-pair"></div>
+
+    <p>
+      And s23 is the showpiece: it begins as a larger <em>wanderer</em>,
+      meandering near the origin for dozens of generations, then decays
+      into two, then three separate directional gliders. A wanderer as an
+      excited bound state that sheds gliders — direct visual evidence
+      the two classes are kin, and the origin of s23's 62-generation
+      startup cost:
+    </p>
+
+    <div id="showpiece"></div>
+
+    <p>
+      The arrival laws are predictive out of sample: fitted on radii up
+      to 384, they forecast the radius-768 arrivals to 0.25% — hat C's
+      law, generation = 62 + 2<em>r</em>, predicts 1598 against a
+      measured 1602, and the clean gliders arrive at 1533/1533/1534
+      against a predicted ≈1536. Every verified glider, on both
+      families — and Goucher's, and the phoenix — runs the same ~2
+      generations per ring: the birth-ahead, die-behind relay seems to
+      set a universal clock.
+    </p>
+
+    <h2>The two that were not gliders</h2>
+    <p>
+      The remaining spectre runs are the anti-gaming machinery paying
+      rent. s31 was a grower — max population 50 → 207 → 1,165 across the
+      verification radii, invisible in-patch, exposed by the
+      multiplicative spread. s32, the looper, is a near-miss for the ages:
+    </p>
+
+    <div id="megalooper"></div>
+
+    <p>
+      Period 3,300 is the longest exact recurrence the project has
+      recorded — and it is the beat of two <em>independent</em> captures,
+      not one orbit: cycle detection on the full state certifies
+      recurrence, but says nothing about how many objects the state
+      contains. The lesson cuts both ways: the machinery works, and
+      immortality is empirical — this family can travel ~190 rings and
+      <em>then</em> trap, so arbitrarily-late failure stays a live
+      possibility for every glider in the table above.
+    </p>
+
+    <h2>What made the difference</h2>
+    <p>
+      All three levers the validation control identified, jointly: a rule
+      family whose non-live states are visible to neighbours and whose
+      conditions conjoin (the winning rules use both — the missing
+      critical point of the Generations era was a property of the rule
+      family, not the substrates); vertex adjacency; and calibrated
+      search power. Each is individually necessary — a later section
+      shows the ablation, along with a brand-new way the search tried to
+      cheat. And one thing was <em>not</em> necessary: rails. The
+      monotiles have no straight ribbons, yet every glider <em>appears</em>
+      to hold the universal clock and a fixed bearing — s21 runs dead
+      south-west, straight at a corner of the hexagonal patch.
+      <em>Appears</em> is doing honest work: 768 rings is the longest
+      flight yet verified, and both the clock and the immortality want
+      far longer rides — which is the flight section's business. The
+      bearings — confirming they really do quantize, and what in the
+      geometry might set them — belong to the compass section.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/hunt.ts"></script>
+</body>
+</html>

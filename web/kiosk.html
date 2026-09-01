@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infinite Flight — Gliders on the Hat Tiling</title>
+  <meta name="description" content="A glider on the hat tiling in unbounded flight — the sliding-window instrument running live." />
+  <link rel="canonical" href="https://offlattice.org/monotile/kiosk.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Infinite Flight — Gliders on the Hat Tiling" />
+  <meta property="og:description" content="A glider on the hat tiling in unbounded flight — the sliding-window instrument running live." />
+  <meta property="og:url" content="https://offlattice.org/monotile/kiosk.html" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --text: #d6dae2;
+      --dim: #8b93a2;
+      --scrim: 11, 13, 16;
+    }
+    body.light {
+      --bg: #ffffff;
+      --text: #2a2d33;
+      --dim: #767c88;
+      --scrim: 255, 255, 255;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.5 Georgia, 'Times New Roman', serif;
+      overflow: hidden;
+    }
+    .flight-panel, .ep-stage { position: absolute; inset: 0; }
+    .ep-canvas { width: 100%; height: 100%; display: block; }
+    .ep-loading {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dim);
+      font-style: italic;
+    }
+    .fp-odometer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.7rem 1.2rem;
+      text-align: center;
+      color: var(--dim);
+      background: linear-gradient(transparent, rgba(var(--scrim), 0.85));
+      font-variant-numeric: tabular-nums;
+    }
+    .fp-odometer b {
+      color: var(--text);
+      font-weight: 600;
+      /* Georgia lacks tabular figures, so font-variant-numeric is
+         ignored; monospace digits stop the side-to-side jitter. */
+      font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      font-size: 0.95em;
+    }
+    .fp-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.8rem 1.2rem;
+      text-align: center;
+      color: var(--dim);
+      background: linear-gradient(rgba(var(--scrim), 0.85), transparent);
+      pointer-events: none;
+    }
+    .fp-title b { color: var(--text); font-weight: 600; }
+    body.light .fp-title b { color: #000; }
+  </style>
+</head>
+<body>
+  <div id="flight"></div>
+  <div class="fp-title">
+    <b>A glider on the hat tiling</b> — the substrate is generated just
+    ahead of it as it flies; it has never been anywhere twice.
+  </div>
+  <script type="module" src="/src/kiosk.ts"></script>
+</body>
+</html>

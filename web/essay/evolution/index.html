@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Genetic search — Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="Evolving rule tables; how the fitness function was shaped." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/evolution/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Genetic search — Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="Evolving rule tables; how the fitness function was shaped." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/evolution/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Genetic search</h1>
+    <p class="subtitle">the objective is the hard part</p>
+
+    <p>
+      Enumeration ends at one rule table. With a table per tile class —
+      seventeen on the hat — the space is ~2<sup>150</sup>, and search has
+      to become evolution: a genome is the list of tables, crossover swaps
+      whole classes between parents, mutation flips single birth or
+      survival bits, tournaments pick winners, and every run is
+      deterministic given its seed. What "winner" means is the rest of
+      this section.
+    </p>
+
+    <h2>You get what you reward</h2>
+    <p>
+      Reward reaching the boundary, and the GA "wins" with the known
+      58-ring mortal — on any patch shorter than its lifespan, a dying
+      traveller escapes and scores. Reward distance under a population
+      cap, and it breeds a filament slow enough to stay under the cap for
+      the whole crossing, then balloon: peak population 93 at radius 64,
+      1,665 at 128, 3,407 at 192. Each parasite bred a countermeasure —
+      distance-only fitness, an explosion filter that aborts any run
+      passing a population ceiling, and above all <em>cross-radius
+      verification</em>: re-run every champion on bigger boards. A glider
+      keeps escaping; a mortal plateaus; a grower's population climbs
+      with the board. No result in this project stands without that
+      battery, and this section is where it was earned.
+    </p>
+
+    <h2>The balance point</h2>
+    <p>
+      The mortal era left two kinds of object: travellers, which lose
+      population and die, and growers, which gain it and live. A glider
+      is net-zero — so the endgame searched the death↔growth boundary
+      directly, seeding the GA with the grower itself and rewarding
+      flat-population travel. Two fitness refinements, each closing the
+      previous loophole, converged on the same kind of champion:
+    </p>
+
+    <table class="rule">
+      <tr><th>fitness</th><th>growth rate</th><th>population as radius doubles</th></tr>
+      <tr><td>the k = 5 grower, unpressured</td><td>~0.55 cells/ring</td><td>linear</td></tr>
+      <tr><td>+ population cap</td><td>~0.38</td><td>76 → 152 → 304</td></tr>
+      <tr><td>+ flatness-weighted fitness</td><td>~0.28</td><td>56 → 112 → 224</td></tr>
+    </table>
+
+    <p>
+      Linear every time: double the board, double the population — a
+      glider would hold constant. Each refinement thinned the grower and
+      none reached zero, because a fitness evaluated at radius R only
+      sees growth that shows up within R, and there is always a grower
+      just under that threshold. The boundary was being approached as a
+      limit with no member at it — a <em>missing critical point</em>.
+    </p>
+
+    <h2>The floor test</h2>
+    <p>
+      One question remained: does the thinning continue forever, or is
+      there a floor? Doubling the span — radius 400, same cap, same
+      flatness pressure — settled it. Over the longer haul the search
+      <em>could not sustain a grower at all</em>. Its champion is
+      something the era had not produced before:
+    </p>
+
+    <div id="floor"></div>
+
+    <p>
+      Flat, and mortal. That splits the boundary into two regimes:
+      structures that live forever <em>grow</em> (at ~0.28 cells per ring
+      or faster, within reach of these searches), and structures that
+      hold a bounded population <em>die</em> (within ~100 rings). A
+      glider — immortal <em>and</em> flat — is exactly the corner neither
+      regime touches. This is the strongest statement of the era: across
+      the exhaustive 2-state census, Hamming-neighbourhood sweeps,
+      chirality and full per-class stratification, two to five states,
+      and a targeted balance search, nothing sits on that corner.
+    </p>
+
+    <p>
+      It is not a proof. It is one rule family and a finite amount of
+      search, and "within reach of these searches" is doing real work in
+      every sentence above. How much search would be <em>enough</em> to
+      trust a negative like this one? That question has an answer, and
+      the next section buys it with a control experiment on a tiling
+      where the ground truth is known.
+    </p>
+  </main>
+  <script type="module" src="/src/essay/evolution.ts"></script>
+</body>
+</html>

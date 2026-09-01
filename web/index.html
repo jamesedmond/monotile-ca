@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>monotile CA</title>
+  <meta name="description" content="The research UI for cellular automata on hat, spectre and Penrose tilings — patch generation, rule editing, and exact replay of every committed record." />
+  <link rel="canonical" href="https://offlattice.org/monotile/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="monotile CA" />
+  <meta property="og:description" content="The research UI for cellular automata on hat, spectre and Penrose tilings — patch generation, rule editing, and exact replay of every committed record." />
+  <meta property="og:url" content="https://offlattice.org/monotile/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex; flex-direction: column; overflow: hidden;
+      background: #0b0d10; color: #cdd3dc;
+      font: 13px/1.4 system-ui, sans-serif;
+    }
+    #controls {
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch;
+      padding: 8px 12px; background: #14171c; border-bottom: 1px solid #23272e;
+    }
+    #title { color: #f0b24a; font-weight: 700; padding-right: 10px; align-self: center; }
+    fieldset.box {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      border: 1px solid #262c35; border-radius: 6px;
+      padding: 4px 10px 6px; margin: 0;
+      min-width: 0; max-width: 100%;
+    }
+    #controls { align-items: flex-start; flex-wrap: nowrap; }
+    #ruleBox { flex-direction: column; align-items: stretch; gap: 6px; flex-shrink: 0; }
+    #restBoxes {
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;
+      flex: 1; min-width: 260px;
+    }
+    #ruleBox .rb-head { display: flex; align-items: center; gap: 8px; }
+    #ruleBox .rb-content { display: flex; align-items: flex-start; gap: 10px; }
+    fieldset.box legend { font-size: 10px; color: #6f7884; padding: 0 4px; }
+    #controls[data-mode="gens"] .table-only { display: none !important; }
+    #controls[data-mode="table"] .gens-only { display: none !important; }
+    fieldset.box .locked { opacity: 0.45; pointer-events: none; }
+    .paint { display: inline-flex; gap: 2px; }
+    .paint button { min-width: 26px; padding: 3px 6px; }
+    .paint button.active { border-color: #f0b24a; color: #f0b24a; }
+    .paint button:disabled { opacity: 0.4; cursor: default; }
+    label { display: inline-flex; align-items: center; gap: 4px; color: #9aa3af; white-space: nowrap; }
+    select, input[type=number], button {
+      background: #1d2127; color: #cdd3dc; border: 1px solid #2c323b;
+      border-radius: 4px; padding: 3px 8px; font: inherit;
+    }
+    button { cursor: pointer; }
+    button:hover { background: #262c34; }
+    button:disabled { opacity: 0.5; cursor: default; }
+    input[type=number] { width: 58px; }
+    input[type=range] { width: 88px; accent-color: #f0b24a; }
+    input[type=checkbox] { accent-color: #f0b24a; margin: 0; }
+    #ruleGrid {
+      display: grid; grid-template-columns: repeat(9, 17px); gap: 1px 2px;
+      justify-items: center; align-items: center;
+      font-size: 10px; line-height: 1; color: #6f7884;
+    }
+    #ruleGrid .rowtag { font-size: 11px; font-weight: 700; color: #9aa3af; }
+    #ruleText { color: #f0b24a; font-weight: 600; min-width: 72px; }
+    #stats { margin-left: auto; display: flex; gap: 14px; padding: 0 4px 0 16px; font-variant-numeric: tabular-nums; color: #9aa3af; }
+    #stats b { color: #e6ebf2; font-weight: 600; }
+    #stage { position: relative; flex: 1; min-height: 0; }
+    canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: crosshair; }
+    #tooltip {
+      position: absolute; pointer-events: none; z-index: 3;
+      background: #1d2127ee; border: 1px solid #2c323b; border-radius: 4px;
+      padding: 5px 8px; white-space: pre; font-size: 12px;
+    }
+    #badge {
+      position: absolute; top: 10px; right: 10px; z-index: 2;
+      background: #5a3a10; color: #ffd9a0; border-radius: 4px; padding: 3px 8px;
+    }
+    #overlay {
+      position: absolute; inset: 0; z-index: 4;
+      display: flex; align-items: center; justify-content: center;
+      background: #0b0d10cc; white-space: pre-wrap; text-align: center;
+      font-size: 14px; color: #e6ebf2;
+    }
+    #overlay.error { color: #ff9d9d; }
+    #overlay[hidden], #tooltip[hidden], #badge[hidden] { display: none; }
+    #tableEditor { color: #9aa3af; }
+    #tableText {
+      flex: 1; max-width: 34rem; background: #10131a; color: #cdd3dc;
+      border: 1px solid #2c323b; border-radius: 4px; padding: 6px 8px;
+      font: 12px ui-monospace, Menlo, monospace; resize: vertical;
+    }
+    .te-side { display: flex; flex-direction: column; gap: 6px; max-width: 24rem; }
+    #tableErr { color: #ff9d9d; font-size: 12px; white-space: pre-wrap; }
+    .te-help { font-size: 11px; color: #6f7884; }
+    .te-help code { color: #9aa3af; }
+  </style>
+</head>
+<body>
+  <header id="controls" data-mode="gens">
+    <span id="title">monotile CA</span>
+    <fieldset class="box" id="ruleBox">
+      <legend>rule</legend>
+      <div class="rb-head">
+        <label>adjacency
+          <select id="nbhd" title="edge: tiles sharing a side; vertex: sharing at least a corner (the glider space). Changing it regenerates the board.">
+            <option value="edge">edge</option>
+            <option value="vertex">vertex</option>
+          </select>
+        </label>
+        <label>mode
+          <select id="modeSel" title="Generations / B·S rules, or priority-table rules (the glider family)">
+            <option value="gens">Generations · B/S</option>
+            <option value="table">Table</option>
+          </select>
+        </label>
+        <label>states <select id="statesSel" title="k. Generations: 0 = dead, 1 fires, 2..k−1 age deterministically. Table: sets the rule's states line.">
+          <option>2</option><option>3</option><option>4</option><option>5</option>
+        </select></label>
+        <span id="ruleText"></span>
+      </div>
+      <div class="rb-content gens-only" id="gensControls">
+        <div id="ruleGrid"></div>
+        <select id="preset"></select>
+        <button id="toTableBtn" title="Expand this rule into its exact equivalent priority table and switch to Table mode — per-state editing lives there">→ Table</button>
+      </div>
+      <div class="rb-content table-only" id="tableEditor">
+        <textarea id="tableText" rows="8" spellcheck="false"></textarea>
+        <div class="te-side">
+          <button id="tableApply" title="Parse and install this table rule (keeps the current board and states)">Apply table rule</button>
+          <button id="tableReset" title="Restore the table this editor was last loaded with — from a replay or a B/S conversion — and apply it">Reset</button>
+          <div id="tableErr"></div>
+          <div class="te-help">one row per line: <code>own | conds -&gt; next</code><br/>
+            own: state or <code>*</code>; conds: <code>nS&gt;=M</code> joined with <code>&amp;</code>, or <code>otherwise</code><br/>
+            first matching row wins; no match &rarr; 0. optional first line <code>states K</code>.</div>
+        </div>
+      </div>
+    </fieldset>
+    <div id="restBoxes">
+    <fieldset class="box">
+      <legend>playback</legend>
+      <button id="stepBack" title="Recompute the previous generation from snapshot history (exact, even across rule changes)">⟨ Back</button>
+      <button id="step">Step</button>
+      <button id="play">Play</button>
+      <button id="reset" title="Return to the state at load, or after the last edit (paint / clear / randomize / rule change)">Reset</button>
+      <label>speed <input id="speed" type="range" min="1" max="60" value="12" /><span id="speedVal">12</span>/s</label>
+    </fieldset>
+    <fieldset class="box">
+      <legend>draw</legend>
+      <span class="paint" id="paintSel" title="Click paints this state onto tiles (click again to erase) — multi-state seeds for table rules">
+        <button data-state="1" class="active">1</button>
+        <button data-state="2">2</button>
+        <button data-state="3">3</button>
+        <button data-state="4">4</button>
+      </span>
+      <button id="clear">Clear</button>
+      <button id="randomize" title="Scatter tiles in the selected paint state over the current board — layer 1s then 2s; Clear first for a fresh soup">Randomize</button>
+      <label>fill <input id="fill" type="range" min="5" max="50" value="20" /><span id="fillVal">20</span>%</label>
+      <label>seed <input id="seed" type="number" value="42" /></label>
+      <label>within <input id="dist" type="number" min="0" value="6" /></label>
+    </fieldset>
+    <fieldset class="box">
+      <legend>board</legend>
+      <label>family
+        <select id="family">
+          <option value="hat">hat</option>
+          <option value="spectre">spectre</option>
+          <option value="penrosep2">penrose p2 (kite/dart)</option>
+          <option value="penrosep3">penrose p3 (rhombs)</option>
+        </select>
+      </label>
+      <label>radius <input id="radius" type="number" min="2" max="256" value="12" title="radii ≳ 100 can take tens of seconds to generate; 192+ can take minutes (the looper needs 192 to stay inside)" /></label>
+      <button id="regen">Regenerate</button>
+    </fieldset>
+    <fieldset class="box">
+      <legend>replay</legend>
+      <label>curated
+        <select id="curatedSel" title="Replay a committed record from the project's results/"></select>
+      </label>
+      <button id="loadBtn" title="Load a search ResultRecord (.json / .jsonl) and replay it">Load result…</button>
+      <input id="loadResult" type="file" accept=".json,.jsonl,application/json" hidden />
+      <select id="recordSel" hidden></select>
+      <button id="reloadBtn" hidden title="Replay the selected record on a patch of the radius set in the radius box — more room before the dead boundary interferes">Reload @ radius</button>
+    </fieldset>
+    <div id="stats">
+      <span>gen <b id="statGen">–</b></span>
+      <span>pop <b id="statPop">–</b></span>
+      <span>changed <b id="statChanged">–</b></span>
+    </div>
+    </div>
+  </header>
+  <main id="stage">
+    <canvas id="canvas"></canvas>
+    <div id="tooltip" hidden></div>
+    <div id="badge" hidden></div>
+    <div id="overlay">Loading…</div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

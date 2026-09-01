@@ -1,0 +1,13 @@
+# TODO at publication: add `doi` (Zenodo), `repository-code`, and a
+# `preferred-citation` block pointing at the arXiv paper.
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper (see README)."
+type: software
+title: "monotile-ca: cellular automata on the hat and spectre aperiodic monotilings"
+authors:
+  - family-names: Edmond
+    given-names: James
+    orcid: "https://orcid.org/0009-0009-0005-4299"
+    email: james@offlattice.org
+url: "https://offlattice.org/monotile/essay/"
+license: MIT OR Apache-2.0

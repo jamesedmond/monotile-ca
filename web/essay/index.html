@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gliders on the Hat and Spectre Tilings</title>
+  <meta name="description" content="An interactive essay on the first gliders discovered on the hat and spectre aperiodic monotilings — every simulation live in the browser, every claim replayable from its committed record." />
+  <link rel="canonical" href="https://offlattice.org/monotile/essay/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Gliders on the Hat and Spectre Tilings" />
+  <meta property="og:description" content="An interactive essay on the first gliders discovered on the hat and spectre aperiodic monotilings — every simulation live in the browser, every claim replayable from its committed record." />
+  <meta property="og:url" content="https://offlattice.org/monotile/essay/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <h1>Gliders on the Hat and Spectre Tilings</h1>
+    <p class="subtitle">a computational essay · every simulation on this page is live</p>
+
+    <p>
+      The tiling below is a <em>hat tiling</em> — a plane covered by copies of a
+      single 13-sided shape, discovered in 2023, that can tile the plane but
+      only <em>aperiodically</em>: there is no wallpaper repeat — no block you
+      could cut out and stamp across the plane to reproduce it. Travelling
+      across it, a tile every two generations, is a glider.
+    </p>
+
+    <div id="hero"></div>
+
+    <p>
+      A <b>glider</b> is a cellular-automaton pattern with a fixed
+      population that moves. On an ordinary grid — Conway's Game of Life —
+      gliders are commonplace, because the grid looks the same everywhere: a
+      pattern that works once works forever. An aperiodic tiling makes no such
+      promise. The ground beneath this glider keeps changing: local shapes it
+      has crossed before do come round again, but never on a fixed schedule,
+      so surviving one step carries no guarantee for the next. In the early
+      stages of this project, nothing survived that: every
+      traveller we found or evolved died within a hundred tiles of home, and
+      we could
+      show that within the rule family we first searched, nothing better
+      existed.
+    </p>
+    <p>
+      The panel is not a video. It is the same cellular-automaton engine that
+      ran the discovery search, compiled to WebAssembly, flying the exact
+      committed record of this glider — seed, rule, and tiling regenerate
+      deterministically from a few hundred bytes. Press <b>⤓ record</b> for
+      those bytes, or open <em>reproduce this flight</em> for the command that
+      re-flies it natively, cross-checked against a monolithic patch. Its
+      population is flat on patches sixteen-fold apart in radius, and it has
+      been flown one million tiles without drifting from its lane.
+    </p>
+
+    <h2>The glider as a worldtube</h2>
+    <p>
+      There is an older way to look at a cellular automaton, familiar from
+      Wolfram's one-dimensional diagrams: draw <em>time</em> as a spatial
+      axis. For a two-dimensional automaton that means stacking each
+      generation as a layer of prisms, and for most automata the result is
+      an unreadable solid block. Not here. Our objects are a dozen cells
+      in an empty universe, so the history of a glider is a thin
+      <b>worldtube</b> climbing through space-time: its speed is the
+      tube's slope, a collision is a vertex where one tube ends on
+      another, and the compass law is the statement that all tubes lean
+      along a handful of quantized directions.
+    </p>
+
+    <div id="worldtube"></div>
+
+    <p>
+      Watch the launch: <em>two</em> tubes rise together, braided a few
+      tiles apart, until one strikes the other's wake at generation 42 and
+      terminates — a worldline vertex. The survivor settles into a
+      straight climb at exactly two generations per tile, and the tube's
+      lean never wavers from its compass direction while the terrain
+      streaming beneath it never settles into a cycle. Drag to orbit; the
+      camera climbs
+      with the glider.
+    </p>
+
+    <p class="note">
+      This is the companion essay to the paper
+      <em>Gliders on aperiodic monotilings</em>. Thirteen sections follow —
+      in the contents rail, starting with <a href="ca/">The game</a> — and
+      every panel in them is built the same way: from the committed
+      records, live.
+    </p>
+
+    <footer>
+      Built from the committed records in <code>results/</code> ·
+      engine and search share one Rust codebase ·
+      <a href="../index.html">playground (current UI)</a>
+    </footer>
+  </main>
+  <script type="module" src="/src/essay/intro.ts"></script>
+</body>
+</html>
