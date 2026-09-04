@@ -39,9 +39,9 @@
       and yet born <em>from</em> computation: the tiles encode the steps of a
       Turing machine, and their refusal to repeat is the undecidability of
       the halting problem made geometric. Robinson got the count down to six
-      in 1971; Roger Penrose to two in 1974 — the kites and darts, and the
-      rhombs,
-      that a later section returns to.
+      in 1971; Roger Penrose to two in 1974 — the kites and darts (his P2
+      tiling) and the rhombs (P3), both of which a later section returns
+      to.
     </p>
 
     <div id="penrose-tiles"></div>
@@ -93,9 +93,20 @@
       tile has a <em>name</em>. Each tiling is built by substitution — small
       tiles compose into supertiles, supertiles into supersupertiles, without
       end — and a tile's address is simply the path upward: which slot of
-      which supertile, of which supersupertile, and so on. Switch the
-      explorer's lens to <em>hierarchy</em> and slide the level: the
-      supertiles materialize out of the chaos, level by level. Neighbourhood
+      which supertile, of which supersupertile, and so on. The path never
+      terminates, so a finite address must end in a repeating cycle, the
+      way 1/7 does in decimal. The same ancestry sorts every tile into a
+      <em>tile class</em>: two tiles share a class when they sit in the
+      same slot of the same kind of supertile — the same role in the
+      construction, one level up. There are only finitely many roles, so
+      finitely many classes: 17 on the hat, 10 on the spectre. The
+      two-coloring is the coarsest such sorting (hat against anti-hat;
+      on the spectre, Mystic pairs against the rest); the classes are
+      the finest the substitution offers, and later sections will hand a
+      rule a separate table per class. Switch the explorer's lens to
+      <em>classes</em> to see them, or to <em>hierarchy</em> and slide
+      the level: the supertiles materialize out of the chaos, level by
+      level. Neighbourhood
       is computable from addresses alone — a finite-state machine reads two
       names and answers whether the tiles touch. The construction is Simon
       Tatham's (<a href="https://arxiv.org/abs/2512.16595" target="_blank"
@@ -107,26 +118,6 @@
     </p>
 
     <div id="explorer"></div>
-
-    <h2>The seam</h2>
-    <p>
-      Addresses end in a repeating cycle — an infinite ancestry, pinning the
-      tile inside an infinite tiling. But not every legal-looking cycle pins
-      it inside the <em>plane</em>: if the cycle's slots hug their
-      supertiles' boundary forever, the union of ancestors covers only a
-      cone, glued edge to edge at a seam. Tiles look innocent; adjacency near
-      the seam is corrupted. Early in the project, every run was quietly
-      crossing one.
-    </p>
-
-    <div id="cone"></div>
-
-    <p>
-      The fix is chosen roots whose cycles are <em>eventually interior</em>,
-      and a flag on every generated patch listing any cell whose
-      neighbourhood touched degenerate glue. The paper states this in two
-      sentences; the red cells above are what the sentences are about.
-    </p>
 
     <p>
       One more thing to click for: neighbour counts. On the square grid every

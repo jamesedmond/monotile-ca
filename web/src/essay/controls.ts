@@ -4,6 +4,7 @@
 // ignite at generation 1.
 import { mountNav } from './nav';
 import { mountEssayPanel } from '../essay-panel';
+import { mountExplorerPanel } from '../explorer-panel';
 import gallery from '../../../results/gallery.jsonl?raw';
 import s21 from '../../../results/hat-tableevolve-r48-s21.jsonl?raw';
 import s32 from '../../../results/spectre-tableevolve-r48-s32.jsonl?raw';
@@ -121,4 +122,22 @@ mountEssayPanel(document.getElementById('cone-phoenix')!, {
     'overlay is a measurement, not the filter: the sound causality ' +
     'bound on P3 is three rings per generation, and that cone would ' +
     'race ahead.',
+});
+
+// The board's own parasite: a degenerate root (its cycle hugs the
+// supertile boundary forever) glues a cone; the library flags every
+// cell whose adjacency computation crossed the glue.
+mountExplorerPanel(document.getElementById('seam')!, {
+  family: 'hat',
+  root: '(tile hat):(subtile 0 of F0)',
+  radius: 12,
+  lens: 'plain',
+  fixed: true,
+  caption:
+    '<b>A degenerate root.</b> This patch was generated from a legal-looking ' +
+    'address whose repeating cycle hugs its supertiles’ boundary, so the ' +
+    'infinite ancestry covers a cone rather than the plane — and the seam ' +
+    'is invisible until you ask about adjacency. The library flags every ' +
+    'cell whose neighbourhood computation crossed the glue (red). One rule ' +
+    'of this project: a run counts only if this list is empty.',
 });

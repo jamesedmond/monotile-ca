@@ -22,7 +22,8 @@ mountFlightPanel(document.getElementById('hero')!, {
   caption:
     '<b>Hat glider A</b> — record <code>hat-tableevolve-r48-s21</code>. ' +
     'Two gliders launch from a two-cell seed; one dies on the other’s wake ' +
-    'at generation 42, and the survivor settles onto its lane: 225.523°, ' +
+    'at generation 42, and the survivor settles onto its lane: 225.523° ' +
+    '(counter-clockwise from east), ' +
     'a tile every two generations, population never above 16. This ' +
     'flight does not loop — the tiling is generated just ahead of the ' +
     'glider as it flies (<a href="flight/">how, later</a>). Ctrl-scroll or ' +

@@ -47,14 +47,16 @@
       So the method rule points at us: before "no glider on the monotiles"
       can be trusted, the same pipeline must first <em>detect</em> the
       known glider on its home board, and then <em>rediscover</em> one
-      blind. The machinery: Penrose P2 and P3 as substrate families;
+      blind. The machinery: Penrose P2 (kites and darts) and P3 (rhombs) as
+      substrate families;
       vertex adjacency computed in tiling-core by bucketing the
       exact-arithmetic placement vertices, no epsilon anywhere — the
       engine still consumes a plain adjacency graph; and
       <code>TableRule</code>, priority rows over per-state neighbour
       counts, strictly containing the Generations family (pinned by an
-      encoding-equivalence test). The eventually-interior root machinery
-      of <em>The board</em> worked on the new tilings unchanged.
+      encoding-equivalence test). The patch machinery of <em>The board</em> —
+      addresses, legal roots and all — worked on the new tilings
+      unchanged.
     </p>
 
     <h2>The table, as printed, cannot glide</h2>
@@ -124,9 +126,12 @@
       Twenty seed orientations at five anchors reproduce
       <code>Periodic{20}</code>, <code>Periodic{40}</code> — "the most
       common eventuality", as Goucher puts it — and, at radius 64,
-      <code>Periodic{200}</code>, the second decagonal period of the
-      published sequence 40, 200, 1240 (which obeys 5·200 + 6·40 = 1240).
-      Brent-exact recurrences, not estimates. The level-1 detection
+      <code>Periodic{200}</code>: 40 and 200 open the published decagonal
+      sequence 40, 200, 1240, …, whose successive periods obey Goucher's
+      recurrence P<sub>n+2</sub> = 5P<sub>n+1</sub> + 6P<sub>n</sub>
+      (5·200 + 6·40 = 1240).
+      Exact recurrences (Brent's cycle detection on full states), not
+      estimates. The level-1 detection
       control passes end to end.
     </p>
 
@@ -136,13 +141,16 @@
       Penrose substrate and rule family and asks it to find a glider from
       nothing: a GA over table-rule genomes (up to 8 priority rows, two
       conditions each, k = 4), random initialisation, a
-      state-role-neutral seed bank, and the standard travel × flatness
+      seed bank that presupposes nothing about which state is head or
+      tail, and the standard travel × flatness
       objective. At the scale of the monotile searches it fails —
-      champions plateau at fitness 26–29 against an available 45. Seeding
+      champions plateau at fitness 26–29 against an available 45 (a true
+      glider's score on this patch). Seeding
       one run with Goucher's rule (deliberately not blind) scores 45
       immediately: the fitness landscape has the glider at its summit,
       so what is being tested is purely whether the optimizer can climb
-      to it. Scaled to population 256 × 800 generations, it can: fitness
+      to it. Scaled to a GA population of 256 genomes for 800 GA
+      generations, it can: fitness
       sat on a plateau near 15 for four hundred GA generations, then
       jumped to 45 — ≈115,000 genome evaluations, ≈1.5 million classified
       runs, into the search. And the needle it found was not the needle we
@@ -154,7 +162,8 @@
     <p>
       Four of six independent scaled runs produced a cross-radius-verified
       glider, and they are mechanically diverse — P3 hosts at least three
-      distinct classes:
+      distinct classes: Goucher's rail-rider above, and two the search
+      produced:
     </p>
 
     <div class="panel-row">

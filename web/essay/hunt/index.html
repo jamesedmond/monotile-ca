@@ -42,11 +42,20 @@
       <tr><td>s33 — spectre A</td><td>spectre</td><td>12</td><td>2.0 gen/ring</td><td>gen 1534</td></tr>
     </table>
 
+    <p class="note">
+      Run names are the search's bookkeeping: <code>hat-tableevolve-r48-s21</code>
+      is the table-rule GA on a radius-48 hat patch with random seed 21,
+      and s21, s22, … are those seeds. Distances stay in edge-rings
+      throughout, even on these vertex-adjacency patches.
+    </p>
+
     <p>
       Each is <code>ReachedBoundary</code> at radius 48, 96, 192, 384
       <em>and</em> 768 — a 16× span, 765 rings of aperiodic terrain
-      survived — with max population exactly flat at every radius. These
-      are the first travelling objects beyond mortal wanderers and growers
+      survived (the verifier stops three rings short of the edge, the
+      vertex fan bound) — with max population exactly flat at every
+      radius. These
+      are the first travelling objects beyond mortal travellers and growers
       ever observed on the aperiodic monotilings and, to our knowledge,
       the first gliders on any substrate without straight rails. And where
       P3 held out for ≈115,000 evaluations, the
@@ -62,7 +71,7 @@
       Multi-glider births are typical. s21 opens with <em>two</em>
       parallel gliders travelling together; at generation 42 one clips
       the other's wake and dies, and the survivor settles onto its
-      lane. The spectre's s33 launches a clean pair separating at ~120°:
+      <em>lane</em> — a fixed bearing it then holds. The spectre's s33 launches a clean pair separating at ~120°:
     </p>
 
     <div id="spectre-pair"></div>
@@ -84,9 +93,11 @@
       law, generation = 62 + 2<em>r</em>, predicts 1598 against a
       measured 1602, and the clean gliders arrive at 1533/1533/1534
       against a predicted ≈1536. Every verified glider, on both
-      families — and Goucher's, and the phoenix — runs the same ~2
-      generations per ring: the birth-ahead, die-behind relay seems to
-      set a universal clock.
+      families — and Goucher's — runs the same ~2 generations per ring:
+      the birth-ahead, die-behind relay seems to set a universal clock.
+      (The phoenix is the exception that locates the limit: with no
+      survival rows at all it is reborn every generation, and runs at
+      one.)
     </p>
 
     <h2>The two that were not gliders</h2>
@@ -100,8 +111,8 @@
     <div id="megalooper"></div>
 
     <p>
-      Period 3,300 is the longest exact recurrence the project has
-      recorded — and it is the beat of two <em>independent</em> captures,
+      Period 3,300 — the lcm of 60 and 550 — is the longest exact
+      recurrence the project has recorded, and it is the beat of two <em>independent</em> captures,
       not one orbit: cycle detection on the full state certifies
       recurrence, but says nothing about how many objects the state
       contains. The lesson cuts both ways: the machinery works, and
@@ -122,12 +133,14 @@
       cheat. And one thing was <em>not</em> necessary: rails. The
       monotiles have no straight ribbons, yet every glider <em>appears</em>
       to hold the universal clock and a fixed bearing — s21 runs dead
-      south-west, straight at a corner of the hexagonal patch.
+      south-west (225.523°; headings throughout are measured
+      counter-clockwise from east), straight at a corner of the hexagonal
+      patch.
       <em>Appears</em> is doing honest work: 768 rings is the longest
       flight yet verified, and both the clock and the immortality want
-      far longer rides — which is the flight section's business. The
+      far longer rides — which is the business of <em>Tiling on the fly</em>. The
       bearings — confirming they really do quantize, and what in the
-      geometry might set them — belong to the compass section.
+      geometry might set them — belong to <em>The survey</em>.
     </p>
   </main>
   <script type="module" src="/src/essay/hunt.ts"></script>

@@ -33,8 +33,9 @@
 
     <h2>A million runs before lunch</h2>
     <p>
-      Soups are the wrong instrument for finding travellers; small seeds
-      are better. Any tile's address can serve as a patch root, so the
+      Soups are the wrong instrument for finding travellers — a soup
+      buries any traveller in debris to collide with; a small seed on an
+      empty board lets it run. Any tile's address can serve as a patch root, so the
       search re-roots at a representative cell of every tile class — 17 on
       the hat, 10 on the spectre — and launches every B0-free rule from
       ~10 small seeds each: the single cell, each cell-plus-neighbour
@@ -68,12 +69,13 @@
 
     <p>
       The traveller is a mechanism, and an isolated one. Of all 433 rules
-      within three bit-flips of B25/S25, only the two originals travel 20
+      within three bit-flips of B25/S25 (or two of its sibling B2/S26 —
+      the same mechanism in two rules), only those two originals travel 20
       rings at all; the nearest variants manage 15, 14, 13, 12 — and
       several die into the <em>same</em> period-2 blinker, at the same
       generation. Launch site matters as much as rule: from six of the 17
-      anchor classes it dies within 28 generations; from three it travels
-      11–23 rings first. Every run, everywhere, ends the same way — the
+      anchor classes it dies within 28 generations; from eight it freezes
+      almost at once; from three it travels 11–23 rings first. Every run, everywhere, ends the same way — the
       blinker calves off, anchors the reaction, and the traveller
       evaporates around it.
     </p>
@@ -82,9 +84,11 @@
     <p>
       The blinker residue is one hat and one anti-hat, straddling both
       colours of <em>The board</em>'s two-coloring — so the obvious upgrade, a
-      separate rule table per colour, cannot kill the residue while
-      keeping the traveller alive: a sweep of 2,950 two-table rules found
-      zero escapes, best travel 28 rings. Finer stratification — one
+      separate rule table per colour, could not be made to kill the
+      residue while keeping the traveller alive: a sweep of 2,950 two-table rules (every
+      one within three bit-flips of the traveller) found zero
+      <em>escapes</em> — runs that reach the boundary alive and still
+      travelling — best travel 28 rings. Finer stratification — one
       table per <em>tile class</em>, a ~2<sup>150</sup> rule space —
       is beyond enumeration and needs evolutionary search (the next
       section's subject). Its champion:
@@ -118,7 +122,7 @@
     </div>
 
     <p>
-      Checked at radii 120 through 168 its peak population sat flat at
+      Checked at radii 120 through 168 its max population sat flat at
       140 — bounded, apparently. Checked at 128, 256, 384 it read 140,
       186, 280: growth, too slow for closely-spaced radii to see. The fix
       is multiplicative spacing — verify at r, 2r, 4r — and it became
@@ -131,8 +135,9 @@
 
     <h2>The ceiling</h2>
     <p>
-      The travel record, by rule expressiveness: 23 rings uniform, 28 on
-      the spectre, 37 with the two-coloring, 58 and 65 per-class, ~82
+      The travel record, by rule expressiveness: 23 rings uniform on the
+      hat, 28 uniform on the spectre, 37 with the spectre's two-coloring,
+      58 and 65 per-class, ~82
       with k states — monotone, flattening, and never an escape. The
       era's verdict, exactly scoped: <em>no glider on either tiling by
       any 2- to 5-state semi-totalistic rule, uniform or fully

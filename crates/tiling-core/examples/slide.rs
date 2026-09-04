@@ -422,7 +422,7 @@ fn flight(a: &Args, tiling: &Tiling, record: &ResultRecord) {
             );
         }
         println!(
-            "frame model: max rigid residual {:.2e} (geom units), max rotation-snap {:.4}° (both ~0 ⇒ exact rigid, exact 30° orientation)",
+            "frame model: max rigid residual {:.2e} (geom units), max rotation-snap {:.2e}° (both ~0 ⇒ exact rigid, exact 30° orientation)",
             max_residual,
             max_snap.to_degrees()
         );

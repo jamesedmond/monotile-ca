@@ -82,12 +82,15 @@
       than one observed continuation — is confined to <b>four</b>
       situations with exactly two continuations each, and their
       recurrence gaps carry additive structure (178, 288, and
-      466 = 178 + 288): the signature of a substitutive sequence. The
-      spectre glider gives the same picture with a vocabulary of 306.
-      One subtlety: vocabularies are <em>per-lane</em> — the
-      looper's captured trajectory shares not one situation with the
-      canonical glider's atlas even while visually indistinguishable
-      from it — so a certificate covers one rule–lane pair, and six
+      466 = 178 + 288): the signature of a substitutive sequence, where
+      the terrain is built by inflation and return distances at
+      successive levels add, the way Fibonacci lengths do. The spectre
+      glider gives the same picture with a vocabulary of 306.
+      One subtlety: vocabularies are <em>per-lane</em>. A wanderer of hat
+      A's own rule, launched from a different site, was captured onto the
+      345° lane and flown 30,000 rings: by every macroscopic invariant it
+      is then a hat glider, yet it shares not one situation with hat A's
+      atlas — so a certificate covers one rule–lane pair, and six
       certificates cover a substrate.
     </p>
 
@@ -96,8 +99,9 @@
       successor map is not forced to be deterministic even by a perfect
       encoding (the next collar sees terrain the key does not), so the
       soundness control is the forced map — from a larger collar to a
-      smaller successor — and all six such maps are deterministic on
-      every sampled generation. What remains as same-radius
+      smaller successor — and all six such maps (collar 4 to 2; 5 to 2
+      and 3; 6 to 2, 3 and 4) are deterministic on every sampled
+      generation. What remains as same-radius
       "nondeterminism" is then pure collar-extension branching: exactly
       the thing the certificate must close over.
     </p>
@@ -126,7 +130,8 @@
       once it has entered any situation of the closed set — keeps its
       lane forever: the speed and the bearing become theorems. It would
       not prove that every travelling object of this rule must ride
-      these lanes; the other five lanes need their own certificates,
+      these lanes; the other five spokes of the fan need their own
+      certificates,
       and objects outside the atlas entirely — never observed, but
       never excluded — are beyond its scope. Immortality of what we
       have; silence about what we have not.
@@ -144,8 +149,10 @@
       reduces the terrain ahead to a corridor whose collar sequence is
       itself substitutive, so the certificate should factor into the
       glider's small phase machine crossed with a finite corridor
-      automaton — Goucher's ribbon proof reappearing as the one-letter
-      special case. Finally, one suspected symmetry could shrink the job
+      automaton — Goucher's ribbon argument reappearing as the special
+      case where the corridor alphabet has one letter: a ribbon is the
+      same collar forever, which is all his argument needs. Finally, one
+      suspected symmetry could shrink the job
       six-fold: the dynamics are blind to the tile classes the encoding
       records, so under a class-blind encoding the six lanes' machines —
       60° rotations of one another, with identical clocks and speeds —

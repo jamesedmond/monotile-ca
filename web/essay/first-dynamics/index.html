@@ -38,12 +38,14 @@
 
     <h2>A census of every rule</h2>
     <p>
-      On a board with at most seven neighbours, the whole space of
+      On a board with at most six or seven neighbours, the whole space of
       birth/survival rules is small enough to enumerate: <b>8,192</b> rules
-      on the hat, <b>32,768</b> on the spectre (excluding birth-on-zero,
-      which sets the infinite vacuum strobing — behaviour a dead-boundary
-      patch cannot model).
-      Running all of them — three random soups each, 1,024 generations,
+      on the hat (six birth bits and seven survival bits, 2¹³),
+      <b>32,768</b> on the spectre (seven and eight, 2¹⁵), excluding
+      birth-on-zero, which sets the infinite vacuum strobing — behaviour a
+      dead-boundary patch cannot model.
+      Running all of them — three random <em>soups</em> (random initial
+      fills) each, 1,024 generations,
       every outcome classified — takes under three seconds on a
       laptop. It sorts as follows:
     </p>
@@ -93,20 +95,27 @@
       One early rule earned a permanent bookmark by doing something no
       oscillator does: growing with a direction. On the spectre tiling,
       B2/S256 — ignited by one specific four-cell seed at one specific
-      anchor class; of ten classes and two seed shapes tried, exactly that
+      anchor class (an <em>anchor</em> is the tile a seed is placed on,
+      the patch's root; every sweep is repeated at an anchor of each tile
+      class); of ten classes and two seed shapes tried, exactly that
       combination — grows a churning, quasi-one-dimensional streak that
       holds a single compass bearing for thousands of generations.
       Directed structure, on a board with no translational symmetry to
-      point the way.
+      point the way — but growth, not motion: the streak lengthens from
+      a tail still rooted at the seed, and its population climbs as it
+      goes.
     </p>
 
     <div id="filament"></div>
 
     <h2>And one rule moved</h2>
     <p>
-      Everything above stays where it was born, dies, or eats the world.
-      In the entire census, run from small seeds at an anchor of every tile
-      class, exactly one mechanism <em>travels</em>:
+      Everything above stays where it was born, dies, or eats the world —
+      the filament grows away from its seed but never leaves it. Across
+      the entire rule space, run from small seeds at an anchor of every
+      tile class (the next section's sweep), exactly one mechanism
+      <em>travels</em> — a bounded population that abandons its
+      birthplace altogether:
     </p>
 
     <div id="walker"></div>

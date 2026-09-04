@@ -60,7 +60,7 @@ const ENTRIES: GliderEntry[] = [
     flyCaption:
       '<b>Hat A</b> — the minimal relay: one or two firing cells, reborn ' +
       'ahead each generation, population never above 16. The first ' +
-      'glider ever seen on a hat tiling, found at GA generation 5 of ' +
+      'glider we found on a hat tiling, at GA generation 5 of ' +
       'the first run; the object the essay’s opening page flies.',
     tubeCaption:
       '<b>Hat A in space-time</b> — the launch pair braid until one dies ' +
@@ -89,12 +89,12 @@ const ENTRIES: GliderEntry[] = [
     download: 'hat-tableevolve-r48-s23.jsonl',
     flight: { launchGens: 150, selectHeading: 345 },
     flyCaption:
-      '<b>Hat C, the lone lane</b> — the wanderer-born glider from the ' +
+      '<b>Hat C, flown alone</b> — the wanderer-born glider from the ' +
       'hunt, flown alone: the launch runs 150 generations so the ' +
       'wanderer finishes decaying into three gliders, then lane ' +
       'selection keeps the one nearest 345° and drops its siblings.',
     tubeCaption:
-      '<b>Hat C, the lone lane</b> — 150 generations of wandering ' +
+      '<b>Hat C, flown alone</b> — 150 generations of wandering ' +
       'adolescence at the base of the tube, then lane selection and a ' +
       'clean climb on the 345° heading. The startup is the best argument ' +
       'in the atlas that wanderers and gliders are one family.',

@@ -117,7 +117,7 @@ mountEssayPanel(document.getElementById('grower-small')!, {
   reproduce: greplay(4, 144, 8192),
   caption:
     '<b>Radius 72</b> — the hat k = 5 grower reaches the boundary at ' +
-    'generation 184, peak population 70. At this scale it passes for a ' +
+    'generation 184, max population 70. At this scale it passes for a ' +
     'glider with a long tail.',
 });
 
@@ -135,7 +135,7 @@ mountEssayPanel(document.getElementById('grower-large')!, {
   caption:
     '<b>Radius 144</b> — the same record, doubled: the object is now a ' +
     'family of separated fronts (the camera follows their centroid), ' +
-    'boundary at generation 558, peak population 140. Twice the radius, ' +
+    'boundary at generation 558, max population 140. Twice the radius, ' +
     'twice the ' +
     'peak — but between forks the width holds, which is exactly why ' +
     'closely-spaced verification radii saw a flat population and passed ' +

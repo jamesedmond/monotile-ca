@@ -184,6 +184,19 @@ footer {
    permanent so the bar height never depends on the digit count. */
 .panel-row .ep-bar { flex-wrap: wrap; row-gap: 0.35rem; }
 .panel-row .ep-stats { flex-basis: 100%; order: 1; }
+/* Narrow viewports: every panel is width-constrained, so the same
+   permanent stats row applies to all control bars (essay, space-time and
+   one-step panels share these classes). The button row may wrap too;
+   its contents are static, so the bar height never breathes. */
+@media (max-width: 40rem) {
+  .ep-bar { flex-wrap: wrap; row-gap: 0.35rem; }
+  .ep-stats { flex-basis: 100%; order: 1; }
+  .ep-speed { width: 56px; }
+  /* Wide tables scroll inside their own box rather than widening the
+     page (a sideways-scrolling phone page is the alternative). */
+  table.rule { display: block; width: fit-content; max-width: 100%; overflow-x: auto; }
+  table.rule th, table.rule td { padding: 0.35rem 0.6rem; }
+}
 
 /* --- the one-step anatomy panel --- */
 .step-panel {

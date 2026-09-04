@@ -29,9 +29,9 @@
       consecutive windows share tiles by address, the shared tiles give the
       exact rigid transform between frames, and the transforms compose in
       double precision — residual ~10⁻¹³, every rotation landing on the
-      tiling's 30° orientation set to 0.0000°. <em>Effective rings</em>
+      tiling's 30° orientation set to within 10⁻¹³ of a degree. <em>Effective rings</em>
       convert displacement back to the origin-anchored radius through κ,
-      the substrate's rings-per-unit constant, fitted offset-free.
+      the substrate's rings-per-unit constant, fitted with no intercept.
       Headings are estimated twice — the settled heading (circular mean
       over the flight's late half) and the net heading (bearing of the
       total displacement) — and the two agree to under 0.01° on every
@@ -39,7 +39,7 @@
     </p>
 
     <table class="rule">
-      <tr><th>lane</th><th>settled heading</th><th>SE</th><th>gens / effective ring</th><th>tortuosity</th></tr>
+      <tr><th>lane</th><th>settled heading (° counter-clockwise from east)</th><th>std. err.</th><th>gens / effective ring</th><th>tortuosity (path ÷ displacement)</th></tr>
       <tr><td>hat A (s21)</td><td>225.523°</td><td>0.003°</td><td>1.998</td><td>1.013</td></tr>
       <tr><td>hat B (s22)</td><td>225.523°</td><td>0.003°</td><td>1.998</td><td>1.013</td></tr>
       <tr><td>hat C, lone lane (s23)</td><td>345.523°</td><td>0.011°</td><td>1.987</td><td>1.021</td></tr>
@@ -54,8 +54,8 @@
       The coincidence: hat A and hat B are unrelated genomes — different
       rules, found by different runs — and their settled headings agree
       to three decimal places. And the arithmetic: hat C's lane sits
-      <b>120.001°</b> from A's, and the spectre's twin lanes sit
-      <b>240.000°</b> apart. Exact multiples of sixty, from unrelated rules
+      <b>120.001°</b> from A's (from the unrounded headings), and the
+      spectre's twin lanes sit <b>240.000°</b> apart. Exact multiples of sixty, from unrelated rules
       whose only common ingredient is the board — the spacing must be the
       substrate's, not the rules'.
     </p>
@@ -72,16 +72,19 @@
       120.001° and 240.000° separations, and the fact that one stable
       offset per substrate drives every residual to zero — across
       independent genomes, independent objects, and from 10⁵ to 10⁶
-      rings. The law inherits its exactness from the geometry: rotations
-      that land on the orientation set to 0.0000° leave nothing for
-      heading error to hide in.
+      rings. The law inherits its exactness from the geometry: with every
+      hop's rotation on the orientation set to within 10⁻¹³ of a degree,
+      the instrument contributes nothing at the millidegree level — a
+      residual of zero is the substrate's, not the frame's, and a real
+      deviation would have nowhere to hide.
     </p>
 
     <div id="roses"></div>
 
     <h2>Filling the fan</h2>
     <p>
-      Six spokes, five lanes — and a fair objection: every discovered
+      Six spokes per substrate, and the discovered flights cover only two
+      of them on each — and a fair objection: every discovered
       object was seeded at the <em>same</em> two tiles, so perhaps the
       launch site, not the rule, picked the directions. Re-seeding
       answers both halves. Sweeping each rule from an interior anchor of
@@ -89,8 +92,9 @@
       188 arbitrary two-tile seedings launch a flat-population traveller
       for hat A, 88% for hat B, 71% for the spectre — and across ~490
       seedings of those three rules, not one death and not one trap.
-      (Hat C's 24% fits its wanderer-intermediate mechanism; the
-      screening label is a lower bound.) Ignition is a property of the
+      (Hat C's 24% fits its wanderer-intermediate mechanism, and
+      undercounts: the radius-64 screen labels some of its slow
+      multi-glider launches as growers.) Ignition is a property of the
       rules, not of the discovery site — and different sites launch
       different <em>directions</em>. Picking launches from the sweep
       filled every remaining spoke: four further flights per substrate,
@@ -137,7 +141,8 @@
     <p>
       What the survey does not explain is the offsets themselves. 45.523°
       and 48.014° are measured constants, not derived ones; the question
-      they pose — the cusp directions of the BFS-ball limit shape, a pure
+      they pose — the cusp directions of the graph-distance ball's limit
+      shape, a pure
       substrate-geometry object plausibly computable from the substitution
       — appears to be new. The numbers are on the table for whoever
       computes them. Meanwhile, a claim this clean deserves adversaries:

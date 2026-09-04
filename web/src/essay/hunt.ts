@@ -60,7 +60,7 @@ mountEssayPanel(document.getElementById('showpiece')!, {
   caption:
     '<b>Hat glider C (run s23)</b> — born a wanderer: it meanders near ' +
     'the origin, population up to 32, then decays into two, then three ' +
-    'directional gliders (two NNW, one SE). The 62-generation transient ' +
+    'directional gliders (two NNW, one ESE). The 62-generation transient ' +
     'in its arrival law is exactly this adolescence; once launched it ' +
     'rides the universal clock.',
 });

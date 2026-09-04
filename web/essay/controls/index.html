@@ -33,13 +33,37 @@
 
     <table class="rule">
       <tr><th>parasite</th><th>the exploit</th><th>the control it forced</th></tr>
+      <tr><td>the seam</td><td>a degenerate root builds a cone, not a plane; adjacency near the glue is corrupted</td><td>eventually-interior roots; artifact flags on every patch</td></tr>
       <tr><td>unbounded growth</td><td>fill the patch, score the travel</td><td>the explosion cap (<code>Outcome::Unbounded</code>)</td></tr>
       <tr><td>boundary gaming</td><td>a dying traveller "escapes" any board shorter than its lifespan</td><td>raw-distance fitness, no escape bonus</td></tr>
       <tr><td>growth gaming</td><td>grow slowly enough to stay under the cap while crossing the board</td><td>cross-radius verification</td></tr>
       <tr><td>slow growth</td><td>look flat across closely-spaced radii</td><td>multiplicative spacing — verify at r, 2r, 4r</td></tr>
-      <tr><td>in-patch lock</td><td>full fitness in the search patch, a trap or death beyond it</td><td>the full battery at 8–16× spans (caught P3's s13/s14 and the spectre looper)</td></tr>
+      <tr><td>in-patch lock</td><td>full fitness in the search patch, a trap or death beyond it</td><td>the full battery at 8–16× spans (caught P3's two impostor runs, s13 and s14, and the spectre looper)</td></tr>
       <tr><td>boundary sniffing</td><td>detect the patch edge itself, at any radius</td><td>the causality filter</td></tr>
     </table>
+
+    <h2>Before any search: the board's own seam</h2>
+    <p>
+      The oldest parasite predates every objective — it belongs to the
+      board. A tile's address ends in a repeating cycle
+      (<em>The board</em>), and a legal-looking cycle can still be the
+      wrong kind: if every ancestor sits at the edge of its parent,
+      forever, the tiles you build fill only a wedge of the plane, and the
+      two edges of the wedge are glued together at a seam. The tiles look
+      innocent; adjacency near the seam is corrupted. Early in the
+      project, every run was quietly crossing one.
+    </p>
+
+    <div id="seam"></div>
+
+    <p>
+      The fix is chosen roots whose cycles are <em>eventually
+      interior</em>, and a flag on every generated patch listing any cell
+      whose neighbourhood touched degenerate glue. The paper states this
+      in two sentences; the red cells above are what the sentences are
+      about. A run counts only if that list is empty, and every record in
+      this essay passes.
+    </p>
 
     <h2>Cross-radius, in one frame</h2>
     <p>
@@ -69,7 +93,9 @@
       nothing. On an empty board every interior tile has three or more
       dead neighbours, so it stays dead — but the corner tiles of an
       edge-adjacency patch have degree ≤ 2 and <em>cannot</em>, so they
-      ignite. The rule does not travel to the boundary; it <em>detects
+      ignite (tiles beyond the patch edge are not dead neighbours — they
+      are simply absent, so a corner tile cannot see three of anything).
+      The rule does not travel to the boundary; it <em>detects
       the boundary</em>, and since every verification patch has one, the
       exploit scales perfectly. Here it is, exactly as evolved:
     </p>
@@ -79,13 +105,16 @@
     <p>
       The fix is the <em>causality filter</em>: zero fitness for any run
       whose activity leaves the seed's light cone — travel bounded by
-      seed extent plus generations × fan margin. In the panel above, the
+      seed extent plus generations × <em>fan margin</em> — under vertex
+      adjacency one step can cross more than one edge-ring: up to two on
+      the monotiles, three on P3. In the panel above, the
       cone is drawn: the faintly lightened disc around the seed is the
       region physics can have reached, growing one ring per generation —
       and the corner cells ignite hopelessly outside it. The sniffer
       violates the filter 48-fold at generation 1. Structurally, the
-      exploit cannot exist on vertex patches (minimum vertex degree
-      exceeds the condition-threshold cap), and none of the committed
+      exploit cannot exist on vertex patches (every vertex degree exceeds
+      the largest neighbour count a rule row is allowed to demand), and
+      none of the committed
       glider rules boundary-sniff — they are vacuum-stable, verified by
       trajectory. For contrast, a genuine glider under the same overlay:
     </p>
@@ -112,8 +141,10 @@
 
     <h2>The ablation</h2>
     <p>
-      The hunt claimed two ingredients made the difference —
-      neighbour-visible states with conjunctions, and vertex adjacency.
+      The hunt claimed three levers made the difference; two of them are
+      ingredients of the rule space — neighbour-visible states with
+      conjunctions, and vertex adjacency — and the third, search budget,
+      is held fixed here.
       A causal claim wants a 2×2 grid, so the two unexplored cells were
       searched at the full calibrated budget (256 × 800, two independent
       seeds × both families per cell, each cell driven by its native
@@ -139,7 +170,8 @@
       then death or a trap — the exact wall that defined the era. Only
       the (vertex, table) cell crosses from mortal to immortal. Caveats
       as ever: four runs per cell at one budget is bounded evidence, not
-      proof, and the drivers are asymmetric by design.
+      proof, and each rule family was searched by its own native machinery,
+      so the two arms are not identical instruments.
     </p>
 
     <p>

@@ -51,7 +51,7 @@ mountEssayPanel(document.getElementById('corrected')!, {
     '<b>Corrected (row 2 → 1)</b> — the same seed glides: one head cell ' +
     'reborn a step further along its ribbon every other generation, ' +
     'population exactly 10 and flat at radius 24, 48 and 96, two ' +
-    'generations per ring. The first glider in this essay.',
+    'generations per ring. The first glider on an aperiodic tiling in this essay.',
 });
 
 mountEssayPanel(document.getElementById('looper')!, {
@@ -65,7 +65,7 @@ mountEssayPanel(document.getElementById('looper')!, {
   caption:
     '<b>P2, the cartwheel orbit</b> — the identical corrected rule on ' +
     'kites and darts closes into an exact period-40 loop, endlessly. ' +
-    'The committed records also pin periods 20 and 200; all Brent-exact ' +
+    'The committed records also pin periods 20 and 200; all exact ' +
     'matches to the published sequence.',
 });
 
@@ -83,7 +83,7 @@ mountEssayPanel(document.getElementById('phoenix')!, {
     '<b>The phoenix (run s11)</b> — a blind-GA rail-glider twice as fast ' +
     'as Goucher’s: ~1 ring per generation, ballistic, max population 32, ' +
     'flat to radius 384. One two-cell seed launches <em>two</em> gliders ' +
-    'on pentagrid headings ~144° apart, each aimed at a corner of the ' +
+    'on five-fold headings ~144° apart, each aimed at a corner of the ' +
     'patch — rail-riding, confirmed by eye and by exponent.',
 });
 
@@ -122,7 +122,9 @@ mountEssayPanel(document.getElementById('phoenix-close')!, {
     'cargo run --release -p tiling-core --example verify_candidate results/penrosep3-tableevolve-r48-s11.jsonl 0 384 50000',
   caption:
     '<b>The phoenix, close up</b> — no cell in this pattern survives a ' +
-    'single generation: what travels is pure rebirth, one ring ahead ' +
+    'single generation without changing state (states 1 and 2 have no ' +
+    'rows at all and drop to ground; state 3’s only row turns it into a ' +
+    'head): what travels is pure rebirth, one ring ahead ' +
     'every step, shedding a pulsing exhaust cluster that flares and ' +
     'dies behind it. The camera tracks one of the two gliders across a ' +
     'radius-96 board.',

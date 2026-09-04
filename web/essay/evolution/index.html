@@ -28,7 +28,7 @@
       to become evolution: a genome is the list of tables, crossover swaps
       whole classes between parents, mutation flips single birth or
       survival bits, tournaments pick winners, and every run is
-      deterministic given its seed. What "winner" means is the rest of
+      deterministic given its random seed. What "winner" means is the rest of
       this section.
     </p>
 
@@ -38,7 +38,7 @@
       58-ring mortal — on any patch shorter than its lifespan, a dying
       traveller escapes and scores. Reward distance under a population
       cap, and it breeds a filament slow enough to stay under the cap for
-      the whole crossing, then balloon: peak population 93 at radius 64,
+      the whole crossing, then balloon: max population 93 at radius 64,
       1,665 at 128, 3,407 at 192. Each parasite bred a countermeasure —
       distance-only fitness, an explosion filter that aborts any run
       passing a population ceiling, and above all <em>cross-radius
@@ -92,8 +92,8 @@
       hold a bounded population <em>die</em> (within ~100 rings). A
       glider — immortal <em>and</em> flat — is exactly the corner neither
       regime touches. This is the strongest statement of the era: across
-      the exhaustive 2-state census, Hamming-neighbourhood sweeps,
-      chirality and full per-class stratification, two to five states,
+      the exhaustive 2-state census, the bit-flip sweeps, two-coloring
+      (chirality) and full per-class stratification, two to five states,
       and a targeted balance search, nothing sits on that corner.
     </p>
 

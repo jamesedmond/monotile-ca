@@ -61,10 +61,15 @@
       windowed flight against monolithic replay: the same glider flown
       both ways agrees state for state along the whole path — the window
       is not an approximation. Second, geometry: each hop places the new
-      window in the old one's frame by an exact rigid motion, and the
-      rotations land on the tilings' 30° orientation set to 0.0000° —
-      frames compose in double precision, so position and heading stay
-      exact at any distance, which the compass section will spend.
+      window in the old one's frame by a rigid motion computed from the
+      tiles the two windows share, and every rotation lands on the
+      tilings' 30° orientation set to within 10⁻¹³ of a degree (every
+      tile sits at one of twelve orientations 30° apart, so a correct
+      motion between windows can only rotate by a multiple of 30°) — and
+      the frames compose in double precision, so even summed over every
+      hop of a million-ring flight the rounding stays a hundred-thousand
+      times below the millidegree headings that <em>The survey</em> will
+      spend.
     </p>
 
     <p>
@@ -79,8 +84,9 @@
 
     <p>
       This instrument flew every verified glider — and both lanes of the
-      spectre's pair — to <b>one million path-rings</b> each, roughly
-      1,300 times the deepest monolithic patch, at constant memory. The
+      spectre's pair — to <b>one million path-rings</b> each (path length:
+      graph distance summed hop to hop), roughly 1,300 times the deepest
+      fixed-patch flight (768 rings), at constant memory. The
       essay's opening page is this exact machinery running live: keep it
       running and you will see it never restart. What the million-ring
       flights measured — the distances, the unbroken clock, and the

@@ -22,8 +22,8 @@ mountEssayPanel(document.getElementById('floor')!, {
     '--radius 400 --pop-cap 90 --balance --seed-from results/hat-evolve-r72-s2.jsonl',
   caption:
     '<b>The floor-test champion</b> — flat, and mortal. It travels 100 ' +
-    'rings with peak population 82, never climbing — inner and overall ' +
-    'maxima identical, a genuine non-grower — and dies at generation ' +
+    'rings with max population 82, never climbing — the maximum away from ' +
+    'the boundary and overall identical, a genuine non-grower — and dies at generation ' +
     '497, verified unchanged at radius 400, 800 and 1,600 (replayed ' +
     'here at 128). Not a coherent spaceship: population swings 9–65 and ' +
     'the centroid lurches and reverses, a chaotic multi-front reaction ' +

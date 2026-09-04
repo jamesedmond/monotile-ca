@@ -40,7 +40,8 @@
       Everything below runs in the same engine that produced this project's
       results, because to that engine a square grid is nothing special: it
       never sees squares, only a list of which cells neighbour which. Life is
-      rule B3/S23 in its bookkeeping, and the grid is a graph it was handed.
+      rule B3/S23 in its bookkeeping — born on 3 neighbours, surviving on 2
+      or 3 — and the grid is a graph it was handed.
     </p>
 
     <h2>Anatomy of one step</h2>
@@ -75,7 +76,8 @@
     <p>
       Life's cells die instantly. Give death a duration instead — states that
       count down before the cell can rest — and you get the
-      <em>Generations</em> family: state 1 fires, states 2 to k−1 are dying
+      <em>Generations</em> family with k states: state 1 fires, states 2 to
+      k−1 are dying
       embers that no rule can see, and only firing neighbours are counted. The
       simplest member is also the liveliest:
     </p>
@@ -87,8 +89,9 @@
       The descriptive power of the Generations rules can be limiting. The
       general form used in this project
       is a <em>priority table</em>: ordered rows, each demanding an own-state
-      and up to two per-state neighbour counts, first match wins, no match
-      means quiescence. Brian's Brain, rewritten:
+      and up to two per-state neighbour counts (n₁ is the number of
+      neighbours in state 1, and so on), first match wins, no match
+      means ground. Brian's Brain, rewritten:
     </p>
 
     <table class="rule">

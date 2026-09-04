@@ -9,6 +9,8 @@ mountNav();
 mountSpecimens(document.getElementById('penrose-tiles')!, [
   { family: 'penrosep2', base: 'kite', label: 'The kite', fill: '#233046' },
   { family: 'penrosep2', base: 'dart', label: 'The dart', fill: '#3a2338' },
+  { family: 'penrosep3', base: 'thick', label: 'The thick rhomb', fill: '#233046' },
+  { family: 'penrosep3', base: 'thin', label: 'The thin rhomb', fill: '#3a2338' },
 ]);
 
 mountSpecimens(document.getElementById('monotiles')!, [
@@ -24,7 +26,7 @@ mountSpecimens(document.getElementById('monotiles')!, [
     base: 'spectre',
     label: 'The spectre',
     fill: '#1f3a2e',
-    note: 'Tiles without reflections — the chiral einstein',
+    note: 'Tiles without reflections — the chiral einstein (handed: it comes in one mirror image only)',
   },
 ]);
 
@@ -75,22 +77,8 @@ mountExplorerPanel(document.getElementById('explorer')!, {
     'radius) and regenerated from scratch, identically, every time this ' +
     'page loads — the entire experimental record system of the project ' +
     'rests on that determinism. Click any tile to read its address, class ' +
-    'and neighbour count; switch lenses to see the two-coloring, the tile ' +
+    'and neighbour count; switch lenses to see the two-coloring (hat against ' +
+    'anti-hat; on the spectre, the Mystic pairs against the rest), the tile ' +
     'classes, or the substitution hierarchy; slide the level to watch ' +
     'supertiles emerge.',
-});
-
-mountExplorerPanel(document.getElementById('cone')!, {
-  family: 'hat',
-  root: '(tile hat):(subtile 0 of F0)',
-  radius: 12,
-  lens: 'plain',
-  fixed: true,
-  caption:
-    '<b>A degenerate root.</b> This patch was generated from a legal-looking ' +
-    'address whose repeating cycle hugs its supertiles’ boundary, so the ' +
-    'infinite ancestry covers a cone rather than the plane — and the seam ' +
-    'is invisible until you ask about adjacency. The library flags every ' +
-    'cell whose neighbourhood computation crossed the glue (red). One rule ' +
-    'of this project: a run counts only if this list is empty.',
 });

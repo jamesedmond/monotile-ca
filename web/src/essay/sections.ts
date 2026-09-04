@@ -28,7 +28,7 @@ export const SECTIONS: Section[] = [
   {
     slug: 'tilings',
     title: 'The board',
-    blurb: 'The hat and spectre tilings, patches by address, and the cone-seed pitfall.',
+    blurb: 'The hat and spectre tilings, patches by address, tile classes and rings.',
     ready: true,
   },
   {
@@ -40,7 +40,7 @@ export const SECTIONS: Section[] = [
   {
     slug: 'first-searches',
     title: 'First searches',
-    blurb: 'The mortal era: seed sweeps, walker anatomy, richer rules, and a ceiling.',
+    blurb: 'The mortal era: seed sweeps, traveller anatomy, richer rules, and a ceiling.',
     ready: true,
   },
   {

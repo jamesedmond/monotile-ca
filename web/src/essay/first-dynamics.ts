@@ -68,7 +68,7 @@ mountEssayPanel(document.getElementById('front')!, {
   loopPauseMs: 2000,
   reproduce: 'cargo run --release -p tiling-core --example isotropy',
   caption:
-    '<b>The shape of growth</b> — B2/S12346, a chaotic Eden-type rule, ' +
+    '<b>The shape of growth</b> — B2/S12346, a chaotic rule, ' +
     'from a 40% soup within six rings of the centre: the isotropy ' +
     'experiment’s recipe on a radius-110 patch (41,612 tiles). The ' +
     'front leaves frozen ash behind and advances as a near-circle: ' +
@@ -121,8 +121,8 @@ mountEssayPanel(document.getElementById('filament')!, {
     'Population grows linearly (~0.25 cells per generation) and the ' +
     'whole filament stays dynamically active — a body that churns ' +
     'without dying, freezing, or exploding. On an instrumented ' +
-    'radius-128 run, its heading held to ±10° for all 3,600 wall-clean ' +
-    'generations.',
+    'radius-128 run, its heading held to ±10° for all 3,600 generations ' +
+    'before it touched the boundary.',
 });
 
 mountEssayPanel(document.getElementById('walker')!, {
@@ -141,6 +141,6 @@ mountEssayPanel(document.getElementById('walker')!, {
     'again, population between 6 and 33 — then at generation ~96 it ' +
     'sheds a pair of period-2 blinkers from one corner, recoils, and ' +
     'evaporates by ~120. The blinkers remain: exact period 2, confirmed ' +
-    'at generation 129. The first travelling object ever seen on this ' +
+    'at generation 129. The first travelling object we found on this ' +
     'tiling, and it is mortal.',
 });
