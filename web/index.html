@@ -73,7 +73,10 @@
     #stats { margin-left: auto; display: flex; gap: 14px; padding: 0 4px 0 16px; font-variant-numeric: tabular-nums; color: #9aa3af; }
     #stats b { color: #e6ebf2; font-weight: 600; }
     #stage { position: relative; flex: 1; min-height: 0; }
-    canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: crosshair; }
+    canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: crosshair; touch-action: none; }
+    #drawerToggle { display: none; }
+    /* Taps on controls must never become double-tap-to-zoom (rapid Step presses). */
+    #controls, #controls button, #controls select, #controls input, #controls label { touch-action: manipulation; }
     #tooltip {
       position: absolute; pointer-events: none; z-index: 3;
       background: #1d2127ee; border: 1px solid #2c323b; border-radius: 4px;
@@ -101,6 +104,47 @@
     #tableErr { color: #ff9d9d; font-size: 12px; white-space: pre-wrap; }
     .te-help { font-size: 11px; color: #6f7884; }
     .te-help code { color: #9aa3af; }
+
+    /* Phones and short landscape screens: the board takes the whole
+       viewport; the playback bar pins to the bottom edge; everything
+       else lives in a drawer above it (a right-hand panel in landscape). */
+    @media (max-width: 50rem), (max-height: 32rem) {
+      #stage { position: absolute; inset: 0; }
+      #controls {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+        display: flex; flex-direction: column; flex-wrap: nowrap; gap: 8px;
+        max-height: 62vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+        padding: 8px 10px; background: #14171cf2;
+        border-top: 1px solid #23272e; border-bottom: 0;
+      }
+      #restBoxes { display: contents; }
+      #title { display: none; }
+      fieldset.box { width: 100%; }
+      #ruleBox { order: 1; flex-shrink: 1; }
+      #drawBox { order: 2; }
+      #boardBox { order: 3; }
+      #replayBox { order: 4; }
+      #stats { order: 7; margin-left: 0; padding: 2px 6px 0; justify-content: center; }
+      #playbackBox { order: 6; position: sticky; bottom: -8px; z-index: 1; background: #14171c; margin-bottom: -8px; padding-bottom: 8px; }
+      #drawerToggle { display: inline-flex; }
+      #controls.collapsed { max-height: none; overflow: visible; }
+      #controls.collapsed > #title, #controls.collapsed > #ruleBox,
+      #controls.collapsed #restBoxes > :not(#playbackBox):not(#stats) { display: none !important; }
+      #ruleBox .rb-head, #ruleBox .rb-content { flex-wrap: wrap; }
+      #ruleBox .rb-content > * { min-width: 0; }
+      .te-side { width: 100%; }
+      #tableText { min-width: 0; }
+      #playbackBox { box-shadow: 0 -8px 14px #0b0d10; }
+      #ruleGrid { grid-template-columns: repeat(9, 22px); gap: 2px 3px; font-size: 11px; }
+      #tableText { max-width: none; width: 100%; }
+      .te-side { max-width: none; }
+      input[type=range] { width: 70px; }
+    }
+    @media (max-height: 32rem) and (min-width: 50rem) {
+      /* landscape phone: drawer as a right-hand panel, playback bar at its foot */
+      #controls { left: auto; top: 0; bottom: 0; width: min(46vw, 30rem); max-height: none; border-top: 0; border-left: 1px solid #23272e; }
+      #controls.collapsed { top: auto; width: auto; left: auto; right: 0; border-left: 0; border-top: 1px solid #23272e; border-top-left-radius: 8px; }
+    }
   </style>
 </head>
 <body>
@@ -144,15 +188,16 @@
       </div>
     </fieldset>
     <div id="restBoxes">
-    <fieldset class="box">
+    <fieldset class="box" id="playbackBox">
       <legend>playback</legend>
+      <button id="drawerToggle" title="rules, drawing, board and replay controls" aria-expanded="false">⚙</button>
       <button id="stepBack" title="Recompute the previous generation from snapshot history (exact, even across rule changes)">⟨ Back</button>
       <button id="step">Step</button>
       <button id="play">Play</button>
       <button id="reset" title="Return to the state at load, or after the last edit (paint / clear / randomize / rule change)">Reset</button>
       <label>speed <input id="speed" type="range" min="1" max="60" value="12" /><span id="speedVal">12</span>/s</label>
     </fieldset>
-    <fieldset class="box">
+    <fieldset class="box" id="drawBox">
       <legend>draw</legend>
       <span class="paint" id="paintSel" title="Click paints this state onto tiles (click again to erase) — multi-state seeds for table rules">
         <button data-state="1" class="active">1</button>
@@ -166,7 +211,7 @@
       <label>seed <input id="seed" type="number" value="42" /></label>
       <label>within <input id="dist" type="number" min="0" value="6" /></label>
     </fieldset>
-    <fieldset class="box">
+    <fieldset class="box" id="boardBox">
       <legend>board</legend>
       <label>family
         <select id="family">
@@ -179,7 +224,7 @@
       <label>radius <input id="radius" type="number" min="2" max="256" value="12" title="radii ≳ 100 can take tens of seconds to generate; 192+ can take minutes (the looper needs 192 to stay inside)" /></label>
       <button id="regen">Regenerate</button>
     </fieldset>
-    <fieldset class="box">
+    <fieldset class="box" id="replayBox">
       <legend>replay</legend>
       <label>curated
         <select id="curatedSel" title="Replay a committed record from the project's results/"></select>

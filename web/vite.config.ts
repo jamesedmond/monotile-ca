@@ -27,6 +27,7 @@ export default defineConfig({
             'compass',
             'certificate',
             'playground-section',
+            'sources',
           ].map((slug) => [
             `essay-${slug}`,
             resolve(

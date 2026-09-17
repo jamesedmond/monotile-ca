@@ -23,8 +23,6 @@
     <p class="subtitle">the full instrument — your licence to deviate</p>
 
     <p>
-      <!-- TODO at publication: clone instructions for the public repo
-         (git clone URL, wasm-pack + npm run dev, one verify command). -->
       Everything in this essay replays in one tool, and this page hands it
       over: the research UI itself, running entirely in your browser —
       patch generation, both adjacencies, the engine, a multi-state paint
@@ -37,6 +35,17 @@
 
     <p>
       <a class="pg-open" href="../../" target="_blank" rel="noopener">Open the playground →</a>
+    </p>
+
+    <p class="note">
+      To run it on your own machine, or to verify a glider natively:
+      <code>git clone https://github.com/jamesedmond/monotile-ca</code>, then
+      <code>wasm-pack build crates/ui-wasm --target web --release -d ../../web/src/wasm</code>
+      and <code>cd web &amp;&amp; npm install &amp;&amp; npm run dev</code>; or
+      <code>cargo run --release -p tiling-core --example verify_candidate
+      results/hat-tableevolve-r48-s21.jsonl 0 384 60000</code> replays the
+      first hat glider on a radius-384 patch. The repository's README
+      walks through the rest.
     </p>
 
     <h2>Start from a record</h2>

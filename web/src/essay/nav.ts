@@ -26,7 +26,8 @@ export function mountNav(): void {
     SECTIONS.map((s, i) => {
       const current = s.slug === slug ? ' class="current"' : '';
       const soon = s.ready ? '' : ' <span class="soon">soon</span>';
-      return `<a${current} href="${href(slug, s.slug)}" title="${s.blurb}">${i + 1}. ${s.title}${soon}</a>`;
+      const num = s.unnumbered ? '' : `${i + 1}. `;
+      return `<a${current} href="${href(slug, s.slug)}" title="${s.blurb}">${num}${s.title}${soon}</a>`;
     }).join('');
 
   const rail = document.createElement('nav');
@@ -47,4 +48,17 @@ export function mountNav(): void {
     (prev ? `<a class="prev" href="${href(slug, prev.slug)}">← ${prev.title}</a>` : '<span></span>') +
     (next ? `<a class="next" href="${href(slug, next.slug)}">${next.title} →</a>` : '<span></span>');
   main.append(pager);
+
+  // Site-wide colophon. The paper PDF lives one level above essay/
+  // (offlattice.org/monotile/paper.pdf).
+  // TODO at publication: replace "arXiv at publication" with the arXiv link.
+  const up = slug === '' ? '../' : '../../';
+  const foot = document.createElement('footer');
+  foot.className = 'colophon';
+  foot.innerHTML =
+    `<span><b>Paper</b> <a href="${up}paper.pdf">Gliders on Aperiodic Monotilings</a> <span class="dim">(PDF · arXiv at publication)</span></span>` +
+    `<span><b>Code &amp; records</b> <a href="https://github.com/jamesedmond/monotile-ca" target="_blank" rel="noopener">github.com/jamesedmond/monotile-ca</a></span>` +
+    `<span><a href="${href(slug, 'sources')}">Sources, citation &amp; colophon</a></span>` +
+    `<span><a href="mailto:james@offlattice.org">james@offlattice.org</a></span>`;
+  main.append(foot);
 }

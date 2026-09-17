@@ -96,6 +96,30 @@ footer {
   font-size: 0.95rem;
 }
 .pager a { text-decoration: none; }
+.colophon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin-top: 1.4rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--edge);
+  color: var(--dim);
+  font-size: 0.88rem;
+}
+.colophon b { color: var(--text); font-weight: 600; }
+.colophon .dim { color: var(--dim); }
+.sources h2 { margin-top: 2.2rem; }
+.sources ul { padding-left: 1.2rem; }
+.sources li { margin: 0.4rem 0; }
+.sources pre {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font: 13px ui-monospace, Menlo, monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
 
 /* --- essay panel --- */
 .essay-panel {

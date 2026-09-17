@@ -72,6 +72,8 @@ The site is built with `base: '/monotile/'` — the playground lands at
 ```sh
 npm run build
 rsync -a --delete dist/ ~/Code/offlattice/site/monotile/
+# the paper, in preprint mode, at offlattice.org/monotile/paper.pdf (linked from every essay page)
+(cd ../paper && sed 's/^%\\preprinttrue/\\preprinttrue/' paper.tex > paper-preprint.tex && pdflatex -interaction=nonstopmode paper-preprint.tex >/dev/null && pdflatex -interaction=nonstopmode paper-preprint.tex >/dev/null && cp paper-preprint.pdf ~/Code/offlattice/site/monotile/paper.pdf)
 cd ~/Code/offlattice
 npx wrangler pages deploy site --project-name offlattice --branch staging  # preview
 npx wrangler pages deploy site --project-name offlattice                   # PRODUCTION

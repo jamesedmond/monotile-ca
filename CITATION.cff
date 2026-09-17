@@ -1,13 +1,40 @@
-# TODO at publication: add `doi` (Zenodo), `repository-code`, and a
-# `preferred-citation` block pointing at the arXiv paper.
+# TODO at publication: add `doi` (the Zenodo concept DOI), `version` and
+# `date-released` (from the release tag), and the arXiv identifier under
+# `preferred-citation.identifiers`.
 cff-version: 1.2.0
-message: "If you use this software or its results, please cite the paper (see README)."
+message: "If you use this software or its results, please cite the paper (preferred-citation below) and, for the code and records, this archive."
 type: software
 title: "monotile-ca: cellular automata on the hat and spectre aperiodic monotilings"
+abstract: "Toolchain, search drivers, and the complete replayable result set behind 'Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre' and its companion interactive essay: transducer-generated patches of the hat, spectre and Penrose tilings, a no_std graph cellular-automaton engine (native and WebAssembly), exhaustive and evolutionary rule-space search with structural anti-gaming controls, cross-radius verification, and a constant-memory sliding-window tracker."
 authors:
   - family-names: Edmond
     given-names: James
     orcid: "https://orcid.org/0009-0009-0005-4299"
     email: james@offlattice.org
+repository-code: "https://github.com/jamesedmond/monotile-ca"
 url: "https://offlattice.org/monotile/essay/"
-license: MIT OR Apache-2.0
+license:
+  - MIT
+  - Apache-2.0
+keywords:
+  - cellular automata
+  - aperiodic tilings
+  - hat monotile
+  - spectre monotile
+  - Penrose tilings
+  - gliders
+  - substitution tilings
+identifiers:
+  - type: url
+    value: "https://offlattice.org/monotile/essay/"
+    description: "Companion interactive essay (every result replayable live)"
+preferred-citation:
+  type: article
+  title: "Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre"
+  authors:
+    - family-names: Edmond
+      given-names: James
+      orcid: "https://orcid.org/0009-0009-0005-4299"
+  year: 2026
+  notes: "Preprint; submitted to Complex Systems. arXiv identifier to be added at publication."
+  url: "https://offlattice.org/monotile/paper.pdf"

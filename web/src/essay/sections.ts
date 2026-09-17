@@ -10,6 +10,8 @@ export interface Section {
   blurb: string;
   /** False renders as "in preparation" in the rail. */
   ready: boolean;
+  /** Rendered in the rail without a section number (sources/colophon). */
+  unnumbered?: boolean;
 }
 
 export const SECTIONS: Section[] = [
@@ -96,5 +98,12 @@ export const SECTIONS: Section[] = [
     title: 'Playground',
     blurb: 'The full interactive UI — your licence to deviate.',
     ready: true,
+  },
+  {
+    slug: 'sources',
+    title: 'Sources & colophon',
+    blurb: 'The paper, the code, how to cite, further reading, and how the site is built.',
+    ready: true,
+    unnumbered: true,
   },
 ];

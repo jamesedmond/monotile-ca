@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 results/*.progress
 results/partial/
+
+# local build outputs of the certify/analysis tools
+out/

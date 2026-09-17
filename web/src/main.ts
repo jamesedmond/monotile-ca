@@ -324,6 +324,54 @@ function hideTooltip(): void {
   hoverCell = -1;
 }
 
+// Phones: the controls collapse to the playback bar; ⚙ opens the drawer.
+{
+  const controls = document.getElementById('controls')!;
+  const toggle = document.getElementById('drawerToggle') as HTMLButtonElement;
+  const narrow = matchMedia('(max-width: 50rem), (max-height: 32rem)');
+  const apply = (): void => {
+    controls.classList.toggle('collapsed', narrow.matches);
+    toggle.setAttribute('aria-expanded', String(narrow.matches && !controls.classList.contains('collapsed')));
+  };
+  apply();
+  narrow.addEventListener('change', apply);
+  toggle.addEventListener('click', () => {
+    const open = controls.classList.toggle('collapsed') === false;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? '✕' : '⚙';
+  });
+}
+
+// Touch: one finger pans, two fingers pinch-zoom about their midpoint. A
+// tap (no touchmove) still paints through the browser's synthetic mouse
+// events; cancelling touchmove suppresses them for drags.
+let touches: { x: number; y: number }[] = [];
+const touchPts = (e: TouchEvent): { x: number; y: number }[] =>
+  Array.from(e.touches, (t) => ({ x: t.clientX, y: t.clientY }));
+canvas.addEventListener('touchstart', (e) => { touches = touchPts(e); }, { passive: true });
+canvas.addEventListener(
+  'touchmove',
+  (e) => {
+    const now = touchPts(e);
+    if (now.length === 1 && touches.length === 1) {
+      renderer.panBy(now[0].x - touches[0].x, now[0].y - touches[0].y);
+    } else if (now.length >= 2 && touches.length >= 2) {
+      const mid = (p: { x: number; y: number }[]): [number, number] => [(p[0].x + p[1].x) / 2, (p[0].y + p[1].y) / 2];
+      const [m0x, m0y] = mid(touches);
+      const [m1x, m1y] = mid(now);
+      const d0 = Math.hypot(touches[0].x - touches[1].x, touches[0].y - touches[1].y);
+      const d1 = Math.hypot(now[0].x - now[1].x, now[0].y - now[1].y);
+      renderer.panBy(m1x - m0x, m1y - m0y);
+      const r = canvas.getBoundingClientRect();
+      if (d0 > 0) renderer.zoomAt(m1x - r.left, m1y - r.top, d1 / d0);
+    }
+    touches = now;
+    e.preventDefault();
+  },
+  { passive: false },
+);
+canvas.addEventListener('touchend', (e) => { touches = touchPts(e); }, { passive: true });
+
 canvas.addEventListener('mousedown', (e) => {
   if (e.button === 0) drag = { x: e.clientX, y: e.clientY, moved: false };
 });
