@@ -7,7 +7,7 @@ Spectre_** (James Edmond, 2026) and its companion interactive essay:
 - **Essay** (every figure live, every record replayable in the browser):
   https://offlattice.org/monotile/essay/
 - **Paper**: _arXiv link at publication_ <!-- TODO at publication -->
-- **Archived release**: _Zenodo DOI at publication_ <!-- TODO at publication -->
+- **Archived release**: v1.0.0, [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248) (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247))
 
 The hat and spectre monotiles (discovered 2023) tile the plane only
 aperiodically. This project ran the first cellular-automaton searches on
@@ -120,3 +120,11 @@ Dual-licensed under either of [MIT](LICENSE-MIT) or
 [Apache License 2.0](LICENSE-APACHE), at your option. The result
 records, the object compendium, and the essay text are © 2026 James
 Edmond and may be reused under the same terms.
+
+## Contributing
+
+This tree is a snapshot, synced from a private research repository in which
+the work is done; it is published so that every record in the paper can be
+regenerated and checked. Bug reports, reproduction problems and corrections
+are welcome as issues. Pull requests are welcome too, but a fix will normally
+be ported into the source tree and re-synced rather than merged here directly.
