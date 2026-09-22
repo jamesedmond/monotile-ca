@@ -51,12 +51,11 @@ export function mountNav(): void {
 
   // Site-wide colophon. The paper PDF lives one level above essay/
   // (offlattice.org/monotile/paper.pdf).
-  // TODO at publication: replace "arXiv at publication" with the arXiv link.
   const up = slug === '' ? '../' : '../../';
   const foot = document.createElement('footer');
   foot.className = 'colophon';
   foot.innerHTML =
-    `<span><b>Paper</b> <a href="${up}paper.pdf">Gliders on Aperiodic Monotilings</a> <span class="dim">(PDF · arXiv at publication)</span></span>` +
+    `<span><b>Paper</b> <a href="${up}paper.pdf">Gliders on Aperiodic Monotilings</a> <span class="dim">(PDF · <a href="https://arxiv.org/abs/2609.22579" target="_blank" rel="noopener">arXiv:2609.22579</a>)</span></span>` +
     `<span><b>Code &amp; records</b> <a href="https://github.com/jamesedmond/monotile-ca" target="_blank" rel="noopener">github.com/jamesedmond/monotile-ca</a></span>` +
     `<span><a href="${href(slug, 'sources')}">Sources, citation &amp; colophon</a></span>` +
     `<span><a href="mailto:james@offlattice.org">james@offlattice.org</a></span>`;
