@@ -34,7 +34,12 @@
       "identifier": "https://github.com/jamesedmond/monotile-ca",
       "relation": "isSupplementTo",
       "resource_type": "software"
+    },
+    {
+      "identifier": "arXiv:2609.22579",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Companion paper: arXiv identifier to be added at publication (see CITATION.cff preferred-citation)."
+  "notes": "Companion paper: arXiv:2609.22579 (nlin.CG), \"Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre\"."
 }

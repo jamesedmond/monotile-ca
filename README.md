@@ -6,7 +6,7 @@ Spectre_** (James Edmond, 2026) and its companion interactive essay:
 
 - **Essay** (every figure live, every record replayable in the browser):
   https://offlattice.org/monotile/essay/
-- **Paper**: _arXiv link at publication_ <!-- TODO at publication -->
+- **Paper**: [arXiv:2609.22579](https://arxiv.org/abs/2609.22579) (nlin.CG), "Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre"
 - **Archived release**: v1.0.0, [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248) (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247))
 
 The hat and spectre monotiles (discovered 2023) tile the plane only

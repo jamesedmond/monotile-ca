@@ -1,4 +1,3 @@
-# TODO at publication: add the arXiv identifier under `preferred-citation.identifiers`.
 cff-version: 1.2.0
 message: "If you use this software or its results, please cite the paper (preferred-citation below) and, for the code and records, this archive."
 type: software
@@ -37,5 +36,9 @@ preferred-citation:
       given-names: James
       orcid: "https://orcid.org/0009-0009-0005-4299"
   year: 2026
-  notes: "Preprint; submitted to Complex Systems. arXiv identifier to be added at publication."
-  url: "https://offlattice.org/monotile/paper.pdf"
+  identifiers:
+    - type: other
+      value: "arXiv:2609.22579"
+      description: "arXiv preprint (nlin.CG)"
+  notes: "Preprint, arXiv:2609.22579. Journal version to follow."
+  url: "https://arxiv.org/abs/2609.22579"
