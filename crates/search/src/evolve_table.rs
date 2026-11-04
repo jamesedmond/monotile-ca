@@ -427,6 +427,7 @@ pub fn run(p: &EvolveTableParams) {
         stratification: None,
         tables: Vec::new(),
         table_rule: Some(champion.clone()),
+        table_rules: Vec::new(),
         neighbourhood: p.neighbourhood,
         initial_cells: seed_cells.clone(),
         initial_states: seed_states.clone(),

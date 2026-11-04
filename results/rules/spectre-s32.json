@@ -1,0 +1,1 @@
+{"states": 4, "rows": [{"own": 0, "conds": [[1, 1], [3, 1]], "next": 3}, {"own": 0, "conds": [[1, 1], [3, 1]], "next": 3}, {"own": 0, "conds": [[0, 2], [3, 1]], "next": 1}, {"own": 1, "conds": [[0, 2]], "next": 2}, {"own": 0, "conds": [[2, 3]], "next": 2}, {"own": 1, "next": 1}, {"own": 3, "conds": [[3, 1]], "next": 1}, {"own": 3, "conds": [[0, 1]], "next": 1}]}

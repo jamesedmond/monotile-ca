@@ -79,6 +79,11 @@ npx wrangler pages deploy site --project-name offlattice --branch staging  # pre
 npx wrangler pages deploy site --project-name offlattice                   # PRODUCTION
 ```
 
+`results/index.html` (the glider census gallery, unpublished until the
+certificate paper) is served by `npm run dev` at `/monotile/results/` but is
+left out of `npm run build` unless `MONOTILE_RESULTS_PAGE=1` is set, so the
+routine deploy above cannot publish it by accident. It carries `noindex`.
+
 Staging serves at https://staging.offlattice.pages.dev/monotile/essay/
 (plus a per-deploy hash URL); production only moves when deploying
 without `--branch`. Before a production deploy, run the launch sweep:

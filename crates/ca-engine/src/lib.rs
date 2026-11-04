@@ -337,12 +337,56 @@ impl TableRule {
     }
 }
 
-/// A rule of either family, for code paths (replay, UI) that must step
+/// A priority-table rule stratified by tile class: `tables[s]` is the
+/// [`TableRule`] applied to cells of stratum `s` (per-cell strata live in
+/// the [`Engine`], as for [`StratifiedRule`]). Lets a table rule treat
+/// the two chiralities differently — e.g. Trevorrow's HatLife `Worms`
+/// rule, whose reflected hats are permanent walls (a table with no rows).
+#[derive(Clone, PartialEq, Eq, Debug)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub struct StratifiedTableRule {
+    pub tables: Vec<TableRule>,
+}
+
+impl StratifiedTableRule {
+    pub fn new(tables: Vec<TableRule>) -> Self {
+        assert!(!tables.is_empty(), "a rule needs at least one table");
+        let k = tables[0].states;
+        assert!(
+            tables.iter().all(|t| t.states == k),
+            "all strata must share the state count"
+        );
+        Self { tables }
+    }
+
+    pub fn strata(&self) -> usize {
+        self.tables.len()
+    }
+
+    pub fn states(&self) -> u8 {
+        self.tables[0].states
+    }
+
+    /// True if any stratum could ignite the vacuum (see
+    /// [`TableRule::vacuum_ignites`]).
+    pub fn vacuum_ignites(&self) -> bool {
+        self.tables.iter().any(TableRule::vacuum_ignites)
+    }
+}
+
+/// A rule of any family, for code paths (replay, UI) that must step
 /// whatever a result record contains. Use the [`CaRule`] impl to step.
 #[derive(Clone, PartialEq, Eq, Debug)]
 pub enum AnyRule {
     Generations(StratifiedRule),
     Table(TableRule),
+    StratifiedTable(StratifiedTableRule),
+}
+
+impl From<StratifiedTableRule> for AnyRule {
+    fn from(rule: StratifiedTableRule) -> Self {
+        Self::StratifiedTable(rule)
+    }
 }
 
 impl From<StratifiedRule> for AnyRule {
@@ -401,29 +445,49 @@ impl CaRule for TableRule {
     }
 }
 
+impl CaRule for StratifiedTableRule {
+    fn states(&self) -> u8 {
+        StratifiedTableRule::states(self)
+    }
+    fn vacuum_ignites(&self) -> bool {
+        StratifiedTableRule::vacuum_ignites(self)
+    }
+    fn step_with_changes(&self, engine: &mut Engine, changed: &mut Vec<u32>) -> StepStats {
+        changed.clear();
+        engine.step_table_strata_impl(self, Some(changed))
+    }
+    fn step(&self, engine: &mut Engine) -> StepStats {
+        engine.step_table_strata_impl(self, None)
+    }
+}
+
 impl CaRule for AnyRule {
     fn states(&self) -> u8 {
         match self {
             AnyRule::Generations(r) => CaRule::states(r),
             AnyRule::Table(r) => CaRule::states(r),
+            AnyRule::StratifiedTable(r) => CaRule::states(r),
         }
     }
     fn vacuum_ignites(&self) -> bool {
         match self {
             AnyRule::Generations(r) => CaRule::vacuum_ignites(r),
             AnyRule::Table(r) => CaRule::vacuum_ignites(r),
+            AnyRule::StratifiedTable(r) => CaRule::vacuum_ignites(r),
         }
     }
     fn step_with_changes(&self, engine: &mut Engine, changed: &mut Vec<u32>) -> StepStats {
         match self {
             AnyRule::Generations(r) => r.step_with_changes(engine, changed),
             AnyRule::Table(r) => r.step_with_changes(engine, changed),
+            AnyRule::StratifiedTable(r) => r.step_with_changes(engine, changed),
         }
     }
     fn step(&self, engine: &mut Engine) -> StepStats {
         match self {
             AnyRule::Generations(r) => CaRule::step(r, engine),
             AnyRule::Table(r) => CaRule::step(r, engine),
+            AnyRule::StratifiedTable(r) => CaRule::step(r, engine),
         }
     }
 }
@@ -598,6 +662,44 @@ impl Engine {
             }
             let own = self.state[cell as usize];
             let next = rule.next_state(own, &counts);
+            self.next[cell as usize] = next;
+            population += u32::from(next != 0);
+            if next != own {
+                changed += 1;
+                if let Some(out) = changed_out.as_deref_mut() {
+                    out.push(cell);
+                }
+            }
+        }
+        core::mem::swap(&mut self.state, &mut self.next);
+        self.generation += 1;
+        StepStats {
+            population,
+            changed,
+        }
+    }
+
+    /// [`step_table_impl`](Self::step_table_impl) with the table chosen by
+    /// each cell's stratum. Engine contract as for Generations: every
+    /// stratum value must index `rule.tables`.
+    fn step_table_strata_impl(
+        &mut self,
+        rule: &StratifiedTableRule,
+        mut changed_out: Option<&mut Vec<u32>>,
+    ) -> StepStats {
+        let mut population = 0;
+        let mut changed = 0;
+        let mut counts = [0u8; MAX_COUNTED_STATES];
+        for cell in 0..self.graph.cells() {
+            counts.fill(0);
+            for &n in self.graph.neighbours(cell) {
+                if let Some(slot) = counts.get_mut(self.state[n as usize] as usize) {
+                    *slot = slot.saturating_add(1);
+                }
+            }
+            let own = self.state[cell as usize];
+            let table = &rule.tables[self.strata[cell as usize] as usize];
+            let next = table.next_state(own, &counts);
             self.next[cell as usize] = next;
             population += u32::from(next != 0);
             if next != own {
@@ -898,6 +1000,33 @@ mod tests {
         let table: AnyRule = TableRule::goucher_glider().into();
         assert_eq!(CaRule::states(&table), 4);
         assert!(!table.vacuum_ignites());
+    }
+
+    #[test]
+    fn stratified_table_rule_selects_table_by_stratum() {
+        // Path 0-1-2. Stratum 0: a live cell with a live neighbour
+        // persists (row own=1, count(1)>=1 → 1); stratum 1 has no rows,
+        // so its cells always become 0 (a wall). Seed all three live.
+        let graph = Graph::from_edges(3, &[(0, 1), (1, 2)]);
+        let keep = TableRule::new(
+            2,
+            vec![RuleRow {
+                own: Some(1),
+                conds: vec![(1, 1)],
+                next: 1,
+            }],
+        );
+        let wall = TableRule::new(2, vec![]);
+        let rule = StratifiedTableRule::new(vec![keep, wall]);
+        let mut engine = Engine::with_strata(graph, vec![0, 1, 0]);
+        engine.load_state(&[1, 1, 1]);
+        CaRule::step(&rule, &mut engine);
+        // Cell 1 (wall) dies; cells 0 and 2 saw their live neighbour 1.
+        assert_eq!(engine.state(), &[1, 0, 1]);
+        CaRule::step(&rule, &mut engine);
+        // Now 0 and 2 have no live neighbour: no row fires.
+        assert_eq!(engine.state(), &[0, 0, 0]);
+        assert!(!rule.vacuum_ignites());
     }
 
     #[test]

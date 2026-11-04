@@ -1,0 +1,12 @@
+[package]
+name = "stcount"
+version = "0.0.1"
+edition = "2024"
+[dependencies]
+stt_old = { package = "substitution-tiling-transducers", version = "=0.1.0" }
+stt_new = { package = "substitution-tiling-transducers", version = "=0.2.1" }
+[[bin]]
+name = "stcount"
+path = "src/main.rs"
+
+[workspace]

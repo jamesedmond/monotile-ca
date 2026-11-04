@@ -7,14 +7,16 @@ Spectre_** (James Edmond, 2026) and its companion interactive essay:
 - **Essay** (every figure live, every record replayable in the browser):
   https://offlattice.org/monotile/essay/
 - **Paper**: [arXiv:2609.22579](https://arxiv.org/abs/2609.22579) (nlin.CG), "Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre"
-- **Archived release**: v1.0.0, [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248) (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247))
+- **Certificates paper**: "Certificates of Immortality for Gliders on the Hat and Spectre Tilings" (James Edmond, 2026; arXiv identifier to be added on posting) — the gliders proved immortal on every tiling of the hull, with exact heading and speed bounds; see [Certificates of immortality](#certificates-of-immortality) below
+- **Archived release**: v1.1.0 (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247)); v1.0.0, the state of the first paper: [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248)
 
 The hat and spectre monotiles (discovered 2023) tile the plane only
-aperiodically. This project ran the first cellular-automaton searches on
-them and found verified gliders on both — plus the search methodology
-(structural controls, cross-radius verification, anti-gaming filters)
-that makes such claims trustworthy on a board with no translational
-symmetry.
+aperiodically. This project ran the first systematic cellular-automaton
+searches on them and found verified gliders on both — plus the search
+methodology (structural controls, cross-radius verification, anti-gaming
+filters) that makes such claims trustworthy on a board with no
+translational symmetry — and then proved the gliders immortal by finite
+computation, the certificates of the second paper.
 
 ## What is here
 
@@ -28,11 +30,19 @@ crates/ca-engine     the automaton: pure no_std graph CA (Generations and
                      identical semantics native and in WebAssembly
 crates/search        headless rule-space search: exhaustive sweeps, seed
                      sweeps, and the genetic search over table rules
+crates/certify       certificates of immortality: the legal-ball atlas by
+                     transducer exploration, the situation closure, the
+                     exact cocycle (heading and speed bounds), keyed flights,
+                     the census; crates/certify/check/ holds the independent
+                     Python checker and the transducer cross-check
 crates/ui-wasm       wasm-bindgen shim exposing the engine to the browser
 web/                 the interactive essay and research playground
 results/             every committed result record (JSONL), including
                      results/flights/ — seeds, decimated telemetry, and
-                     final checkpoints of the million-ring flights
+                     final checkpoints of the million-ring flights;
+                     results/certificates/ — the ten certificates, the
+                     atlas and geometry audit logs, the census tables;
+                     results/rules/ — rules from outside our search, as data
 GLIDERS.md           the object compendium: exact rule, seed, and measured
                      properties of every mobile object
 analysis/            flight telemetry analysis (headings, compass refit)
@@ -83,6 +93,45 @@ cargo run --release -p tiling-core --example slide \
   results/hat-tableevolve-r48-s21.jsonl 0 24 --launch-radius 48 --launch-gens 60
 ```
 
+## Certificates of immortality
+
+A certificate is a finite set of *situations* (a glider's pattern with
+four rings of surrounding tiles) closed under the rule on every legal
+environment the tiling can present. Its existence proves the glider
+immortal on every tiling of the hull, and its exact cocycle bounds the
+heading and speed (Theorems 1 and 2 of the certificates paper). The ten
+certificates are in `results/certificates/`; `GLIDERS.md` tabulates them.
+
+Regenerate the hat's radius-9 atlas of legal balls (a few minutes), then
+read a certificate's numbers and check it independently:
+
+```sh
+cargo run --release -p certify -- atlas hat 9 --verify --out out/atlas-hat-r9.json
+cargo run --release -p certify -- cocycle results/certificates/hat-A-s21-k4-R9.json
+python3 crates/certify/check/check_certificate.py   results/certificates/hat-A-s21-k4-R9.json out/atlas-hat-r9.json   results/hat-tableevolve-r48-s21.jsonl
+```
+
+Rebuild a certificate from its record (the closure, from the keyed flight
+on a radius-384 patch), fly it with every generation keyed against the
+certificate, and compare two certificates:
+
+```sh
+cargo run --release -p certify -- closure results/hat-tableevolve-r48-s21.jsonl out/atlas-hat-r9.json   --radius 384 --start 60 --k 4 --out out/hat-A.json
+cargo run --release -p certify -- trace results/hat-tableevolve-r48-s21.jsonl   results/certificates/hat-A-s21-k4-R9.json --gens 20000 --out out/hat-A-trace.tsv
+cargo run --release -p certify -- stats results/certificates/hat-A-s21-k4-R9.json results/certificates/hat-B-s22-k4-R10.json
+cargo run --release -p certify -- relabel results/certificates/hat-A-s21-k4-R9.json   results/certificates/hat-B-s22-k4-R10.json --map 1:3,2:1,3:0     # hat B is hat A in another alphabet
+```
+
+The spectre and the radius-10/11 certificates need the matching atlas
+(`atlas spectre 9`, `atlas hat 10`, `atlas hat 11`, `atlas spectre 11`);
+the stratified Worms certificate takes `--strata 1:1` on the checker.
+Rules from outside our search run as data: `results/rules/*.json` through
+`cargo run --release -p tiling-core --example table_soups`, and
+Trevorrow's HatLife Worms through `--example worms_hatlife`, which checks
+the transcription against a direct implementation of HatLife's rule.
+`crates/certify/check/transducer-crosscheck` is the stand-alone cross-check
+of the transducer against its reference algorithm (Appendix C of the paper).
+
 ## Search
 
 ```sh
@@ -110,8 +159,9 @@ their controls appear in the paper.
 
 ## Citing
 
-See `CITATION.cff`. Please cite the paper for the results and this
-repository (or its archived Zenodo release) for the software and
+See `CITATION.cff`. Please cite the papers for the results — the first
+for the gliders and the search, the second for the certificates — and
+this repository (or its archived Zenodo release) for the software and
 records.
 
 ## License

@@ -1,0 +1,12 @@
+census: Spectre rule table-evolve champion travel 46 escape (seed 'pair 1,3') — seeds (1,3) both orders; patch radius 512 (881279 cells, 72s); settle 300, track ≤ 300, k=4, R=11
+known certificates at k=4: 7
+known certificates at k=4: 63
+6 seedings
+
+outcomes: {"grower/shower": 6, "shower fragments on-vertex": 137, "shower fragments off-vertex": 5, "launched": 3}
+buckets (closed sets at k=4):
+  bucket 0: 2542 states, reached by 1 components — spectre-s33-lane108-k4-R9.json; 1 mobile, heading 59.64° mod 60 (max dev 0.00°)
+  bucket 1: 2559 states, reached by 1 components — new object (2559 states); 1 mobile, heading 58.98° mod 60 (max dev 0.00°)
+  bucket 2: 2544 states, reached by 1 components — new object (2544 states); 1 mobile, heading 48.53° mod 60 (max dev 0.00°)
+written out/census3/spectre-resettle.tsv
+exit 0

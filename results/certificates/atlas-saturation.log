@@ -1,0 +1,31 @@
+=== hat R=128
+witness check (library driver): 1081/1081 balls reproduce exactly (87.8s)
+patch radius 128: 56344 cells (3.3s)
+patch check: 46303/46303 balls found in atlas, 1081 distinct in patch (atlas 1081), 0 vertex-adjacency mismatches (40.9s)
+validation verdict: PASS
+=== hat R=256
+witness check (library driver): 1081/1081 balls reproduce exactly (89.4s)
+patch radius 256: 225370 cells (14.8s)
+patch check: 204861/204861 balls found in atlas, 1081 distinct in patch (atlas 1081), 0 vertex-adjacency mismatches (176.8s)
+validation verdict: PASS
+=== hat R=512
+witness check (library driver): 1081/1081 balls reproduce exactly (86.6s)
+patch radius 512: 901490 cells (60.4s)
+patch check: 859600/859600 balls found in atlas, 1081 distinct in patch (atlas 1081), 0 vertex-adjacency mismatches (752.3s)
+validation verdict: PASS
+=== spectre R=128
+witness check (library driver): 991/991 balls reproduce exactly (107.7s)
+patch radius 128: 55335 cells (3.6s)
+patch check: 45463/45463 balls found in atlas, 991 distinct in patch (atlas 991), 0 vertex-adjacency mismatches (38.6s)
+validation verdict: PASS
+=== spectre R=256
+witness check (library driver): 991/991 balls reproduce exactly (108.0s)
+patch radius 256: 220650 cells (15.5s)
+patch check: 200461/200461 balls found in atlas, 991 distinct in patch (atlas 991), 0 vertex-adjacency mismatches (172.9s)
+validation verdict: PASS
+=== spectre R=512
+witness check (library driver): 991/991 balls reproduce exactly (107.7s)
+patch radius 512: 881279 cells (65.6s)
+patch check: 840489/840489 balls found in atlas, 991 distinct in patch (atlas 991), 0 vertex-adjacency mismatches (713.0s)
+validation verdict: PASS
+exit 0

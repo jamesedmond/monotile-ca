@@ -7,7 +7,7 @@
 use serde::{Deserialize, Serialize};
 
 use ca_engine::classify::Outcome;
-use ca_engine::{AnyRule, Rule, StratifiedRule, TableRule};
+use ca_engine::{AnyRule, Rule, StratifiedRule, StratifiedTableRule, TableRule};
 
 use crate::{Neighbourhood, Patch, Stratification, TilingFamily};
 
@@ -37,6 +37,12 @@ pub struct ResultRecord {
     /// byte-identical on disk.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub table_rule: Option<TableRule>,
+    /// Per-stratum priority tables for a class-stratified table rule
+    /// (one per stratum of [`Self::stratification`]); empty for every
+    /// other record, which stays byte-identical on disk. When present it
+    /// is the run's actual rule and `table_rule` must be absent.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub table_rules: Vec<TableRule>,
     /// Adjacency relation the run used (defaults to edge — every pre-§9
     /// record). The patch must be regenerated with the same value.
     #[serde(default, skip_serializing_if = "Neighbourhood::is_edge")]
@@ -104,6 +110,10 @@ impl ResultRecord {
 
     /// The run's actual rule, whichever family it belongs to.
     pub fn ruleset(&self) -> AnyRule {
+        if !self.table_rules.is_empty() {
+            assert!(self.table_rule.is_none(), "table_rule and table_rules both set");
+            return AnyRule::StratifiedTable(StratifiedTableRule::new(self.table_rules.clone()));
+        }
         match &self.table_rule {
             Some(t) => AnyRule::Table(t.clone()),
             None => AnyRule::Generations(self.stratified_rule()),
@@ -164,6 +174,7 @@ mod tests {
             stratification: None,
             tables: Vec::new(),
             table_rule: None,
+            table_rules: Vec::new(),
             neighbourhood: Neighbourhood::Edge,
             initial_cells,
             initial_states: Vec::new(),
@@ -240,6 +251,7 @@ mod tests {
             stratification: Some(Stratification::PerClass),
             tables,
             table_rule: None,
+            table_rules: Vec::new(),
             neighbourhood: Neighbourhood::Edge,
             initial_cells: vec![0, 1, 2, 3],
             initial_states: Vec::new(),
@@ -275,6 +287,7 @@ mod tests {
             stratification: None,
             tables: Vec::new(),
             table_rule: None,
+            table_rules: Vec::new(),
             neighbourhood: Neighbourhood::Edge,
             initial_cells: vec![10],
             initial_states: Vec::new(),
@@ -344,6 +357,7 @@ mod tests {
             stratification: None,
             tables: Vec::new(),
             table_rule: Some(rule),
+            table_rules: Vec::new(),
             neighbourhood: Neighbourhood::Vertex,
             initial_cells: vec![head, tail],
             initial_states: vec![1, 2],

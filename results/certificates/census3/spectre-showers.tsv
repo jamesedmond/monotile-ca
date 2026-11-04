@@ -1,0 +1,71 @@
+seeding	kind	class	anchor	partner	states	outcome
+0	rec0	-	30543	-	pair shower screen; census3: grower (56 cells, 10 comps)	shower(56 cells): frags 10 on-vertex 10 off-vertex 0 [] other 0
+1	rec1	-	93019	-	pair shower screen; census3: grower (45 cells, 8 comps)	shower(45 cells): frags 8 on-vertex 7 off-vertex 1 [0@220.7°/126u] other 0 c0:NOT-CERTIFIED(6327 states, 0 errors, no deaths)@227.2°/472u
+2	rec2	-	93104	-	pair shower screen; census3: grower (56 cells, 10 comps)	shower(56 cells): frags 10 on-vertex 10 off-vertex 0 [] other 0
+3	rec3	-	61784	-	pair shower screen; census3: grower (98 cells, 15 comps)	shower(98 cells): frags 15 on-vertex 15 off-vertex 0 [] other 0
+4	rec4	-	63234	-	soup7 shower screen; census3: grower (85 cells, 14 comps)	shower(85 cells): frags 14 on-vertex 14 off-vertex 0 [] other 0
+5	rec5	-	105786	-	soup10 shower screen; census3: grower (62 cells, 11 comps)	shower(62 cells): frags 11 on-vertex 11 off-vertex 0 [] other 0
+6	rec6	-	112830	-	soup16 shower screen; census3: grower (42 cells, 8 comps)	shower(42 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+7	rec7	-	83153	-	soup23 shower screen; census3: grower (43 cells, 8 comps)	shower(43 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+8	rec8	-	83764	-	soup26 shower screen; census3: grower (72 cells, 10 comps)	shower(72 cells): frags 10 on-vertex 10 off-vertex 0 [] other 0
+9	rec9	-	61125	-	soup30 shower screen; census3: grower (38 cells, 7 comps)	shower(38 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+10	rec10	-	117205	-	soup34 shower screen; census3: grower (55 cells, 11 comps)	shower(55 cells): frags 11 on-vertex 9 off-vertex 2 [2@112.4°/123u,3@113.3°/128u] other 0 c2:bucket0@108.6°/356u c3:bucket0@108.6°/356u
+11	rec11	-	55769	-	soup57 shower screen; census3: grower (37 cells, 7 comps)	shower(37 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+12	rec12	-	51855	-	soup72 shower screen; census3: grower (43 cells, 8 comps)	shower(43 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+13	rec13	-	112470	-	soup76 shower screen; census3: grower (50 cells, 10 comps)	shower(50 cells): frags 10 on-vertex 6 off-vertex 0 [] other 4
+14	rec14	-	78150	-	soup89 shower screen; census3: grower (132 cells, 19 comps)	shower(132 cells): frags 19 on-vertex 15 off-vertex 1 [7@325.3°/90u] other 3 c7:NOT-CERTIFIED(4104 states, 15 errors, no deaths)@346.6°/432u
+15	rec15	-	35787	-	soup93 shower screen; census3: grower (227 cells, 34 comps)	shower(227 cells): frags 34 on-vertex 31 off-vertex 0 [] other 3
+16	rec16	-	115869	-	soup104 shower screen; census3: grower (40 cells, 7 comps)	shower(40 cells): frags 7 on-vertex 3 off-vertex 0 [] other 4
+17	rec17	-	117150	-	soup151 shower screen; census3: grower (219 cells, 37 comps)	shower(219 cells): frags 37 on-vertex 27 off-vertex 2 [12@218.1°/73u,13@226.0°/62u] other 8 c12:short(0) c13:short(0)
+18	rec18	-	102593	-	soup152 shower screen; census3: grower (49 cells, 9 comps)	shower(49 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+19	rec19	-	124933	-	soup167 shower screen; census3: grower (168 cells, 28 comps)	shower(168 cells): frags 28 on-vertex 25 off-vertex 2 [0@172.0°/99u,5@152.3°/101u] other 1 c0:NOT-CERTIFIED(1541 states, 12 errors, no deaths)@176.8°/457u c5:NOT-CERTIFIED(4050 states, 2 errors, no deaths)@171.9°/442u
+20	rec20	-	102992	-	soup176 shower screen; census3: grower (39 cells, 7 comps)	shower(39 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+21	rec21	-	107167	-	soup187 shower screen; census3: grower (115 cells, 21 comps)	shower(115 cells): frags 21 on-vertex 21 off-vertex 0 [] other 0
+22	rec22	-	99937	-	soup199 shower screen; census3: grower (42 cells, 7 comps)	shower(42 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+23	rec23	-	103540	-	soup219 shower screen; census3: grower (58 cells, 9 comps)	shower(58 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+24	rec24	-	46874	-	soup221 shower screen; census3: grower (93 cells, 14 comps)	shower(93 cells): frags 14 on-vertex 9 off-vertex 0 [] other 5
+25	rec25	-	122945	-	soup232 shower screen; census3: grower (60 cells, 9 comps)	shower(60 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+26	rec26	-	40306	-	soup257 shower screen; census3: grower (40 cells, 7 comps)	shower(40 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+27	rec27	-	37427	-	soup316 shower screen; census3: grower (72 cells, 14 comps)	shower(72 cells): frags 14 on-vertex 13 off-vertex 1 [7@245.5°/119u] other 0 c7:bucket1@232.8°/461u
+28	rec28	-	95875	-	soup317 shower screen; census3: grower (38 cells, 7 comps)	shower(38 cells): frags 7 on-vertex 4 off-vertex 0 [] other 3
+29	rec29	-	74403	-	soup324 shower screen; census3: grower (51 cells, 9 comps)	shower(51 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+30	rec30	-	121848	-	soup327 shower screen; census3: grower (37 cells, 7 comps)	shower(37 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+31	rec31	-	42516	-	soup348 shower screen; census3: grower (66 cells, 11 comps)	shower(66 cells): frags 11 on-vertex 11 off-vertex 0 [] other 0
+32	rec32	-	102411	-	soup425 shower screen; census3: grower (44 cells, 8 comps)	shower(44 cells): frags 8 on-vertex 7 off-vertex 1 [6@179.7°/104u] other 0 c6:NOT-CERTIFIED(1466 states, 6 errors, no deaths)@280.0°/305u
+33	rec33	-	72702	-	soup435 shower screen; census3: grower (60 cells, 11 comps)	shower(60 cells): frags 11 on-vertex 11 off-vertex 0 [] other 0
+34	rec34	-	87303	-	soup505 shower screen; census3: grower (54 cells, 9 comps)	shower(54 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+35	rec35	-	116359	-	soup519 shower screen; census3: grower (209 cells, 31 comps)	shower(209 cells): frags 31 on-vertex 12 off-vertex 0 [] other 19
+36	rec36	-	70606	-	soup531 shower screen; census3: grower (40 cells, 9 comps)	shower(40 cells): frags 9 on-vertex 8 off-vertex 0 [] other 1
+37	rec37	-	67526	-	soup533 shower screen; census3: grower (69 cells, 12 comps)	shower(69 cells): frags 12 on-vertex 12 off-vertex 0 [] other 0
+38	rec38	-	76194	-	soup534 shower screen; census3: grower (44 cells, 8 comps)	shower(44 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+39	rec39	-	106619	-	soup544 shower screen; census3: grower (220 cells, 37 comps)	shower(220 cells): frags 37 on-vertex 18 off-vertex 0 [] other 19
+40	rec40	-	78983	-	soup545 shower screen; census3: grower (72 cells, 15 comps)	shower(72 cells): frags 15 on-vertex 15 off-vertex 0 [] other 0
+41	rec41	-	83296	-	soup579 shower screen; census3: grower (55 cells, 11 comps)	shower(55 cells): frags 11 on-vertex 10 off-vertex 1 [9@120.5°/54u] other 0 c9:NOT-CERTIFIED(1466 states, 6 errors, no deaths)@170.4°/376u
+42	rec42	-	45532	-	soup580 shower screen; census3: grower (68 cells, 12 comps)	shower(68 cells): frags 12 on-vertex 12 off-vertex 0 [] other 0
+43	rec43	-	108624	-	soup598 shower screen; census3: grower (53 cells, 11 comps)	shower(53 cells): frags 11 on-vertex 11 off-vertex 0 [] other 0
+44	rec44	-	101015	-	soup612 shower screen; census3: grower (92 cells, 16 comps)	shower(92 cells): frags 16 on-vertex 14 off-vertex 0 [] other 2
+45	rec45	-	86457	-	soup624 shower screen; census3: grower (51 cells, 9 comps)	shower(51 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+46	rec46	-	76302	-	soup650 shower screen; census3: grower (46 cells, 8 comps)	shower(46 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+47	rec47	-	120150	-	soup674 shower screen; census3: grower (52 cells, 9 comps)	shower(52 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+48	rec48	-	83619	-	soup679 shower screen; census3: grower (56 cells, 10 comps)	shower(56 cells): frags 10 on-vertex 10 off-vertex 0 [] other 0
+49	rec49	-	87032	-	soup717 shower screen; census3: grower (80 cells, 12 comps)	shower(80 cells): frags 12 on-vertex 12 off-vertex 0 [] other 0
+50	rec50	-	51443	-	soup722 shower screen; census3: grower (76 cells, 13 comps)	shower(76 cells): frags 13 on-vertex 11 off-vertex 0 [] other 2
+51	rec51	-	94766	-	soup723 shower screen; census3: grower (193 cells, 33 comps)	shower(193 cells): frags 33 on-vertex 17 off-vertex 1 [18@224.6°/50u] other 15 c18:short(0)
+52	rec52	-	119721	-	soup724 shower screen; census3: grower (65 cells, 11 comps)	shower(65 cells): frags 11 on-vertex 10 off-vertex 0 [] other 1
+53	rec53	-	118011	-	soup743 shower screen; census3: grower (91 cells, 14 comps)	shower(91 cells): frags 14 on-vertex 14 off-vertex 0 [] other 0
+54	rec54	-	69942	-	soup750 shower screen; census3: grower (101 cells, 19 comps)	shower(101 cells): frags 19 on-vertex 18 off-vertex 1 [5@282.5°/117u] other 0 c5:NOT-CERTIFIED(2561 states, 2 errors, no deaths)@286.7°/467u
+55	rec55	-	73282	-	soup752 shower screen; census3: grower (46 cells, 7 comps)	shower(46 cells): frags 7 on-vertex 4 off-vertex 0 [] other 3
+56	rec56	-	70476	-	soup754 shower screen; census3: grower (38 cells, 7 comps)	shower(38 cells): frags 7 on-vertex 7 off-vertex 0 [] other 0
+57	rec57	-	88617	-	soup768 shower screen; census3: grower (135 cells, 21 comps)	shower(135 cells): frags 21 on-vertex 16 off-vertex 2 [8@310.2°/107u,17@284.3°/123u] other 3 c8:NOT-CERTIFIED(1465 states, 5 errors, no deaths)@299.2°/445u c17:too-big(rho 5)@288.2°/472u
+58	rec58	-	39091	-	soup772 shower screen; census3: grower (52 cells, 10 comps)	shower(52 cells): frags 10 on-vertex 9 off-vertex 1 [0@59.2°/124u] other 0 c0:bucket2@58.0°/462u
+59	rec59	-	120549	-	soup796 shower screen; census3: grower (56 cells, 8 comps)	shower(56 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+60	rec60	-	69433	-	soup797 shower screen; census3: grower (60 cells, 10 comps)	shower(60 cells): frags 10 on-vertex 10 off-vertex 0 [] other 0
+61	rec61	-	83679	-	soup836 shower screen; census3: grower (81 cells, 11 comps)	shower(81 cells): frags 11 on-vertex 10 off-vertex 0 [] other 1
+62	rec62	-	121429	-	soup902 shower screen; census3: grower (76 cells, 14 comps)	shower(76 cells): frags 14 on-vertex 11 off-vertex 0 [] other 3
+63	rec63	-	98994	-	soup912 shower screen; census3: grower (392 cells, 64 comps)	shower(392 cells): frags 64 on-vertex 33 off-vertex 1 [1@355.1°/124u] other 30 c1:bucket2@356.9°/462u
+64	rec64	-	90530	-	soup914 shower screen; census3: grower (51 cells, 9 comps)	shower(51 cells): frags 9 on-vertex 9 off-vertex 0 [] other 0
+65	rec65	-	57470	-	soup919 shower screen; census3: grower (75 cells, 14 comps)	shower(75 cells): frags 14 on-vertex 14 off-vertex 0 [] other 0
+66	rec66	-	54643	-	soup928 shower screen; census3: grower (108 cells, 19 comps)	shower(108 cells): frags 19 on-vertex 19 off-vertex 0 [] other 0
+67	rec67	-	54225	-	soup965 shower screen; census3: grower (47 cells, 8 comps)	shower(47 cells): frags 8 on-vertex 8 off-vertex 0 [] other 0
+68	rec68	-	38790	-	soup976 shower screen; census3: grower (63 cells, 12 comps)	shower(63 cells): frags 12 on-vertex 12 off-vertex 0 [] other 0
+69	rec69	-	40940	-	soup998 shower screen; census3: grower (40 cells, 7 comps)	shower(40 cells): frags 7 on-vertex 4 off-vertex 1 [3@105.9°/136u] other 2 c3:too-big(rho 5)@107.5°/477u

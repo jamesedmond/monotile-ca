@@ -68,6 +68,7 @@ fn main() {
                 stratification: None,
                 tables: Vec::new(),
                 table_rule: src.table_rule.clone(),
+                table_rules: Vec::new(),
                 neighbourhood: src.neighbourhood,
                 initial_cells: vec![a, n],
                 initial_states: vec![sa, sb],

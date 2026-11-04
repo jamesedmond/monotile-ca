@@ -22,6 +22,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "certify"
+version = "0.1.0"
+dependencies = [
+ "ca-engine",
+ "serde",
+ "serde_json",
+ "substitution-tiling-transducers",
+ "tiling-core",
+]
+
+[[package]]
 name = "cfg-if"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"

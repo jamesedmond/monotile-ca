@@ -615,6 +615,38 @@ function replayRadiusFor(line: string): number {
   return Math.max(currentRadius(), recorded);
 }
 
+/** A situation-closure certificate (results/certificates/*.json) is a
+ * proof object, not a replay record; if the user opens one, say so and
+ * name the record it certifies instead of failing deep inside serde. */
+function certificateSummary(line: string): string | null {
+  // Every replay record names its seed cells; a certificate never does.
+  if (!line.startsWith('{"') || line.includes('"initial_cells"')) return null;
+  try {
+    const c = JSON.parse(line) as {
+      family?: string;
+      k?: number;
+      r?: number;
+      states?: unknown[];
+      transitions?: unknown[];
+      rule_note?: string;
+      entry?: { record?: string; index?: number };
+    };
+    if (!Array.isArray(c.states) || !Array.isArray(c.transitions) || c.k === undefined) return null;
+    const from =
+      c.entry?.record !== undefined
+        ? `${c.entry.record} (record ${c.entry.index ?? 0})`
+        : (/\[([^\]]+\.jsonl)\]\s*$/.exec(c.rule_note ?? '')?.[1] ?? 'the record named in its rule note');
+    return (
+      `This is a situation-closure certificate (${c.family ?? '?'}, k=${c.k}, R=${c.r ?? '?'}, ` +
+      `${c.states.length} states, ${c.transitions.length} transitions), not a replay record. ` +
+      `To fly the glider it certifies, load ${from}; the census objects are in ` +
+      `results/certificates/census-seeds.jsonl.`
+    );
+  } catch {
+    return null;
+  }
+}
+
 loadBtn.addEventListener('click', () => loadInput.click());
 loadInput.addEventListener('change', async () => {
   const file = loadInput.files?.[0];
@@ -623,6 +655,14 @@ loadInput.addEventListener('change', async () => {
   const text = await file.text();
   records = text.split('\n').map((l) => l.trim()).filter(Boolean);
   if (records.length === 0) return;
+  const cert = certificateSummary(records[0]);
+  if (cert) {
+    records = [];
+    recordSel.innerHTML = '';
+    recordSel.hidden = true;
+    showOverlay(cert, true);
+    return;
+  }
   recordSel.innerHTML = '';
   records.forEach((line, i) => recordSel.append(new Option(recordLabel(line, i), String(i))));
   recordSel.hidden = records.length <= 1;

@@ -1,0 +1,42 @@
+# hat B is hat A relabelled (2026-11-03): certify relabel and track_compare outputs
+== certify relabel hat-A -> hat-B, map 1:3,2:1,3:0 ==
+381 situations of A under the map [0, 3, 1, 0]: 381 land on situations of B (381 distinct of B's 381), 0 vanish (no cell left), 0 miss: []
+transitions of A under the map: 1089 are transitions of B, 0 are not (B has 1340)
+== controls: identity; renaming without deletion ==
+381 situations of A under the map [0, 1, 2, 3]: 0 land on situations of B (0 distinct of B's 381), 0 vanish (no cell left), 381 miss
+transitions of A under the map: 0 are transitions of B, 1089 are not (B has 1340)
+381 situations of A under the map [0, 3, 1, 3]: 0 land on situations of B (0 distinct of B's 381), 0 vanish (no cell left), 381 miss
+transitions of A under the map: 0 are transitions of B, 1089 are not (B has 1340)
+== track_compare hat A vs hat B (radius 256, gens 440, lane 225, from 60, k 4) ==
+A: table-evolve champion travel 47 escape (seed 'pair 1,2') (441 gens followed); B: table-evolve champion travel 47 escape (seed 'pair 3,1') (441 gens)
+union tracks from generation 60: A 940 tiles, B 940 tiles, shared 940 (Jaccard 1.000)
+  B's tiles from A's track: distance 0 940 | 1 0 | 2 0 | 3 0 | 4 0 | >4 0
+  A's tiles from B's track: distance 0 940 | 1 0 | 2 0 | 3 0 | 4 0 | >4 0
+centroid lines: A heading 45.521 deg, B heading 45.521 deg; B's centroids sit +0.01 u (rms 2.84) across A's line; A's own scatter rms 2.67 u
+  B's support within A's support + collar at A's nearest phase: inside at 381 of 381 generations (worst case 0 cells outside the 4-collar)
+  A's support within B's support + collar at B's nearest phase: inside at 381 of 381 generations (worst case 0 cells outside the 4-collar)
+at equal generations (381): identical supports 0; B's support inside A's 381; A's inside B's 0; first generations (|A|, |B|, shared) [(6, 5, 5), (7, 6, 6), (7, 6, 6), (6, 5, 5), (6, 5, 5), (7, 6, 6)]
+  state pairs (A state, B state) on shared cells, summed over generations: [((1, 3), 409), ((2, 1), 1802)]
+  states of cells only in A: [(3, 381)]; only in B: []
+== track_compare hat A vs s33-on-hat soup 14 (radius 288, gens 500, from 200) ==
+A: table-evolve champion travel 47 escape (seed 'pair 1,2') (501 gens followed); B: table rule from out/wake/s33.json, soup 14 of rng 24301 at 50% within ring 2 (501 gens)
+union tracks from generation 200: A 744 tiles, B 733 tiles, shared 404 (Jaccard 0.377)
+  B's tiles from A's track: distance 0 404 | 1 175 | 2 154 | 3 0 | 4 0 | >4 0
+  A's tiles from B's track: distance 0 404 | 1 175 | 2 165 | 3 0 | 4 0 | >4 0
+centroid lines: A heading 45.517 deg, B heading 45.514 deg; B's centroids sit +7.39 u (rms 2.76) across A's line; A's own scatter rms 2.67 u
+  B's support within A's support + collar at A's nearest phase: inside at 301 of 301 generations (worst case 0 cells outside the 4-collar)
+  A's support within B's support + collar at B's nearest phase: inside at 301 of 301 generations (worst case 0 cells outside the 4-collar)
+at equal generations (301): identical supports 0; B's support inside A's 0; A's inside B's 0; first generations (|A|, |B|, shared) [(7, 5, 0), (7, 6, 1), (6, 6, 0), (7, 6, 1), (7, 6, 0), (7, 6, 2)]
+  state pairs (A state, B state) on shared cells, summed over generations: [((1, 3), 150), ((2, 3), 22)]
+  states of cells only in A: [(1, 173), (2, 1402), (3, 301)]; only in B: [(1, 323), (3, 1214)]
+== track_compare hat A vs Trevorrow's worm soup 2 ==
+A: table-evolve champion travel 47 escape (seed 'pair 1,2') (501 gens followed); B: HatLife Worms (Trevorrow, May 2023), soup 2 of rng 24301 at 35% within ring 16 (501 gens)
+union tracks from generation 200: A 744 tiles, B 456 tiles, shared 0 (Jaccard 0.000)
+  B's tiles from A's track: distance 0 0 | 1 0 | 2 12 | 3 172 | 4 173 | >4 99
+  A's tiles from B's track: distance 0 0 | 1 0 | 2 6 | 3 205 | 4 158 | >4 375
+centroid lines: A heading 45.517 deg, B heading 45.521 deg; B's centroids sit -20.39 u (rms 0.14) across A's line; A's own scatter rms 2.67 u
+  B's support within A's support + collar at A's nearest phase: inside at 102 of 301 generations (worst case 6 cells outside the 4-collar)
+  A's support within B's support + collar at B's nearest phase: inside at 5 of 301 generations (worst case 8 cells outside the 4-collar)
+at equal generations (301): identical supports 0; B's support inside A's 0; A's inside B's 0; first generations (|A|, |B|, shared) [(7, 6, 0), (7, 8, 0), (6, 6, 0), (7, 8, 0), (7, 6, 0), (7, 8, 0)]
+  state pairs (A state, B state) on shared cells, summed over generations: []
+  states of cells only in A: [(1, 323), (2, 1424), (3, 301)]; only in B: [(1, 1204), (2, 301), (3, 601)]

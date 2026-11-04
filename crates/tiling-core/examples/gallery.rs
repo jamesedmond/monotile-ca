@@ -71,6 +71,7 @@ fn classify_and_record(e: &Entry) -> ResultRecord {
         stratification: if tables.is_empty() { None } else { Some(scheme) },
         tables,
         table_rule: None,
+        table_rules: Vec::new(),
         neighbourhood: tiling_core::Neighbourhood::Edge,
         initial_cells: seed_cells,
         initial_states: Vec::new(),

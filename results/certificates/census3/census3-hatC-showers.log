@@ -1,0 +1,37 @@
+census: Hat rule table-evolve champion travel 47 escape (seed 'pair 2,1') — seeds (2,1) both orders; patch radius 384 (507115 cells, 36s); settle 150, track ≤ 300, k=4, R=11
+known certificates at k=4: 7
+known certificates at k=4: 68
+562 seedings
+  census: 70/562 seedings, 4 buckets, 327s
+  census: 100/562 seedings, 4 buckets, 474s
+  census: 130/562 seedings, 4 buckets, 604s
+  census: 150/562 seedings, 5 buckets, 704s
+  census: 180/562 seedings, 6 buckets, 862s
+  census: 220/562 seedings, 7 buckets, 1074s
+  census: 230/562 seedings, 7 buckets, 1127s
+  census: 250/562 seedings, 7 buckets, 1218s
+  census: 280/562 seedings, 7 buckets, 1350s
+  census: 340/562 seedings, 9 buckets, 1628s
+  census: 430/562 seedings, 11 buckets, 2012s
+  census: 440/562 seedings, 12 buckets, 2054s
+  census: 450/562 seedings, 12 buckets, 2101s
+  census: 470/562 seedings, 12 buckets, 2190s
+  census: 500/562 seedings, 12 buckets, 2312s
+  census: 550/562 seedings, 12 buckets, 2519s
+
+outcomes: {"shower fragments on-vertex": 3138, "grower/shower": 562, "shower fragments off-vertex": 140, "launched": 130}
+buckets (closed sets at k=4):
+  bucket 0: 282 states, reached by 6 components — new object (282 states); 6 mobile, heading 43.56° mod 60 (max dev 1.00°)
+  bucket 1: 286 states, reached by 3 components — new object (286 states); 3 mobile, heading 43.25° mod 60 (max dev 1.20°)
+  bucket 2: 284 states, reached by 1 components — new object (284 states); 1 mobile, heading 42.40° mod 60 (max dev 0.00°)
+  bucket 3: 475 states, reached by 12 components — hatC.tsv.bucket22.json; 12 mobile, heading 44.06° mod 60 (max dev 0.82°)
+  bucket 4: 381 states, reached by 11 components — hat-C-s23-lane345a-k4-R11.json; 11 mobile, heading 45.69° mod 60 (max dev 0.60°)
+  bucket 5: 284 states, reached by 1 components — new object (284 states); 1 mobile, heading 43.12° mod 60 (max dev 0.00°)
+  bucket 6: 288 states, reached by 3 components — new object (288 states); 3 mobile, heading 43.09° mod 60 (max dev 0.45°)
+  bucket 7: 861 states, reached by 1 components — new object (861 states); 1 mobile, heading 47.96° mod 60 (max dev 0.00°)
+  bucket 8: 290 states, reached by 2 components — hatC.tsv.bucket6.json; 2 mobile, heading 43.65° mod 60 (max dev 0.00°)
+  bucket 9: 383 states, reached by 1 components — new object (383 states); 1 mobile, heading 45.24° mod 60 (max dev 0.00°)
+  bucket 10: 290 states, reached by 1 components — new object (290 states); 1 mobile, heading 41.94° mod 60 (max dev 0.00°)
+  bucket 11: 428 states, reached by 1 components — new object (428 states); 1 mobile, heading 43.42° mod 60 (max dev 0.00°)
+written out/census3/hatC-showers.tsv
+exit 0

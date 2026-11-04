@@ -8,6 +8,7 @@
 //! graph for `ca-engine` plus per-cell metadata. No geometry is involved
 //! anywhere in this process.
 
+pub mod audit;
 pub mod results;
 pub mod slide;
 
@@ -162,42 +163,52 @@ pub enum Stratification {
     PerClass,
 }
 
+impl Stratification {
+    /// The stratum a tile class belongs to under this scheme (the per-class
+    /// rule behind [`Patch::strata`], exposed so certificate code can
+    /// stratify a ball's tiles by class without a patch).
+    pub fn stratum_of(self, index: usize, class: &TileClass) -> u8 {
+        match self {
+            Stratification::Uniform => 0,
+            // antihat (hat family), Gamma-pair (spectre Mystic), dart
+            // (P2) or thin rhomb (P3) → stratum 1; everything else → 0.
+            Stratification::Chirality => u8::from(
+                class.base == "antihat"
+                    || class.parent == "Gamma"
+                    || class.base == "dart"
+                    || class.base == "thin",
+            ),
+            Stratification::PerClass => {
+                assert!(index < 256, "PerClass needs class count <= 256 to fit a u8 stratum");
+                index as u8
+            }
+        }
+    }
+
+    /// Number of strata the scheme has over `classes`.
+    pub fn count(self, classes: &[TileClass]) -> usize {
+        match self {
+            Stratification::Uniform => 1,
+            Stratification::Chirality => 2,
+            Stratification::PerClass => classes.len(),
+        }
+    }
+}
+
 impl Patch {
     /// Per-cell stratum index under `scheme` (length = cell count) and
     /// the number of strata. The byte array is ready for
     /// [`Engine::with_strata`](ca_engine::Engine::with_strata); the count
     /// sizes a [`StratifiedRule`](ca_engine::StratifiedRule)'s tables.
     pub fn strata(&self, scheme: Stratification) -> (Vec<u8>, usize) {
-        match scheme {
-            Stratification::Uniform => (vec![0u8; self.cells.len()], 1),
-            Stratification::Chirality => {
-                let strata = self
-                    .cells
-                    .iter()
-                    .map(|c| {
-                        let class = &self.classes[c.class as usize];
-                        // antihat (hat family), Gamma-pair (spectre
-                        // Mystic), dart (P2) or thin rhomb (P3) →
-                        // stratum 1; everything else → 0.
-                        u8::from(
-                            class.base == "antihat"
-                                || class.parent == "Gamma"
-                                || class.base == "dart"
-                                || class.base == "thin",
-                        )
-                    })
-                    .collect();
-                (strata, 2)
-            }
-            Stratification::PerClass => {
-                assert!(
-                    self.classes.len() <= 256,
-                    "PerClass needs class count <= 256 to fit a u8 stratum"
-                );
-                let strata = self.cells.iter().map(|c| c.class as u8).collect();
-                (strata, self.classes.len())
-            }
-        }
+        let of_class: Vec<u8> = self
+            .classes
+            .iter()
+            .enumerate()
+            .map(|(i, c)| scheme.stratum_of(i, c))
+            .collect();
+        let strata = self.cells.iter().map(|c| of_class[c.class as usize]).collect();
+        (strata, scheme.count(&self.classes))
     }
 }
 
@@ -261,6 +272,17 @@ impl Tiling {
 
     pub fn classes(&self) -> &[TileClass] {
         &self.classes
+    }
+
+    /// Whether a closed walk of `(parent type, slot)` steps in the
+    /// self-parent layer is eventually interior (see
+    /// [`cycle_is_interior`]); a `false` means the repeating cycle leaves
+    /// an infinite-order supertile boundary in the tiling (a cone seam or
+    /// a straight singular line), which `generate` will flag.
+    pub fn cycle_is_interior(&self, walk: &[Step]) -> bool {
+        let cs = &self.sys.cs_fine;
+        let layer = cs.lookup_layer(cycle_layer(cs));
+        cycle_is_interior(cs, layer, walk)
     }
 
     /// Direct access to the underlying library system, for callers that

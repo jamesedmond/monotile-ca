@@ -1,0 +1,130 @@
+census: Hat rule table-evolve champion travel 47 escape (seed 'pair 1,2') — seeds (1,2) both orders; patch radius 384 (507115 cells, 36s); settle 150, track ≤ 300, k=4, R=11
+known certificates at k=4: 7
+3538 seedings
+  census: 20/3538 seedings, 3 buckets, 76s
+  census: 40/3538 seedings, 3 buckets, 152s
+  census: 110/3538 seedings, 3 buckets, 390s
+  census: 130/3538 seedings, 3 buckets, 463s
+  census: 200/3538 seedings, 3 buckets, 696s
+  census: 220/3538 seedings, 3 buckets, 771s
+  census: 290/3538 seedings, 4 buckets, 1007s
+  census: 310/3538 seedings, 4 buckets, 1081s
+  census: 380/3538 seedings, 4 buckets, 1319s
+  census: 400/3538 seedings, 4 buckets, 1394s
+  census: 470/3538 seedings, 4 buckets, 1627s
+  census: 490/3538 seedings, 4 buckets, 1700s
+  census: 560/3538 seedings, 4 buckets, 1938s
+  census: 580/3538 seedings, 4 buckets, 2013s
+  census: 650/3538 seedings, 4 buckets, 2247s
+  census: 670/3538 seedings, 4 buckets, 2322s
+  census: 740/3538 seedings, 4 buckets, 2560s
+  census: 760/3538 seedings, 4 buckets, 2635s
+  census: 830/3538 seedings, 5 buckets, 2865s
+  census: 850/3538 seedings, 5 buckets, 2940s
+  census: 920/3538 seedings, 5 buckets, 3173s
+  census: 940/3538 seedings, 5 buckets, 3241s
+  census: 1010/3538 seedings, 7 buckets, 3472s
+  census: 1030/3538 seedings, 7 buckets, 3547s
+  census: 1100/3538 seedings, 7 buckets, 3773s
+  census: 1120/3538 seedings, 7 buckets, 3848s
+  census: 1190/3538 seedings, 7 buckets, 4086s
+  census: 1210/3538 seedings, 7 buckets, 4160s
+  census: 1280/3538 seedings, 7 buckets, 4394s
+  census: 1300/3538 seedings, 7 buckets, 4464s
+  census: 1370/3538 seedings, 7 buckets, 4696s
+  census: 1390/3538 seedings, 7 buckets, 4769s
+  census: 1460/3538 seedings, 7 buckets, 4978s
+  census: 1480/3538 seedings, 7 buckets, 5047s
+  census: 1550/3538 seedings, 7 buckets, 5264s
+  census: 1570/3538 seedings, 7 buckets, 5339s
+  census: 1640/3538 seedings, 7 buckets, 5565s
+  census: 1660/3538 seedings, 7 buckets, 5640s
+  census: 1730/3538 seedings, 7 buckets, 5868s
+  census: 1750/3538 seedings, 7 buckets, 5943s
+  census: 1820/3538 seedings, 7 buckets, 6172s
+  census: 1840/3538 seedings, 7 buckets, 6237s
+  census: 1910/3538 seedings, 7 buckets, 6463s
+  census: 1930/3538 seedings, 7 buckets, 6536s
+  census: 2000/3538 seedings, 8 buckets, 6750s
+  census: 2020/3538 seedings, 8 buckets, 6815s
+  census: 2090/3538 seedings, 8 buckets, 7037s
+  census: 2110/3538 seedings, 8 buckets, 7111s
+  census: 2180/3538 seedings, 8 buckets, 7349s
+  census: 2200/3538 seedings, 8 buckets, 7422s
+  census: 2270/3538 seedings, 8 buckets, 7659s
+  census: 2290/3538 seedings, 9 buckets, 7736s
+  census: 2360/3538 seedings, 9 buckets, 7971s
+  census: 2380/3538 seedings, 9 buckets, 8045s
+  census: 2450/3538 seedings, 9 buckets, 8282s
+  census: 2470/3538 seedings, 9 buckets, 8356s
+  census: 2560/3538 seedings, 9 buckets, 8663s
+  census: 2600/3538 seedings, 9 buckets, 8854s
+  census: 2610/3538 seedings, 9 buckets, 8934s
+  census: 2630/3538 seedings, 9 buckets, 9020s
+  census: 2640/3538 seedings, 9 buckets, 9089s
+  census: 2660/3538 seedings, 9 buckets, 9191s
+  census: 2700/3538 seedings, 9 buckets, 9365s
+  census: 2710/3538 seedings, 10 buckets, 9455s
+  census: 2720/3538 seedings, 10 buckets, 9506s
+  census: 2740/3538 seedings, 10 buckets, 9584s
+  census: 2760/3538 seedings, 10 buckets, 9663s
+  census: 2770/3538 seedings, 10 buckets, 9718s
+  census: 2790/3538 seedings, 10 buckets, 9831s
+  census: 2800/3538 seedings, 10 buckets, 9881s
+  census: 2820/3538 seedings, 10 buckets, 9950s
+  census: 2830/3538 seedings, 10 buckets, 9978s
+  census: 2840/3538 seedings, 10 buckets, 10034s
+  census: 2850/3538 seedings, 10 buckets, 10076s
+  census: 2870/3538 seedings, 10 buckets, 10175s
+  census: 2880/3538 seedings, 10 buckets, 10236s
+  census: 2900/3538 seedings, 10 buckets, 10315s
+  census: 2920/3538 seedings, 10 buckets, 10426s
+  census: 2930/3538 seedings, 10 buckets, 10497s
+  census: 2940/3538 seedings, 10 buckets, 10548s
+  census: 2950/3538 seedings, 10 buckets, 10594s
+  census: 2970/3538 seedings, 10 buckets, 10746s
+  census: 3000/3538 seedings, 10 buckets, 10868s
+  census: 3020/3538 seedings, 10 buckets, 10967s
+  census: 3040/3538 seedings, 10 buckets, 11045s
+  census: 3060/3538 seedings, 10 buckets, 11165s
+  census: 3080/3538 seedings, 10 buckets, 11269s
+  census: 3090/3538 seedings, 10 buckets, 11315s
+  census: 3110/3538 seedings, 10 buckets, 11402s
+  census: 3120/3538 seedings, 10 buckets, 11438s
+  census: 3140/3538 seedings, 10 buckets, 11533s
+  census: 3150/3538 seedings, 10 buckets, 11592s
+  census: 3200/3538 seedings, 10 buckets, 11837s
+  census: 3230/3538 seedings, 10 buckets, 11984s
+  census: 3240/3538 seedings, 10 buckets, 12045s
+  census: 3250/3538 seedings, 10 buckets, 12101s
+  census: 3260/3538 seedings, 10 buckets, 12147s
+  census: 3270/3538 seedings, 10 buckets, 12197s
+  census: 3310/3538 seedings, 11 buckets, 12389s
+  census: 3320/3538 seedings, 12 buckets, 12460s
+  census: 3330/3538 seedings, 12 buckets, 12488s
+  census: 3360/3538 seedings, 12 buckets, 12649s
+  census: 3390/3538 seedings, 12 buckets, 12791s
+  census: 3420/3538 seedings, 12 buckets, 12938s
+  census: 3430/3538 seedings, 12 buckets, 12966s
+  census: 3480/3538 seedings, 12 buckets, 13209s
+  census: 3490/3538 seedings, 13 buckets, 13265s
+  census: 3500/3538 seedings, 13 buckets, 13302s
+  census: 3520/3538 seedings, 13 buckets, 13416s
+
+outcomes: {"died or hit margin": 2506, "launched": 1032}
+buckets (closed sets at k=4):
+  bucket 0: 630 states, reached by 1066 components — hat-A-lane345-capture-k4-R9.json; 1066 mobile, heading 45.50° mod 60 (max dev 0.49°)
+  bucket 1: 381 states, reached by 271 components — hat-A-s21-k4-R9.json; 271 mobile, heading 45.55° mod 60 (max dev 0.59°)
+  bucket 2: 380 states, reached by 486 components — new object (380 states); 486 mobile, heading 45.52° mod 60 (max dev 0.51°)
+  bucket 3: 1649 states, reached by 4 components — new object (1649 states); 4 mobile, heading 44.35° mod 60 (max dev 1.19°)
+  bucket 4: 948 states, reached by 2 components — new object (948 states); 2 mobile, heading 44.81° mod 60 (max dev 0.69°)
+  bucket 5: 1022 states, reached by 4 components — new object (1022 states); 4 mobile, heading 45.43° mod 60 (max dev 0.20°)
+  bucket 6: 1652 states, reached by 4 components — new object (1652 states); 4 mobile, heading 43.97° mod 60 (max dev 0.21°)
+  bucket 7: 444 states, reached by 3 components — new object (444 states); 3 mobile, heading 40.17° mod 60 (max dev 3.88°)
+  bucket 8: 1295 states, reached by 11 components — new object (1295 states); 11 mobile, heading 46.87° mod 60 (max dev 13.70°)
+  bucket 9: 441 states, reached by 1 components — new object (441 states); 1 mobile, heading 45.54° mod 60 (max dev 0.00°)
+  bucket 10: 561 states, reached by 2 components — new object (561 states); 2 mobile, heading 45.60° mod 60 (max dev 0.00°)
+  bucket 11: 1617 states, reached by 2 components — new object (1617 states); 2 mobile, heading 46.42° mod 60 (max dev 0.96°)
+  bucket 12: 728 states, reached by 1 components — new object (728 states); 1 mobile, heading 45.07° mod 60 (max dev 0.00°)
+written out/census3/hatA.tsv
+exit 0

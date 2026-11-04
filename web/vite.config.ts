@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
+import { existsSync } from 'node:fs';
 
 export default defineConfig({
   // The essay's permanent home is offlattice.org/monotile/ — every asset
@@ -12,6 +13,13 @@ export default defineConfig({
         essayLegacyRedirect: resolve(__dirname, 'essay.html'),
         kiosk: resolve(__dirname, 'kiosk.html'),
         essay: resolve(__dirname, 'essay/index.html'),
+        // The glider census (results/) is unpublished certificate-paper
+        // material: it is served by the dev server but only enters a
+        // build when MONOTILE_RESULTS_PAGE is set, so a routine essay
+        // deploy cannot publish it by accident.
+        ...(process.env.MONOTILE_RESULTS_PAGE && existsSync(resolve(__dirname, 'results/index.html'))
+          ? { results: resolve(__dirname, 'results/index.html') }
+          : {}),
         ...Object.fromEntries(
           [
             'ca',

@@ -1,0 +1,9 @@
+census: Spectre rule table-evolve champion travel 46 escape (seed 'pair 1,3') — seeds (1,3) both orders; patch radius 512 (881279 cells, 72s); settle 500, track ≤ 300, k=4, R=12
+known certificates at k=4: 7
+known certificates at k=4: 55
+7 seedings
+
+outcomes: {"grower/shower": 7}
+buckets (closed sets at k=4):
+written out/census3/spectre-late.tsv
+exit 0

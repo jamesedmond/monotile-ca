@@ -105,6 +105,18 @@ fn main() {
             let (x, y) = centroid(c);
             (x - fx).hypot(y - fy) < 16.0
         })
+    } else if let Some(spec) = focus.strip_prefix("cell:") {
+        // Focus "cell:N[:radius]": crop to the disc of the given radius
+        // (default 40 units) around cell N's centroid — for watching what
+        // stays behind at a launch site.
+        let mut it = spec.split(':');
+        let n: usize = it.next().unwrap().parse().expect("focus cell");
+        let r: f64 = it.next().map_or(40.0, |x| x.parse().expect("focus radius"));
+        let (fx, fy) = centroid(n);
+        Box::new(move |c: usize| {
+            let (x, y) = centroid(c);
+            (x - fx).hypot(y - fy) < r
+        })
     } else {
         Box::new(|_| true)
     };

@@ -118,6 +118,14 @@ startup with one survivor. From `--family hat --rng-seed 22`.
 - Measured: max population **14**, flat; boundary at
   89/183/377/763/1533 — identical clock to A. Heading 226.6°. Ignition: 88% generic (165/188); same merge-or-deflect pair behaviour as A.
 
+- **Hat B is hat A in another alphabet** (2026-11-03, FINDINGS 10.11.58):
+  renaming hat A's states 1→3 and 2→1 and deleting its state-3 cell maps
+  all 381 situations of hat A's certificate onto all 381 of hat B's and
+  every hat A transition onto a hat B transition (`certify relabel`);
+  on one patch the two gliders occupy the same tiles at the same
+  generations, hat A with one extra state-3 cell. The GA found the same
+  glider twice under two tables.
+
 ### Hat glider C (triple) — `results/hat-tableevolve-r48-s23.jsonl`
 
 The showpiece: starts as a **wanderer** that meanders near the origin
@@ -242,6 +250,82 @@ at **142.9° ≈ 4·36°**, each aimed at a decagon corner, each trailing a
   at 0.45°; lane ≤ 1.6 tiles.
 
 ---
+
+## Certificates of immortality
+
+Every settled glider above, and the three from outside our search below, has a
+**certificate**: a finite set of situations (pattern + 4-ring collar) closed under
+the rule on every legal environment of the tiling, which proves the object immortal
+on every tiling of the hull and bounds its heading and speed exactly (the companion
+paper *Certificates of Immortality for Gliders on the Hat and Spectre Tilings*,
+2026). The files are `results/certificates/*.json`; the `certify` crate builds,
+checks and reads them (`cargo run --release -p certify -- cocycle <file>` prints the
+numbers below; the independent checker is `crates/certify/check/check_certificate.py`).
+
+| object | certificate | situations / transitions | reference cycle | heading window (mod 60) | speed ≥ |
+|---|---|---|---|---|---|
+| hat A (s21) | `hat-A-s21-k4-R9.json` | 381 / 1,089 | 26 gens, 55.749 u | [45.4895°, 45.6084°], 0.1188° | 2.1397 u/gen |
+| hat B (s22) | `hat-B-s22-k4-R10.json` | 381 / 1,340 | 26, 55.749 | same | 2.1397 |
+| captured object (s21, lane 345) | `hat-A-lane345-capture-k4-R9.json` | 630 / 1,621 (three gliders glued at k = 4: 257, 256, 127) | 26, 55.749 | same | 2.1397 |
+| hat C, 105° glider (s23) | `hat-C-s23-lane105-k4-R11.json` | 257 / 801 | 26, 55.749 | same | 2.1397 |
+| hat C, 345° pair (s23) | `hat-C-s23-lane345a/b-k4-R11.json` | 381 / 1,582 (identical sets) | 26, 55.749 | same | 2.1397 |
+| spectre glider (s33) | `spectre-s33-lane108-k4-R9.json` | 2,542 / 7,089 | 182 gens, 288.031 u | [47.7448°, 48.1373°], 0.3925° | 1.5807 |
+| spectre, second family (s33) | `spectre-second-lane177-k4-R11.json` | 1,454 / 5,675 | 18 gens, 27.796 u | [56.9589°, 57.5125°], 0.5536° | 1.5442 |
+| Trevorrow's worm | `hat-worms-trevorrow-k4-R9.json` | 326 / 644 | 42 gens, 89.867 u | [45.4895°, 45.6086°], 0.1191° | 2.1397 |
+| Gabbay's wake traveller | `hat-wake-gabbay-k4-R9.json` | 134 / 449 | 26, 55.749 | [45.4895°, 45.6084°], 0.1188° | 2.1397 |
+| s33 on the hat | `hat-s33-k4-R9.json` | 380 / 1,072 | 26, 55.749 | same | 2.1397 |
+
+Every hat object shares hat A's cocycle numbers: the corridor is the tiling's. Hat B is hat A's
+mechanism in another alphabet (its entry above); the others are distinct objects on the same
+corridor numbers. Atlases regenerate with `certify atlas <hat|spectre> <R> --verify` (the
+certificates record which R they used).
+
+## Gliders from outside the search
+
+Three hat gliders not found by our search, certified by the same pipeline unchanged.
+
+### Trevorrow's worm (HatLife *Worms*, 2023) — `results/hat-worms-trevorrow-soup2.jsonl`
+
+- Rule: Andrew Trevorrow's *Worms* from HatLife (ConwayLife forum, May 2023), four states on
+  the vertex neighbourhood (0 empty, 1 body, 2 head, 3 tail), designed to send short chains
+  along the gaps between rows of reflected hats; transcribed as a stratified priority table
+  (hats carry the table, anti-hats stay empty) and checked against a direct implementation of
+  HatLife's transition function (`tiling-core --example worms_hatlife`). Used with permission.
+- Record: soup 2 (rng 24301, 35% within ring 16) on the hat A root; the worm of population
+  6–8 that heads 225°. A second worm of the same soup flies the opposite spoke.
+- Certificate: 326 situations / 644 transitions, reference cycle 42 generations and 89.867 u,
+  window [225.4895°, 225.6086°]; the cocycle numbers are hat A's, down to the return
+  displacements. Measured heading 225.5237° on a radius-384 flight.
+- Its path runs parallel to hat A's about 20 u to the side, sharing no tile
+  (`tiling-core --example track_compare`): the same corridor numbers from a different row.
+
+### Gabbay's wake traveller (Aperiodic Life `TABLE:HAT-WAKE`, 2026) — `results/hat-wake-gabbay-soup8.jsonl`
+
+- Rule: Murdoch Gabbay's four-row table, found by his own evolutionary search in Aperiodic
+  Life (release 3.7.x, October 2026), which rewarded distance and compactness and named no
+  direction; `results/rules/hat-wake-gabbay.json`, run by `tiling-core --example table_soups`.
+  Used with permission.
+- Record: soup 8 (rng 24301) on the hat A root; the traveller that heads 345°.
+- Certificate: 134 situations / 449 transitions, reference cycle 26 generations and 55.749 u,
+  window [345.4895°, 345.6084°]: hat A's corridor on the 345° spoke, reached by a search that
+  knew nothing of the lane. Measured heading 345.5240° at radius 384.
+
+### The spectre rule on the hat (s33 transplanted) — `results/hat-s33-soup14.jsonl`
+
+- Rule: our spectre glider's table (`results/rules/spectre-s33.json`), unchanged, on the hat.
+- Record: soup 14 (rng 24301) on the hat A root; a traveller of 5–6 cells heading 225°.
+- Certificate: 380 situations / 1,072 transitions, reference cycle 26 and 55.749 u, window
+  [225.4895°, 225.6084°]: hat A's corridor, ridden 7 u to the side of hat A's own path with no
+  consistent state correspondence, so a different pattern in the same band.
+
+### Spectre, the second lane family — `results/spectre-second-lane177-seed.jsonl`
+
+- Found by the census of two-tile seeds under the spectre rule s33 (`certify census`), not by the
+  earlier paper's search; the record is line 9 of `results/certificates/census-seeds.jsonl`.
+- Certificate: 1,454 situations / 5,675 transitions at R = 11, reference cycle 18 generations and
+  27.796 u, window [116.9589°, 117.5125°] (0.5536° wide), speed ≥ 1.5442 u/gen. Population 4–8.
+- Flight: `results/flights/spectre-second-lane177-1M.csv`, a million generations in the sliding
+  window, net heading 177.16995°; the family sits 9.156° from the glider's (48.0138° mod 60).
 
 ## Wanderers (super-diffusive Lévy walkers on the rail fan)
 
@@ -390,3 +474,12 @@ results/spectre-tableevolve-r48-s32.jsonl 0 192 3300`.
   166/286 generations for 48/96; at 192,
   `Periodic { period: 3300, detected_by: 7395 }` = the two-loop beat
   above.
+- Trap census (2026-10-30, FINDINGS 10.11.56; `tiling-core --example
+  trap_census`): 862 two-cell launches over 16 far-apart roots find
+  **five circuit types**, each with a fixed track size — periods
+  60/162/240/550/1072 on 207/572/639/1,509/2,862 cells — recurring as
+  copies in every root; composites 1620 (60+162) and 3300 (60+550) are
+  lcm beats of touching circuits. The 60 and 240 are 3-fold loops around
+  the junction of three level-4 / level-5 supertiles; the 1072 is a
+  2-fold loop across a level-7 boundary; the 550 straddles two level-5
+  pieces and sits on ground shared by several supertile types.

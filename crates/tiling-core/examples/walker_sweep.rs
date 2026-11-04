@@ -131,6 +131,7 @@ fn main() {
             stratification: None,
             tables: Vec::new(),
             table_rule: None,
+            table_rules: Vec::new(),
             neighbourhood: tiling_core::Neighbourhood::Edge,
             initial_cells: seed.clone(),
             initial_states: Vec::new(),

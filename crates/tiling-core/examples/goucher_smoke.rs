@@ -102,6 +102,7 @@ fn main() {
             stratification: None,
             tables: Vec::new(),
             table_rule: Some(rule),
+            table_rules: Vec::new(),
             neighbourhood: Neighbourhood::Vertex,
             initial_cells: vec![0, tail],
             initial_states: vec![1, 2],

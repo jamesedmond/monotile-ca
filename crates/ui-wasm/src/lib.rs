@@ -465,7 +465,7 @@ impl Universe {
     pub fn rule_birth(&self) -> u32 {
         match &self.rule {
             AnyRule::Generations(r) => r.tables[0].birth,
-            AnyRule::Table(_) => 0,
+            AnyRule::Table(_) | AnyRule::StratifiedTable(_) => 0,
         }
     }
 
@@ -473,7 +473,7 @@ impl Universe {
     pub fn rule_survival(&self) -> u32 {
         match &self.rule {
             AnyRule::Generations(r) => r.tables[0].survival,
-            AnyRule::Table(_) => 0,
+            AnyRule::Table(_) | AnyRule::StratifiedTable(_) => 0,
         }
     }
 
@@ -496,6 +496,7 @@ impl Universe {
             AnyRule::Generations(r) => r.tables.len(),
             // Editing away from a table-rule record collapses to uniform.
             AnyRule::Table(_) => 1,
+            AnyRule::StratifiedTable(r) => r.strata(),
         };
         let rule = AnyRule::Generations(StratifiedRule::new(vec![table; tables]));
         if rule != self.rule {
@@ -512,6 +513,7 @@ impl Universe {
         let tables = match &self.rule {
             AnyRule::Generations(r) => r.tables.len(),
             AnyRule::Table(_) => 1,
+            AnyRule::StratifiedTable(r) => r.strata(),
         };
         let rule = AnyRule::Generations(StratifiedRule::new(vec![table; tables]));
         if rule != self.rule {

@@ -1,0 +1,90 @@
+census: Spectre rule table-evolve champion travel 46 escape (seed 'pair 1,3') — seeds (1,3) both orders; patch radius 384 (495970 cells, 39s); settle 150, track ≤ 300, k=4, R=11
+known certificates at k=4: 7
+2539 seedings
+  census: 30/2539 seedings, 2 buckets, 115s
+  census: 70/2539 seedings, 2 buckets, 262s
+  census: 120/2539 seedings, 2 buckets, 419s
+  census: 160/2539 seedings, 2 buckets, 561s
+  census: 210/2539 seedings, 2 buckets, 733s
+  census: 250/2539 seedings, 2 buckets, 885s
+  census: 300/2539 seedings, 2 buckets, 1061s
+  census: 340/2539 seedings, 2 buckets, 1204s
+  census: 390/2539 seedings, 2 buckets, 1369s
+  census: 430/2539 seedings, 2 buckets, 1512s
+  census: 480/2539 seedings, 2 buckets, 1663s
+  census: 520/2539 seedings, 2 buckets, 1775s
+  census: 570/2539 seedings, 2 buckets, 1939s
+  census: 610/2539 seedings, 2 buckets, 2066s
+  census: 660/2539 seedings, 2 buckets, 2223s
+  census: 700/2539 seedings, 2 buckets, 2344s
+  census: 750/2539 seedings, 2 buckets, 2503s
+  census: 790/2539 seedings, 2 buckets, 2625s
+  census: 840/2539 seedings, 2 buckets, 2789s
+  census: 880/2539 seedings, 2 buckets, 2924s
+  census: 930/2539 seedings, 2 buckets, 3094s
+  census: 970/2539 seedings, 2 buckets, 3228s
+  census: 1020/2539 seedings, 2 buckets, 3405s
+  census: 1060/2539 seedings, 2 buckets, 3535s
+  census: 1110/2539 seedings, 2 buckets, 3705s
+  census: 1150/2539 seedings, 2 buckets, 3838s
+  census: 1200/2539 seedings, 2 buckets, 4009s
+  census: 1240/2539 seedings, 2 buckets, 4135s
+  census: 1290/2539 seedings, 2 buckets, 4281s
+  census: 1330/2539 seedings, 2 buckets, 4411s
+  census: 1380/2539 seedings, 2 buckets, 4584s
+  census: 1420/2539 seedings, 2 buckets, 4715s
+  census: 1470/2539 seedings, 2 buckets, 4874s
+  census: 1510/2539 seedings, 2 buckets, 4994s
+  census: 1540/2539 seedings, 2 buckets, 5095s
+  census: 1600/2539 seedings, 3 buckets, 5455s
+  census: 1630/2539 seedings, 3 buckets, 5586s
+  census: 1640/2539 seedings, 3 buckets, 5648s
+  census: 1650/2539 seedings, 3 buckets, 5714s
+  census: 1740/2539 seedings, 3 buckets, 6192s
+  census: 1750/2539 seedings, 3 buckets, 6265s
+  census: 1770/2539 seedings, 3 buckets, 6372s
+  census: 1780/2539 seedings, 3 buckets, 6457s
+  census: 1800/2539 seedings, 3 buckets, 6548s
+  census: 1810/2539 seedings, 3 buckets, 6576s
+  census: 1820/2539 seedings, 3 buckets, 6642s
+  census: 1830/2539 seedings, 3 buckets, 6701s
+  census: 1850/2539 seedings, 3 buckets, 6844s
+  census: 1870/2539 seedings, 3 buckets, 6921s
+  census: 1880/2539 seedings, 3 buckets, 6990s
+  census: 1890/2539 seedings, 3 buckets, 7031s
+  census: 1920/2539 seedings, 3 buckets, 7200s
+  census: 1960/2539 seedings, 3 buckets, 7420s
+  census: 1970/2539 seedings, 3 buckets, 7469s
+  census: 1980/2539 seedings, 3 buckets, 7534s
+  census: 2030/2539 seedings, 3 buckets, 7827s
+  census: 2050/2539 seedings, 3 buckets, 7922s
+  census: 2060/2539 seedings, 3 buckets, 7945s
+  census: 2070/2539 seedings, 3 buckets, 8010s
+  census: 2080/2539 seedings, 3 buckets, 8081s
+  census: 2090/2539 seedings, 3 buckets, 8126s
+  census: 2130/2539 seedings, 3 buckets, 8316s
+  census: 2150/2539 seedings, 3 buckets, 8441s
+  census: 2160/2539 seedings, 3 buckets, 8517s
+  census: 2180/2539 seedings, 3 buckets, 8625s
+  census: 2200/2539 seedings, 3 buckets, 8779s
+  census: 2210/2539 seedings, 3 buckets, 8850s
+  census: 2230/2539 seedings, 3 buckets, 8973s
+  census: 2270/2539 seedings, 3 buckets, 9200s
+  census: 2280/2539 seedings, 3 buckets, 9261s
+  census: 2300/2539 seedings, 3 buckets, 9351s
+  census: 2340/2539 seedings, 3 buckets, 9588s
+  census: 2350/2539 seedings, 3 buckets, 9641s
+  census: 2380/2539 seedings, 3 buckets, 9784s
+  census: 2410/2539 seedings, 3 buckets, 9919s
+  census: 2420/2539 seedings, 3 buckets, 9947s
+  census: 2450/2539 seedings, 3 buckets, 10102s
+  census: 2460/2539 seedings, 3 buckets, 10151s
+  census: 2520/2539 seedings, 3 buckets, 10483s
+
+outcomes: {"died or hit margin": 1680, "grower/shower": 70, "launched": 789}
+buckets (closed sets at k=4):
+  bucket 0: 1454 states, reached by 676 components — new object (1454 states); 676 mobile, heading 57.17° mod 60 (max dev 1.58°)
+  bucket 1: 2542 states, reached by 1097 components — spectre-s33-lane108-k4-R9.json; 1097 mobile, heading 48.02° mod 60 (max dev 1.07°)
+  bucket 2: 3327 states, reached by 4 components — new object (3327 states); 4 mobile, heading 48.05° mod 60 (max dev 0.13°)
+written out/census3/spectre.tsv
+exit 0

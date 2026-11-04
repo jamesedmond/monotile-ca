@@ -1061,6 +1061,7 @@ impl<'a> Slider<'a> {
                     stratification: self.source.stratification,
                     tables: self.source.tables.clone(),
                     table_rule: self.source.table_rule.clone(),
+                    table_rules: Vec::new(),
                     neighbourhood: self.neighbourhood,
                     initial_cells: resolved,
                     initial_states,

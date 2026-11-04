@@ -1,0 +1,101 @@
+=== hat 256
+Hat root (tile antihat)(subtile 3 of H0)(subtile 1 of F0):(subtile 4 of F0) radius 256: 225370 cells, 220183 interior
+  class 0: 0 congruent to cell 0, 21044 mirror images, 0 NEITHER
+  class 1: 0 congruent to cell 0, 21058 mirror images, 0 NEITHER
+  class 2: 0 congruent to cell 0, 3562 mirror images, 0 NEITHER
+  class 3: 0 congruent to cell 0, 3559 mirror images, 0 NEITHER
+  class 4: 0 congruent to cell 0, 8380 mirror images, 0 NEITHER
+  class 5: 0 congruent to cell 0, 8376 mirror images, 0 NEITHER
+  class 6: 0 congruent to cell 0, 24450 mirror images, 0 NEITHER
+  class 7: 0 congruent to cell 0, 24508 mirror images, 0 NEITHER
+  class 8: 0 congruent to cell 0, 24477 mirror images, 0 NEITHER
+  class 9: 24379 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 10: 0 congruent to cell 0, 4181 mirror images, 0 NEITHER
+  class 11: 0 congruent to cell 0, 4173 mirror images, 0 NEITHER
+  class 12: 0 congruent to cell 0, 4155 mirror images, 0 NEITHER
+  class 13: 4152 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 14: 0 congruent to cell 0, 20358 mirror images, 0 NEITHER
+  class 15: 0 congruent to cell 0, 20377 mirror images, 0 NEITHER
+  class 16: 0 congruent to cell 0, 4181 mirror images, 0 NEITHER
+  planar map: 3082562 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 1314713 interior vertices, 0 with angle sum != 360°
+  faithfulness: 220183 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: PASS
+=== spectre 256
+Spectre root (tile spectre)(subtile 0 of Delta):(subtile 2 of Delta) radius 256: 220650 cells, 215532 interior
+  class 0: 24834 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 1: 24818 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 2: 24860 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 3: 24864 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 4: 3150 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 5: 18563 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 6: 3152 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 7: 18562 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 8: 43481 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 9: 34366 congruent to cell 0, 0 mirror images, 0 NEITHER
+  planar map: 3017448 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 1286659 interior vertices, 0 with angle sum != 360°
+  faithfulness: 215532 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: PASS
+=== hat 128
+Hat root (tile antihat)(subtile 3 of H0)(subtile 1 of F0):(subtile 4 of F0) radius 128: 56344 cells, 53746 interior
+  class 0: 0 congruent to cell 0, 5254 mirror images, 0 NEITHER
+  class 1: 0 congruent to cell 0, 5281 mirror images, 0 NEITHER
+  class 2: 0 congruent to cell 0, 896 mirror images, 0 NEITHER
+  class 3: 0 congruent to cell 0, 889 mirror images, 0 NEITHER
+  class 4: 0 congruent to cell 0, 2101 mirror images, 0 NEITHER
+  class 5: 0 congruent to cell 0, 2097 mirror images, 0 NEITHER
+  class 6: 0 congruent to cell 0, 6132 mirror images, 0 NEITHER
+  class 7: 0 congruent to cell 0, 6122 mirror images, 0 NEITHER
+  class 8: 0 congruent to cell 0, 6122 mirror images, 0 NEITHER
+  class 9: 6055 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 10: 0 congruent to cell 0, 1051 mirror images, 0 NEITHER
+  class 11: 0 congruent to cell 0, 1041 mirror images, 0 NEITHER
+  class 12: 0 congruent to cell 0, 1043 mirror images, 0 NEITHER
+  class 13: 1034 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 14: 0 congruent to cell 0, 5097 mirror images, 0 NEITHER
+  class 15: 0 congruent to cell 0, 5084 mirror images, 0 NEITHER
+  class 16: 0 congruent to cell 0, 1045 mirror images, 0 NEITHER
+  planar map: 752444 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 319293 interior vertices, 0 with angle sum != 360°
+  faithfulness: 53746 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: PASS
+=== spectre 128
+Spectre root (tile spectre)(subtile 0 of Delta):(subtile 2 of Delta) radius 128: 55335 cells, 52761 interior
+  class 0: 6239 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 1: 6213 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 2: 6226 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 3: 6241 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 4: 802 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 5: 4659 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 6: 802 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 7: 4652 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 8: 10889 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 9: 8612 congruent to cell 0, 0 mirror images, 0 NEITHER
+  planar map: 738654 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 313508 interior vertices, 0 with angle sum != 360°
+  faithfulness: 52761 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: PASS
+=== penrosep3 64
+PenroseP3 root (tile thick):(subtile 1 of thick) radius 64: 9856 cells, 8998 interior
+  class 0: 0 congruent to cell 0, 0 mirror images, 2328 NEITHER
+  class 1: 2289 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 2: 2361 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 3: 0 congruent to cell 0, 0 mirror images, 1439 NEITHER
+  class 4: 1439 congruent to cell 0, 0 mirror images, 0 NEITHER
+  planar map: 35992 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 8872 interior vertices, 0 with angle sum != 360°
+  faithfulness: 8998 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: FAIL
+=== penrosep2 64
+PenroseP2 root (tile dart):(subtile 1 of dart) radius 64: 9370 cells, 8519 interior
+  class 0: 0 congruent to cell 0, 0 mirror images, 1365 NEITHER
+  class 1: 1367 congruent to cell 0, 0 mirror images, 0 NEITHER
+  class 2: 0 congruent to cell 0, 0 mirror images, 2215 NEITHER
+  class 3: 0 congruent to cell 0, 0 mirror images, 2211 NEITHER
+  class 4: 2212 congruent to cell 0, 0 mirror images, 0 NEITHER
+  planar map: 34076 interior directed edges, 0 unmatched (gap/T-junction), 0 doubled (overlap)
+  flatness: 8438 interior vertices, 0 with angle sum != 360°
+  faithfulness: 8519 interior cells, 0 edge-neighbour mismatches, 0 vertex-neighbour mismatches
+verdict: FAIL
+exit 0

@@ -1,0 +1,90 @@
+census: Hat rule table-evolve champion travel 47 escape (seed 'pair 2,1') — seeds (2,1) both orders; patch radius 384 (507115 cells, 36s); settle 150, track ≤ 300, k=4, R=11
+known certificates at k=4: 7
+3538 seedings
+  census: 200/3538 seedings, 4 buckets, 493s
+  census: 220/3538 seedings, 5 buckets, 590s
+  census: 290/3538 seedings, 5 buckets, 781s
+  census: 310/3538 seedings, 7 buckets, 865s
+  census: 400/3538 seedings, 7 buckets, 1124s
+  census: 470/3538 seedings, 7 buckets, 1347s
+  census: 560/3538 seedings, 8 buckets, 1714s
+  census: 580/3538 seedings, 8 buckets, 1775s
+  census: 760/3538 seedings, 9 buckets, 2230s
+  census: 830/3538 seedings, 9 buckets, 2365s
+  census: 850/3538 seedings, 9 buckets, 2411s
+  census: 940/3538 seedings, 10 buckets, 2683s
+  census: 1010/3538 seedings, 11 buckets, 2981s
+  census: 1280/3538 seedings, 11 buckets, 3758s
+  census: 1300/3538 seedings, 11 buckets, 3844s
+  census: 1370/3538 seedings, 11 buckets, 4018s
+  census: 1640/3538 seedings, 11 buckets, 4862s
+  census: 1660/3538 seedings, 11 buckets, 4908s
+  census: 1750/3538 seedings, 11 buckets, 5156s
+  census: 1820/3538 seedings, 11 buckets, 5375s
+  census: 1910/3538 seedings, 12 buckets, 5589s
+  census: 2110/3538 seedings, 12 buckets, 6283s
+  census: 2470/3538 seedings, 12 buckets, 7247s
+  census: 2600/3538 seedings, 13 buckets, 7775s
+  census: 2640/3538 seedings, 14 buckets, 7997s
+  census: 2660/3538 seedings, 14 buckets, 8108s
+  census: 2700/3538 seedings, 15 buckets, 8254s
+  census: 2710/3538 seedings, 16 buckets, 8369s
+  census: 2740/3538 seedings, 16 buckets, 8465s
+  census: 2760/3538 seedings, 16 buckets, 8582s
+  census: 2800/3538 seedings, 17 buckets, 8754s
+  census: 2820/3538 seedings, 18 buckets, 8791s
+  census: 2850/3538 seedings, 18 buckets, 8903s
+  census: 2870/3538 seedings, 18 buckets, 8999s
+  census: 2880/3538 seedings, 18 buckets, 9035s
+  census: 2940/3538 seedings, 18 buckets, 9278s
+  census: 2980/3538 seedings, 20 buckets, 9498s
+  census: 2990/3538 seedings, 20 buckets, 9583s
+  census: 3000/3538 seedings, 20 buckets, 9656s
+  census: 3020/3538 seedings, 20 buckets, 9739s
+  census: 3040/3538 seedings, 20 buckets, 9779s
+  census: 3090/3538 seedings, 21 buckets, 9963s
+  census: 3150/3538 seedings, 21 buckets, 10206s
+  census: 3200/3538 seedings, 23 buckets, 10437s
+  census: 3210/3538 seedings, 23 buckets, 10516s
+  census: 3250/3538 seedings, 23 buckets, 10700s
+  census: 3260/3538 seedings, 23 buckets, 10769s
+  census: 3320/3538 seedings, 25 buckets, 11080s
+  census: 3330/3538 seedings, 25 buckets, 11108s
+  census: 3480/3538 seedings, 27 buckets, 11746s
+  census: 3520/3538 seedings, 30 buckets, 12005s
+
+outcomes: {"launched": 483, "grower/shower": 562, "died or hit margin": 2493}
+buckets (closed sets at k=4):
+  bucket 0: 381 states, reached by 594 components — hat-C-s23-lane345a-k4-R11.json; 594 mobile, heading 45.46° mod 60 (max dev 4.68°)
+  bucket 1: 386 states, reached by 102 components — new object (386 states); 102 mobile, heading 45.54° mod 60 (max dev 1.11°)
+  bucket 2: 129 states, reached by 148 components — new object (129 states); 148 mobile, heading 45.47° mod 60 (max dev 1.39°)
+  bucket 3: 257 states, reached by 231 components — new object (257 states); 231 mobile, heading 45.45° mod 60 (max dev 1.29°)
+  bucket 4: 257 states, reached by 112 components — hat-C-s23-lane105-k4-R11.json; 112 mobile, heading 45.52° mod 60 (max dev 1.16°)
+  bucket 5: 2 states, reached by 6 components — new object (2 states); stationary
+  bucket 6: 290 states, reached by 3 components — new object (290 states); 3 mobile, heading 43.69° mod 60 (max dev 2.59°)
+  bucket 7: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 10.89° mod 60 (max dev 0.00°)
+  bucket 8: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 47.21° mod 60 (max dev 0.00°)
+  bucket 9: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 47.21° mod 60 (max dev 0.00°)
+  bucket 10: 388 states, reached by 5 components — new object (388 states); 5 mobile, heading 45.37° mod 60 (max dev 0.88°)
+  bucket 11: 258 states, reached by 2 components — new object (258 states); 2 mobile, heading 46.29° mod 60 (max dev 0.00°)
+  bucket 12: 10 states, reached by 1 components — new object (10 states); stationary
+  bucket 13: 5 states, reached by 1 components — new object (5 states); stationary
+  bucket 14: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 49.11° mod 60 (max dev 0.00°)
+  bucket 15: 2 states, reached by 1 components — new object (2 states); stationary
+  bucket 16: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 14.25° mod 60 (max dev 0.00°)
+  bucket 17: 2 states, reached by 2 components — new object (2 states); 2 mobile, heading 9.78° mod 60 (max dev 0.00°)
+  bucket 18: 2 states, reached by 1 components — new object (2 states); stationary
+  bucket 19: 384 states, reached by 1 components — new object (384 states); 1 mobile, heading 44.94° mod 60 (max dev 0.00°)
+  bucket 20: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 49.11° mod 60 (max dev 0.00°)
+  bucket 21: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 43.70° mod 60 (max dev 0.00°)
+  bucket 22: 475 states, reached by 1 components — new object (475 states); 1 mobile, heading 43.60° mod 60 (max dev 0.00°)
+  bucket 23: 294 states, reached by 3 components — new object (294 states); 3 mobile, heading 41.89° mod 60 (max dev 0.47°)
+  bucket 24: 3 states, reached by 1 components — new object (3 states); 1 mobile, heading 47.21° mod 60 (max dev 0.00°)
+  bucket 25: 3 states, reached by 1 components — new object (3 states); stationary
+  bucket 26: 2 states, reached by 1 components — new object (2 states); stationary
+  bucket 27: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 25.94° mod 60 (max dev 0.00°)
+  bucket 28: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 49.11° mod 60 (max dev 0.00°)
+  bucket 29: 2 states, reached by 1 components — new object (2 states); 1 mobile, heading 11.03° mod 60 (max dev 0.00°)
+  bucket 30: 3 states, reached by 1 components — new object (3 states); stationary
+written out/census3/hatC.tsv
+exit 0

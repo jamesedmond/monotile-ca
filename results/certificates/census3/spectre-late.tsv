@@ -1,0 +1,8 @@
+seeding	kind	class	anchor	partner	states	outcome
+0	rec0	-	80672	-	soup28 late-settle; census3 label: c0:too-big(rho 5)@107.8°/449u c1:bucket1@228.5°/415u c2:bucket1@348.5°/474u	grower (140 cells, 20 comps)
+1	rec1	-	35307	-	soup36 late-settle; census3 label: c0:too-big(rho 6)@285.3°/439u c1:too-big(rho 6)@285.3°/439u	grower (295 cells, 50 comps)
+2	rec2	-	65163	-	soup67 late-settle; census3 label: c0:bucket1@168.1°/474u c1:bucket1@167.8°/474u c2:bucket0@236.9°/465u c3:too-big(rho 6)@300.0°/409u c	grower (224 cells, 39 comps)
+3	rec3	-	118787	-	soup186 late-settle; census3 label: c0:too-big(rho 5)@167.9°/473u c1:too-big(rho 5)@167.9°/473u c2:short(2) c3:short(2) c4:bucket1@107.5	grower (85 cells, 16 comps)
+4	rec4	-	104339	-	soup551 late-settle; census3 label: c0:too-big(rho 5)@167.9°/472u c1:too-big(rho 5)@167.9°/472u c2:bucket0@117.6°/463u c3:bucket1@47.9°/	grower (49 cells, 10 comps)
+5	rec5	-	83233	-	soup625 late-settle; census3 label: c0:bucket1@348.5°/461u c1:bucket1@48.2°/418u c2:bucket1@47.5°/474u c3:bucket0@118.0°/459u c4:too-big	grower (114 cells, 22 comps)
+6	rec6	-	72674	-	soup781 late-settle; census3 label: c0:too-big(rho 5)@168.2°/472u c1:NOT-CERTIFIED(1494 states, 15 errors, deaths)@177.2°/468u c2:bucket	grower (122 cells, 22 comps)

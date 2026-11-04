@@ -1,0 +1,2540 @@
+seeding	kind	class	anchor	partner	states	outcome
+0	pair	0	30554	29910	11	died-or-margin
+1	pair	0	30554	29910	12	died-or-margin
+2	pair	0	30554	29910	13	c0:bucket0@176.4°/467u c1:bucket0@297.8°/461u
+3	pair	0	30554	29910	21	died-or-margin
+4	pair	0	30554	29910	22	died-or-margin
+5	pair	0	30554	29910	23	died-or-margin
+6	pair	0	30554	29910	31	c0:bucket0@117.1°/463u c1:bucket1@228.0°/473u c2:bucket1@348.2°/474u c3:bucket0@357.3°/463u
+7	pair	0	30554	29910	32	died-or-margin
+8	pair	0	30554	29910	33	died-or-margin
+9	pair	0	30554	29911	11	died-or-margin
+10	pair	0	30554	29911	12	died-or-margin
+11	pair	0	30554	29911	13	c0:bucket0@116.8°/466u c1:bucket1@228.6°/474u
+12	pair	0	30554	29911	21	died-or-margin
+13	pair	0	30554	29911	22	died-or-margin
+14	pair	0	30554	29911	23	died-or-margin
+15	pair	0	30554	29911	31	c0:bucket1@48.1°/476u c1:bucket0@297.6°/464u
+16	pair	0	30554	29911	32	died-or-margin
+17	pair	0	30554	29911	33	died-or-margin
+18	pair	0	30554	30553	11	died-or-margin
+19	pair	0	30554	30553	12	died-or-margin
+20	pair	0	30554	30553	13	c0:bucket1@107.9°/474u c1:bucket1@288.1°/473u c2:bucket0@357.3°/461u
+21	pair	0	30554	30553	21	died-or-margin
+22	pair	0	30554	30553	22	died-or-margin
+23	pair	0	30554	30553	23	died-or-margin
+24	pair	0	30554	30553	31	c0:bucket0@177.0°/463u c1:bucket1@108.2°/472u c2:bucket1@227.4°/473u
+25	pair	0	30554	30553	32	died-or-margin
+26	pair	0	30554	30553	33	died-or-margin
+27	pair	0	30554	30555	11	died-or-margin
+28	pair	0	30554	30555	12	died-or-margin
+29	pair	0	30554	30555	13	c0:bucket1@48.5°/474u c1:bucket1@167.9°/474u
+30	pair	0	30554	30555	21	died-or-margin
+31	pair	0	30554	30555	22	died-or-margin
+32	pair	0	30554	30555	23	died-or-margin
+33	pair	0	30554	30555	31	c0:bucket1@107.8°/474u c1:bucket1@228.5°/473u c2:bucket0@237.4°/463u c3:bucket1@347.9°/474u c4:bucket0@357.3°/461u
+34	pair	0	30554	30555	32	died-or-margin
+35	pair	0	30554	30555	33	died-or-margin
+36	pair	0	30554	31201	11	died-or-margin
+37	pair	0	30554	31201	12	died-or-margin
+38	pair	0	30554	31201	13	c0:bucket1@107.5°/473u c1:bucket1@348.5°/474u
+39	pair	0	30554	31201	21	died-or-margin
+40	pair	0	30554	31201	22	died-or-margin
+41	pair	0	30554	31201	23	died-or-margin
+42	pair	0	30554	31201	31	c0:bucket1@167.2°/470u c1:bucket1@288.1°/479u
+43	pair	0	30554	31201	32	died-or-margin
+44	pair	0	30554	31201	33	died-or-margin
+45	pair	0	61772	60861	11	died-or-margin
+46	pair	0	61772	60861	12	died-or-margin
+47	pair	0	61772	60861	13	c0:bucket1@347.9°/474u c1:bucket1@228.5°/474u
+48	pair	0	61772	60861	21	died-or-margin
+49	pair	0	61772	60861	22	died-or-margin
+50	pair	0	61772	60861	23	died-or-margin
+51	pair	0	61772	60861	31	c0:bucket1@48.5°/473u c1:short(35) c2:short(35) c3:bucket0@177.5°/465u c4:bucket1@167.9°/474u
+52	pair	0	61772	60861	32	died-or-margin
+53	pair	0	61772	60861	33	died-or-margin
+54	pair	0	61772	60862	11	died-or-margin
+55	pair	0	61772	60862	12	died-or-margin
+56	pair	0	61772	60862	13	c0:bucket1@287.5°/473u c1:bucket1@168.5°/474u
+57	pair	0	61772	60862	21	died-or-margin
+58	pair	0	61772	60862	22	died-or-margin
+59	pair	0	61772	60862	23	died-or-margin
+60	pair	0	61772	60862	31	c0:bucket1@347.2°/470u c1:bucket1@107.7°/477u
+61	pair	0	61772	60862	32	died-or-margin
+62	pair	0	61772	60862	33	died-or-margin
+63	pair	0	61772	61771	11	died-or-margin
+64	pair	0	61772	61771	12	died-or-margin
+65	pair	0	61772	61771	13	c0:bucket0@297.6°/464u c1:bucket1@48.1°/475u
+66	pair	0	61772	61771	21	died-or-margin
+67	pair	0	61772	61771	22	died-or-margin
+68	pair	0	61772	61771	23	died-or-margin
+69	pair	0	61772	61771	31	c0:bucket0@117.6°/464u c1:bucket1@228.1°/476u
+70	pair	0	61772	61771	32	died-or-margin
+71	pair	0	61772	61771	33	died-or-margin
+72	pair	0	61772	62678	11	died-or-margin
+73	pair	0	61772	62678	12	died-or-margin
+74	pair	0	61772	62678	13	c0:bucket0@357.3°/464u c1:bucket0@117.0°/463u
+75	pair	0	61772	62678	21	died-or-margin
+76	pair	0	61772	62678	22	died-or-margin
+77	pair	0	61772	62678	23	died-or-margin
+78	pair	0	61772	62678	31	c0:bucket0@297.1°/463u c1:bucket0@176.6°/459u
+79	pair	0	61772	62678	32	died-or-margin
+80	pair	0	61772	62678	33	died-or-margin
+81	pair	0	61772	62679	11	died-or-margin
+82	pair	0	61772	62679	12	died-or-margin
+83	pair	0	61772	62679	13	c0:bucket1@287.9°/474u c1:bucket1@108.1°/473u c2:bucket0@177.3°/461u
+84	pair	0	61772	62679	21	died-or-margin
+85	pair	0	61772	62679	22	died-or-margin
+86	pair	0	61772	62679	23	died-or-margin
+87	pair	0	61772	62679	31	c0:bucket0@357.0°/463u c1:bucket1@287.9°/474u
+88	pair	0	61772	62679	32	died-or-margin
+89	pair	0	61772	62679	33	died-or-margin
+90	pair	0	92970	91847	11	died-or-margin
+91	pair	0	92970	91847	12	died-or-margin
+92	pair	0	92970	91847	13	c0:bucket1@227.5°/473u c1:bucket1@347.2°/406u
+93	pair	0	92970	91847	21	died-or-margin
+94	pair	0	92970	91847	22	died-or-margin
+95	pair	0	92970	91847	23	died-or-margin
+96	pair	0	92970	91847	31	c0:bucket1@167.8°/475u c1:bucket1@47.8°/392u
+97	pair	0	92970	91847	32	died-or-margin
+98	pair	0	92970	91847	33	died-or-margin
+99	pair	0	92970	91848	11	died-or-margin
+100	pair	0	92970	91848	12	died-or-margin
+101	pair	0	92970	91848	13	c0:bucket1@168.1°/473u c1:bucket0@236.5°/464u
+102	pair	0	92970	91848	21	died-or-margin
+103	pair	0	92970	91848	22	died-or-margin
+104	pair	0	92970	91848	23	died-or-margin
+105	pair	0	92970	91848	31	c0:bucket0@177.6°/463u c1:bucket0@58.0°/462u c2:bucket1@347.6°/407u
+106	pair	0	92970	91848	32	died-or-margin
+107	pair	0	92970	91848	33	died-or-margin
+108	pair	0	92970	91849	11	died-or-margin
+109	pair	0	92970	91849	12	died-or-margin
+110	pair	0	92970	91849	13	c0:bucket0@176.9°/462u c1:bucket0@57.6°/460u
+111	pair	0	92970	91849	21	died-or-margin
+112	pair	0	92970	91849	22	died-or-margin
+113	pair	0	92970	91849	23	died-or-margin
+114	pair	0	92970	91849	31	c0:bucket0@358.1°/385u c1:bucket0@236.4°/467u
+115	pair	0	92970	91849	32	died-or-margin
+116	pair	0	92970	91849	33	died-or-margin
+117	pair	0	92970	92969	11	died-or-margin
+118	pair	0	92970	92969	12	died-or-margin
+119	pair	0	92970	92969	13	c0:bucket1@47.5°/391u c1:bucket1@288.1°/472u
+120	pair	0	92970	92969	21	died-or-margin
+121	pair	0	92970	92969	22	died-or-margin
+122	pair	0	92970	92969	23	died-or-margin
+123	pair	0	92970	92969	31	c0:bucket0@117.0°/464u c1:bucket1@108.1°/473u c2:bucket1@227.5°/473u c3:bucket1@227.5°/472u
+124	pair	0	92970	92969	32	died-or-margin
+125	pair	0	92970	92969	33	died-or-margin
+126	pair	0	92970	92971	11	died-or-margin
+127	pair	0	92970	92971	12	died-or-margin
+128	pair	0	92970	92971	13	c0:bucket0@357.6°/383u c1:bucket1@108.5°/470u
+129	pair	0	92970	92971	21	died-or-margin
+130	pair	0	92970	92971	22	died-or-margin
+131	pair	0	92970	92971	23	died-or-margin
+132	pair	0	92970	92971	31	c0:bucket0@177.0°/465u c1:bucket1@287.8°/475u
+133	pair	0	92970	92971	32	died-or-margin
+134	pair	0	92970	92971	33	died-or-margin
+135	pair	1	30543	29899	11	died-or-margin
+136	pair	1	30543	29899	12	died-or-margin
+137	pair	1	30543	29899	13	c0:bucket0@117.3°/463u c1:bucket1@288.1°/472u
+138	pair	1	30543	29899	21	died-or-margin
+139	pair	1	30543	29899	22	died-or-margin
+140	pair	1	30543	29899	23	died-or-margin
+141	pair	1	30543	29899	31	c0:bucket1@107.8°/471u c1:bucket0@297.3°/461u
+142	pair	1	30543	29899	32	died-or-margin
+143	pair	1	30543	29899	33	died-or-margin
+144	pair	1	30543	29901	11	died-or-margin
+145	pair	1	30543	29901	12	died-or-margin
+146	pair	1	30543	29901	13	c0:bucket1@107.9°/474u c1:bucket0@176.9°/462u
+147	pair	1	30543	29901	21	died-or-margin
+148	pair	1	30543	29901	22	died-or-margin
+149	pair	1	30543	29901	23	died-or-margin
+150	pair	1	30543	29901	31	c0:bucket1@108.0°/476u c1:bucket1@288.1°/473u c2:bucket0@356.9°/462u
+151	pair	1	30543	29901	32	died-or-margin
+152	pair	1	30543	29901	33	died-or-margin
+153	pair	1	30543	30542	11	died-or-margin
+154	pair	1	30543	30542	12	died-or-margin
+155	pair	1	30543	30542	13	c0:bucket0@57.6°/463u c1:bucket0@237.2°/465u c2:bucket0@297.6°/463u
+156	pair	1	30543	30542	21	died-or-margin
+157	pair	1	30543	30542	22	died-or-margin
+158	pair	1	30543	30542	23	died-or-margin
+159	pair	1	30543	30542	31	c0:bucket0@57.7°/463u c1:bucket0@116.5°/464u c2:bucket1@228.2°/472u
+160	pair	1	30543	30542	32	died-or-margin
+161	pair	1	30543	30542	33	died-or-margin
+162	pair	1	30543	31190	11	died-or-margin
+163	pair	1	30543	31190	12	died-or-margin
+164	pair	1	30543	31190	13	grower (56 cells, 10 comps)
+165	pair	1	30543	31190	21	died-or-margin
+166	pair	1	30543	31190	22	died-or-margin
+167	pair	1	30543	31190	23	died-or-margin
+168	pair	1	30543	31190	31	c0:bucket0@237.1°/464u c1:bucket0@177.2°/462u
+169	pair	1	30543	31190	32	died-or-margin
+170	pair	1	30543	31190	33	died-or-margin
+171	pair	1	61804	60894	11	died-or-margin
+172	pair	1	61804	60894	12	died-or-margin
+173	pair	1	61804	60894	13	c0:bucket0@356.5°/464u c1:bucket1@287.9°/474u
+174	pair	1	61804	60894	21	died-or-margin
+175	pair	1	61804	60894	22	died-or-margin
+176	pair	1	61804	60894	23	died-or-margin
+177	pair	1	61804	60894	31	c0:bucket1@288.0°/476u c1:bucket1@108.0°/473u c2:bucket0@176.9°/462u
+178	pair	1	61804	60894	32	died-or-margin
+179	pair	1	61804	60894	33	died-or-margin
+180	pair	1	61804	60895	11	died-or-margin
+181	pair	1	61804	60895	12	died-or-margin
+182	pair	1	61804	60895	13	c0:bucket0@357.0°/464u c1:bucket1@48.5°/472u c2:bucket1@288.3°/476u c3:bucket0@177.4°/464u c4:bucket0@237.9°/468u
+183	pair	1	61804	60895	21	died-or-margin
+184	pair	1	61804	60895	22	died-or-margin
+185	pair	1	61804	60895	23	died-or-margin
+186	pair	1	61804	60895	31	c0:bucket0@356.8°/465u c1:bucket0@56.7°/465u
+187	pair	1	61804	60895	32	died-or-margin
+188	pair	1	61804	60895	33	died-or-margin
+189	pair	1	61804	61803	11	died-or-margin
+190	pair	1	61804	61803	12	died-or-margin
+191	pair	1	61804	61803	13	c0:bucket0@297.3°/462u c1:bucket1@107.9°/472u
+192	pair	1	61804	61803	21	died-or-margin
+193	pair	1	61804	61803	22	died-or-margin
+194	pair	1	61804	61803	23	died-or-margin
+195	pair	1	61804	61803	31	c0:bucket1@287.8°/471u c1:bucket0@117.3°/461u
+196	pair	1	61804	61803	32	died-or-margin
+197	pair	1	61804	61803	33	died-or-margin
+198	pair	1	61804	62713	11	died-or-margin
+199	pair	1	61804	62713	12	died-or-margin
+200	pair	1	61804	62713	13	c0:bucket0@56.8°/465u c1:bucket0@117.6°/463u c2:bucket0@237.6°/464u
+201	pair	1	61804	62713	21	died-or-margin
+202	pair	1	61804	62713	22	died-or-margin
+203	pair	1	61804	62713	23	died-or-margin
+204	pair	1	61804	62713	31	c0:bucket0@297.3°/464u c1:bucket0@56.9°/460u c2:bucket0@237.4°/464u
+205	pair	1	61804	62713	32	died-or-margin
+206	pair	1	61804	62713	33	died-or-margin
+207	pair	1	93019	91894	11	died-or-margin
+208	pair	1	93019	91894	12	died-or-margin
+209	pair	1	93019	91894	13	c0:bucket1@347.7°/462u c1:bucket0@297.0°/463u c2:bucket1@228.2°/472u
+210	pair	1	93019	91894	21	died-or-margin
+211	pair	1	93019	91894	22	died-or-margin
+212	pair	1	93019	91894	23	died-or-margin
+213	pair	1	93019	91894	31	c0:bucket1@48.0°/394u c1:bucket0@116.9°/464u
+214	pair	1	93019	91894	32	died-or-margin
+215	pair	1	93019	91894	33	died-or-margin
+216	pair	1	93019	91895	11	died-or-margin
+217	pair	1	93019	91895	12	died-or-margin
+218	pair	1	93019	91895	13	c0:bucket1@347.9°/437u c1:bucket0@177.0°/463u c2:bucket0@116.9°/465u c3:bucket1@287.9°/474u
+219	pair	1	93019	91895	21	died-or-margin
+220	pair	1	93019	91895	22	died-or-margin
+221	pair	1	93019	91895	23	died-or-margin
+222	pair	1	93019	91895	31	c0:bucket0@357.7°/381u c1:bucket1@167.9°/472u c2:bucket0@296.9°/462u
+223	pair	1	93019	91895	32	died-or-margin
+224	pair	1	93019	91895	33	died-or-margin
+225	pair	1	93019	93018	11	died-or-margin
+226	pair	1	93019	93018	12	died-or-margin
+227	pair	1	93019	93018	13	c0:bucket1@47.6°/392u c1:bucket0@237.6°/463u
+228	pair	1	93019	93018	21	died-or-margin
+229	pair	1	93019	93018	22	died-or-margin
+230	pair	1	93019	93018	23	died-or-margin
+231	pair	1	93019	93018	31	c0:bucket1@347.8°/457u c1:bucket1@48.2°/413u c2:bucket0@57.3°/458u c3:bucket1@167.9°/474u c4:bucket1@227.8°/470u c5:bucket1@227.6°/470u
+232	pair	1	93019	93018	32	died-or-margin
+233	pair	1	93019	93018	33	died-or-margin
+234	pair	1	93019	94139	11	died-or-margin
+235	pair	1	93019	94139	12	died-or-margin
+236	pair	1	93019	94139	13	grower (45 cells, 8 comps)
+237	pair	1	93019	94139	21	died-or-margin
+238	pair	1	93019	94139	22	died-or-margin
+239	pair	1	93019	94139	23	died-or-margin
+240	pair	1	93019	94139	31	c0:bucket0@357.2°/412u c1:bucket0@176.9°/462u c2:bucket1@107.9°/472u c3:bucket0@237.4°/465u c4:bucket1@227.5°/473u
+241	pair	1	93019	94139	32	died-or-margin
+242	pair	1	93019	94139	33	died-or-margin
+243	pair	2	30542	29898	11	died-or-margin
+244	pair	2	30542	29898	12	died-or-margin
+245	pair	2	30542	29898	13	c0:bucket1@167.5°/473u c1:bucket1@287.4°/473u
+246	pair	2	30542	29898	21	died-or-margin
+247	pair	2	30542	29898	22	died-or-margin
+248	pair	2	30542	29898	23	died-or-margin
+249	pair	2	30542	29898	31	c0:bucket1@107.5°/473u c1:bucket1@348.1°/473u
+250	pair	2	30542	29898	32	died-or-margin
+251	pair	2	30542	29898	33	died-or-margin
+252	pair	2	30542	29899	11	died-or-margin
+253	pair	2	30542	29899	12	died-or-margin
+254	pair	2	30542	29899	13	c0:bucket1@107.5°/473u c1:bucket0@236.9°/462u
+255	pair	2	30542	29899	21	died-or-margin
+256	pair	2	30542	29899	22	died-or-margin
+257	pair	2	30542	29899	23	died-or-margin
+258	pair	2	30542	29899	31	c0:bucket1@168.2°/472u c1:bucket0@57.6°/460u c2:bucket1@288.2°/472u
+259	pair	2	30542	29899	32	died-or-margin
+260	pair	2	30542	29899	33	died-or-margin
+261	pair	2	30542	30541	11	died-or-margin
+262	pair	2	30542	30541	12	died-or-margin
+263	pair	2	30542	30541	13	c0:bucket1@228.2°/472u c1:bucket1@347.8°/471u
+264	pair	2	30542	30541	21	died-or-margin
+265	pair	2	30542	30541	22	died-or-margin
+266	pair	2	30542	30541	23	died-or-margin
+267	pair	2	30542	30541	31	c0:bucket1@48.1°/473u c1:bucket1@167.5°/473u c2:bucket0@57.2°/465u c3:bucket0@177.6°/463u
+268	pair	2	30542	30541	32	died-or-margin
+269	pair	2	30542	30541	33	died-or-margin
+270	pair	2	30542	30543	11	died-or-margin
+271	pair	2	30542	30543	12	died-or-margin
+272	pair	2	30542	30543	13	c0:bucket0@57.7°/463u c1:bucket0@116.5°/464u c2:bucket1@228.2°/472u
+273	pair	2	30542	30543	21	died-or-margin
+274	pair	2	30542	30543	22	died-or-margin
+275	pair	2	30542	30543	23	died-or-margin
+276	pair	2	30542	30543	31	c0:bucket0@57.6°/463u c1:bucket0@237.2°/465u c2:bucket0@297.6°/463u
+277	pair	2	30542	30543	32	died-or-margin
+278	pair	2	30542	30543	33	died-or-margin
+279	pair	2	30542	31189	11	died-or-margin
+280	pair	2	30542	31189	12	died-or-margin
+281	pair	2	30542	31189	13	c0:bucket1@48.5°/470u c1:bucket0@297.4°/463u
+282	pair	2	30542	31189	21	died-or-margin
+283	pair	2	30542	31189	22	died-or-margin
+284	pair	2	30542	31189	23	died-or-margin
+285	pair	2	30542	31189	31	c0:bucket0@116.3°/461u c1:bucket1@228.1°/472u
+286	pair	2	30542	31189	32	died-or-margin
+287	pair	2	30542	31189	33	died-or-margin
+288	pair	2	61727	60811	11	died-or-margin
+289	pair	2	61727	60811	12	died-or-margin
+290	pair	2	61727	60811	13	c0:bucket0@356.5°/464u c1:bucket1@228.1°/473u
+291	pair	2	61727	60811	21	died-or-margin
+292	pair	2	61727	60811	22	died-or-margin
+293	pair	2	61727	60811	23	died-or-margin
+294	pair	2	61727	60811	31	c0:bucket1@288.3°/474u c1:bucket1@48.2°/472u c2:bucket0@176.9°/462u
+295	pair	2	61727	60811	32	died-or-margin
+296	pair	2	61727	60811	33	died-or-margin
+297	pair	2	61727	61726	11	died-or-margin
+298	pair	2	61727	61726	12	died-or-margin
+299	pair	2	61727	61726	13	c0:bucket1@288.1°/472u c1:bucket1@47.4°/473u
+300	pair	2	61727	61726	21	died-or-margin
+301	pair	2	61727	61726	22	died-or-margin
+302	pair	2	61727	61726	23	died-or-margin
+303	pair	2	61727	61726	31	c0:bucket1@108.1°/473u c1:bucket1@227.8°/475u
+304	pair	2	61727	61726	32	died-or-margin
+305	pair	2	61727	61726	33	died-or-margin
+306	pair	2	61727	61728	11	died-or-margin
+307	pair	2	61727	61728	12	died-or-margin
+308	pair	2	61727	61728	13	c0:bucket0@356.9°/460u c1:bucket0@236.5°/464u c2:bucket0@177.4°/464u
+309	pair	2	61727	61728	21	died-or-margin
+310	pair	2	61727	61728	22	died-or-margin
+311	pair	2	61727	61728	23	died-or-margin
+312	pair	2	61727	61728	31	c0:bucket0@356.4°/467u c1:bucket0@57.6°/463u c2:bucket0@177.6°/464u
+313	pair	2	61727	61728	32	died-or-margin
+314	pair	2	61727	61728	33	died-or-margin
+315	pair	2	61727	62630	11	died-or-margin
+316	pair	2	61727	62630	12	died-or-margin
+317	pair	2	61727	62630	13	c0:bucket1@348.1°/472u c1:bucket1@107.8°/471u
+318	pair	2	61727	62630	21	died-or-margin
+319	pair	2	61727	62630	22	died-or-margin
+320	pair	2	61727	62630	23	died-or-margin
+321	pair	2	61727	62630	31	c0:bucket1@287.8°/475u c1:bucket0@297.6°/463u c2:bucket0@176.6°/461u c3:bucket1@168.1°/473u
+322	pair	2	61727	62630	32	died-or-margin
+323	pair	2	61727	62630	33	died-or-margin
+324	pair	2	61727	62631	11	died-or-margin
+325	pair	2	61727	62631	12	died-or-margin
+326	pair	2	61727	62631	13	c0:bucket0@57.3°/463u c1:bucket1@167.8°/471u
+327	pair	2	61727	62631	21	died-or-margin
+328	pair	2	61727	62631	22	died-or-margin
+329	pair	2	61727	62631	23	died-or-margin
+330	pair	2	61727	62631	31	c0:bucket1@347.8°/475u c1:bucket0@236.4°/467u
+331	pair	2	61727	62631	32	died-or-margin
+332	pair	2	61727	62631	33	died-or-margin
+333	pair	2	92960	91838	11	died-or-margin
+334	pair	2	92960	91838	12	died-or-margin
+335	pair	2	92960	91838	13	c0:bucket1@168.1°/473u c1:bucket0@297.3°/461u
+336	pair	2	92960	91838	21	died-or-margin
+337	pair	2	92960	91838	22	died-or-margin
+338	pair	2	92960	91838	23	died-or-margin
+339	pair	2	92960	91838	31	c0:bucket0@116.9°/462u c1:bucket1@227.9°/474u c2:bucket1@348.0°/395u
+340	pair	2	92960	91838	32	died-or-margin
+341	pair	2	92960	91838	33	died-or-margin
+342	pair	2	92960	92959	11	died-or-margin
+343	pair	2	92960	92959	12	died-or-margin
+344	pair	2	92960	92959	13	c0:bucket1@227.5°/473u c1:bucket1@347.5°/394u
+345	pair	2	92960	92959	21	died-or-margin
+346	pair	2	92960	92959	22	died-or-margin
+347	pair	2	92960	92959	23	died-or-margin
+348	pair	2	92960	92959	31	c0:bucket1@167.8°/475u c1:bucket1@47.7°/386u
+349	pair	2	92960	92959	32	died-or-margin
+350	pair	2	92960	92959	33	died-or-margin
+351	pair	2	92960	92961	11	died-or-margin
+352	pair	2	92960	92961	12	died-or-margin
+353	pair	2	92960	92961	13	c0:bucket0@176.9°/462u c1:bucket0@117.7°/463u c2:bucket1@288.2°/472u
+354	pair	2	92960	92961	21	died-or-margin
+355	pair	2	92960	92961	22	died-or-margin
+356	pair	2	92960	92961	23	died-or-margin
+357	pair	2	92960	92961	31	c0:bucket0@117.6°/464u c1:bucket0@297.2°/465u c2:bucket0@357.8°/382u
+358	pair	2	92960	92961	32	died-or-margin
+359	pair	2	92960	92961	33	died-or-margin
+360	pair	2	92960	94080	11	died-or-margin
+361	pair	2	92960	94080	12	died-or-margin
+362	pair	2	92960	94080	13	c0:bucket1@47.4°/385u c1:bucket1@288.1°/472u
+363	pair	2	92960	94080	21	died-or-margin
+364	pair	2	92960	94080	22	died-or-margin
+365	pair	2	92960	94080	23	died-or-margin
+366	pair	2	92960	94080	31	c0:bucket0@117.2°/465u c1:bucket1@108.1°/473u c2:bucket1@227.5°/473u c3:bucket0@237.6°/463u
+367	pair	2	92960	94080	32	died-or-margin
+368	pair	2	92960	94080	33	died-or-margin
+369	pair	2	92960	94081	11	died-or-margin
+370	pair	2	92960	94081	12	died-or-margin
+371	pair	2	92960	94081	13	c0:bucket1@108.2°/472u c1:bucket0@357.3°/380u
+372	pair	2	92960	94081	21	died-or-margin
+373	pair	2	92960	94081	22	died-or-margin
+374	pair	2	92960	94081	23	died-or-margin
+375	pair	2	92960	94081	31	c0:bucket0@177.0°/465u c1:bucket1@287.5°/473u
+376	pair	2	92960	94081	32	died-or-margin
+377	pair	2	92960	94081	33	died-or-margin
+378	pair	3	30547	29903	11	died-or-margin
+379	pair	3	30547	29903	12	died-or-margin
+380	pair	3	30547	29903	13	c0:bucket1@108.5°/474u c1:bucket1@228.0°/475u
+381	pair	3	30547	29903	21	died-or-margin
+382	pair	3	30547	29903	22	died-or-margin
+383	pair	3	30547	29903	23	died-or-margin
+384	pair	3	30547	29903	31	c0:bucket1@47.8°/474u c1:bucket1@288.2°/474u
+385	pair	3	30547	29903	32	died-or-margin
+386	pair	3	30547	29903	33	died-or-margin
+387	pair	3	30547	30541	11	died-or-margin
+388	pair	3	30547	30541	12	died-or-margin
+389	pair	3	30547	30541	13	c0:bucket1@168.3°/476u c1:bucket1@48.3°/470u
+390	pair	3	30547	30541	21	died-or-margin
+391	pair	3	30547	30541	22	died-or-margin
+392	pair	3	30547	30541	23	died-or-margin
+393	pair	3	30547	30541	31	c0:bucket1@228.0°/474u c1:bucket1@347.9°/472u
+394	pair	3	30547	30541	32	died-or-margin
+395	pair	3	30547	30541	33	died-or-margin
+396	pair	3	30547	30546	11	died-or-margin
+397	pair	3	30547	30546	12	died-or-margin
+398	pair	3	30547	30546	13	c0:bucket1@287.8°/473u c1:bucket0@177.6°/464u
+399	pair	3	30547	30546	21	died-or-margin
+400	pair	3	30547	30546	22	died-or-margin
+401	pair	3	30547	30546	23	died-or-margin
+402	pair	3	30547	30546	31	c0:bucket1@107.9°/474u c1:bucket0@357.3°/462u
+403	pair	3	30547	30546	32	died-or-margin
+404	pair	3	30547	30546	33	died-or-margin
+405	pair	3	30547	31188	11	died-or-margin
+406	pair	3	30547	31188	12	died-or-margin
+407	pair	3	30547	31188	13	c0:bucket0@117.2°/462u c1:bucket1@347.8°/471u
+408	pair	3	30547	31188	21	died-or-margin
+409	pair	3	30547	31188	22	died-or-margin
+410	pair	3	30547	31188	23	died-or-margin
+411	pair	3	30547	31188	31	c0:bucket1@168.3°/474u c1:bucket0@298.0°/459u
+412	pair	3	30547	31188	32	died-or-margin
+413	pair	3	30547	31188	33	died-or-margin
+414	pair	3	30547	31194	11	died-or-margin
+415	pair	3	30547	31194	12	died-or-margin
+416	pair	3	30547	31194	13	c0:bucket0@296.9°/462u c1:bucket0@357.2°/461u
+417	pair	3	30547	31194	21	died-or-margin
+418	pair	3	30547	31194	22	died-or-margin
+419	pair	3	30547	31194	23	died-or-margin
+420	pair	3	30547	31194	31	c0:bucket0@117.4°/463u c1:bucket1@287.9°/474u c2:bucket0@177.1°/463u c3:bucket1@347.4°/473u
+421	pair	3	30547	31194	32	died-or-margin
+422	pair	3	30547	31194	33	died-or-margin
+423	pair	3	61760	60846	11	died-or-margin
+424	pair	3	61760	60846	12	died-or-margin
+425	pair	3	61760	60846	13	c0:bucket0@297.1°/464u c1:bucket0@236.8°/465u
+426	pair	3	61760	60846	21	died-or-margin
+427	pair	3	61760	60846	22	died-or-margin
+428	pair	3	61760	60846	23	died-or-margin
+429	pair	3	61760	60846	31	c0:bucket1@288.5°/472u c1:bucket0@57.4°/464u c2:bucket0@117.8°/466u c3:bucket0@236.4°/460u c4:bucket1@168.3°/476u
+430	pair	3	61760	60846	32	died-or-margin
+431	pair	3	61760	60846	33	died-or-margin
+432	pair	3	61760	61759	11	died-or-margin
+433	pair	3	61760	61759	12	died-or-margin
+434	pair	3	61760	61759	13	c0:bucket1@288.1°/473u c1:bucket0@57.9°/468u
+435	pair	3	61760	61759	21	died-or-margin
+436	pair	3	61760	61759	22	died-or-margin
+437	pair	3	61760	61759	23	died-or-margin
+438	pair	3	61760	61759	31	c0:bucket1@107.9°/474u c1:bucket0@236.7°/465u
+439	pair	3	61760	61759	32	died-or-margin
+440	pair	3	61760	61759	33	died-or-margin
+441	pair	3	61760	61761	11	died-or-margin
+442	pair	3	61760	61761	12	died-or-margin
+443	pair	3	61760	61761	13	c0:bucket0@117.6°/464u c1:bucket1@228.6°/475u
+444	pair	3	61760	61761	21	died-or-margin
+445	pair	3	61760	61761	22	died-or-margin
+446	pair	3	61760	61761	23	died-or-margin
+447	pair	3	61760	61761	31	c0:bucket0@297.9°/462u c1:bucket1@48.2°/475u
+448	pair	3	61760	61761	32	died-or-margin
+449	pair	3	61760	61761	33	died-or-margin
+450	pair	3	61760	62664	11	died-or-margin
+451	pair	3	61760	62664	12	died-or-margin
+452	pair	3	61760	62664	13	c0:bucket1@348.5°/474u c1:bucket1@108.0°/474u
+453	pair	3	61760	62664	21	died-or-margin
+454	pair	3	61760	62664	22	died-or-margin
+455	pair	3	61760	62664	23	died-or-margin
+456	pair	3	61760	62664	31	c0:bucket1@287.7°/477u c1:bucket1@168.1°/474u
+457	pair	3	61760	62664	32	died-or-margin
+458	pair	3	61760	62664	33	died-or-margin
+459	pair	3	61760	62665	11	died-or-margin
+460	pair	3	61760	62665	12	died-or-margin
+461	pair	3	61760	62665	13	c0:bucket1@48.6°/474u c1:bucket1@168.0°/474u
+462	pair	3	61760	62665	21	died-or-margin
+463	pair	3	61760	62665	22	died-or-margin
+464	pair	3	61760	62665	23	died-or-margin
+465	pair	3	61760	62665	31	c0:bucket1@347.9°/474u c1:bucket1@228.6°/474u
+466	pair	3	61760	62665	32	died-or-margin
+467	pair	3	61760	62665	33	died-or-margin
+468	pair	3	93104	91975	11	died-or-margin
+469	pair	3	93104	91975	12	died-or-margin
+470	pair	3	93104	91975	13	c0:bucket1@228.6°/475u c1:bucket0@117.6°/464u
+471	pair	3	93104	91975	21	died-or-margin
+472	pair	3	93104	91975	22	died-or-margin
+473	pair	3	93104	91975	23	died-or-margin
+474	pair	3	93104	91975	31	c0:bucket0@297.6°/464u c1:bucket1@47.5°/391u
+475	pair	3	93104	91975	32	died-or-margin
+476	pair	3	93104	91975	33	died-or-margin
+477	pair	3	93104	93103	11	died-or-margin
+478	pair	3	93104	93103	12	died-or-margin
+479	pair	3	93104	93103	13	c0:bucket0@297.1°/464u c1:bucket0@236.9°/465u
+480	pair	3	93104	93103	21	died-or-margin
+481	pair	3	93104	93103	22	died-or-margin
+482	pair	3	93104	93103	23	died-or-margin
+483	pair	3	93104	93103	31	grower (56 cells, 10 comps)
+484	pair	3	93104	93103	32	died-or-margin
+485	pair	3	93104	93103	33	died-or-margin
+486	pair	3	93104	93105	11	died-or-margin
+487	pair	3	93104	93105	12	died-or-margin
+488	pair	3	93104	93105	13	c0:bucket1@47.9°/390u c1:bucket1@167.9°/474u
+489	pair	3	93104	93105	21	died-or-margin
+490	pair	3	93104	93105	22	died-or-margin
+491	pair	3	93104	93105	23	died-or-margin
+492	pair	3	93104	93105	31	c0:bucket1@347.9°/434u c1:bucket1@228.6°/474u
+493	pair	3	93104	93105	32	died-or-margin
+494	pair	3	93104	93105	33	died-or-margin
+495	pair	3	93104	94223	11	died-or-margin
+496	pair	3	93104	94223	12	died-or-margin
+497	pair	3	93104	94223	13	c0:bucket1@288.1°/473u c1:bucket0@57.9°/411u
+498	pair	3	93104	94223	21	died-or-margin
+499	pair	3	93104	94223	22	died-or-margin
+500	pair	3	93104	94223	23	died-or-margin
+501	pair	3	93104	94223	31	c0:bucket0@236.9°/464u c1:bucket1@108.1°/463u
+502	pair	3	93104	94223	32	died-or-margin
+503	pair	3	93104	94223	33	died-or-margin
+504	pair	3	93104	94224	11	died-or-margin
+505	pair	3	93104	94224	12	died-or-margin
+506	pair	3	93104	94224	13	c0:bucket1@348.2°/432u c1:bucket1@107.7°/462u
+507	pair	3	93104	94224	21	died-or-margin
+508	pair	3	93104	94224	22	died-or-margin
+509	pair	3	93104	94224	23	died-or-margin
+510	pair	3	93104	94224	31	c0:bucket1@287.7°/477u c1:bucket1@167.8°/471u
+511	pair	3	93104	94224	32	died-or-margin
+512	pair	3	93104	94224	33	died-or-margin
+513	pair	4	30684	30034	11	died-or-margin
+514	pair	4	30684	30034	12	died-or-margin
+515	pair	4	30684	30034	13	c0:bucket0@357.1°/463u c1:bucket1@228.2°/476u
+516	pair	4	30684	30034	21	died-or-margin
+517	pair	4	30684	30034	22	died-or-margin
+518	pair	4	30684	30034	23	died-or-margin
+519	pair	4	30684	30034	31	c0:bucket1@48.5°/474u c1:bucket0@177.3°/461u
+520	pair	4	30684	30034	32	died-or-margin
+521	pair	4	30684	30034	33	died-or-margin
+522	pair	4	30684	30035	11	died-or-margin
+523	pair	4	30684	30035	12	died-or-margin
+524	pair	4	30684	30035	13	c0:bucket1@288.2°/475u c1:bucket0@177.6°/464u
+525	pair	4	30684	30035	21	died-or-margin
+526	pair	4	30684	30035	22	died-or-margin
+527	pair	4	30684	30035	23	died-or-margin
+528	pair	4	30684	30035	31	c0:bucket0@357.6°/464u c1:bucket1@108.0°/475u
+529	pair	4	30684	30035	32	died-or-margin
+530	pair	4	30684	30035	33	died-or-margin
+531	pair	4	30684	30685	11	died-or-margin
+532	pair	4	30684	30685	12	died-or-margin
+533	pair	4	30684	30685	13	c0:bucket1@347.3°/471u c1:bucket1@108.2°/476u c2:bucket0@236.8°/464u
+534	pair	4	30684	30685	21	died-or-margin
+535	pair	4	30684	30685	22	died-or-margin
+536	pair	4	30684	30685	23	died-or-margin
+537	pair	4	30684	30685	31	c0:bucket1@288.2°/472u c1:bucket0@57.3°/461u
+538	pair	4	30684	30685	32	died-or-margin
+539	pair	4	30684	30685	33	died-or-margin
+540	pair	4	30684	31332	11	died-or-margin
+541	pair	4	30684	31332	12	died-or-margin
+542	pair	4	30684	31332	13	c0:bucket0@297.6°/464u c1:bucket1@48.2°/475u
+543	pair	4	30684	31332	21	died-or-margin
+544	pair	4	30684	31332	22	died-or-margin
+545	pair	4	30684	31332	23	died-or-margin
+546	pair	4	30684	31332	31	c0:bucket0@117.6°/464u c1:bucket1@228.0°/475u
+547	pair	4	30684	31332	32	died-or-margin
+548	pair	4	30684	31332	33	died-or-margin
+549	pair	4	30684	31333	11	died-or-margin
+550	pair	4	30684	31333	12	died-or-margin
+551	pair	4	30684	31333	13	c0:bucket1@348.2°/476u c1:bucket0@116.8°/464u c2:bucket1@227.8°/470u
+552	pair	4	30684	31333	21	died-or-margin
+553	pair	4	30684	31333	22	died-or-margin
+554	pair	4	30684	31333	23	died-or-margin
+555	pair	4	30684	31333	31	c0:bucket0@297.3°/461u c1:bucket1@168.5°/474u
+556	pair	4	30684	31333	32	died-or-margin
+557	pair	4	30684	31333	33	died-or-margin
+558	pair	4	30684	31334	11	died-or-margin
+559	pair	4	30684	31334	12	died-or-margin
+560	pair	4	30684	31334	13	c0:bucket0@57.6°/464u c1:bucket1@168.2°/475u
+561	pair	4	30684	31334	21	died-or-margin
+562	pair	4	30684	31334	22	died-or-margin
+563	pair	4	30684	31334	23	died-or-margin
+564	pair	4	30684	31334	31	c0:bucket1@348.0°/475u c1:bucket0@237.6°/464u
+565	pair	4	30684	31334	32	died-or-margin
+566	pair	4	30684	31334	33	died-or-margin
+567	pair	4	61900	60993	11	died-or-margin
+568	pair	4	61900	60993	12	died-or-margin
+569	pair	4	61900	60993	13	c0:bucket0@356.8°/464u c1:bucket1@108.3°/474u c2:bucket1@227.9°/474u
+570	pair	4	61900	60993	21	died-or-margin
+571	pair	4	61900	60993	22	died-or-margin
+572	pair	4	61900	60993	23	died-or-margin
+573	pair	4	61900	60993	31	c0:bucket1@48.2°/472u c1:bucket0@177.3°/461u
+574	pair	4	61900	60993	32	died-or-margin
+575	pair	4	61900	60993	33	died-or-margin
+576	pair	4	61900	61898	11	died-or-margin
+577	pair	4	61900	61898	12	died-or-margin
+578	pair	4	61900	61898	13	c0:bucket1@348.2°/476u c1:bucket0@117.1°/463u c2:bucket1@227.8°/471u
+579	pair	4	61900	61898	21	died-or-margin
+580	pair	4	61900	61898	22	died-or-margin
+581	pair	4	61900	61898	23	died-or-margin
+582	pair	4	61900	61898	31	c0:bucket1@168.5°/474u c1:bucket0@297.3°/461u
+583	pair	4	61900	61898	32	died-or-margin
+584	pair	4	61900	61898	33	died-or-margin
+585	pair	4	61900	61899	11	died-or-margin
+586	pair	4	61900	61899	12	died-or-margin
+587	pair	4	61900	61899	13	c0:bucket1@47.9°/474u c1:bucket0@297.6°/464u
+588	pair	4	61900	61899	21	died-or-margin
+589	pair	4	61900	61899	22	died-or-margin
+590	pair	4	61900	61899	23	died-or-margin
+591	pair	4	61900	61899	31	c0:bucket0@117.6°/464u c1:bucket1@228.1°/475u
+592	pair	4	61900	61899	32	died-or-margin
+593	pair	4	61900	61899	33	died-or-margin
+594	pair	4	61900	61901	11	died-or-margin
+595	pair	4	61900	61901	12	died-or-margin
+596	pair	4	61900	61901	13	c0:bucket0@177.6°/464u c1:bucket1@288.1°/476u
+597	pair	4	61900	61901	21	died-or-margin
+598	pair	4	61900	61901	22	died-or-margin
+599	pair	4	61900	61901	23	died-or-margin
+600	pair	4	61900	61901	31	c0:bucket0@356.8°/463u c1:bucket1@108.6°/475u
+601	pair	4	61900	61901	32	died-or-margin
+602	pair	4	61900	61901	33	died-or-margin
+603	pair	4	61900	62813	11	died-or-margin
+604	pair	4	61900	62813	12	died-or-margin
+605	pair	4	61900	62813	13	c0:bucket0@57.2°/465u c1:bucket1@168.2°/475u
+606	pair	4	61900	62813	21	died-or-margin
+607	pair	4	61900	62813	22	died-or-margin
+608	pair	4	61900	62813	23	died-or-margin
+609	pair	4	61900	62813	31	c0:bucket1@348.0°/475u c1:bucket0@236.8°/463u
+610	pair	4	61900	62813	32	died-or-margin
+611	pair	4	61900	62813	33	died-or-margin
+612	pair	4	61900	62814	11	died-or-margin
+613	pair	4	61900	62814	12	died-or-margin
+614	pair	4	61900	62814	13	c0:bucket1@108.2°/476u c1:bucket0@237.1°/463u
+615	pair	4	61900	62814	21	died-or-margin
+616	pair	4	61900	62814	22	died-or-margin
+617	pair	4	61900	62814	23	died-or-margin
+618	pair	4	61900	62814	31	c0:bucket0@56.9°/464u c1:bucket1@288.5°/474u
+619	pair	4	61900	62814	32	died-or-margin
+620	pair	4	61900	62814	33	died-or-margin
+621	pair	4	93193	92066	11	died-or-margin
+622	pair	4	93193	92066	12	died-or-margin
+623	pair	4	93193	92066	13	c0:bucket0@357.1°/463u c1:bucket1@228.2°/476u
+624	pair	4	93193	92066	21	died-or-margin
+625	pair	4	93193	92066	22	died-or-margin
+626	pair	4	93193	92066	23	died-or-margin
+627	pair	4	93193	92066	31	c0:bucket1@48.6°/434u c1:bucket0@177.3°/461u
+628	pair	4	93193	92066	32	died-or-margin
+629	pair	4	93193	92066	33	died-or-margin
+630	pair	4	93193	92067	11	died-or-margin
+631	pair	4	93193	92067	12	died-or-margin
+632	pair	4	93193	92067	13	c0:bucket1@288.2°/475u c1:bucket0@177.6°/464u
+633	pair	4	93193	92067	21	died-or-margin
+634	pair	4	93193	92067	22	died-or-margin
+635	pair	4	93193	92067	23	died-or-margin
+636	pair	4	93193	92067	31	c0:bucket0@357.6°/464u c1:bucket1@108.0°/391u
+637	pair	4	93193	92067	32	died-or-margin
+638	pair	4	93193	92067	33	died-or-margin
+639	pair	4	93193	93194	11	died-or-margin
+640	pair	4	93193	93194	12	died-or-margin
+641	pair	4	93193	93194	13	c0:bucket1@347.7°/474u c1:bucket1@108.4°/389u c2:bucket0@236.8°/464u
+642	pair	4	93193	93194	21	died-or-margin
+643	pair	4	93193	93194	22	died-or-margin
+644	pair	4	93193	93194	23	died-or-margin
+645	pair	4	93193	93194	31	c0:bucket1@288.2°/472u c1:bucket0@56.3°/381u
+646	pair	4	93193	93194	32	died-or-margin
+647	pair	4	93193	93194	33	died-or-margin
+648	pair	4	93193	94316	11	died-or-margin
+649	pair	4	93193	94316	12	died-or-margin
+650	pair	4	93193	94316	13	c0:bucket0@297.6°/464u c1:bucket1@48.2°/432u
+651	pair	4	93193	94316	21	died-or-margin
+652	pair	4	93193	94316	22	died-or-margin
+653	pair	4	93193	94316	23	died-or-margin
+654	pair	4	93193	94316	31	c0:bucket0@116.9°/457u c1:bucket1@228.0°/475u
+655	pair	4	93193	94316	32	died-or-margin
+656	pair	4	93193	94316	33	died-or-margin
+657	pair	4	93193	94317	11	died-or-margin
+658	pair	4	93193	94317	12	died-or-margin
+659	pair	4	93193	94317	13	c0:bucket1@348.2°/476u c1:bucket0@116.8°/454u c2:bucket1@227.8°/470u
+660	pair	4	93193	94317	21	died-or-margin
+661	pair	4	93193	94317	22	died-or-margin
+662	pair	4	93193	94317	23	died-or-margin
+663	pair	4	93193	94317	31	c0:bucket0@297.3°/461u c1:bucket1@168.5°/474u
+664	pair	4	93193	94317	32	died-or-margin
+665	pair	4	93193	94317	33	died-or-margin
+666	pair	4	93193	94318	11	died-or-margin
+667	pair	4	93193	94318	12	died-or-margin
+668	pair	4	93193	94318	13	c0:bucket0@56.8°/380u c1:bucket1@168.2°/475u
+669	pair	4	93193	94318	21	died-or-margin
+670	pair	4	93193	94318	22	died-or-margin
+671	pair	4	93193	94318	23	died-or-margin
+672	pair	4	93193	94318	31	c0:bucket1@348.0°/475u c1:bucket0@237.6°/464u
+673	pair	4	93193	94318	32	died-or-margin
+674	pair	4	93193	94318	33	died-or-margin
+675	pair	5	30544	29900	11	died-or-margin
+676	pair	5	30544	29900	12	died-or-margin
+677	pair	5	30544	29900	13	c0:bucket1@107.7°/472u c1:bucket1@228.2°/475u
+678	pair	5	30544	29900	21	died-or-margin
+679	pair	5	30544	29900	22	died-or-margin
+680	pair	5	30544	29900	23	died-or-margin
+681	pair	5	30544	29900	31	c0:bucket1@48.1°/474u c1:bucket1@288.2°/472u
+682	pair	5	30544	29900	32	died-or-margin
+683	pair	5	30544	29900	33	died-or-margin
+684	pair	5	30544	29901	11	died-or-margin
+685	pair	5	30544	29901	12	died-or-margin
+686	pair	5	30544	29901	13	c0:bucket1@168.2°/476u c1:bucket1@287.7°/477u
+687	pair	5	30544	29901	21	died-or-margin
+688	pair	5	30544	29901	22	died-or-margin
+689	pair	5	30544	29901	23	died-or-margin
+690	pair	5	30544	29901	31	c0:bucket1@108.0°/474u c1:bucket1@348.5°/474u
+691	pair	5	30544	29901	32	died-or-margin
+692	pair	5	30544	29901	33	died-or-margin
+693	pair	5	30544	30545	11	died-or-margin
+694	pair	5	30544	30545	12	died-or-margin
+695	pair	5	30544	30545	13	c0:bucket1@48.2°/472u c1:bucket0@176.8°/464u
+696	pair	5	30544	30545	21	died-or-margin
+697	pair	5	30544	30545	22	died-or-margin
+698	pair	5	30544	30545	23	died-or-margin
+699	pair	5	30544	30545	31	c0:bucket1@227.8°/475u c1:bucket0@357.3°/461u
+700	pair	5	30544	30545	32	died-or-margin
+701	pair	5	30544	30545	33	died-or-margin
+702	pair	5	30544	31190	11	died-or-margin
+703	pair	5	30544	31190	12	died-or-margin
+704	pair	5	30544	31190	13	c0:bucket0@237.6°/464u c1:bucket1@348.2°/475u
+705	pair	5	30544	31190	21	died-or-margin
+706	pair	5	30544	31190	22	died-or-margin
+707	pair	5	30544	31190	23	died-or-margin
+708	pair	5	30544	31190	31	c0:bucket0@57.6°/464u c1:bucket1@168.6°/475u
+709	pair	5	30544	31190	32	died-or-margin
+710	pair	5	30544	31190	33	died-or-margin
+711	pair	5	30544	31191	11	died-or-margin
+712	pair	5	30544	31191	12	died-or-margin
+713	pair	5	30544	31191	13	c0:bucket1@168.2°/472u c1:bucket0@56.8°/463u c2:bucket1@288.6°/474u
+714	pair	5	30544	31191	21	died-or-margin
+715	pair	5	30544	31191	22	died-or-margin
+716	pair	5	30544	31191	23	died-or-margin
+717	pair	5	30544	31191	31	c0:bucket1@108.6°/474u c1:bucket0@237.2°/464u
+718	pair	5	30544	31191	32	died-or-margin
+719	pair	5	30544	31191	33	died-or-margin
+720	pair	5	30544	31192	11	died-or-margin
+721	pair	5	30544	31192	12	died-or-margin
+722	pair	5	30544	31192	13	c0:bucket1@108.1°/476u c1:bucket0@357.6°/464u
+723	pair	5	30544	31192	21	died-or-margin
+724	pair	5	30544	31192	22	died-or-margin
+725	pair	5	30544	31192	23	died-or-margin
+726	pair	5	30544	31192	31	c0:bucket1@288.1°/475u c1:bucket0@176.8°/466u
+727	pair	5	30544	31192	32	died-or-margin
+728	pair	5	30544	31192	33	died-or-margin
+729	pair	5	61716	60800	11	died-or-margin
+730	pair	5	61716	60800	12	died-or-margin
+731	pair	5	61716	60800	13	c0:bucket1@348.2°/472u c1:bucket0@237.6°/463u
+732	pair	5	61716	60800	21	died-or-margin
+733	pair	5	61716	60800	22	died-or-margin
+734	pair	5	61716	60800	23	died-or-margin
+735	pair	5	61716	60800	31	c0:bucket0@57.7°/464u c1:bucket1@167.8°/473u
+736	pair	5	61716	60800	32	died-or-margin
+737	pair	5	61716	60800	33	died-or-margin
+738	pair	5	61716	60802	11	died-or-margin
+739	pair	5	61716	60802	12	died-or-margin
+740	pair	5	61716	60802	13	c0:bucket1@287.7°/477u c1:bucket1@167.5°/473u
+741	pair	5	61716	60802	21	died-or-margin
+742	pair	5	61716	60802	22	died-or-margin
+743	pair	5	61716	60802	23	died-or-margin
+744	pair	5	61716	60802	31	c0:bucket1@348.5°/474u c1:bucket1@108.0°/474u
+745	pair	5	61716	60802	32	died-or-margin
+746	pair	5	61716	60802	33	died-or-margin
+747	pair	5	61716	61715	11	died-or-margin
+748	pair	5	61716	61715	12	died-or-margin
+749	pair	5	61716	61715	13	c0:bucket1@288.6°/474u c1:bucket0@56.9°/464u c2:bucket1@168.0°/473u
+750	pair	5	61716	61715	21	died-or-margin
+751	pair	5	61716	61715	22	died-or-margin
+752	pair	5	61716	61715	23	died-or-margin
+753	pair	5	61716	61715	31	c0:bucket0@237.6°/464u c1:bucket1@108.6°/474u
+754	pair	5	61716	61715	32	died-or-margin
+755	pair	5	61716	61715	33	died-or-margin
+756	pair	5	61716	61717	11	died-or-margin
+757	pair	5	61716	61717	12	died-or-margin
+758	pair	5	61716	61717	13	c0:bucket1@228.5°/472u c1:bucket1@107.7°/472u
+759	pair	5	61716	61717	21	died-or-margin
+760	pair	5	61716	61717	22	died-or-margin
+761	pair	5	61716	61717	23	died-or-margin
+762	pair	5	61716	61717	31	c0:bucket1@288.2°/472u c1:bucket1@48.2°/471u
+763	pair	5	61716	61717	32	died-or-margin
+764	pair	5	61716	61717	33	died-or-margin
+765	pair	5	61716	62619	11	died-or-margin
+766	pair	5	61716	62619	12	died-or-margin
+767	pair	5	61716	62619	13	c0:bucket0@357.4°/463u c1:bucket1@108.1°/476u
+768	pair	5	61716	62619	21	died-or-margin
+769	pair	5	61716	62619	22	died-or-margin
+770	pair	5	61716	62619	23	died-or-margin
+771	pair	5	61716	62619	31	c0:bucket1@288.1°/475u c1:bucket0@176.6°/465u
+772	pair	5	61716	62619	32	died-or-margin
+773	pair	5	61716	62619	33	died-or-margin
+774	pair	5	61716	62620	11	died-or-margin
+775	pair	5	61716	62620	12	died-or-margin
+776	pair	5	61716	62620	13	c0:bucket1@48.2°/472u c1:bucket0@176.7°/463u
+777	pair	5	61716	62620	21	died-or-margin
+778	pair	5	61716	62620	22	died-or-margin
+779	pair	5	61716	62620	23	died-or-margin
+780	pair	5	61716	62620	31	c0:bucket0@356.8°/463u c1:bucket1@228.5°/474u
+781	pair	5	61716	62620	32	died-or-margin
+782	pair	5	61716	62620	33	died-or-margin
+783	pair	5	92894	91775	11	died-or-margin
+784	pair	5	92894	91775	12	died-or-margin
+785	pair	5	92894	91775	13	c0:bucket1@167.7°/477u c1:bucket1@48.2°/476u
+786	pair	5	92894	91775	21	died-or-margin
+787	pair	5	92894	91775	22	died-or-margin
+788	pair	5	92894	91775	23	died-or-margin
+789	pair	5	92894	91775	31	c0:bucket1@228.3°/437u c1:bucket1@348.0°/474u
+790	pair	5	92894	91775	32	died-or-margin
+791	pair	5	92894	91775	33	died-or-margin
+792	pair	5	92894	91776	11	died-or-margin
+793	pair	5	92894	91776	12	died-or-margin
+794	pair	5	92894	91776	13	c0:bucket1@107.9°/474u c1:bucket1@347.7°/472u
+795	pair	5	92894	91776	21	died-or-margin
+796	pair	5	92894	91776	22	died-or-margin
+797	pair	5	92894	91776	23	died-or-margin
+798	pair	5	92894	91776	31	c0:bucket1@167.9°/474u c1:bucket1@288.4°/394u
+799	pair	5	92894	91776	32	died-or-margin
+800	pair	5	92894	91776	33	died-or-margin
+801	pair	5	92894	92893	11	died-or-margin
+802	pair	5	92894	92893	12	died-or-margin
+803	pair	5	92894	92893	13	c0:bucket0@117.6°/464u c1:bucket1@227.9°/435u
+804	pair	5	92894	92893	21	died-or-margin
+805	pair	5	92894	92893	22	died-or-margin
+806	pair	5	92894	92893	23	died-or-margin
+807	pair	5	92894	92893	31	c0:bucket0@297.7°/450u c1:bucket1@48.0°/475u
+808	pair	5	92894	92893	32	died-or-margin
+809	pair	5	92894	92893	33	died-or-margin
+810	pair	5	92894	92895	11	died-or-margin
+811	pair	5	92894	92895	12	died-or-margin
+812	pair	5	92894	92895	13	c0:bucket1@288.0°/393u c1:bucket0@56.8°/464u
+813	pair	5	92894	92895	21	died-or-margin
+814	pair	5	92894	92895	22	died-or-margin
+815	pair	5	92894	92895	23	died-or-margin
+816	pair	5	92894	92895	31	c0:bucket0@237.2°/384u c1:bucket1@107.5°/473u
+817	pair	5	92894	92895	32	died-or-margin
+818	pair	5	92894	92895	33	died-or-margin
+819	pair	5	92894	94013	11	died-or-margin
+820	pair	5	92894	94013	12	died-or-margin
+821	pair	5	92894	94013	13	c0:bucket1@168.6°/474u c1:bucket0@297.4°/449u c2:bucket1@48.1°/472u
+822	pair	5	92894	94013	21	died-or-margin
+823	pair	5	92894	94013	22	died-or-margin
+824	pair	5	92894	94013	23	died-or-margin
+825	pair	5	92894	94013	31	c0:bucket0@117.2°/464u c1:bucket1@348.6°/474u
+826	pair	5	92894	94013	32	died-or-margin
+827	pair	5	92894	94013	33	died-or-margin
+828	pair	5	92894	94014	11	died-or-margin
+829	pair	5	92894	94014	12	died-or-margin
+830	pair	5	92894	94014	13	c0:bucket0@237.7°/384u c1:bucket1@348.1°/476u
+831	pair	5	92894	94014	21	died-or-margin
+832	pair	5	92894	94014	22	died-or-margin
+833	pair	5	92894	94014	23	died-or-margin
+834	pair	5	92894	94014	31	c0:bucket1@168.1°/475u c1:bucket0@56.1°/466u
+835	pair	5	92894	94014	32	died-or-margin
+836	pair	5	92894	94014	33	died-or-margin
+837	pair	6	30667	30018	11	died-or-margin
+838	pair	6	30667	30018	12	died-or-margin
+839	pair	6	30667	30018	13	c0:bucket1@347.9°/474u c1:bucket0@356.9°/464u c2:short(21) c3:short(21) c4:bucket1@228.6°/474u
+840	pair	6	30667	30018	21	died-or-margin
+841	pair	6	30667	30018	22	died-or-margin
+842	pair	6	30667	30018	23	died-or-margin
+843	pair	6	30667	30018	31	c0:bucket1@48.6°/474u c1:bucket1@167.9°/474u
+844	pair	6	30667	30018	32	died-or-margin
+845	pair	6	30667	30018	33	died-or-margin
+846	pair	6	30667	30019	11	died-or-margin
+847	pair	6	30667	30019	12	died-or-margin
+848	pair	6	30667	30019	13	c0:bucket0@297.3°/461u c1:bucket1@168.5°/474u
+849	pair	6	30667	30019	21	died-or-margin
+850	pair	6	30667	30019	22	died-or-margin
+851	pair	6	30667	30019	23	died-or-margin
+852	pair	6	30667	30019	31	c0:bucket1@348.2°/476u c1:bucket0@117.1°/463u c2:bucket1@227.3°/471u
+853	pair	6	30667	30019	32	died-or-margin
+854	pair	6	30667	30019	33	died-or-margin
+855	pair	6	30667	30666	11	died-or-margin
+856	pair	6	30667	30666	12	died-or-margin
+857	pair	6	30667	30666	13	c0:bucket1@287.9°/474u c1:bucket1@48.1°/474u
+858	pair	6	30667	30666	21	died-or-margin
+859	pair	6	30667	30666	22	died-or-margin
+860	pair	6	30667	30666	23	died-or-margin
+861	pair	6	30667	30666	31	c0:bucket1@107.7°/472u c1:bucket1@227.9°/474u
+862	pair	6	30667	30666	32	died-or-margin
+863	pair	6	30667	30666	33	died-or-margin
+864	pair	6	30667	30668	11	died-or-margin
+865	pair	6	30667	30668	12	died-or-margin
+866	pair	6	30667	30668	13	c0:bucket0@237.3°/461u c1:bucket0@117.3°/461u
+867	pair	6	30667	30668	21	died-or-margin
+868	pair	6	30667	30668	22	died-or-margin
+869	pair	6	30667	30668	23	died-or-margin
+870	pair	6	30667	30668	31	c0:bucket0@297.3°/462u c1:bucket0@57.1°/463u
+871	pair	6	30667	30668	32	died-or-margin
+872	pair	6	30667	30668	33	died-or-margin
+873	pair	6	30667	31312	11	died-or-margin
+874	pair	6	30667	31312	12	died-or-margin
+875	pair	6	30667	31312	13	c0:bucket0@357.3°/462u c1:bucket1@107.4°/473u
+876	pair	6	30667	31312	21	died-or-margin
+877	pair	6	30667	31312	22	died-or-margin
+878	pair	6	30667	31312	23	died-or-margin
+879	pair	6	30667	31312	31	c0:bucket1@287.4°/473u c1:bucket1@288.2°/472u c2:bucket1@48.3°/476u c3:bucket0@177.4°/464u
+880	pair	6	30667	31312	32	died-or-margin
+881	pair	6	30667	31312	33	died-or-margin
+882	pair	6	30667	31314	11	died-or-margin
+883	pair	6	30667	31314	12	died-or-margin
+884	pair	6	30667	31314	13	c0:bucket1@288.3°/474u c1:bucket1@48.2°/472u c2:bucket0@176.9°/462u
+885	pair	6	30667	31314	21	died-or-margin
+886	pair	6	30667	31314	22	died-or-margin
+887	pair	6	30667	31314	23	died-or-margin
+888	pair	6	30667	31314	31	c0:bucket0@356.5°/464u c1:bucket1@228.1°/473u
+889	pair	6	30667	31314	32	died-or-margin
+890	pair	6	30667	31314	33	died-or-margin
+891	pair	6	30667	31315	11	died-or-margin
+892	pair	6	30667	31315	12	died-or-margin
+893	pair	6	30667	31315	13	c0:bucket0@57.3°/461u c1:bucket1@227.8°/471u
+894	pair	6	30667	31315	21	died-or-margin
+895	pair	6	30667	31315	22	died-or-margin
+896	pair	6	30667	31315	23	died-or-margin
+897	pair	6	30667	31315	31	c0:bucket1@48.1°/472u c1:bucket0@237.3°/462u
+898	pair	6	30667	31315	32	died-or-margin
+899	pair	6	30667	31315	33	died-or-margin
+900	pair	6	61803	60893	11	died-or-margin
+901	pair	6	61803	60893	12	died-or-margin
+902	pair	6	61803	60893	13	c0:bucket0@357.3°/461u c1:bucket1@227.8°/475u
+903	pair	6	61803	60893	21	died-or-margin
+904	pair	6	61803	60893	22	died-or-margin
+905	pair	6	61803	60893	23	died-or-margin
+906	pair	6	61803	60893	31	c0:bucket1@48.2°/476u c1:bucket1@287.3°/471u c2:bucket0@176.8°/464u
+907	pair	6	61803	60893	32	died-or-margin
+908	pair	6	61803	60893	33	died-or-margin
+909	pair	6	61803	60894	11	died-or-margin
+910	pair	6	61803	60894	12	died-or-margin
+911	pair	6	61803	60894	13	c0:bucket0@297.3°/461u c1:bucket0@177.4°/464u
+912	pair	6	61803	60894	21	died-or-margin
+913	pair	6	61803	60894	22	died-or-margin
+914	pair	6	61803	60894	23	died-or-margin
+915	pair	6	61803	60894	31	c0:bucket0@357.3°/462u c1:bucket0@117.1°/463u
+916	pair	6	61803	60894	32	died-or-margin
+917	pair	6	61803	60894	33	died-or-margin
+918	pair	6	61803	61802	11	died-or-margin
+919	pair	6	61803	61802	12	died-or-margin
+920	pair	6	61803	61802	13	c0:short(27) c1:short(27) c2:bucket1@47.9°/474u c3:bucket0@56.9°/464u c4:bucket1@288.6°/474u
+921	pair	6	61803	61802	21	died-or-margin
+922	pair	6	61803	61802	22	died-or-margin
+923	pair	6	61803	61802	23	died-or-margin
+924	pair	6	61803	61802	31	c0:bucket1@108.5°/474u c1:bucket1@227.9°/474u
+925	pair	6	61803	61802	32	died-or-margin
+926	pair	6	61803	61802	33	died-or-margin
+927	pair	6	61803	61804	11	died-or-margin
+928	pair	6	61803	61804	12	died-or-margin
+929	pair	6	61803	61804	13	c0:bucket1@287.8°/471u c1:bucket0@117.3°/461u
+930	pair	6	61803	61804	21	died-or-margin
+931	pair	6	61803	61804	22	died-or-margin
+932	pair	6	61803	61804	23	died-or-margin
+933	pair	6	61803	61804	31	c0:bucket0@297.3°/462u c1:bucket1@107.9°/472u
+934	pair	6	61803	61804	32	died-or-margin
+935	pair	6	61803	61804	33	died-or-margin
+936	pair	6	61803	62711	11	died-or-margin
+937	pair	6	61803	62711	12	died-or-margin
+938	pair	6	61803	62711	13	c0:bucket1@347.9°/474u c1:bucket1@108.2°/471u
+939	pair	6	61803	62711	21	died-or-margin
+940	pair	6	61803	62711	22	died-or-margin
+941	pair	6	61803	62711	23	died-or-margin
+942	pair	6	61803	62711	31	c0:bucket1@287.9°/474u c1:bucket1@167.7°/472u
+943	pair	6	61803	62711	32	died-or-margin
+944	pair	6	61803	62711	33	died-or-margin
+945	pair	6	61803	62712	11	died-or-margin
+946	pair	6	61803	62712	12	died-or-margin
+947	pair	6	61803	62712	13	c0:bucket0@57.3°/462u c1:bucket1@167.4°/473u
+948	pair	6	61803	62712	21	died-or-margin
+949	pair	6	61803	62712	22	died-or-margin
+950	pair	6	61803	62712	23	died-or-margin
+951	pair	6	61803	62712	31	c0:bucket1@347.4°/473u c1:bucket1@348.2°/472u c2:bucket1@108.3°/476u c3:bucket0@237.4°/464u
+952	pair	6	61803	62712	32	died-or-margin
+953	pair	6	61803	62712	33	died-or-margin
+954	pair	6	61803	62713	11	died-or-margin
+955	pair	6	61803	62713	12	died-or-margin
+956	pair	6	61803	62713	13	c0:bucket1@348.3°/474u c1:bucket1@108.2°/472u c2:bucket0@236.9°/462u
+957	pair	6	61803	62713	21	died-or-margin
+958	pair	6	61803	62713	22	died-or-margin
+959	pair	6	61803	62713	23	died-or-margin
+960	pair	6	61803	62713	31	c0:bucket0@56.5°/464u c1:bucket1@288.1°/473u
+961	pair	6	61803	62713	32	died-or-margin
+962	pair	6	61803	62713	33	died-or-margin
+963	pair	6	93169	92040	11	died-or-margin
+964	pair	6	93169	92040	12	died-or-margin
+965	pair	6	93169	92040	13	c0:bucket0@357.3°/461u c1:bucket0@237.4°/464u
+966	pair	6	93169	92040	21	died-or-margin
+967	pair	6	93169	92040	22	died-or-margin
+968	pair	6	93169	92040	23	died-or-margin
+969	pair	6	93169	92040	31	c0:bucket0@57.6°/383u c1:bucket0@177.1°/463u
+970	pair	6	93169	92040	32	died-or-margin
+971	pair	6	93169	92040	33	died-or-margin
+972	pair	6	93169	92041	11	died-or-margin
+973	pair	6	93169	92041	12	died-or-margin
+974	pair	6	93169	92041	13	c0:bucket1@347.8°/471u c1:bucket0@177.3°/461u
+975	pair	6	93169	92041	21	died-or-margin
+976	pair	6	93169	92041	22	died-or-margin
+977	pair	6	93169	92041	23	died-or-margin
+978	pair	6	93169	92041	31	c0:bucket0@357.3°/462u c1:bucket1@168.1°/472u
+979	pair	6	93169	92041	32	died-or-margin
+980	pair	6	93169	92041	33	died-or-margin
+981	pair	6	93169	92042	11	died-or-margin
+982	pair	6	93169	92042	12	died-or-margin
+983	pair	6	93169	92042	13	c0:bucket0@296.9°/462u c1:bucket1@48.1°/432u c2:bucket1@168.2°/472u
+984	pair	6	93169	92042	21	died-or-margin
+985	pair	6	93169	92042	22	died-or-margin
+986	pair	6	93169	92042	23	died-or-margin
+987	pair	6	93169	92042	31	c0:bucket1@347.5°/473u c1:bucket0@116.5°/461u
+988	pair	6	93169	92042	32	died-or-margin
+989	pair	6	93169	92042	33	died-or-margin
+990	pair	6	93169	93168	11	died-or-margin
+991	pair	6	93169	93168	12	died-or-margin
+992	pair	6	93169	93168	13	c0:bucket1@288.2°/472u c1:bucket0@57.2°/381u
+993	pair	6	93169	93168	21	died-or-margin
+994	pair	6	93169	93168	22	died-or-margin
+995	pair	6	93169	93168	23	died-or-margin
+996	pair	6	93169	93168	31	c0:bucket1@347.7°/474u c1:bucket0@236.8°/464u c2:bucket1@108.4°/389u
+997	pair	6	93169	93168	32	died-or-margin
+998	pair	6	93169	93168	33	died-or-margin
+999	pair	6	93169	93170	11	died-or-margin
+1000	pair	6	93169	93170	12	died-or-margin
+1001	pair	6	93169	93170	13	c0:bucket1@227.4°/473u c1:bucket0@116.9°/459u
+1002	pair	6	93169	93170	21	died-or-margin
+1003	pair	6	93169	93170	22	died-or-margin
+1004	pair	6	93169	93170	23	died-or-margin
+1005	pair	6	93169	93170	31	c0:bucket0@296.6°/460u c1:bucket1@47.6°/433u c2:bucket1@47.7°/410u c3:bucket1@168.3°/476u
+1006	pair	6	93169	93170	32	died-or-margin
+1007	pair	6	93169	93170	33	died-or-margin
+1008	pair	6	93169	94290	11	died-or-margin
+1009	pair	6	93169	94290	12	died-or-margin
+1010	pair	6	93169	94290	13	c0:bucket1@348.6°/474u c1:short(30) c2:short(30) c3:bucket1@108.0°/387u c4:bucket0@116.9°/464u
+1011	pair	6	93169	94290	21	died-or-margin
+1012	pair	6	93169	94290	22	died-or-margin
+1013	pair	6	93169	94290	23	died-or-margin
+1014	pair	6	93169	94290	31	c0:bucket1@287.9°/474u c1:bucket1@168.6°/474u
+1015	pair	6	93169	94290	32	died-or-margin
+1016	pair	6	93169	94290	33	died-or-margin
+1017	pair	6	93169	94291	11	died-or-margin
+1018	pair	6	93169	94291	12	died-or-margin
+1019	pair	6	93169	94291	13	c0:bucket1@48.1°/409u c1:bucket1@168.3°/471u
+1020	pair	6	93169	94291	21	died-or-margin
+1021	pair	6	93169	94291	22	died-or-margin
+1022	pair	6	93169	94291	23	died-or-margin
+1023	pair	6	93169	94291	31	c0:bucket1@347.9°/474u c1:bucket1@227.7°/472u
+1024	pair	6	93169	94291	32	died-or-margin
+1025	pair	6	93169	94291	33	died-or-margin
+1026	pair	7	30545	29900	11	died-or-margin
+1027	pair	7	30545	29900	12	died-or-margin
+1028	pair	7	30545	29900	13	c0:bucket1@48.3°/476u c1:bucket1@287.4°/473u c2:bucket1@288.2°/472u c3:bucket0@177.4°/464u
+1029	pair	7	30545	29900	21	died-or-margin
+1030	pair	7	30545	29900	22	died-or-margin
+1031	pair	7	30545	29900	23	died-or-margin
+1032	pair	7	30545	29900	31	c0:bucket1@107.4°/473u c1:bucket0@357.3°/462u
+1033	pair	7	30545	29900	32	died-or-margin
+1034	pair	7	30545	29900	33	died-or-margin
+1035	pair	7	30545	29904	11	died-or-margin
+1036	pair	7	30545	29904	12	died-or-margin
+1037	pair	7	30545	29904	13	c0:bucket1@108.1°/473u c1:bucket1@227.8°/475u
+1038	pair	7	30545	29904	21	died-or-margin
+1039	pair	7	30545	29904	22	died-or-margin
+1040	pair	7	30545	29904	23	died-or-margin
+1041	pair	7	30545	29904	31	c0:bucket1@47.4°/473u c1:bucket1@288.1°/472u
+1042	pair	7	30545	29904	32	died-or-margin
+1043	pair	7	30545	29904	33	died-or-margin
+1044	pair	7	30545	29905	11	died-or-margin
+1045	pair	7	30545	29905	12	died-or-margin
+1046	pair	7	30545	29905	13	c0:bucket1@47.8°/475u c1:bucket1@167.4°/473u
+1047	pair	7	30545	29905	21	died-or-margin
+1048	pair	7	30545	29905	22	died-or-margin
+1049	pair	7	30545	29905	23	died-or-margin
+1050	pair	7	30545	29905	31	c0:bucket1@227.8°/472u c1:bucket1@347.4°/473u
+1051	pair	7	30545	29905	32	died-or-margin
+1052	pair	7	30545	29905	33	died-or-margin
+1053	pair	7	30545	30544	11	died-or-margin
+1054	pair	7	30545	30544	12	died-or-margin
+1055	pair	7	30545	30544	13	c0:bucket1@227.8°/475u c1:bucket0@357.3°/461u
+1056	pair	7	30545	30544	21	died-or-margin
+1057	pair	7	30545	30544	22	died-or-margin
+1058	pair	7	30545	30544	23	died-or-margin
+1059	pair	7	30545	30544	31	c0:bucket1@48.2°/472u c1:bucket0@176.8°/464u
+1060	pair	7	30545	30544	32	died-or-margin
+1061	pair	7	30545	30544	33	died-or-margin
+1062	pair	7	30545	30548	11	died-or-margin
+1063	pair	7	30545	30548	12	died-or-margin
+1064	pair	7	30545	30548	13	c0:bucket1@107.9°/474u c1:bucket1@348.2°/472u
+1065	pair	7	30545	30548	21	died-or-margin
+1066	pair	7	30545	30548	22	died-or-margin
+1067	pair	7	30545	30548	23	died-or-margin
+1068	pair	7	30545	30548	31	c0:bucket1@167.7°/472u c1:bucket1@288.2°/475u
+1069	pair	7	30545	30548	32	died-or-margin
+1070	pair	7	30545	30548	33	died-or-margin
+1071	pair	7	30545	31192	11	died-or-margin
+1072	pair	7	30545	31192	12	died-or-margin
+1073	pair	7	30545	31192	13	c0:bucket1@47.9°/474u c1:bucket0@57.4°/465u c2:bucket1@288.5°/473u c3:short(28) c4:short(28)
+1074	pair	7	30545	31192	21	died-or-margin
+1075	pair	7	30545	31192	22	died-or-margin
+1076	pair	7	30545	31192	23	died-or-margin
+1077	pair	7	30545	31192	31	c0:bucket1@108.5°/474u c1:bucket1@227.9°/474u
+1078	pair	7	30545	31192	32	died-or-margin
+1079	pair	7	30545	31192	33	died-or-margin
+1080	pair	7	61788	60877	11	died-or-margin
+1081	pair	7	61788	60877	12	died-or-margin
+1082	pair	7	61788	60877	13	c0:bucket1@347.8°/475u c1:bucket1@228.1°/473u
+1083	pair	7	61788	60877	21	died-or-margin
+1084	pair	7	61788	60877	22	died-or-margin
+1085	pair	7	61788	60877	23	died-or-margin
+1086	pair	7	61788	60877	31	c0:bucket1@48.1°/472u c1:bucket1@167.4°/473u
+1087	pair	7	61788	60877	32	died-or-margin
+1088	pair	7	61788	60877	33	died-or-margin
+1089	pair	7	61788	60878	11	died-or-margin
+1090	pair	7	61788	60878	12	died-or-margin
+1091	pair	7	61788	60878	13	c0:bucket1@287.8°/475u c1:bucket1@168.2°/472u
+1092	pair	7	61788	60878	21	died-or-margin
+1093	pair	7	61788	60878	22	died-or-margin
+1094	pair	7	61788	60878	23	died-or-margin
+1095	pair	7	61788	60878	31	c0:bucket1@347.8°/472u c1:bucket1@107.4°/473u
+1096	pair	7	61788	60878	32	died-or-margin
+1097	pair	7	61788	60878	33	died-or-margin
+1098	pair	7	61788	61787	11	died-or-margin
+1099	pair	7	61788	61787	12	died-or-margin
+1100	pair	7	61788	61787	13	c0:bucket0@297.4°/464u c1:bucket1@48.2°/472u c2:bucket1@47.4°/473u c3:bucket1@168.3°/476u
+1101	pair	7	61788	61787	21	died-or-margin
+1102	pair	7	61788	61787	22	died-or-margin
+1103	pair	7	61788	61787	23	died-or-margin
+1104	pair	7	61788	61787	31	c0:bucket0@117.4°/463u c1:bucket1@227.4°/473u
+1105	pair	7	61788	61787	32	died-or-margin
+1106	pair	7	61788	61787	33	died-or-margin
+1107	pair	7	61788	61789	11	died-or-margin
+1108	pair	7	61788	61789	12	died-or-margin
+1109	pair	7	61788	61789	13	c0:bucket1@108.1°/472u c1:bucket1@227.9°/474u
+1110	pair	7	61788	61789	21	died-or-margin
+1111	pair	7	61788	61789	22	died-or-margin
+1112	pair	7	61788	61789	23	died-or-margin
+1113	pair	7	61788	61789	31	c0:bucket1@287.8°/472u c1:bucket1@48.2°/475u
+1114	pair	7	61788	61789	32	died-or-margin
+1115	pair	7	61788	61789	33	died-or-margin
+1116	pair	7	61788	62696	11	died-or-margin
+1117	pair	7	61788	62696	12	died-or-margin
+1118	pair	7	61788	62696	13	c0:bucket1@347.8°/475u c1:bucket0@116.8°/463u
+1119	pair	7	61788	62696	21	died-or-margin
+1120	pair	7	61788	62696	22	died-or-margin
+1121	pair	7	61788	62696	23	died-or-margin
+1122	pair	7	61788	62696	31	c0:bucket0@296.8°/464u c1:bucket1@168.5°/474u
+1123	pair	7	61788	62696	32	died-or-margin
+1124	pair	7	61788	62696	33	died-or-margin
+1125	pair	7	61788	62697	11	died-or-margin
+1126	pair	7	61788	62697	12	died-or-margin
+1127	pair	7	61788	62697	13	c0:bucket1@48.5°/473u c1:short(32) c2:short(32) c3:bucket1@167.8°/473u c4:bucket0@177.4°/465u
+1128	pair	7	61788	62697	21	died-or-margin
+1129	pair	7	61788	62697	22	died-or-margin
+1130	pair	7	61788	62697	23	died-or-margin
+1131	pair	7	61788	62697	31	c0:bucket1@347.9°/474u c1:bucket1@228.5°/474u
+1132	pair	7	61788	62697	32	died-or-margin
+1133	pair	7	61788	62697	33	died-or-margin
+1134	pair	7	92923	91801	11	died-or-margin
+1135	pair	7	92923	91801	12	died-or-margin
+1136	pair	7	92923	91801	13	c0:bucket1@167.4°/473u c1:bucket0@56.6°/460u
+1137	pair	7	92923	91801	21	died-or-margin
+1138	pair	7	92923	91801	22	died-or-margin
+1139	pair	7	92923	91801	23	died-or-margin
+1140	pair	7	92923	91801	31	c0:bucket0@237.6°/386u c1:bucket1@348.0°/450u
+1141	pair	7	92923	91801	32	died-or-margin
+1142	pair	7	92923	91801	33	died-or-margin
+1143	pair	7	92923	91803	11	died-or-margin
+1144	pair	7	92923	91803	12	died-or-margin
+1145	pair	7	92923	91803	13	c0:bucket1@107.8°/475u c1:bucket1@348.3°/448u
+1146	pair	7	92923	91803	21	died-or-margin
+1147	pair	7	92923	91803	22	died-or-margin
+1148	pair	7	92923	91803	23	died-or-margin
+1149	pair	7	92923	91803	31	c0:bucket1@168.1°/472u c1:bucket1@287.5°/394u
+1150	pair	7	92923	91803	32	died-or-margin
+1151	pair	7	92923	91803	33	died-or-margin
+1152	pair	7	92923	92922	11	died-or-margin
+1153	pair	7	92923	92922	12	died-or-margin
+1154	pair	7	92923	92922	13	c0:bucket0@237.2°/384u c1:bucket1@107.5°/473u
+1155	pair	7	92923	92922	21	died-or-margin
+1156	pair	7	92923	92922	22	died-or-margin
+1157	pair	7	92923	92922	23	died-or-margin
+1158	pair	7	92923	92922	31	c0:bucket1@288.0°/393u c1:bucket0@56.7°/463u
+1159	pair	7	92923	92922	32	died-or-margin
+1160	pair	7	92923	92922	33	died-or-margin
+1161	pair	7	92923	92924	11	died-or-margin
+1162	pair	7	92923	92924	12	died-or-margin
+1163	pair	7	92923	92924	13	c0:bucket1@288.0°/393u c1:bucket1@47.4°/473u
+1164	pair	7	92923	92924	21	died-or-margin
+1165	pair	7	92923	92924	22	died-or-margin
+1166	pair	7	92923	92924	23	died-or-margin
+1167	pair	7	92923	92924	31	c0:bucket1@227.8°/433u c1:bucket1@108.1°/473u
+1168	pair	7	92923	92924	32	died-or-margin
+1169	pair	7	92923	92924	33	died-or-margin
+1170	pair	7	92923	94042	11	died-or-margin
+1171	pair	7	92923	94042	12	died-or-margin
+1172	pair	7	92923	94042	13	c0:bucket1@168.5°/473u c1:short(35) c2:short(35) c3:bucket1@288.0°/393u c4:bucket0@296.9°/414u
+1173	pair	7	92923	94042	21	died-or-margin
+1174	pair	7	92923	94042	22	died-or-margin
+1175	pair	7	92923	94042	23	died-or-margin
+1176	pair	7	92923	94042	31	c0:bucket1@107.9°/474u c1:bucket1@348.0°/447u
+1177	pair	7	92923	94042	32	died-or-margin
+1178	pair	7	92923	94042	33	died-or-margin
+1179	pair	7	92923	94043	11	died-or-margin
+1180	pair	7	92923	94043	12	died-or-margin
+1181	pair	7	92923	94043	13	c0:bucket1@228.2°/432u c1:bucket1@347.6°/446u
+1182	pair	7	92923	94043	21	died-or-margin
+1183	pair	7	92923	94043	22	died-or-margin
+1184	pair	7	92923	94043	23	died-or-margin
+1185	pair	7	92923	94043	31	c0:bucket1@168.2°/475u c1:bucket1@47.7°/472u
+1186	pair	7	92923	94043	32	died-or-margin
+1187	pair	7	92923	94043	33	died-or-margin
+1188	pair	8	30559	29915	11	died-or-margin
+1189	pair	8	30559	29915	12	died-or-margin
+1190	pair	8	30559	29915	13	c0:bucket1@168.6°/474u c1:bucket0@297.2°/464u
+1191	pair	8	30559	29915	21	died-or-margin
+1192	pair	8	30559	29915	22	died-or-margin
+1193	pair	8	30559	29915	23	died-or-margin
+1194	pair	8	30559	29915	31	c0:bucket0@116.8°/463u c1:bucket1@228.1°/472u c2:bucket1@348.6°/474u
+1195	pair	8	30559	29915	32	died-or-margin
+1196	pair	8	30559	29915	33	died-or-margin
+1197	pair	8	30559	29916	11	died-or-margin
+1198	pair	8	30559	29916	12	died-or-margin
+1199	pair	8	30559	29916	13	c0:bucket1@108.1°/473u c1:bucket0@116.6°/459u c2:bucket0@237.1°/463u c3:bucket1@347.8°/471u
+1200	pair	8	30559	29916	21	died-or-margin
+1201	pair	8	30559	29916	22	died-or-margin
+1202	pair	8	30559	29916	23	died-or-margin
+1203	pair	8	30559	29916	31	c0:bucket0@57.1°/463u c1:bucket0@297.3°/464u
+1204	pair	8	30559	29916	32	died-or-margin
+1205	pair	8	30559	29916	33	died-or-margin
+1206	pair	8	30559	30558	11	died-or-margin
+1207	pair	8	30559	30558	12	died-or-margin
+1208	pair	8	30559	30558	13	c0:bucket1@228.6°/474u c1:bucket1@347.9°/474u
+1209	pair	8	30559	30558	21	died-or-margin
+1210	pair	8	30559	30558	22	died-or-margin
+1211	pair	8	30559	30558	23	died-or-margin
+1212	pair	8	30559	30558	31	c0:bucket1@48.0°/474u c1:bucket1@168.0°/474u
+1213	pair	8	30559	30558	32	died-or-margin
+1214	pair	8	30559	30558	33	died-or-margin
+1215	pair	8	30559	30560	11	died-or-margin
+1216	pair	8	30559	30560	12	died-or-margin
+1217	pair	8	30559	30560	13	c0:bucket0@57.3°/461u c1:bucket1@228.5°/475u
+1218	pair	8	30559	30560	21	died-or-margin
+1219	pair	8	30559	30560	22	died-or-margin
+1220	pair	8	30559	30560	23	died-or-margin
+1221	pair	8	30559	30560	31	c0:bucket1@47.5°/473u c1:bucket0@237.7°/463u
+1222	pair	8	30559	30560	32	died-or-margin
+1223	pair	8	30559	30560	33	died-or-margin
+1224	pair	8	30559	31204	11	died-or-margin
+1225	pair	8	30559	31204	12	died-or-margin
+1226	pair	8	30559	31204	13	c0:bucket1@48.0°/475u c1:bucket1@288.3°/474u
+1227	pair	8	30559	31204	21	died-or-margin
+1228	pair	8	30559	31204	22	died-or-margin
+1229	pair	8	30559	31204	23	died-or-margin
+1230	pair	8	30559	31204	31	c0:bucket1@108.5°/474u c1:bucket1@228.5°/472u
+1231	pair	8	30559	31204	32	died-or-margin
+1232	pair	8	30559	31204	33	died-or-margin
+1233	pair	8	30559	31205	11	died-or-margin
+1234	pair	8	30559	31205	12	died-or-margin
+1235	pair	8	30559	31205	13	c0:bucket0@357.4°/463u c1:bucket1@108.5°/472u
+1236	pair	8	30559	31205	21	died-or-margin
+1237	pair	8	30559	31205	22	died-or-margin
+1238	pair	8	30559	31205	23	died-or-margin
+1239	pair	8	30559	31205	31	c0:bucket1@47.9°/474u c1:bucket0@177.4°/463u c2:bucket1@288.5°/475u
+1240	pair	8	30559	31205	32	died-or-margin
+1241	pair	8	30559	31205	33	died-or-margin
+1242	pair	8	30559	31206	11	died-or-margin
+1243	pair	8	30559	31206	12	died-or-margin
+1244	pair	8	30559	31206	13	c0:bucket1@48.0°/476u c1:bucket0@178.0°/459u
+1245	pair	8	30559	31206	21	died-or-margin
+1246	pair	8	30559	31206	22	died-or-margin
+1247	pair	8	30559	31206	23	died-or-margin
+1248	pair	8	30559	31206	31	c0:bucket0@356.9°/462u c1:bucket1@227.9°/474u
+1249	pair	8	30559	31206	32	died-or-margin
+1250	pair	8	30559	31206	33	died-or-margin
+1251	pair	8	61784	60872	11	died-or-margin
+1252	pair	8	61784	60872	12	died-or-margin
+1253	pair	8	61784	60872	13	c0:bucket0@357.2°/465u c1:bucket1@228.1°/473u
+1254	pair	8	61784	60872	21	died-or-margin
+1255	pair	8	61784	60872	22	died-or-margin
+1256	pair	8	61784	60872	23	died-or-margin
+1257	pair	8	61784	60872	31	c0:bucket1@288.6°/474u c1:bucket1@48.2°/472u c2:bucket0@176.7°/465u
+1258	pair	8	61784	60872	32	died-or-margin
+1259	pair	8	61784	60872	33	died-or-margin
+1260	pair	8	61784	60873	11	died-or-margin
+1261	pair	8	61784	60873	12	died-or-margin
+1262	pair	8	61784	60873	13	c0:bucket0@296.9°/462u c1:bucket0@176.4°/467u
+1263	pair	8	61784	60873	21	died-or-margin
+1264	pair	8	61784	60873	22	died-or-margin
+1265	pair	8	61784	60873	23	died-or-margin
+1266	pair	8	61784	60873	31	c0:bucket0@357.3°/463u c1:bucket0@117.6°/460u
+1267	pair	8	61784	60873	32	died-or-margin
+1268	pair	8	61784	60873	33	died-or-margin
+1269	pair	8	61784	61783	11	died-or-margin
+1270	pair	8	61784	61783	12	died-or-margin
+1271	pair	8	61784	61783	13	c0:bucket1@287.6°/470u c1:bucket1@48.0°/473u
+1272	pair	8	61784	61783	21	died-or-margin
+1273	pair	8	61784	61783	22	died-or-margin
+1274	pair	8	61784	61783	23	died-or-margin
+1275	pair	8	61784	61783	31	c0:bucket1@108.1°/474u c1:bucket1@228.8°/475u
+1276	pair	8	61784	61783	32	died-or-margin
+1277	pair	8	61784	61783	33	died-or-margin
+1278	pair	8	61784	61785	11	died-or-margin
+1279	pair	8	61784	61785	12	died-or-margin
+1280	pair	8	61784	61785	13	grower (98 cells, 15 comps)
+1281	pair	8	61784	61785	21	died-or-margin
+1282	pair	8	61784	61785	22	died-or-margin
+1283	pair	8	61784	61785	23	died-or-margin
+1284	pair	8	61784	61785	31	c0:bucket0@297.2°/465u c1:bucket1@107.8°/471u
+1285	pair	8	61784	61785	32	died-or-margin
+1286	pair	8	61784	61785	33	died-or-margin
+1287	pair	8	61784	62691	11	died-or-margin
+1288	pair	8	61784	62691	12	died-or-margin
+1289	pair	8	61784	62691	13	c0:bucket1@348.0°/474u c1:bucket1@108.0°/474u
+1290	pair	8	61784	62691	21	died-or-margin
+1291	pair	8	61784	62691	22	died-or-margin
+1292	pair	8	61784	62691	23	died-or-margin
+1293	pair	8	61784	62691	31	c0:bucket1@287.9°/474u c1:bucket1@168.3°/470u
+1294	pair	8	61784	62691	32	died-or-margin
+1295	pair	8	61784	62691	33	died-or-margin
+1296	pair	8	61784	62692	11	died-or-margin
+1297	pair	8	61784	62692	12	died-or-margin
+1298	pair	8	61784	62692	13	c0:bucket0@56.8°/463u c1:bucket1@168.9°/473u
+1299	pair	8	61784	62692	21	died-or-margin
+1300	pair	8	61784	62692	22	died-or-margin
+1301	pair	8	61784	62692	23	died-or-margin
+1302	pair	8	61784	62692	31	c0:bucket1@348.2°/472u c1:bucket1@107.9°/474u c2:bucket0@237.6°/463u
+1303	pair	8	61784	62692	32	died-or-margin
+1304	pair	8	61784	62692	33	died-or-margin
+1305	pair	8	61784	62693	11	died-or-margin
+1306	pair	8	61784	62693	12	died-or-margin
+1307	pair	8	61784	62693	13	c0:bucket1@287.5°/473u c1:bucket1@107.9°/474u c2:bucket0@236.7°/465u
+1308	pair	8	61784	62693	21	died-or-margin
+1309	pair	8	61784	62693	22	died-or-margin
+1310	pair	8	61784	62693	23	died-or-margin
+1311	pair	8	61784	62693	31	c0:bucket1@288.1°/473u c1:bucket0@57.9°/468u
+1312	pair	8	61784	62693	32	died-or-margin
+1313	pair	8	61784	62693	33	died-or-margin
+1314	pair	8	92976	91852	11	died-or-margin
+1315	pair	8	92976	91852	12	died-or-margin
+1316	pair	8	92976	91852	13	c0:bucket1@168.2°/474u c1:bucket1@288.0°/475u
+1317	pair	8	92976	91852	21	died-or-margin
+1318	pair	8	92976	91852	22	died-or-margin
+1319	pair	8	92976	91852	23	died-or-margin
+1320	pair	8	92976	91852	31	c0:bucket1@107.8°/474u c1:bucket1@348.0°/414u
+1321	pair	8	92976	91852	32	died-or-margin
+1322	pair	8	92976	91852	33	died-or-margin
+1323	pair	8	92976	91853	11	died-or-margin
+1324	pair	8	92976	91853	12	died-or-margin
+1325	pair	8	92976	91853	13	c0:bucket1@108.3°/470u c1:bucket1@227.9°/474u
+1326	pair	8	92976	91853	21	died-or-margin
+1327	pair	8	92976	91853	22	died-or-margin
+1328	pair	8	92976	91853	23	died-or-margin
+1329	pair	8	92976	91853	31	c0:bucket1@47.6°/391u c1:bucket1@288.0°/474u
+1330	pair	8	92976	91853	32	died-or-margin
+1331	pair	8	92976	91853	33	died-or-margin
+1332	pair	8	92976	92975	11	died-or-margin
+1333	pair	8	92976	92975	12	died-or-margin
+1334	pair	8	92976	92975	13	c0:bucket0@236.9°/465u c1:bucket1@347.9°/411u
+1335	pair	8	92976	92975	21	died-or-margin
+1336	pair	8	92976	92975	22	died-or-margin
+1337	pair	8	92976	92975	23	died-or-margin
+1338	pair	8	92976	92975	31	c0:bucket1@167.8°/474u c1:bucket0@57.3°/458u c2:bucket1@287.4°/473u
+1339	pair	8	92976	92975	32	died-or-margin
+1340	pair	8	92976	92975	33	died-or-margin
+1341	pair	8	92976	92977	11	died-or-margin
+1342	pair	8	92976	92977	12	died-or-margin
+1343	pair	8	92976	92977	13	c0:bucket0@176.8°/463u c1:bucket1@47.9°/390u
+1344	pair	8	92976	92977	21	died-or-margin
+1345	pair	8	92976	92977	22	died-or-margin
+1346	pair	8	92976	92977	23	died-or-margin
+1347	pair	8	92976	92977	31	c0:bucket0@357.2°/381u c1:bucket1@108.6°/474u c2:bucket1@227.9°/473u
+1348	pair	8	92976	92977	32	died-or-margin
+1349	pair	8	92976	92977	33	died-or-margin
+1350	pair	8	92976	94094	11	died-or-margin
+1351	pair	8	92976	94094	12	died-or-margin
+1352	pair	8	92976	94094	13	c0:bucket0@57.3°/464u c1:bucket0@57.5°/455u c2:bucket1@287.9°/474u c3:bucket0@297.2°/465u
+1353	pair	8	92976	94094	21	died-or-margin
+1354	pair	8	92976	94094	22	died-or-margin
+1355	pair	8	92976	94094	23	died-or-margin
+1356	pair	8	92976	94094	31	c0:bucket1@107.4°/473u c1:bucket0@237.2°/463u
+1357	pair	8	92976	94094	32	died-or-margin
+1358	pair	8	92976	94094	33	died-or-margin
+1359	pair	8	92976	94095	11	died-or-margin
+1360	pair	8	92976	94095	12	died-or-margin
+1361	pair	8	92976	94095	13	c0:bucket1@167.4°/473u c1:bucket1@107.5°/472u c2:bucket0@297.7°/463u
+1362	pair	8	92976	94095	21	died-or-margin
+1363	pair	8	92976	94095	22	died-or-margin
+1364	pair	8	92976	94095	23	died-or-margin
+1365	pair	8	92976	94095	31	c0:bucket0@117.6°/463u c1:bucket1@288.2°/472u
+1366	pair	8	92976	94095	32	died-or-margin
+1367	pair	8	92976	94095	33	died-or-margin
+1368	pair	8	92976	94096	11	died-or-margin
+1369	pair	8	92976	94096	12	died-or-margin
+1370	pair	8	92976	94096	13	c0:bucket1@348.3°/425u c1:bucket0@357.3°/379u c2:bucket0@117.0°/463u
+1371	pair	8	92976	94096	21	died-or-margin
+1372	pair	8	92976	94096	22	died-or-margin
+1373	pair	8	92976	94096	23	died-or-margin
+1374	pair	8	92976	94096	31	c0:bucket0@177.4°/463u c1:bucket0@297.8°/461u
+1375	pair	8	92976	94096	32	died-or-margin
+1376	pair	8	92976	94096	33	died-or-margin
+1377	pair	9	30541	29898	11	died-or-margin
+1378	pair	9	30541	29898	12	died-or-margin
+1379	pair	9	30541	29898	13	c0:bucket1@107.2°/473u c1:bucket1@227.4°/473u
+1380	pair	9	30541	29898	21	died-or-margin
+1381	pair	9	30541	29898	22	died-or-margin
+1382	pair	9	30541	29898	23	died-or-margin
+1383	pair	9	30541	29898	31	c0:bucket1@47.4°/473u c1:bucket1@288.1°/472u
+1384	pair	9	30541	29898	32	died-or-margin
+1385	pair	9	30541	29898	33	died-or-margin
+1386	pair	9	30541	29903	11	died-or-margin
+1387	pair	9	30541	29903	12	died-or-margin
+1388	pair	9	30541	29903	13	c0:bucket1@168.5°/474u c1:bucket1@287.9°/474u
+1389	pair	9	30541	29903	21	died-or-margin
+1390	pair	9	30541	29903	22	died-or-margin
+1391	pair	9	30541	29903	23	died-or-margin
+1392	pair	9	30541	29903	31	c0:bucket1@107.8°/473u c1:bucket1@348.1°/474u
+1393	pair	9	30541	29903	32	died-or-margin
+1394	pair	9	30541	29903	33	died-or-margin
+1395	pair	9	30541	30542	11	died-or-margin
+1396	pair	9	30541	30542	12	died-or-margin
+1397	pair	9	30541	30542	13	c0:bucket1@48.1°/473u c1:bucket1@167.5°/473u c2:bucket0@57.2°/465u c3:bucket0@177.6°/463u
+1398	pair	9	30541	30542	21	died-or-margin
+1399	pair	9	30541	30542	22	died-or-margin
+1400	pair	9	30541	30542	23	died-or-margin
+1401	pair	9	30541	30542	31	c0:bucket1@228.2°/472u c1:bucket1@347.8°/471u
+1402	pair	9	30541	30542	32	died-or-margin
+1403	pair	9	30541	30542	33	died-or-margin
+1404	pair	9	30541	30547	11	died-or-margin
+1405	pair	9	30541	30547	12	died-or-margin
+1406	pair	9	30541	30547	13	c0:bucket1@228.0°/474u c1:bucket1@347.9°/472u
+1407	pair	9	30541	30547	21	died-or-margin
+1408	pair	9	30541	30547	22	died-or-margin
+1409	pair	9	30541	30547	23	died-or-margin
+1410	pair	9	30541	30547	31	c0:bucket1@168.3°/476u c1:bucket1@48.3°/470u
+1411	pair	9	30541	30547	32	died-or-margin
+1412	pair	9	30541	30547	33	died-or-margin
+1413	pair	9	30541	31188	11	died-or-margin
+1414	pair	9	30541	31188	12	died-or-margin
+1415	pair	9	30541	31188	13	c0:bucket1@48.2°/472u c1:bucket0@297.4°/463u
+1416	pair	9	30541	31188	21	died-or-margin
+1417	pair	9	30541	31188	22	died-or-margin
+1418	pair	9	30541	31188	23	died-or-margin
+1419	pair	9	30541	31188	31	c0:bucket0@116.8°/463u c1:bucket1@228.2°/472u
+1420	pair	9	30541	31188	32	died-or-margin
+1421	pair	9	30541	31188	33	died-or-margin
+1422	pair	9	30541	31189	11	died-or-margin
+1423	pair	9	30541	31189	12	died-or-margin
+1424	pair	9	30541	31189	13	c0:bucket0@116.4°/464u c1:bucket1@348.2°/472u
+1425	pair	9	30541	31189	21	died-or-margin
+1426	pair	9	30541	31189	22	died-or-margin
+1427	pair	9	30541	31189	23	died-or-margin
+1428	pair	9	30541	31189	31	c0:bucket1@167.2°/473u c1:bucket0@296.8°/463u
+1429	pair	9	30541	31189	32	died-or-margin
+1430	pair	9	30541	31189	33	died-or-margin
+1431	pair	9	61690	60772	11	died-or-margin
+1432	pair	9	61690	60772	12	died-or-margin
+1433	pair	9	61690	60772	13	c0:bucket1@347.5°/473u c1:bucket1@227.5°/475u
+1434	pair	9	61690	60772	21	died-or-margin
+1435	pair	9	61690	60772	22	died-or-margin
+1436	pair	9	61690	60772	23	died-or-margin
+1437	pair	9	61690	60772	31	c0:bucket1@48.5°/474u c1:bucket1@167.5°/473u
+1438	pair	9	61690	60772	32	died-or-margin
+1439	pair	9	61690	60772	33	died-or-margin
+1440	pair	9	61690	60773	11	died-or-margin
+1441	pair	9	61690	60773	12	died-or-margin
+1442	pair	9	61690	60773	13	c0:bucket1@287.9°/474u c1:bucket0@357.2°/465u c2:bucket0@177.2°/465u c3:bucket1@168.1°/473u
+1443	pair	9	61690	60773	21	died-or-margin
+1444	pair	9	61690	60773	22	died-or-margin
+1445	pair	9	61690	60773	23	died-or-margin
+1446	pair	9	61690	60773	31	c0:bucket1@348.2°/472u c1:bucket1@108.5°/472u
+1447	pair	9	61690	60773	32	died-or-margin
+1448	pair	9	61690	60773	33	died-or-margin
+1449	pair	9	61690	60777	11	died-or-margin
+1450	pair	9	61690	60777	12	died-or-margin
+1451	pair	9	61690	60777	13	c0:bucket0@236.9°/464u c1:bucket1@108.2°/472u
+1452	pair	9	61690	60777	21	died-or-margin
+1453	pair	9	61690	60777	22	died-or-margin
+1454	pair	9	61690	60777	23	died-or-margin
+1455	pair	9	61690	60777	31	c0:bucket1@288.6°/474u c1:bucket0@57.6°/464u
+1456	pair	9	61690	60777	32	died-or-margin
+1457	pair	9	61690	60777	33	died-or-margin
+1458	pair	9	61690	61689	11	died-or-margin
+1459	pair	9	61690	61689	12	died-or-margin
+1460	pair	9	61690	61689	13	c0:bucket1@287.8°/471u c1:bucket1@48.5°/472u
+1461	pair	9	61690	61689	21	died-or-margin
+1462	pair	9	61690	61689	22	died-or-margin
+1463	pair	9	61690	61689	23	died-or-margin
+1464	pair	9	61690	61689	31	c0:bucket1@228.2°/476u c1:bucket1@108.2°/472u
+1465	pair	9	61690	61689	32	died-or-margin
+1466	pair	9	61690	61689	33	died-or-margin
+1467	pair	9	61690	61693	11	died-or-margin
+1468	pair	9	61690	61693	12	died-or-margin
+1469	pair	9	61690	61693	13	c0:bucket0@57.4°/463u c1:bucket1@167.9°/474u
+1470	pair	9	61690	61693	21	died-or-margin
+1471	pair	9	61690	61693	22	died-or-margin
+1472	pair	9	61690	61693	23	died-or-margin
+1473	pair	9	61690	61693	31	c0:bucket1@348.5°/473u c1:bucket0@236.5°/464u
+1474	pair	9	61690	61693	32	died-or-margin
+1475	pair	9	61690	61693	33	died-or-margin
+1476	pair	9	61690	62593	11	died-or-margin
+1477	pair	9	61690	62593	12	died-or-margin
+1478	pair	9	61690	62593	13	c0:bucket1@347.8°/471u c1:bucket1@107.7°/477u
+1479	pair	9	61690	62593	21	died-or-margin
+1480	pair	9	61690	62593	22	died-or-margin
+1481	pair	9	61690	62593	23	died-or-margin
+1482	pair	9	61690	62593	31	c0:bucket1@287.5°/473u c1:bucket1@167.6°/470u
+1483	pair	9	61690	62593	32	died-or-margin
+1484	pair	9	61690	62593	33	died-or-margin
+1485	pair	9	93095	91966	11	died-or-margin
+1486	pair	9	93095	91966	12	died-or-margin
+1487	pair	9	93095	91966	13	c0:bucket1@288.5°/472u c1:bucket1@167.8°/471u
+1488	pair	9	93095	91966	21	died-or-margin
+1489	pair	9	93095	91966	22	died-or-margin
+1490	pair	9	93095	91966	23	died-or-margin
+1491	pair	9	93095	91966	31	c0:bucket1@347.9°/433u c1:bucket1@108.5°/475u
+1492	pair	9	93095	91966	32	died-or-margin
+1493	pair	9	93095	91966	33	died-or-margin
+1494	pair	9	93095	91968	11	died-or-margin
+1495	pair	9	93095	91968	12	died-or-margin
+1496	pair	9	93095	91968	13	c0:bucket1@228.0°/474u c1:bucket1@107.8°/472u
+1497	pair	9	93095	91968	21	died-or-margin
+1498	pair	9	93095	91968	22	died-or-margin
+1499	pair	9	93095	91968	23	died-or-margin
+1500	pair	9	93095	91968	31	c0:bucket1@288.5°/474u c1:bucket1@47.6°/391u
+1501	pair	9	93095	91968	32	died-or-margin
+1502	pair	9	93095	91968	33	died-or-margin
+1503	pair	9	93095	93094	11	died-or-margin
+1504	pair	9	93095	93094	12	died-or-margin
+1505	pair	9	93095	93094	13	c0:bucket1@348.2°/438u c1:bucket1@227.5°/473u
+1506	pair	9	93095	93094	21	died-or-margin
+1507	pair	9	93095	93094	22	died-or-margin
+1508	pair	9	93095	93094	23	died-or-margin
+1509	pair	9	93095	93094	31	c0:bucket1@47.9°/389u c1:bucket1@167.5°/473u
+1510	pair	9	93095	93094	32	died-or-margin
+1511	pair	9	93095	93094	33	died-or-margin
+1512	pair	9	93095	93096	11	died-or-margin
+1513	pair	9	93095	93096	12	died-or-margin
+1514	pair	9	93095	93096	13	c0:bucket1@47.9°/390u c1:bucket1@47.8°/427u c2:bucket0@57.8°/426u c3:bucket1@167.9°/474u
+1515	pair	9	93095	93096	21	died-or-margin
+1516	pair	9	93095	93096	22	died-or-margin
+1517	pair	9	93095	93096	23	died-or-margin
+1518	pair	9	93095	93096	31	c0:bucket1@348.4°/431u c1:bucket1@228.2°/472u
+1519	pair	9	93095	93096	32	died-or-margin
+1520	pair	9	93095	93096	33	died-or-margin
+1521	pair	9	93095	94217	11	died-or-margin
+1522	pair	9	93095	94217	12	died-or-margin
+1523	pair	9	93095	94217	13	c0:bucket0@297.3°/462u c1:bucket1@47.9°/386u
+1524	pair	9	93095	94217	21	died-or-margin
+1525	pair	9	93095	94217	22	died-or-margin
+1526	pair	9	93095	94217	23	died-or-margin
+1527	pair	9	93095	94217	31	c0:bucket1@227.8°/473u c1:bucket0@116.9°/465u
+1528	pair	9	93095	94217	32	died-or-margin
+1529	pair	9	93095	94217	33	died-or-margin
+1530	pair	9	93095	94218	11	died-or-margin
+1531	pair	9	93095	94218	12	died-or-margin
+1532	pair	9	93095	94218	13	c0:bucket1@348.7°/430u c1:bucket0@116.9°/464u
+1533	pair	9	93095	94218	21	died-or-margin
+1534	pair	9	93095	94218	22	died-or-margin
+1535	pair	9	93095	94218	23	died-or-margin
+1536	pair	9	93095	94218	31	c0:bucket0@297.6°/464u c1:bucket1@168.6°/474u
+1537	pair	9	93095	94218	32	died-or-margin
+1538	pair	9	93095	94218	33	died-or-margin
+1539	soup0	-	38327	-	36910:3,39779:2,39059:3,39058:1,39057:1,38328:1	c0:bucket1@168.5°/474u c1:bucket1@227.9°/474u
+1540	soup1	-	82116	-	81079:3,81076:2,80033:3,82113:1,82116:1,83172:3	c0:short(33) c1:bucket1@168.6°/474u c2:bucket1@287.9°/474u c3:bucket0@297.0°/466u c4:short(33)
+1541	soup2	-	87423	-	86348:3,86344:3,87427:2,85286:3,86342:1,85283:3	c0:bucket1@48.1°/422u c1:bucket1@227.4°/473u
+1542	soup3	-	50855	-	51685:1,49213:3,50030:1,51686:3,49209:2,52519:2	c0:bucket0@177.6°/464u c1:bucket1@47.9°/474u
+1543	soup4	-	85350	-	85349:2,84279:1,85352:3,84276:1,86412:1,85351:1	c0:bucket1@47.7°/411u c1:bucket1@108.2°/472u
+1544	soup5	-	51543	-	51541:3,51540:2,50706:3,52365:1,52366:2,50704:2	died-or-margin
+1545	soup6	-	82884	-	80798:3,81842:1,85024:3,85023:2,85025:1,82884:2	c0:bucket2@227.9°/471u c1:bucket2@227.9°/471u c2:bucket1@347.7°/417u c3:bucket1@108.5°/474u
+1546	soup7	-	64165	-	63234:3,62309:1,64164:3,64167:3,63236:1,62310:3	grower (85 cells, 14 comps)
+1547	soup8	-	44068	-	43303:2,45628:3,45626:2,43305:1,42543:2,44070:2	died-or-margin
+1548	soup9	-	106834	-	106839:1,105637:3,106832:1,106837:3,106833:3,108035:1	c0:bucket1@167.9°/474u c1:bucket1@48.3°/371u c2:bucket0@57.1°/422u
+1549	soup10	-	104600	-	105786:1,103425:1,104602:3,106993:2,106992:3,103423:3	grower (62 cells, 11 comps)
+1550	soup11	-	91140	-	92249:1,91138:3,93375:3,90044:3,90043:1,91139:1	c0:bucket1@107.9°/446u c1:bucket1@287.9°/474u c2:bucket0@237.4°/463u
+1551	soup12	-	66837	-	65894:3,66836:2,65891:2,67783:3,68744:2,67784:1	c0:bucket1@167.9°/469u c1:bucket1@288.2°/472u
+1552	soup13	-	70242	-	70241:2,71204:1,71205:2,71203:1,68307:3,72188:1	died-or-margin
+1553	soup14	-	113128	-	114344:3,113129:1,111900:2,113127:2,111898:2,110659:2	died-or-margin
+1554	soup15	-	51535	-	53182:3,52355:1,53192:2,50694:2,52346:3,51535:1	died-or-margin
+1555	soup16	-	110364	-	112830:1,109155:1,110366:3,110364:3,110363:3,111599:1	grower (42 cells, 8 comps)
+1556	soup17	-	106862	-	105656:1,105658:2,105657:3,108056:2,106861:2,104474:3	c0:bucket0@176.7°/465u
+1557	soup18	-	89794	-	90883:3,89793:3,89796:2,88694:3,91988:3,88697:2	died-or-margin
+1558	soup19	-	118855	-	120118:3,117593:1,120116:3,116349:1,120117:2,116346:1	died-or-margin
+1559	soup20	-	53218	-	54942:1,53217:1,52378:2,54077:1,54078:3,53220:1	died-or-margin
+1560	soup21	-	104786	-	103608:1,105980:1,102435:2,104787:3,107181:2,107180:3	c0:bucket0@296.5°/464u c1:bucket1@288.0°/476u c2:bucket0@177.5°/465u c3:bucket0@176.9°/465u c4:short(44) c5:short(44)
+1561	soup22	-	104399	-	105582:1,103221:2,105583:1,103222:2,104397:1,102044:3	died-or-margin
+1562	soup23	-	84214	-	83153:2,86349:3,84214:3,83149:3,85287:1,85284:1	grower (43 cells, 8 comps)
+1563	soup24	-	71680	-	71682:2,70706:1,70707:1,72665:1,72667:3,72664:2	died-or-margin
+1564	soup25	-	116827	-	116832:3,118084:1,115562:1,115571:1,119319:3,118078:3	c0:bucket1@47.7°/323u
+1565	soup26	-	83765	-	83764:3,82697:1,83765:1,82698:2,84833:3,84835:1	grower (72 cells, 10 comps)
+1566	soup27	-	83647	-	81546:1,83647:2,82582:3,84715:2,83645:3,84714:2	died-or-margin
+1567	soup28	-	82755	-	80672:1,83821:3,84890:2,84892:3,83824:1,82756:3	c0:too-big(rho 5)@107.8°/449u c1:bucket1@228.5°/415u c2:bucket1@348.5°/474u
+1568	soup29	-	87256	-	86175:1,88347:2,85117:2,87254:2,87255:1,88345:3	c0:bucket1@348.1°/409u
+1569	soup30	-	60215	-	61125:1,60213:2,58437:1,59309:3,60215:1,59311:2	grower (38 cells, 7 comps)
+1570	soup31	-	59709	-	59709:2,59710:3,58828:3,57948:1,57947:2,58834:2	c0:bucket1@107.7°/477u c1:bucket1@347.8°/471u
+1571	soup32	-	112124	-	113358:3,110888:3,113359:3,112122:2,114575:2,112123:2	died-or-margin
+1572	soup33	-	71195	-	72182:2,69262:2,71197:3,70234:2,71194:3,70235:2	died-or-margin
+1573	soup34	-	115947	-	117205:1,118461:3,117204:3,114698:2,117202:1,118460:1	grower (55 cells, 11 comps)
+1574	soup35	-	118735	-	117478:3,119998:2,119996:1,117484:1,119995:3,118737:3	c0:bucket1@287.3°/318u c1:bucket0@57.6°/464u
+1575	soup36	-	36012	-	35307:3,36718:3,36717:1,37418:1,35306:2,36014:3	c0:too-big(rho 6)@285.3°/439u c1:too-big(rho 6)@285.3°/439u
+1576	soup37	-	51470	-	49815:3,49812:1,52297:1,51470:3,50633:1,53133:3	c0:bucket0@236.9°/464u
+1577	soup38	-	32678	-	32016:3,32019:3,32678:2,32676:1,31373:1,33347:1	c0:bucket1@48.5°/474u c1:bucket1@168.3°/472u
+1578	soup39	-	78744	-	80824:2,80823:2,79784:2,78742:3,77732:1,80822:2	died-or-margin
+1579	soup40	-	70878	-	71855:3,69915:2,70880:2,68941:2,68944:2,69914:1	died-or-margin
+1580	soup41	-	87426	-	86349:1,87431:2,85286:3,86352:1,87428:3,88521:1	c0:bucket0@57.4°/464u c1:bucket0@117.3°/461u c2:bucket0@297.3°/458u
+1581	soup42	-	40521	-	41269:3,42008:1,42007:3,41270:2,39072:1,40521:1	c0:bucket1@107.4°/473u
+1582	soup43	-	97394	-	99691:1,98543:2,96256:3,96257:3,99689:2,97392:1	c0:bucket1@108.2°/472u c1:bucket0@356.4°/467u
+1583	soup44	-	113670	-	113671:2,113670:3,112445:3,113668:2,112447:2,111217:1	died-or-margin
+1584	soup45	-	33051	-	33050:3,33049:2,33718:1,33052:2,32385:2,32384:1	c0:bucket0@237.6°/463u
+1585	soup46	-	115144	-	112685:1,113907:3,117647:2,115144:2,113909:3,113908:2	c0:bucket1@227.7°/471u c1:bucket1@347.4°/337u
+1586	soup47	-	54868	-	53146:2,55715:3,55718:3,56582:2,55716:2,56581:1	c0:bucket1@48.5°/472u
+1587	soup48	-	75811	-	75811:1,76825:3,74796:1,73812:3,75813:1,74795:1	c0:bucket1@107.9°/474u c1:bucket0@177.4°/463u c2:short(0) c3:short(0) c4:bucket1@348.6°/474u
+1588	soup49	-	35518	-	34843:1,36222:2,36223:2,34168:2,35517:1,34157:1	died-or-margin
+1589	soup50	-	115483	-	113024:3,113023:2,118002:2,114241:1,116747:2,118000:2	died-or-margin
+1590	soup51	-	67404	-	65525:3,66463:2,67404:1,65523:3,69321:2,67403:1	died-or-margin
+1591	soup52	-	37774	-	38495:3,37071:3,37075:3,39222:1,39221:2,39219:3	c0:bucket1@168.3°/476u c1:bucket1@47.6°/470u
+1592	soup53	-	61407	-	59585:2,61405:3,62311:3,62308:2,59588:1,60500:2	died-or-margin
+1593	soup54	-	91658	-	92774:2,92772:2,91657:3,91983:3,89458:2,93890:2	died-or-margin
+1594	soup55	-	81285	-	79196:2,83381:2,83379:2,82317:3,82320:2,81285:2	died-or-margin
+1595	soup56	-	55326	-	53602:2,55325:1,55328:1,54470:2,54468:3,56185:3	c0:bucket0@177.6°/464u c1:bucket1@48.6°/474u
+1596	soup57	-	56633	-	55769:3,55776:3,56631:1,56636:3,57519:1,54918:1	grower (37 cells, 7 comps)
+1597	soup58	-	110970	-	109750:3,108540:3,109753:1,109752:3,110970:3,112206:1	c0:bucket0@56.9°/464u c1:bucket1@348.0°/474u c2:bucket1@168.2°/353u
+1598	soup59	-	49842	-	50664:2,49023:3,49840:1,49842:2,49839:3,49843:3	c0:bucket0@116.9°/464u c1:bucket0@297.3°/462u
+1599	soup60	-	107001	-	105795:1,108188:2,107002:2,108187:2,105796:3,105797:3	c0:bucket1@47.9°/354u c1:bucket1@167.4°/473u
+1600	soup61	-	111505	-	112738:1,112736:1,112735:2,113961:1,109063:3,110280:1	died-or-margin
+1601	soup62	-	121087	-	119800:2,122372:1,121087:1,119797:3,121086:2,122376:3	died-or-margin
+1602	soup63	-	117208	-	114703:3,115951:3,117209:3,118465:3,117207:2,117206:1	died-or-margin
+1603	soup64	-	42397	-	42397:1,42393:3,42398:2,42396:3,43224:1,41651:1	died-or-margin
+1604	soup65	-	72378	-	72379:2,72376:2,71395:1,70427:1,70425:1,70426:2	died-or-margin
+1605	soup66	-	53434	-	52591:1,55156:1,52589:3,53434:1,53435:1,54300:2	c0:bucket0@237.0°/463u c1:bucket0@116.9°/465u
+1606	soup67	-	64228	-	65163:3,62376:2,64228:3,63299:3,65160:3,64227:1	c0:bucket1@168.1°/474u c1:bucket1@167.8°/474u c2:bucket0@236.9°/465u c3:too-big(rho 6)@300.0°/409u c4:too-big(rho 6)@347.9°/481u c5:bucket1@47.8°/473u
+1607	soup68	-	110213	-	110213:3,112671:3,111441:1,110215:2,112669:3,107797:1	c0:bucket1@228.3°/470u c1:bucket1@348.9°/345u
+1608	soup69	-	108145	-	110562:2,108147:2,109354:1,109351:3,105753:2,106955:3	died-or-margin
+1609	soup70	-	75439	-	77486:3,74444:1,75438:2,73447:2,74443:1,77488:1	died-or-margin
+1610	soup71	-	102443	-	103619:1,102445:1,100097:3,102442:2,101263:2,102443:1	died-or-margin
+1611	soup72	-	51023	-	51855:1,51024:1,51857:2,50196:3,51026:3,52675:3	grower (43 cells, 8 comps)
+1612	soup73	-	49682	-	48069:3,51340:2,50508:1,51339:2,48068:3,50506:3	c0:bucket1@288.2°/472u
+1613	soup74	-	38902	-	38901:2,39628:3,38173:3,38904:2,38175:2,38176:1	died-or-margin
+1614	soup75	-	42956	-	43716:3,44489:1,41455:3,43718:2,42956:1,42955:2	c0:bucket0@177.1°/463u c1:bucket1@227.5°/473u c2:bucket0@236.6°/460u c3:bucket1@287.9°/474u c4:bucket1@348.2°/472u c5:bucket1@108.1°/473u
+1615	soup76	-	113695	-	112470:3,114924:1,112471:1,116178:2,112472:1,114923:1	grower (50 cells, 10 comps)
+1616	soup77	-	107955	-	106761:1,107954:3,110369:2,107957:2,110368:3,110367:2	died-or-margin
+1617	soup78	-	121897	-	124457:2,121890:2,120605:2,123168:1,123171:3,120609:1	died-or-margin
+1618	soup79	-	68800	-	67842:3,70738:1,69773:1,69775:1,67841:2,68798:3	c0:bucket1@228.2°/472u c1:bucket0@117.4°/463u
+1619	soup80	-	66944	-	66001:1,67889:2,65990:2,66954:2,68736:3,66010:1	died-or-margin
+1620	soup81	-	97463	-	95195:2,99756:3,96325:3,98613:2,97453:3,96330:1	died-or-margin
+1621	soup82	-	78336	-	79361:1,79363:1,79364:1,80400:2,77320:1,76293:2	died-or-margin
+1622	soup83	-	83133	-	83134:2,85269:3,82079:1,84191:2,83135:3,83133:3	died-or-margin
+1623	soup84	-	122676	-	121399:3,125263:1,122678:2,122677:3,121400:2,120113:1	c0:bucket1@228.6°/474u
+1624	soup85	-	103731	-	106104:1,101376:1,104912:3,102555:3,103731:3,103729:1	c0:bucket0@237.6°/464u
+1625	soup86	-	52618	-	51803:2,52528:2,54330:3,50960:2,53472:2,51794:2	died-or-margin
+1626	soup87	-	50082	-	49261:2,51740:1,49263:3,50081:2,48459:3,49262:3	died-or-margin
+1627	soup88	-	51497	-	53160:3,50660:3,49843:3,52327:2,49840:3,52326:1	c0:bucket1@107.2°/473u
+1628	soup89	-	78148	-	78150:3,79169:1,78149:2,77133:1,78146:2,79167:2	grower (132 cells, 19 comps)
+1629	soup90	-	45821	-	45041:3,45042:3,45822:2,46603:1,45820:1,45040:1	c0:bucket1@287.5°/473u
+1630	soup91	-	32535	-	33876:3,32535:3,31873:2,33874:1,31874:1,33875:2	c0:bucket1@348.6°/474u c1:bucket1@48.0°/474u c2:bucket0@176.6°/459u c3:bucket0@238.0°/459u c4:bucket1@288.1°/473u
+1631	soup92	-	73008	-	73006:2,72014:3,73009:1,72013:3,74006:2,74007:1	c0:bucket1@167.8°/471u
+1632	soup93	-	35788	-	35787:3,36489:2,35104:3,35788:1,35790:1,35105:1	grower (227 cells, 34 comps)
+1633	soup94	-	82899	-	83970:3,82897:2,85038:1,83969:2,81854:3,80813:2	died-or-margin
+1634	soup95	-	39652	-	39654:3,41122:1,40373:3,38198:3,41123:2,40374:1	c0:bucket0@356.9°/464u c1:bucket1@288.1°/473u
+1635	soup96	-	85816	-	84752:1,86889:3,83685:3,85816:2,86884:2,85822:3	died-or-margin
+1636	soup97	-	32109	-	32109:1,32107:2,32773:1,32112:2,32771:1,32774:3	c0:bucket1@168.5°/474u c1:bucket0@236.7°/463u
+1637	soup98	-	97669	-	95391:1,96523:1,97672:2,96527:1,97668:3,96522:1	c0:bucket1@48.7°/379u
+1638	soup99	-	45224	-	45986:1,46008:1,44447:2,45203:2,45225:1,44451:1	died-or-margin
+1639	soup100	-	48807	-	49604:3,48805:2,48000:2,47997:3,50432:1,47999:1	c0:bucket1@227.7°/472u
+1640	soup101	-	63163	-	62239:1,62241:2,62240:3,63162:2,64089:1,61336:1	c0:bucket0@356.9°/462u c1:bucket1@48.2°/476u
+1641	soup102	-	107577	-	109980:1,107578:3,105181:1,109983:2,107579:3,106374:2	died-or-margin
+1642	soup103	-	113230	-	114449:3,110764:3,113231:3,111997:3,115692:1,111996:1	c0:bucket0@238.0°/465u c1:bucket1@168.1°/474u
+1643	soup104	-	117128	-	115869:1,117126:3,119635:2,118384:1,118386:2,114619:1	grower (40 cells, 7 comps)
+1644	soup105	-	55395	-	55397:3,53668:2,53669:3,56252:3,55394:3,53670:2	died-or-margin
+1645	soup106	-	121939	-	119364:3,120649:3,121937:1,119365:2,120646:1,121938:1	c0:bucket0@296.8°/463u c1:bucket1@48.3°/334u
+1646	soup107	-	112510	-	112511:3,112513:1,110056:2,113739:3,113738:1,114962:2	c0:bucket0@357.9°/468u
+1647	soup108	-	72609	-	74597:2,74599:1,73603:2,71622:1,72609:1,73600:2	died-or-margin
+1648	soup109	-	34760	-	34758:3,34073:1,34762:2,35431:3,35429:1,33404:1	died-or-margin
+1649	soup110	-	35137	-	33782:1,35825:3,35138:2,35137:1,34453:3,33783:1	c0:bucket1@168.2°/476u c1:bucket0@176.5°/464u c2:bucket1@288.1°/473u c3:bucket0@296.8°/463u c4:bucket0@297.2°/465u c5:bucket1@48.2°/475u
+1650	soup111	-	73882	-	72888:3,71894:2,73884:3,73881:1,74866:3,71896:2	died-or-margin
+1651	soup112	-	94504	-	95639:1,95638:2,92260:1,93388:3,95635:3,95636:1	c0:bucket1@108.7°/423u
+1652	soup113	-	90738	-	92970:1,89652:1,91848:2,91851:1,88551:3,90737:2	died-or-margin
+1653	soup114	-	111348	-	112580:3,112583:1,113806:2,108904:1,110123:2,112582:2	died-or-margin
+1654	soup115	-	110391	-	110390:3,109182:3,111624:3,110393:3,107979:1,109184:1	c0:bucket0@237.5°/342u c1:bucket0@297.3°/399u
+1655	soup116	-	51305	-	51307:1,52138:2,51303:1,51305:3,49646:3,50471:1	c0:bucket0@357.3°/461u c1:bucket0@357.3°/464u c2:bucket1@107.2°/470u c3:bucket0@237.2°/465u c4:bucket1@168.5°/472u c5:bucket1@227.9°/474u
+1656	soup117	-	64163	-	65094:1,65092:2,66029:1,64160:2,65091:1,62306:1	died-or-margin
+1657	soup118	-	112341	-	114797:2,111111:2,113574:2,111113:2,112343:3,111114:1	c0:bucket1@287.9°/474u
+1658	soup119	-	31380	-	30736:3,32027:3,32025:3,32024:2,31380:3,30087:1	c0:bucket1@47.8°/471u c1:bucket0@178.0°/462u
+1659	soup120	-	65693	-	64747:2,66624:1,65695:2,65694:1,63820:2,67573:1	died-or-margin
+1660	soup121	-	70990	-	70030:3,70029:1,70031:2,70989:1,71967:1,70988:2	c0:bucket0@57.3°/464u c1:bucket1@167.8°/473u
+1661	soup122	-	104054	-	104055:1,105232:3,105231:1,104049:2,102877:1,104053:3	c0:bucket1@107.9°/473u c1:bucket1@168.1°/456u
+1662	soup123	-	120250	-	118975:1,121537:1,120248:1,118977:2,120251:2,118976:3	c0:bucket1@48.3°/476u
+1663	soup124	-	84960	-	83893:1,83885:1,84961:3,86016:1,86022:2,86023:3	died-or-margin
+1664	soup125	-	48245	-	47448:2,47436:3,48258:1,48257:3,49057:3,48245:3	c0:bucket0@357.6°/464u c1:bucket0@237.1°/463u
+1665	soup126	-	110351	-	109140:3,109139:3,110351:3,107937:1,109138:2,109141:2	c0:bucket0@177.2°/465u c1:bucket0@296.7°/420u
+1666	soup127	-	102653	-	101475:3,103829:1,103831:3,102652:3,101471:1,102655:2	died-or-margin
+1667	soup128	-	52442	-	52444:2,53281:3,51614:2,52443:2,53282:2,52441:2	died-or-margin
+1668	soup129	-	78170	-	77151:1,79191:1,77154:1,78169:2,79193:1,77153:1	died-or-margin
+1669	soup130	-	123712	-	125011:1,121153:1,123714:2,121151:1,126307:1,123712:3	died-or-margin
+1670	soup131	-	46923	-	46923:3,46136:3,46925:2,48533:1,47723:3,46922:1	c0:bucket0@117.0°/463u c1:bucket1@348.0°/474u
+1671	soup132	-	43588	-	43589:2,42835:1,44357:2,45133:3,42833:2,43585:3	died-or-margin
+1672	soup133	-	36409	-	35030:3,35709:3,35033:3,36409:3,35710:2,35707:2	died-or-margin
+1673	soup134	-	78868	-	79911:1,79910:1,79913:3,77853:1,80950:3,77851:1	c0:bucket1@228.2°/472u c1:bucket0@56.9°/464u
+1674	soup135	-	53268	-	54128:2,51600:3,52426:2,52427:1,54127:2,53267:1	c0:bucket1@48.2°/472u c1:bucket1@227.9°/474u c2:bucket0@296.6°/465u c3:bucket1@347.8°/471u
+1675	soup136	-	46660	-	46662:1,45093:2,45879:3,45096:3,45880:2,46661:3	c0:bucket1@167.8°/474u
+1676	soup137	-	94569	-	94568:3,95702:1,93453:1,94571:3,94570:3,93456:2	c0:bucket1@228.1°/472u c1:bucket0@296.9°/462u
+1677	soup138	-	51682	-	53355:1,52515:1,50849:3,52516:2,52513:1,50851:2	died-or-margin
+1678	soup139	-	103930	-	105101:2,101568:1,103929:2,105102:1,102744:2,106298:2	died-or-margin
+1679	soup140	-	96761	-	97901:2,94495:2,97903:2,96763:3,96762:3,95627:2	died-or-margin
+1680	soup141	-	41381	-	39903:2,41381:2,40626:2,42118:3,42117:3,42882:3	died-or-margin
+1681	soup142	-	83454	-	85591:3,82395:2,84514:3,85592:1,83455:2,83453:3	c0:bucket0@57.7°/404u c1:bucket0@236.9°/462u
+1682	soup143	-	119295	-	116807:2,119296:2,118048:1,120594:1,119284:2,119295:1	died-or-margin
+1683	soup144	-	67930	-	66982:1,66983:3,68892:1,69864:3,67932:3,68888:3	c0:bucket1@167.8°/471u c1:bucket1@47.5°/473u c2:bucket1@287.4°/464u c3:bucket0@297.2°/465u c4:bucket1@348.2°/472u
+1684	soup145	-	95183	-	95184:1,94051:1,95185:2,95195:1,95179:3,94057:2	c0:bucket1@48.0°/399u
+1685	soup146	-	77896	-	76874:3,76876:3,76873:3,78910:3,79956:2,77898:2	died-or-margin
+1686	soup147	-	37011	-	37010:3,37712:2,37014:1,37709:3,37013:2,38429:1	died-or-margin
+1687	soup148	-	99389	-	98241:1,101713:3,100535:3,101714:2,98237:3,100543:1	died-or-margin
+1688	soup149	-	60635	-	59727:3,61547:1,60635:3,58844:3,59730:1,61550:1	died-or-margin
+1689	soup150	-	91085	-	93308:3,91080:2,92190:3,92179:3,92189:3,92185:3	died-or-margin
+1690	soup151	-	115895	-	117150:1,114642:2,115895:3,113429:1,117152:1,115894:3	grower (219 cells, 37 comps)
+1691	soup152	-	103766	-	102593:1,102589:3,101409:3,101408:1,103767:2,102592:3	grower (49 cells, 9 comps)
+1692	soup153	-	86334	-	86334:2,86333:2,86335:2,84197:1,85272:3,85274:1	c0:bucket1@167.9°/473u
+1693	soup154	-	79602	-	79600:1,80644:3,79603:1,78565:1,80642:1,77562:2	c0:bucket1@107.8°/471u c1:bucket0@237.1°/464u
+1694	soup155	-	60509	-	61417:2,60510:3,61418:3,59600:3,59598:1,59601:2	c0:bucket1@287.9°/474u
+1695	soup156	-	99547	-	98404:3,101884:2,100710:1,100711:2,100707:3,99545:2	died-or-margin
+1696	soup157	-	62312	-	64167:2,60501:2,62312:2,61407:2,63237:1,61409:2	died-or-margin
+1697	soup158	-	70407	-	69436:2,72357:3,68476:3,69435:1,71375:1,70406:1	c0:bucket1@48.3°/474u c1:bucket1@168.1°/453u
+1698	soup159	-	76396	-	75381:1,75380:2,76398:3,77425:3,78431:3,77423:2	died-or-margin
+1699	soup160	-	47054	-	47055:3,46268:3,45479:2,47859:1,46270:1,48672:1	died-or-margin
+1700	soup161	-	93744	-	92625:3,96004:2,92622:2,96007:1,96006:2,93743:1	died-or-margin
+1701	soup162	-	94170	-	93049:1,94170:1,95297:1,94169:1,93048:1,94172:3	died-or-margin
+1702	soup163	-	121284	-	121281:1,121287:2,119997:1,119999:1,121282:3,123850:1	c0:bucket1@288.2°/317u c1:bucket0@356.9°/404u c2:bucket1@47.4°/473u
+1703	soup164	-	123806	-	123805:1,121242:1,125105:3,121280:2,123807:1,122558:2	c0:bucket1@168.4°/346u c1:bucket0@236.6°/302u
+1704	soup165	-	77490	-	76460:1,78493:2,79529:2,76461:1,78491:2,77491:2	died-or-margin
+1705	soup166	-	88557	-	89655:3,88556:1,86383:3,90743:2,89657:3,87460:2	c0:bucket1@108.2°/476u c1:bucket1@348.5°/423u
+1706	soup167	-	123636	-	124933:1,126228:3,124935:1,126227:3,123637:1,122361:3	grower (168 cells, 28 comps)
+1707	soup168	-	58535	-	57662:2,59413:1,59407:2,58532:1,60316:3,57658:1	c0:bucket1@227.3°/471u
+1708	soup169	-	119785	-	119783:3,121076:3,121072:2,122359:3,118534:1,117277:1	died-or-margin
+1709	soup170	-	98966	-	100109:1,98968:1,98967:1,97818:2,100110:2,100106:2	died-or-margin
+1710	soup171	-	86722	-	86722:1,87780:2,86715:3,86714:3,85646:1,85632:3	c0:bucket1@168.0°/439u c1:bucket0@236.9°/462u
+1711	soup172	-	101971	-	104323:2,101974:2,100792:1,103144:3,99634:3,101973:1	died-or-margin
+1712	soup173	-	74844	-	74845:3,76876:2,74844:1,73861:1,75860:1,73858:2	died-or-margin
+1713	soup174	-	33935	-	33937:2,34611:1,34612:3,33262:2,33933:3,33934:2	c0:bucket0@57.6°/463u
+1714	soup175	-	95883	-	97022:2,95884:1,97024:1,97021:3,94762:1,95882:3	died-or-margin
+1715	soup176	-	102992	-	102992:1,101818:1,104171:3,104170:1,100643:2,101815:2	grower (39 cells, 7 comps)
+1716	soup177	-	114215	-	115456:3,112994:2,111764:1,115457:2,112995:3,111763:3	c0:bucket1@227.5°/473u c1:bucket1@47.3°/334u
+1717	soup178	-	35061	-	35742:3,34369:2,36441:3,33701:3,35738:1,34368:1	c0:bucket0@117.1°/463u
+1718	soup179	-	101718	-	104073:2,104072:1,102894:3,101717:2,100544:3,102892:1	c0:bucket1@107.4°/473u c1:bucket1@288.1°/403u
+1719	soup180	-	103347	-	104521:2,103348:2,102167:1,105711:3,105709:3,104523:2	died-or-margin
+1720	soup181	-	33956	-	33952:3,33956:1,35305:3,33284:1,34617:2,33283:1	c0:bucket1@288.6°/474u c1:bucket0@296.7°/465u c2:bucket0@57.3°/463u c3:bucket0@57.3°/461u c4:bucket0@177.9°/468u
+1721	soup182	-	38075	-	38097:1,38077:2,38075:3,37367:3,38076:2,38086:3	c0:bucket1@48.3°/470u c1:bucket1@168.0°/473u
+1722	soup183	-	118390	-	115873:2,115872:1,117130:1,118390:3,117133:3,118392:3	died-or-margin
+1723	soup184	-	38513	-	37092:2,38511:1,39240:1,38513:2,39970:1,38515:1	died-or-margin
+1724	soup185	-	55398	-	55396:1,55399:2,53673:2,56257:2,54541:3,56256:1	c0:bucket1@227.8°/473u
+1725	soup186	-	118786	-	118787:1,118785:3,116277:1,121333:3,120045:1,121335:2	c0:too-big(rho 5)@167.9°/473u c1:too-big(rho 5)@167.9°/473u c2:short(2) c3:short(2) c4:bucket1@107.5°/473u
+1726	soup187	-	107169	-	107167:1,104774:2,104775:1,108363:1,108362:3,105967:3	grower (115 cells, 21 comps)
+1727	soup188	-	77295	-	77295:1,77273:1,78304:2,78290:3,77287:3,75256:3	c0:bucket1@48.1°/473u c1:bucket1@168.5°/472u
+1728	soup189	-	91932	-	91934:3,91933:3,90828:3,91932:1,90825:2,93059:2	c0:bucket0@57.3°/458u c1:bucket1@168.3°/472u
+1729	soup190	-	57116	-	56244:2,56243:1,57118:2,58002:2,58005:1,56246:3	died-or-margin
+1730	soup191	-	76332	-	76330:3,76331:3,75321:3,77361:1,75320:3,78370:1	c0:bucket0@58.0°/465u c1:bucket0@237.3°/461u
+1731	soup192	-	49147	-	49148:3,49145:3,47539:3,50792:1,49969:1,49149:3	died-or-margin
+1732	soup193	-	37306	-	35900:3,38015:1,37304:1,36604:3,37305:3,36606:3	c0:bucket1@47.7°/471u c1:bucket0@176.9°/464u
+1733	soup194	-	109811	-	108600:3,108599:3,109809:1,107412:3,111033:1,109812:3	c0:bucket1@227.7°/410u
+1734	soup195	-	83332	-	84398:2,83331:1,83333:1,84402:2,84395:3,83332:1	c0:bucket1@287.6°/473u c1:bucket1@48.0°/422u
+1735	soup196	-	99832	-	102171:3,98686:2,100996:2,99831:3,100992:3,97537:3	died-or-margin
+1736	soup197	-	61629	-	61630:1,59835:2,61641:2,59825:3,61629:1,60717:3	c0:bucket0@56.4°/467u c1:bucket1@288.0°/474u
+1737	soup198	-	34773	-	34087:3,34085:2,35446:1,34773:1,34771:1,34086:1	c0:bucket0@237.3°/464u c1:bucket1@287.5°/473u
+1738	soup199	-	98810	-	99937:2,98817:2,98810:1,96514:1,96515:3,97665:1	grower (42 cells, 7 comps)
+1739	soup200	-	61161	-	61160:3,59347:2,59345:2,61159:1,61158:2,61162:2	c0:bucket1@288.0°/475u
+1740	soup201	-	83712	-	84776:2,85846:1,82648:1,83708:2,84777:2,83712:1	died-or-margin
+1741	soup202	-	115667	-	113203:1,118183:2,115666:2,115669:3,116930:3,114421:2	died-or-margin
+1742	soup203	-	79428	-	78399:1,77388:2,80469:3,79427:1,80471:1,80467:1	c0:bucket1@107.6°/470u c1:bucket1@168.3°/429u
+1743	soup204	-	49462	-	50286:3,48661:3,48664:2,50281:1,49459:3,50282:1	died-or-margin
+1744	soup205	-	42857	-	42859:1,44380:3,44381:1,43610:3,42090:1,41354:1	c0:bucket0@56.5°/464u c1:bucket0@237.0°/463u
+1745	soup206	-	104883	-	103703:1,106073:1,103702:3,102524:3,104881:1,107277:1	c0:bucket0@296.8°/465u c1:bucket1@169.0°/367u
+1746	soup207	-	81118	-	83210:3,81117:1,80076:2,79030:3,79031:2,81116:3	c0:bucket1@348.8°/469u c1:bucket1@228.1°/474u
+1747	soup208	-	73668	-	72678:3,75667:3,74663:1,71689:1,75668:1,74664:1	died-or-margin
+1748	soup209	-	77211	-	75178:3,77210:3,77208:1,75176:2,77213:3,76193:1	c0:bucket1@287.9°/474u c1:bucket1@107.5°/436u c2:bucket0@237.3°/461u c3:bucket1@167.9°/474u c4:bucket1@228.1°/473u
+1749	soup210	-	79990	-	77935:1,78945:2,79991:2,79988:3,78946:1,77936:3	c0:bucket1@288.0°/438u c1:bucket1@47.8°/474u
+1750	soup211	-	101607	-	102781:2,100436:3,99287:3,102782:3,102779:3,102780:2	died-or-margin
+1751	soup212	-	111537	-	111535:1,112770:2,110305:3,113991:2,109094:2,113992:1	c0:bucket0@116.5°/464u c1:bucket0@56.9°/465u
+1752	soup213	-	38270	-	38271:3,37559:3,38268:2,37557:1,36852:1,38272:3	c0:bucket1@167.7°/472u c1:bucket1@288.8°/475u
+1753	soup214	-	47898	-	48708:2,47092:1,46303:2,47093:1,47896:3,47898:3	died-or-margin
+1754	soup215	-	104347	-	103168:1,105532:2,104346:1,103169:1,104349:1,105531:1	died-or-margin
+1755	soup216	-	109868	-	109869:1,109867:3,111092:3,111094:1,112322:3,108654:2	c0:bucket0@57.6°/464u c1:bucket1@229.1°/340u c2:bucket0@297.3°/461u
+1756	soup217	-	51502	-	52329:3,50668:1,50670:2,51500:3,51501:2,51504:1	died-or-margin
+1757	soup218	-	106040	-	103671:2,106040:2,106041:1,103673:3,104854:1,103669:2	c0:bucket1@348.0°/475u c1:bucket1@228.2°/474u
+1758	soup219	-	101190	-	103540:3,102372:1,102370:3,101189:2,102371:3,100018:3	grower (58 cells, 9 comps)
+1759	soup220	-	84321	-	85392:1,84321:1,85390:2,84322:1,82195:1,84323:1	died-or-margin
+1760	soup221	-	45299	-	46874:3,46875:1,45299:2,46093:1,45300:3,43758:3	grower (93 cells, 14 comps)
+1761	soup222	-	86545	-	87598:2,87599:1,88727:3,87625:1,85482:1,84414:3	c0:bucket1@288.2°/472u c1:bucket1@348.4°/446u c2:bucket1@228.2°/473u c3:bucket0@117.9°/460u
+1762	soup223	-	65123	-	65122:1,65125:1,65121:1,63262:2,66060:2,65123:3	died-or-margin
+1763	soup224	-	90345	-	90344:1,89250:3,92561:3,89252:3,92562:1,88151:1	c0:bucket0@177.3°/429u c1:bucket0@237.7°/383u c2:bucket1@48.1°/473u
+1764	soup225	-	35159	-	35161:2,33807:1,34479:1,35157:2,35159:2,35160:2	died-or-margin
+1765	soup226	-	84405	-	83341:1,82274:2,84406:2,82278:2,83340:1,82276:1	died-or-margin
+1766	soup227	-	61341	-	61339:3,63168:3,61342:1,61341:2,60436:1,62246:2	died-or-margin
+1767	soup228	-	88491	-	87400:3,86323:3,87398:2,90678:2,89592:3,88491:2	died-or-margin
+1768	soup229	-	64078	-	64080:2,65008:2,65941:2,64076:2,65006:3,63151:1	died-or-margin
+1769	soup230	-	54704	-	55556:2,54706:3,55558:1,56415:1,54705:1,55559:1	c0:bucket1@288.2°/476u c1:bucket0@57.6°/464u c2:bucket1@107.9°/474u c3:bucket1@227.9°/469u
+1770	soup231	-	106824	-	105618:2,106827:1,106821:3,109220:2,105621:2,104439:2	died-or-margin
+1771	soup232	-	122944	-	122945:1,124230:3,121666:2,121664:1,122943:3,121667:2	grower (60 cells, 9 comps)
+1772	soup233	-	41754	-	40269:2,42505:1,41755:3,42503:1,41756:2,41754:3	c0:bucket0@296.8°/463u
+1773	soup234	-	31593	-	30950:2,30304:2,30949:1,32245:3,32246:1,32247:3	c0:bucket1@108.1°/472u c1:bucket0@177.2°/465u c2:bucket0@236.8°/463u c3:short(0) c4:short(0)
+1774	soup235	-	37443	-	36038:1,36742:2,37443:1,38153:3,37445:2,36741:1	died-or-margin
+1775	soup236	-	49127	-	47520:1,48332:3,47521:3,49952:2,47522:3,49129:3	c0:bucket0@236.6°/465u c1:bucket1@348.1°/473u
+1776	soup237	-	118873	-	121425:2,116368:1,120138:3,116369:2,117614:3,116367:3	c0:bucket0@236.5°/464u c1:bucket0@177.7°/463u c2:bucket1@348.5°/343u
+1777	soup238	-	120442	-	117919:2,120444:3,120439:3,121730:3,121729:2,123006:1	died-or-margin
+1778	soup239	-	55705	-	54859:1,57455:3,54857:1,57454:3,55706:3,56573:2	c0:bucket1@48.5°/474u c1:bucket1@168.2°/472u
+1779	soup240	-	40602	-	39875:1,42091:1,41353:3,39151:3,40602:3,39877:1	c0:bucket0@56.8°/463u c1:bucket1@167.8°/471u c2:bucket1@167.2°/470u c3:bucket1@288.2°/472u c4:bucket1@348.2°/474u
+1780	soup241	-	84011	-	86138:3,81897:1,85080:1,85081:1,82939:3,85083:3	died-or-margin
+1781	soup242	-	122544	-	121272:2,119979:1,122548:1,123836:2,122543:3,119978:1	died-or-margin
+1782	soup243	-	85695	-	86758:2,86759:1,84626:3,84624:1,85697:1,86760:2	died-or-margin
+1783	soup244	-	58350	-	58349:3,60125:2,57468:3,57467:3,58351:2,59220:3	died-or-margin
+1784	soup245	-	56806	-	56805:2,56812:1,55089:1,55939:1,55081:2,55082:1	died-or-margin
+1785	soup246	-	110979	-	110977:2,112213:1,108548:3,110980:3,109759:1,110981:1	c0:bucket0@57.2°/461u c1:bucket1@288.1°/472u
+1786	soup247	-	64691	-	64689:1,65636:1,64693:3,65634:2,64690:1,62839:1	died-or-margin
+1787	soup248	-	48955	-	48150:2,49763:1,48955:2,47339:1,50589:1,48149:3	died-or-margin
+1788	soup249	-	58675	-	59550:2,58676:3,60464:3,57816:1,58675:1,59560:2	c0:bucket1@48.2°/476u
+1789	soup250	-	61908	-	62824:1,62822:1,61002:2,60097:2,60095:2,63745:2	died-or-margin
+1790	soup251	-	110026	-	110027:1,107620:3,108809:3,110026:2,107619:1,111253:2	c0:bucket0@117.2°/463u c1:bucket1@168.1°/447u c2:bucket0@57.1°/463u c3:bucket0@296.8°/466u
+1791	soup252	-	87507	-	85365:1,88604:1,88601:1,86428:1,89702:1,85363:1	died-or-margin
+1792	soup253	-	63807	-	64738:1,62884:2,62882:3,64737:3,61972:1,61973:3	c0:bucket1@48.2°/476u c1:bucket1@108.2°/472u c2:bucket0@297.1°/463u
+1793	soup254	-	35015	-	33651:3,36393:2,35014:1,35692:3,34321:1,35016:2	c0:bucket1@168.1°/475u c1:bucket1@107.8°/475u
+1794	soup255	-	90308	-	92522:1,89215:3,90305:2,91410:3,89214:3,89212:3	c0:bucket0@56.9°/462u c1:bucket1@168.0°/466u c2:bucket1@288.2°/472u
+1795	soup256	-	58657	-	57780:1,60444:3,58656:2,59528:3,58655:1,57779:2	died-or-margin
+1796	soup257	-	41797	-	40306:3,42545:1,41799:1,42546:3,41053:2,42544:3	grower (40 cells, 7 comps)
+1797	soup258	-	119239	-	116754:2,121817:2,120528:2,118006:3,120527:1,120531:1	died-or-margin
+1798	soup259	-	100070	-	98928:1,101242:2,101238:2,101241:3,100069:1,98929:2	died-or-margin
+1799	soup260	-	37964	-	37966:2,37260:2,37261:1,36554:2,37964:2,37262:3	c0:bucket1@48.2°/472u
+1800	soup261	-	102996	-	101820:1,104178:2,101821:2,100646:2,105360:1,102996:2	died-or-margin
+1801	soup262	-	85781	-	84714:2,83648:2,85782:2,85780:1,83649:3,86851:2	died-or-margin
+1802	soup263	-	34079	-	35437:1,33410:2,32743:1,33411:1,35435:3,34078:3	died-or-margin
+1803	soup264	-	82731	-	81689:2,83798:3,82730:3,82729:3,84867:3,83796:3	died-or-margin
+1804	soup265	-	68182	-	68179:2,69142:3,68182:2,66280:1,68184:3,69143:2	died-or-margin
+1805	soup266	-	89095	-	89097:2,91286:2,87995:2,87993:1,89093:1,89096:3	died-or-margin
+1806	soup267	-	75758	-	74747:1,73761:1,73760:2,76774:2,75756:2,74749:3	c0:bucket0@117.3°/461u c1:bucket0@297.1°/437u
+1807	soup268	-	39374	-	39376:2,40099:3,37921:3,39373:3,39375:3,37923:2	died-or-margin
+1808	soup269	-	111984	-	109533:1,109534:2,110748:2,111982:1,109535:2,110749:3	died-or-margin
+1809	soup270	-	110010	-	111237:1,108792:2,111234:2,110007:1,110012:3,107603:3	c0:bucket1@48.2°/472u c1:bucket0@296.8°/463u
+1810	soup271	-	54259	-	53394:2,54257:3,55975:2,54261:1,55974:1,53395:1	died-or-margin
+1811	soup272	-	122831	-	122829:3,124118:3,122830:2,120268:2,120269:1,120270:2	died-or-margin
+1812	soup273	-	76524	-	75508:1,78559:1,76525:2,77556:1,77558:3,78560:3	c0:bucket1@227.5°/432u c1:bucket0@356.7°/463u
+1813	soup274	-	94538	-	94536:3,93423:3,92299:3,95675:3,96808:1,94540:2	c0:bucket1@348.2°/472u c1:bucket1@228.1°/474u
+1814	soup275	-	120128	-	117603:1,120127:1,122690:1,122689:2,121414:2,120128:2	died-or-margin
+1815	soup276	-	42832	-	42833:3,42062:2,42834:1,43586:1,41327:3,42061:3	c0:bucket0@57.6°/463u c1:bucket1@108.5°/475u
+1816	soup277	-	123268	-	123267:3,125855:3,123269:1,123268:3,124559:3,125857:3	c0:bucket0@297.3°/464u c1:bucket0@177.8°/466u
+1817	soup278	-	54238	-	54237:2,55097:3,53374:3,54239:3,52534:3,55096:2	died-or-margin
+1818	soup279	-	49876	-	49874:3,50696:1,49054:2,49060:1,50695:2,49880:1	c0:bucket1@348.0°/473u
+1819	soup280	-	101810	-	99475:1,101812:1,100636:1,102986:1,100637:1,99474:3	c0:bucket0@177.3°/463u c1:bucket1@228.5°/472u c2:bucket1@288.4°/445u c3:bucket1@47.9°/474u
+1820	soup281	-	37759	-	37059:1,37754:3,39208:2,38474:1,38480:2,38473:3	c0:bucket0@57.7°/463u c1:bucket0@236.9°/462u
+1821	soup282	-	106763	-	105563:3,105561:3,107958:3,105564:3,107959:2,106762:3	died-or-margin
+1822	soup283	-	37049	-	36348:3,35639:3,37048:3,36347:3,36342:1,35644:2	c0:bucket1@168.0°/475u c1:bucket0@56.8°/463u c2:bucket1@227.8°/472u c3:bucket1@348.2°/475u
+1823	soup284	-	47961	-	47962:2,49565:2,47153:3,48771:3,47964:2,47154:3	died-or-margin
+1824	soup285	-	102442	-	100094:2,101262:3,103617:3,103618:3,101261:2,102443:3	died-or-margin
+1825	soup286	-	50052	-	50879:1,51707:1,51708:1,49234:3,48429:3,50876:2	died-or-margin
+1826	soup287	-	68314	-	70249:1,69277:2,69278:3,67357:1,70248:2,67354:3	died-or-margin
+1827	soup288	-	81825	-	79741:2,82870:2,83936:2,80782:2,79743:2,79742:2	died-or-margin
+1828	soup289	-	68137	-	67181:2,68135:3,67182:2,66235:1,70070:1,68136:3	died-or-margin
+1829	soup290	-	52124	-	52122:2,51294:3,52125:1,53805:2,52948:2,52124:2	c0:bucket0@298.0°/459u c1:bucket0@296.5°/464u c2:bucket1@47.8°/473u c3:bucket0@177.2°/465u c4:bucket1@168.0°/476u
+1830	soup291	-	67437	-	67437:2,69357:1,68396:2,67435:1,66495:1,69356:3	c0:bucket0@56.8°/465u c1:bucket0@116.5°/461u c2:bucket1@288.2°/472u c3:bucket1@287.2°/470u c4:bucket0@177.2°/463u
+1831	soup292	-	83537	-	82478:3,84605:1,83538:2,83539:1,82476:2,84603:1	died-or-margin
+1832	soup293	-	30797	-	30148:1,30797:1,31440:2,31442:2,32088:2,30149:2	died-or-margin
+1833	soup294	-	94081	-	96340:1,95209:3,94082:2,92963:1,92960:2,95212:3	c0:bucket0@177.2°/463u c1:bucket0@357.5°/373u
+1834	soup295	-	115104	-	112644:3,115103:2,112643:3,113867:2,113866:2,116354:1	died-or-margin
+1835	soup296	-	34066	-	34063:2,34749:3,34066:1,32729:3,34070:3,33397:1	c0:bucket1@48.2°/472u c1:bucket1@167.4°/473u
+1836	soup297	-	119310	-	120591:3,118072:2,120597:1,116819:3,118070:1,118068:1	c0:bucket0@237.6°/463u c1:bucket0@116.7°/445u
+1837	soup298	-	56449	-	57330:3,55588:3,54737:3,56449:2,58210:2,57329:3	died-or-margin
+1838	soup299	-	59859	-	58965:1,60764:3,59860:3,60762:2,58095:2,58988:1	c0:bucket1@48.3°/472u
+1839	soup300	-	60642	-	61557:1,59735:3,58853:2,62460:2,59738:2,60642:1	died-or-margin
+1840	soup301	-	44428	-	44430:2,43662:1,44433:3,43658:3,45988:3,44429:2	c0:bucket1@108.2°/472u c1:bucket0@237.2°/464u
+1841	soup302	-	86384	-	87461:2,85321:3,86382:1,87462:2,85320:2,88557:1	died-or-margin
+1842	soup303	-	95773	-	93528:1,98057:3,95773:1,98056:3,95769:1,96912:1	c0:bucket1@108.6°/474u c1:bucket1@288.1°/476u
+1843	soup304	-	52401	-	52399:2,54101:2,51576:2,51573:3,53240:2,50737:2	died-or-margin
+1844	soup305	-	117418	-	116170:3,116171:2,114916:3,119933:3,119934:2,116169:1	c0:bucket1@227.6°/329u c1:bucket1@348.0°/475u
+1845	soup306	-	37922	-	36511:3,38644:2,38643:3,39374:2,37923:2,39372:3	died-or-margin
+1846	soup307	-	45998	-	44437:2,45213:1,45212:3,46783:2,44441:3,46003:3	c0:bucket1@108.1°/473u c1:bucket0@117.6°/464u c2:bucket1@227.9°/474u
+1847	soup308	-	88567	-	88566:3,88570:1,90752:3,88569:1,90753:1,89666:2	c0:bucket0@356.7°/388u c1:bucket1@287.7°/472u
+1848	soup309	-	69435	-	68476:3,70404:3,69434:1,69437:2,69436:3,68473:3	c0:bucket1@48.5°/474u c1:bucket1@168.1°/460u
+1849	soup310	-	46349	-	46348:1,44801:3,45559:1,45567:1,46349:1,45579:3	c0:bucket1@47.9°/474u c1:bucket0@236.5°/464u c2:bucket1@348.2°/472u c3:bucket1@168.2°/472u
+1850	soup311	-	83338	-	82274:3,83333:2,84398:2,83339:3,84406:1,85473:2	died-or-margin
+1851	soup312	-	106573	-	104196:3,106575:2,108966:1,104193:3,107772:1,107770:3	c0:bucket0@177.6°/463u c1:bucket0@117.4°/464u
+1852	soup313	-	113498	-	112267:2,112269:1,111036:3,113497:2,111037:2,114719:2	died-or-margin
+1853	soup314	-	93571	-	92445:1,91332:2,94691:1,93573:1,91330:2,94690:3	c0:bucket1@48.3°/470u c1:bucket1@167.8°/427u
+1854	soup315	-	115293	-	117801:3,112834:3,117800:3,115292:3,114056:1,116552:2	c0:short(2) c1:short(2) c2:bucket1@107.8°/473u c3:bucket1@228.0°/399u c4:bucket0@298.0°/401u c5:bucket0@356.9°/465u
+1855	soup316	-	37425	-	37427:1,36018:2,37423:1,36725:3,37425:1,36727:1	grower (72 cells, 14 comps)
+1856	soup317	-	95876	-	95875:2,97017:1,98156:1,94753:3,94751:1,97015:1	grower (38 cells, 7 comps)
+1857	soup318	-	64990	-	64988:2,65925:2,66875:2,64058:1,66876:1,65927:3	died-or-margin
+1858	soup319	-	123903	-	122616:1,123904:1,125201:1,123903:2,121337:1,121335:1	died-or-margin
+1859	soup320	-	110238	-	110236:2,111462:3,107820:2,109020:3,107823:3,111463:2	died-or-margin
+1860	soup321	-	79803	-	78762:3,78760:3,79805:3,80841:2,79803:2,77752:2	died-or-margin
+1861	soup322	-	73010	-	71035:2,72017:2,74009:1,71034:2,74007:1,72015:1	died-or-margin
+1862	soup323	-	111300	-	110072:1,110074:3,108855:1,112526:2,113755:3,112533:1	c0:bucket0@177.7°/461u c1:short(0) c2:short(0)
+1863	soup324	-	74403	-	74403:3,72424:3,73420:3,72420:2,75402:2,72428:1	grower (51 cells, 9 comps)
+1864	soup325	-	46461	-	48057:3,45678:2,45680:2,47252:2,47251:2,46461:3	died-or-margin
+1865	soup326	-	51987	-	53655:2,51986:3,51987:2,51151:3,53656:1,53657:1	died-or-margin
+1866	soup327	-	120561	-	121848:1,121849:3,123126:2,123125:3,120561:3,119278:1	grower (37 cells, 7 comps)
+1867	soup328	-	39392	-	38661:2,40117:2,38662:1,39393:2,38663:2,39391:3	died-or-margin
+1868	soup329	-	95709	-	94580:3,93461:1,94578:2,96844:2,97987:3,97986:2	died-or-margin
+1869	soup330	-	90433	-	91537:1,92651:2,92650:3,90431:1,89338:2,90435:1	c0:bucket0@297.6°/385u
+1870	soup331	-	66846	-	68752:2,65898:1,64962:2,67793:2,66845:3,68750:3	c0:bucket0@237.6°/463u c1:bucket0@57.8°/466u
+1871	soup332	-	75145	-	75144:1,76159:2,73158:2,74152:3,74154:2,73157:3	c0:bucket1@288.0°/474u c1:bucket1@168.5°/474u
+1872	soup333	-	61509	-	61509:1,60596:1,61511:1,60595:2,60597:1,62414:3	died-or-margin
+1873	soup334	-	89753	-	91946:2,90845:1,87559:3,88657:2,88655:3,90842:3	died-or-margin
+1874	soup335	-	63443	-	61616:3,64376:1,64375:3,62521:3,62519:1,65315:1	c0:bucket1@228.5°/472u c1:bucket1@107.8°/471u
+1875	soup336	-	82558	-	83622:2,82558:2,81521:3,82556:1,84689:1,80477:1	c0:bucket1@108.6°/470u c1:bucket1@167.8°/426u
+1876	soup337	-	62750	-	62749:2,60931:1,61837:1,61838:2,63680:3,61839:2	died-or-margin
+1877	soup338	-	71218	-	69284:1,69282:2,71219:2,69283:3,71217:3,70256:1	c0:bucket0@296.8°/465u
+1878	soup339	-	51390	-	52222:2,53051:2,52214:3,52224:3,51381:2,51391:2	died-or-margin
+1879	soup340	-	118891	-	118891:3,117634:1,116386:3,118889:3,118890:1,120155:2	c0:bucket1@227.5°/473u c1:bucket1@228.0°/473u c2:bucket0@176.9°/462u c3:bucket1@288.0°/362u c4:bucket0@357.5°/382u
+1880	soup341	-	114238	-	115476:3,111787:2,113019:1,116741:3,114239:1,113020:1	died-or-margin
+1881	soup342	-	85509	-	85510:2,83373:1,84439:2,85508:2,85509:1,87653:3	died-or-margin
+1882	soup343	-	31554	-	32209:2,32876:3,30916:3,32211:3,31555:3,30913:2	died-or-margin
+1883	soup344	-	68652	-	67687:3,67690:2,66743:1,69617:3,69616:3,68654:2	c0:bucket0@57.7°/463u c1:bucket0@236.7°/465u
+1884	soup345	-	83451	-	82391:3,85589:1,83449:1,82389:2,82392:1,82390:2	c0:bucket0@356.8°/464u c1:bucket1@288.1°/473u
+1885	soup346	-	42852	-	42854:1,43607:1,41351:2,43608:2,42084:2,42853:1	died-or-margin
+1886	soup347	-	67950	-	69886:3,68913:3,67005:2,66055:1,67951:2,69884:1	died-or-margin
+1887	soup348	-	42518	-	42516:1,42518:1,41768:1,41769:3,43278:1,41771:1	grower (66 cells, 11 comps)
+1888	soup349	-	57753	-	57751:2,56866:3,57752:2,56868:1,56867:1,59503:2	c0:bucket1@168.6°/474u
+1889	soup350	-	65261	-	66189:3,64322:1,65260:2,64325:3,64324:2,67142:1	c0:bucket0@117.3°/463u c1:bucket1@228.2°/472u
+1890	soup351	-	107776	-	105384:2,107777:2,108972:3,108974:1,106578:1,105386:2	died-or-margin
+1891	soup352	-	86996	-	84860:3,88080:1,86998:3,85917:1,84858:3,89179:3	c0:bucket1@47.4°/473u c1:bucket0@237.3°/461u c2:bucket1@288.1°/474u
+1892	soup353	-	121563	-	121560:2,121564:3,124126:3,120280:2,122841:1,120279:1	c0:bucket1@108.6°/474u c1:bucket0@356.6°/465u
+1893	soup354	-	63356	-	62435:1,62439:2,63355:1,64295:2,63357:3,64288:1	c0:bucket1@48.3°/474u c1:bucket1@107.8°/474u c2:bucket1@228.0°/474u c3:bucket0@237.0°/463u
+1894	soup355	-	99193	-	98049:1,100337:3,101513:3,98045:1,101509:1,100340:1	c0:bucket1@47.5°/473u c1:bucket1@107.7°/454u
+1895	soup356	-	68296	-	69262:1,69261:2,66397:1,70232:1,70234:3,70233:3	c0:bucket1@348.2°/477u c1:bucket0@117.6°/464u c2:bucket1@167.5°/472u
+1896	soup357	-	39559	-	39562:1,38844:1,38103:2,38104:1,40281:1,38114:2	died-or-margin
+1897	soup358	-	109139	-	109137:3,111584:2,111583:3,106742:3,109140:3,107937:3	died-or-margin
+1898	soup359	-	95916	-	95915:2,95918:3,97056:2,93663:1,97054:3,97055:3	died-or-margin
+1899	soup360	-	120110	-	121398:2,121394:3,118848:2,122673:2,121396:1,117588:1	died-or-margin
+1900	soup361	-	103183	-	100825:1,103184:2,105544:2,100826:1,104360:2,103185:3	c0:bucket1@228.5°/407u
+1901	soup362	-	111134	-	109906:3,109908:3,111134:3,108695:1,111136:2,111135:3	c0:bucket1@108.0°/473u c1:bucket1@228.0°/348u
+1902	soup363	-	69780	-	67846:3,68805:3,71718:1,70744:2,67845:2,69782:1	died-or-margin
+1903	soup364	-	46606	-	48209:2,47399:2,47401:1,48212:2,48211:2,46607:1	died-or-margin
+1904	soup365	-	32397	-	31094:3,31739:2,31736:2,33061:1,33730:2,33063:3	died-or-margin
+1905	soup366	-	44013	-	44792:1,44790:2,43255:2,43252:3,43254:3,42491:2	died-or-margin
+1906	soup367	-	96990	-	95849:2,94725:2,96991:3,96989:1,98131:1,95848:1	c0:bucket1@107.8°/473u c1:bucket0@237.4°/449u
+1907	soup368	-	92545	-	94796:1,92543:1,91432:3,93666:2,90331:2,91433:2	c0:bucket0@57.0°/463u c1:bucket0@296.4°/467u
+1908	soup369	-	63095	-	64020:1,63094:2,64021:1,62173:3,61265:2,63099:2	died-or-margin
+1909	soup370	-	117525	-	117527:1,115025:1,117526:2,117525:3,118785:2,116274:3	died-or-margin
+1910	soup371	-	109597	-	108387:2,110810:2,109597:2,112045:3,109596:3,112043:3	died-or-margin
+1911	soup372	-	74759	-	75060:2,73075:2,74070:2,75767:1,73771:2,74071:1	died-or-margin
+1912	soup373	-	55370	-	57097:2,53643:3,55368:2,56229:3,53642:1,55371:3	c0:bucket0@176.9°/464u c1:bucket1@108.1°/473u
+1913	soup374	-	56493	-	54779:2,56492:2,56493:2,55635:1,56496:3,57372:1	c0:bucket1@167.9°/474u
+1914	soup375	-	120402	-	119131:1,120406:2,119118:2,117877:1,119126:2,117888:3	c0:bucket1@227.7°/477u
+1915	soup376	-	72432	-	71451:3,73419:2,72437:2,73420:1,72438:2,73424:2	died-or-margin
+1916	soup377	-	113195	-	113196:1,115660:2,111967:2,110728:1,111966:2,110729:3	c0:bucket1@227.9°/472u
+1917	soup378	-	75413	-	76428:3,77456:3,76429:1,77452:3,77457:3,75407:1	c0:bucket1@48.3°/470u c1:bucket1@167.6°/438u
+1918	soup379	-	71889	-	70914:3,70911:1,72881:2,72883:1,71887:1,71888:3	c0:bucket1@287.3°/456u c1:bucket1@48.5°/473u
+1919	soup380	-	116925	-	118181:3,115663:1,114418:3,116927:2,116926:3,119425:2	c0:bucket0@297.2°/464u c1:bucket1@168.6°/474u
+1920	soup381	-	58520	-	59395:3,58520:1,59396:2,58522:2,59397:3,60303:2	c0:bucket1@107.5°/471u
+1921	soup382	-	63559	-	62635:3,63561:3,64491:2,64490:2,62634:1,62632:1	c0:bucket1@48.2°/472u c1:bucket1@167.5°/473u
+1922	soup383	-	111086	-	109862:2,109858:3,111084:2,111088:1,112313:2,112315:1	died-or-margin
+1923	soup384	-	84955	-	86016:1,86014:1,86018:3,82822:1,82821:1,83889:3	c0:bucket0@116.7°/465u c1:bucket0@297.3°/403u
+1924	soup385	-	39207	-	40660:3,38473:1,39206:1,38472:3,38478:1,39931:2	c0:bucket1@107.7°/470u c1:bucket1@227.5°/473u
+1925	soup386	-	58233	-	59106:3,58232:2,56470:2,59105:2,57353:2,58233:1	c0:short(0) c1:short(0) c2:short(0) c3:bucket1@228.2°/472u c4:bucket0@236.9°/465u
+1926	soup387	-	105271	-	105274:1,105270:2,104089:2,105269:3,102918:1,105276:1	died-or-margin
+1927	soup388	-	101172	-	101170:2,101171:3,102354:1,100004:1,101174:2,102353:1	died-or-margin
+1928	soup389	-	34759	-	34761:3,34760:3,36136:3,34074:3,34757:1,36137:2	died-or-margin
+1929	soup390	-	78916	-	77904:1,81002:2,78915:3,78917:1,77902:3,78916:2	died-or-margin
+1930	soup391	-	92265	-	92265:1,92263:2,91154:2,93390:1,93392:2,92267:3	died-or-margin
+1931	soup392	-	56152	-	57020:2,57901:3,55291:2,57019:3,55292:2,57021:2	died-or-margin
+1932	soup393	-	33854	-	34527:2,34529:1,35204:2,34526:1,33180:3,33179:1	c0:short(26) c1:bucket1@108.6°/474u c2:short(26) c3:bucket1@227.9°/474u c4:bucket0@237.4°/465u
+1933	soup394	-	97479	-	98631:3,99777:1,97481:1,97480:2,98629:1,96340:3	c0:bucket1@108.0°/476u c1:bucket0@237.0°/463u
+1934	soup395	-	99187	-	96900:1,98035:2,98040:2,100335:3,99187:2,98043:1	died-or-margin
+1935	soup396	-	85886	-	86965:2,85887:2,83757:1,85885:1,88045:3,86963:2	died-or-margin
+1936	soup397	-	79847	-	81925:2,80897:2,79848:1,78815:3,78814:1,79847:2	c0:bucket0@297.6°/422u c1:bucket1@347.4°/463u
+1937	soup398	-	39860	-	39859:3,40585:1,39137:3,40586:2,38406:3,39860:3	died-or-margin
+1938	soup399	-	120871	-	120870:3,120873:2,119590:2,122157:3,123436:2,119588:1	c0:bucket1@108.3°/341u c1:bucket1@227.8°/478u
+1939	soup400	-	101948	-	103120:2,100771:3,101949:3,103122:3,100768:2,103123:3	died-or-margin
+1940	soup401	-	67039	-	67985:3,65155:2,67989:3,65158:1,67988:1,67038:2	c0:bucket0@237.6°/460u c1:bucket1@347.8°/471u
+1941	soup402	-	108328	-	105934:1,109536:2,107136:3,105936:3,109535:2,109534:2	c0:bucket1@47.6°/391u c1:bucket1@227.4°/473u
+1942	soup403	-	111287	-	110068:1,111289:2,110062:2,112526:2,108843:2,112521:2	died-or-margin
+1943	soup404	-	51155	-	51989:2,51992:1,50319:3,51991:3,51990:2,51154:2	c0:bucket1@347.8°/471u c1:bucket1@228.1°/472u
+1944	soup405	-	95779	-	94656:3,96920:1,98062:2,94654:1,98063:3,95781:2	c0:bucket0@57.3°/463u c1:bucket0@117.4°/454u c2:bucket0@177.1°/371u c3:bucket1@288.1°/472u
+1945	soup406	-	110264	-	111488:1,109045:3,109411:1,110623:2,107846:2,111862:1	died-or-margin
+1946	soup407	-	72661	-	70700:1,72660:1,72659:2,72658:3,71677:2,72663:2	c0:bucket0@296.2°/443u
+1947	soup408	-	96513	-	94253:3,94257:3,98808:1,97656:1,97655:1,96512:1	died-or-margin
+1948	soup409	-	76442	-	78475:2,76439:3,75427:3,76441:3,77472:1,74428:1	died-or-margin
+1949	soup410	-	94409	-	94407:3,93292:3,96675:1,94411:1,93294:3,93293:3	died-or-margin
+1950	soup411	-	122342	-	121053:2,119767:1,119768:1,124916:1,124915:3,122342:1	c0:bucket1@228.7°/318u
+1951	soup412	-	121358	-	121356:2,120070:3,121358:2,122634:2,118810:2,120072:3	died-or-margin
+1952	soup413	-	98489	-	97343:2,98491:1,98488:3,99634:2,100790:3,98490:3	c0:bucket1@288.1°/380u
+1953	soup414	-	86113	-	83986:1,87197:2,85057:1,83985:1,88286:2,85056:2	died-or-margin
+1954	soup415	-	40524	-	40522:1,39800:2,41275:1,40524:3,39077:3,41276:3	c0:bucket1@108.0°/473u c1:bucket0@356.9°/465u c2:bucket1@168.5°/474u c3:bucket1@287.9°/474u
+1955	soup416	-	109400	-	107016:2,111841:3,110600:2,110622:1,110264:1,109410:2	died-or-margin
+1956	soup417	-	102539	-	100193:3,104895:2,103712:2,101358:1,101361:3,100195:2	c0:bucket1@48.0°/474u c1:bucket1@288.5°/474u
+1957	soup418	-	54248	-	55105:1,55106:3,55963:3,54249:1,52543:3,55107:1	died-or-margin
+1958	soup419	-	108225	-	107037:2,109433:1,108225:2,105831:3,110642:1,108218:2	died-or-margin
+1959	soup420	-	81867	-	82909:3,82912:2,81865:3,79786:3,81869:3,81868:1	c0:bucket0@116.8°/463u
+1960	soup421	-	68595	-	69551:1,70519:2,67628:1,68595:3,69553:3,67629:2	c0:bucket1@227.7°/464u c1:bucket1@347.5°/473u
+1961	soup422	-	105049	-	107450:2,103872:2,105051:1,107449:2,105050:1,105049:2	died-or-margin
+1962	soup423	-	64122	-	65984:1,63192:3,65052:2,65051:3,65049:3,65983:2	died-or-margin
+1963	soup424	-	98268	-	97121:3,97123:3,99419:1,100573:3,95990:1,97125:2	c0:bucket0@236.5°/423u c1:bucket0@56.8°/463u
+1964	soup425	-	103580	-	102411:1,104758:2,103580:3,104759:1,105954:2,105955:2	grower (44 cells, 8 comps)
+1965	soup426	-	74096	-	73095:1,73102:2,75065:3,75078:3,75087:2,75086:3	died-or-margin
+1966	soup427	-	104926	-	106120:1,103745:1,104926:3,103747:1,104925:3,103746:2	c0:bucket0@57.3°/463u c1:bucket0@118.8°/349u
+1967	soup428	-	86025	-	83895:2,84970:2,86025:1,83900:3,87105:3,87109:2	c0:bucket0@237.6°/443u
+1968	soup429	-	83780	-	81671:1,84848:2,83781:2,81670:2,83780:1,82712:3	died-or-margin
+1969	soup430	-	64163	-	64163:1,66028:2,63233:3,65091:2,62306:3,66027:3	c0:bucket1@108.0°/473u c1:bucket1@348.2°/470u
+1970	soup431	-	106710	-	109106:3,106712:1,106711:2,107902:2,104326:2,105512:2	died-or-margin
+1971	soup432	-	40140	-	41621:1,39417:3,40141:2,40139:2,40873:1,38687:1	c0:bucket0@176.6°/459u c1:bucket1@287.8°/471u
+1972	soup433	-	44309	-	43538:3,45868:3,45864:3,42788:2,44309:1,44308:2	died-or-margin
+1973	soup434	-	41955	-	41219:3,41220:2,42721:2,41955:1,41218:1,41958:2	c0:bucket0@177.3°/463u c1:bucket0@237.1°/464u
+1974	soup435	-	72702	-	72702:3,70740:3,72700:2,71717:2,71715:1,73693:3	grower (60 cells, 11 comps)
+1975	soup436	-	89013	-	87914:1,91206:3,89015:3,87915:2,89013:3,90110:1	c0:bucket1@47.5°/473u c1:bucket0@117.3°/389u
+1976	soup437	-	106199	-	108592:3,103830:2,107402:1,103828:3,105000:2,103829:3	c0:bucket0@118.0°/341u c1:bucket0@238.0°/459u
+1977	soup438	-	117932	-	119167:2,116678:1,115415:1,119169:1,119168:1,117933:1	died-or-margin
+1978	soup439	-	70867	-	69908:3,70866:3,72835:3,68932:3,70868:3,72834:1	c0:bucket0@296.5°/464u c1:bucket1@48.2°/475u
+1979	soup440	-	36250	-	35543:2,36948:3,36947:1,36251:1,36246:3,36249:3	c0:bucket1@107.4°/473u c1:bucket1@228.2°/472u c2:bucket1@347.5°/473u
+1980	soup441	-	44889	-	45669:2,44889:1,43348:3,44109:3,44888:1,45667:3	c0:bucket1@47.8°/472u
+1981	soup442	-	36249	-	37653:1,36249:2,37649:1,36952:3,36948:1,36251:3	c0:bucket1@288.1°/474u
+1982	soup443	-	107618	-	105220:2,108809:2,107620:2,107619:1,110025:1,106417:3	c0:bucket0@117.6°/463u c1:bucket0@296.9°/447u
+1983	soup444	-	30667	-	30019:3,29384:2,31316:1,30667:3,29385:1,31312:3	died-or-margin
+1984	soup445	-	39888	-	40613:3,41365:1,38434:3,39161:1,39887:2,39164:1	c0:bucket1@348.5°/472u c1:bucket0@356.6°/465u
+1985	soup446	-	33184	-	34531:2,32517:1,31855:3,33183:3,33185:1,32518:1	c0:bucket1@47.9°/474u c1:bucket0@177.7°/464u c2:bucket1@168.6°/474u c3:bucket1@108.8°/475u
+1986	soup447	-	122354	-	122352:3,124928:1,122356:1,119780:1,121066:1,123632:2	c0:bucket1@108.2°/429u c1:bucket1@227.7°/317u
+1987	soup448	-	44325	-	45106:1,43554:1,45104:3,43558:1,45887:1,43556:3	c0:bucket0@56.9°/462u c1:bucket0@116.9°/465u c2:bucket1@167.5°/473u c3:bucket1@167.7°/477u c4:bucket0@356.4°/464u c5:bucket0@296.9°/462u
+1988	soup449	-	48114	-	48922:1,48110:3,47305:3,46512:3,48114:2,48115:3	c0:bucket0@57.6°/464u
+1989	soup450	-	53094	-	53952:3,51433:1,53954:2,52261:2,53951:2,51431:2	died-or-margin
+1990	soup451	-	65178	-	63315:2,64246:1,65179:3,64245:1,66112:2,67058:3	c0:bucket1@228.3°/474u c1:bucket0@237.6°/463u c2:bucket0@357.0°/463u c3:bucket0@357.8°/461u
+1991	soup452	-	33516	-	34872:2,34874:1,33517:3,32186:1,34191:1,32848:2	c0:bucket1@108.3°/474u c1:bucket0@117.1°/463u c2:bucket0@177.9°/462u c3:bucket1@228.1°/474u c4:short(0) c5:short(0)
+1992	soup453	-	123607	-	124904:1,122330:1,122331:1,121054:2,123601:2,121046:2	died-or-margin
+1993	soup454	-	109036	-	109038:1,111481:2,110423:3,110422:2,110255:3,107838:2	died-or-margin
+1994	soup455	-	107305	-	106105:2,106103:3,107304:1,106101:2,106104:3,108498:1	died-or-margin
+1995	soup456	-	98033	-	95747:2,96887:2,99179:3,98032:2,96892:1,98031:2	died-or-margin
+1996	soup457	-	83562	-	83560:3,84630:1,85701:3,85699:2,84629:1,84631:1	c0:bucket1@108.4°/452u c1:bucket1@168.5°/409u
+1997	soup458	-	60239	-	61146:3,60240:3,59330:1,61147:2,60239:2,62052:3	died-or-margin
+1998	soup459	-	44109	-	45668:1,44109:3,43347:2,42586:2,44107:2,44888:1	c0:bucket1@287.8°/470u
+1999	soup460	-	62471	-	63394:1,60651:3,62470:3,62472:2,60653:3,61566:3	died-or-margin
+2000	soup461	-	51608	-	52437:2,51608:3,49954:2,53277:2,50774:1,51607:3	c0:bucket1@107.9°/474u c1:bucket0@237.3°/461u
+2001	soup462	-	69313	-	71250:3,70290:1,68352:3,69314:1,68351:2,67394:2	c0:bucket0@357.2°/465u c1:bucket1@227.8°/471u
+2002	soup463	-	33871	-	34544:3,33871:1,33200:1,33873:1,34542:1,33199:2	died-or-margin
+2003	soup464	-	76159	-	75144:3,75145:2,77177:1,75146:3,76159:2,76161:1	c0:bucket0@176.5°/462u
+2004	soup465	-	33763	-	34437:1,33763:1,34436:2,35120:2,33764:3,32429:1	died-or-margin
+2005	soup466	-	80125	-	78063:1,82199:2,80125:3,79077:2,81166:3,78064:3	c0:bucket1@48.3°/435u c1:bucket0@176.8°/463u
+2006	soup467	-	32304	-	32970:2,32303:2,31004:1,32304:2,31646:3,33634:1	c0:bucket1@168.0°/476u c1:bucket1@287.5°/473u
+2007	soup468	-	117903	-	117903:1,116649:1,117901:3,115390:1,115387:2,116648:3	c0:bucket0@237.6°/463u
+2008	soup469	-	76205	-	75193:2,76205:3,75192:1,78245:2,77226:2,74201:1	c0:bucket1@48.1°/473u
+2009	soup470	-	76084	-	77104:2,74084:1,76090:1,76082:3,76083:3,74078:2	died-or-margin
+2010	soup471	-	38929	-	40380:1,38927:3,37491:3,39656:1,39654:3,38929:2	died-or-margin
+2011	soup472	-	74165	-	74166:1,75160:3,76174:3,75159:1,73169:2,74163:1	died-or-margin
+2012	soup473	-	31641	-	30349:2,32955:1,30998:1,31635:1,30352:2,31643:3	died-or-margin
+2013	soup474	-	65123	-	63261:1,65122:3,66057:1,63262:1,64191:2,65123:1	c0:bucket1@228.1°/472u c1:bucket1@47.4°/473u c2:bucket0@357.4°/463u
+2014	soup475	-	65494	-	63623:1,64553:2,67373:2,65493:3,66430:2,65494:3	died-or-margin
+2015	soup476	-	43910	-	45459:1,44683:2,42385:1,42388:3,44682:3,42387:2	died-or-margin
+2016	soup477	-	46965	-	47765:3,47768:3,46967:2,46966:1,48576:1,45390:2	c0:bucket1@287.9°/474u c1:bucket1@347.9°/472u
+2017	soup478	-	121914	-	121912:1,123179:3,120618:2,121913:2,123183:3,124470:2	c0:bucket1@348.0°/399u c1:bucket0@116.3°/384u
+2018	soup479	-	49176	-	49998:2,48376:2,50818:3,49175:3,50817:3,50000:3	died-or-margin
+2019	soup480	-	119212	-	120501:3,117981:3,119213:2,120500:2,121788:3,117978:2	died-or-margin
+2020	soup481	-	59333	-	60242:2,61148:1,58459:2,59336:1,58460:1,59332:1	died-or-margin
+2021	soup482	-	87281	-	89470:2,86198:3,87282:2,86200:1,88373:1,89468:1	died-or-margin
+2022	soup483	-	56506	-	57385:2,56506:1,57387:3,58270:2,56509:2,57384:1	c0:bucket1@287.8°/475u
+2023	soup484	-	106204	-	106203:2,108597:3,106202:1,107409:1,107408:1,105009:3	c0:bucket0@117.5°/340u c1:bucket1@227.8°/423u
+2024	soup485	-	53834	-	54703:1,52153:1,54701:2,54702:1,52978:3,53834:1	died-or-margin
+2025	soup486	-	59329	-	58454:1,59327:2,60234:1,60236:2,61143:2,59329:3	died-or-margin
+2026	soup487	-	35925	-	35229:2,34556:2,36628:3,36632:2,37331:2,36631:2	died-or-margin
+2027	soup488	-	69925	-	67991:1,69926:3,69925:1,69927:2,70887:2,70888:1	c0:bucket1@348.1°/473u c1:bucket0@57.8°/461u
+2028	soup489	-	63289	-	63290:3,64217:3,64218:2,62367:2,63289:3,65151:2	died-or-margin
+2029	soup490	-	112736	-	112738:3,113963:3,112734:3,115199:2,111503:1,110277:2	c0:bucket0@177.8°/432u c1:bucket1@287.5°/341u
+2030	soup491	-	34337	-	35709:3,35033:2,33668:3,34338:2,35031:1,34336:2	c0:bucket0@357.6°/463u
+2031	soup492	-	80175	-	80173:2,78113:3,79130:3,81218:1,82248:2,82247:1	died-or-margin
+2032	soup493	-	40298	-	41045:3,39579:3,41048:1,41783:1,40294:2,40298:3	c0:bucket1@287.9°/474u
+2033	soup494	-	64328	-	65265:1,63394:1,64329:3,62473:1,64330:3,63393:2	c0:bucket1@347.8°/475u c1:bucket0@57.3°/462u c2:bucket1@168.1°/472u c3:bucket0@296.6°/460u
+2034	soup495	-	55425	-	56283:2,54571:1,57153:1,56284:2,55425:2,54570:1	died-or-margin
+2035	soup496	-	114083	-	115317:2,116579:1,112860:2,114082:3,115318:3,114085:2	c0:bucket1@167.5°/472u c1:bucket1@48.3°/470u
+2036	soup497	-	33385	-	32053:1,32720:2,33386:3,32717:2,33387:2,33384:1	c0:bucket1@287.4°/473u
+2037	soup498	-	105623	-	105623:3,104444:3,106819:2,105627:3,106826:3,104440:2	died-or-margin
+2038	soup499	-	91650	-	92765:3,89449:2,91651:2,92766:3,89612:2,91808:2	died-or-margin
+2039	soup500	-	39788	-	39065:2,41262:1,39788:3,40513:2,40514:1,40510:2	died-or-margin
+2040	soup501	-	104691	-	104689:2,105882:2,102343:2,105883:1,103515:1,105885:2	died-or-margin
+2041	soup502	-	119149	-	119148:1,117910:1,120430:2,119149:2,119150:1,121720:3	died-or-margin
+2042	soup503	-	68586	-	67621:2,70510:2,67620:3,68585:3,69545:3,66670:1	died-or-margin
+2043	soup504	-	118438	-	119690:2,120973:2,118437:1,119689:2,117182:2,117180:1	died-or-margin
+2044	soup505	-	86222	-	87303:1,86224:3,86220:1,86223:1,87306:2,87304:3	grower (54 cells, 9 comps)
+2045	soup506	-	75109	-	76123:1,75111:3,74117:1,76122:2,73120:1,77147:1	c0:bucket1@167.7°/470u
+2046	soup507	-	116058	-	118566:3,114806:1,114807:2,114804:1,117308:3,118567:3	died-or-margin
+2047	soup508	-	68452	-	68451:1,69411:2,69410:3,69412:1,66545:2,67490:1	c0:bucket1@48.3°/474u
+2048	soup509	-	88655	-	90843:2,87557:1,88656:1,87556:1,89750:1,88657:2	died-or-margin
+2049	soup510	-	67192	-	68146:1,66245:3,67194:1,68149:1,69109:3,66246:1	c0:bucket1@48.3°/472u c1:bucket1@47.4°/464u c2:bucket1@108.6°/475u c3:bucket0@296.8°/463u c4:bucket0@236.4°/467u c5:bucket1@287.9°/474u
+2050	soup511	-	109113	-	109112:2,110327:2,109111:2,107912:2,107911:2,111558:2	died-or-margin
+2051	soup512	-	100735	-	101909:3,98430:2,100731:2,100736:3,101908:3,101905:2	died-or-margin
+2052	soup513	-	61297	-	59478:2,63125:3,60389:2,63126:3,59477:1,59476:1	died-or-margin
+2053	soup514	-	99940	-	98806:1,99942:3,98803:3,98804:2,99938:2,97652:2	died-or-margin
+2054	soup515	-	123298	-	122017:3,123299:2,125886:2,125884:2,120731:1,125887:2	c0:bucket0@57.6°/309u c1:bucket0@177.1°/463u
+2055	soup516	-	92293	-	91181:1,93419:3,90086:3,94533:3,92292:1,92294:3	died-or-margin
+2056	soup517	-	80936	-	83023:2,78854:3,79895:2,81975:2,80938:1,81974:2	died-or-margin
+2057	soup518	-	89673	-	88573:3,91874:2,90760:1,88576:3,91871:2,90757:1	died-or-margin
+2058	soup519	-	116357	-	116359:2,117600:3,116355:3,117602:2,117601:1,113869:3	grower (209 cells, 31 comps)
+2059	soup520	-	81125	-	81123:3,81124:1,83218:1,82161:3,79039:3,82159:2	c0:bucket1@287.9°/474u
+2060	soup521	-	60006	-	60911:1,60007:2,61815:2,59107:1,58231:2,61817:2	died-or-margin
+2061	soup522	-	104517	-	104518:2,102162:3,105703:1,104517:2,106905:1,103343:3	died-or-margin
+2062	soup523	-	50820	-	49204:1,50820:2,52484:2,51654:2,51653:3,50002:2	died-or-margin
+2063	soup524	-	94171	-	94169:3,91923:3,95296:3,93048:1,95298:3,95297:2	c0:bucket1@288.0°/474u c1:bucket1@47.6°/388u
+2064	soup525	-	66220	-	67169:3,65292:2,68124:2,65291:2,65293:1,64354:3	c0:bucket1@228.5°/475u
+2065	soup526	-	94728	-	95852:3,94727:3,95853:1,96992:2,94730:3,94728:2	c0:bucket0@57.2°/462u c1:bucket1@167.8°/474u c2:bucket0@177.9°/370u c3:bucket1@287.4°/473u
+2066	soup527	-	40441	-	41191:1,40440:3,38988:3,41189:3,39715:1,38989:2	died-or-margin
+2067	soup528	-	74078	-	76083:2,72091:1,76084:3,72092:3,73086:1,75066:1	c0:bucket1@227.7°/477u c1:bucket1@107.8°/468u
+2068	soup529	-	48856	-	50480:3,48042:3,49658:3,47235:1,49657:2,48044:2	c0:bucket1@348.2°/474u c1:bucket1@108.0°/475u
+2069	soup530	-	31309	-	31307:3,31946:1,32614:3,30660:3,31950:2,31951:2	c0:bucket0@356.9°/462u c1:bucket0@177.3°/461u
+2070	soup531	-	72565	-	70606:2,72567:3,73557:1,74554:2,73555:2,74552:2	grower (40 cells, 9 comps)
+2071	soup532	-	74386	-	74386:3,76396:3,75382:2,72401:1,74384:2,73393:1	died-or-margin
+2072	soup533	-	67526	-	67526:1,68491:2,69447:2,67524:1,68488:3,65645:2	grower (69 cells, 12 comps)
+2073	soup534	-	77213	-	76194:2,75179:1,77214:1,75178:3,76193:1,79255:2	grower (44 cells, 8 comps)
+2074	soup535	-	84530	-	84531:1,85601:2,84529:2,85604:2,83466:3,86666:2	c0:bucket0@357.1°/463u c1:bucket1@107.4°/422u c2:bucket1@228.2°/476u
+2075	soup536	-	69179	-	69178:1,70150:2,69188:2,69179:3,70159:2,70151:1	c0:bucket1@48.6°/474u
+2076	soup537	-	70282	-	70281:2,69309:1,72229:1,71245:1,68346:1,71247:3	c0:bucket0@357.7°/463u c1:bucket1@47.9°/474u c2:bucket1@108.2°/472u c3:bucket0@177.4°/463u c4:bucket1@227.8°/473u c5:bucket0@236.9°/464u
+2077	soup538	-	43365	-	41849:2,44905:1,44907:1,44127:1,44129:2,43365:1	died-or-margin
+2078	soup539	-	55960	-	55102:3,56828:1,55959:3,55104:1,55958:3,55962:2	died-or-margin
+2079	soup540	-	75919	-	75924:1,75920:1,73920:2,75918:2,76939:3,75919:2	c0:bucket1@47.7°/445u c1:bucket1@108.2°/472u c2:bucket0@236.9°/462u c3:bucket1@348.6°/439u
+2080	soup541	-	101148	-	102328:2,102324:2,103501:1,102325:2,101150:1,102326:2	died-or-margin
+2081	soup542	-	107990	-	105593:1,105594:2,109192:1,110401:1,109191:1,107992:1	died-or-margin
+2082	soup543	-	107599	-	107600:3,108789:1,108785:3,110003:1,107597:2,106398:2	c0:bucket1@107.4°/473u c1:bucket1@348.2°/472u
+2083	soup544	-	104238	-	106619:3,104236:1,106618:1,101885:3,101884:1,101883:2	grower (220 cells, 37 comps)
+2084	soup545	-	81069	-	78983:1,81070:1,82102:3,78984:3,83155:1,80025:3	grower (72 cells, 15 comps)
+2085	soup546	-	101717	-	101718:3,102895:1,104072:1,102894:2,102897:2,101717:2	c0:bucket1@347.9°/474u
+2086	soup547	-	83203	-	81110:3,82148:1,82147:2,85340:2,84264:2,84266:2	died-or-margin
+2087	soup548	-	42829	-	44349:3,44350:3,42057:3,41326:1,43583:1,42829:1	died-or-margin
+2088	soup549	-	102293	-	101122:2,103468:1,101127:1,101106:1,99959:3,102307:1	c0:bucket0@297.8°/461u
+2089	soup550	-	70479	-	71451:1,71446:2,72418:3,70472:3,72437:1,71452:3	c0:bucket1@47.6°/470u c1:bucket1@108.1°/475u c2:bucket1@228.6°/474u c3:bucket0@297.6°/462u
+2090	soup551	-	103161	-	104339:1,103159:3,101989:1,101988:1,103162:3,100804:2	c0:too-big(rho 5)@167.9°/472u c1:too-big(rho 5)@167.9°/472u c2:bucket0@117.6°/463u c3:bucket1@47.9°/474u c4:bucket0@297.3°/463u c5:bucket1@48.1°/473u
+2091	soup552	-	44975	-	45747:3,45745:3,44189:2,44975:1,43430:2,44966:3	c0:bucket0@57.2°/465u c1:bucket0@297.3°/461u c2:bucket0@117.6°/463u c3:bucket0@177.4°/463u
+2092	soup553	-	89538	-	91738:2,91739:2,88441:1,89536:3,87352:1,90625:1	c0:bucket1@228.5°/445u c1:bucket1@47.8°/471u
+2093	soup554	-	72498	-	71512:1,74485:1,73488:1,73491:3,71509:2,71511:1	died-or-margin
+2094	soup555	-	52708	-	51055:1,51889:1,54425:2,52710:2,53558:3,51888:2	died-or-margin
+2095	soup556	-	91734	-	92848:1,90618:1,91735:3,92847:3,90620:1,92850:1	c0:bucket1@168.5°/474u c1:bucket1@228.3°/435u
+2096	soup557	-	54101	-	52401:1,53242:3,53240:1,53241:1,55817:1,52400:2	c0:bucket0@356.9°/464u
+2097	soup558	-	81712	-	81714:3,80672:2,81712:3,80674:1,80673:3,82759:1	c0:bucket0@177.4°/423u c1:bucket1@48.0°/476u c2:bucket1@228.6°/430u
+2098	soup559	-	50105	-	51766:1,49283:1,50104:1,50934:3,50103:1,48484:3	c0:bucket0@116.6°/459u c1:bucket0@178.0°/459u
+2099	soup560	-	48621	-	48619:2,47812:1,50243:3,47814:1,48623:2,47008:1	died-or-margin
+2100	soup561	-	117951	-	119186:3,119188:1,117953:1,116700:2,116697:2,117951:3	died-or-margin
+2101	soup562	-	120188	-	121477:2,120190:1,118920:3,121486:2,118909:1,120386:3	c0:bucket0@177.6°/464u c1:bucket1@227.7°/367u
+2102	soup563	-	39684	-	38955:2,38958:2,38965:3,40417:1,38959:2,40408:3	died-or-margin
+2103	soup564	-	82842	-	81793:3,83908:2,81790:2,82843:1,83907:2,83902:3	c0:bucket1@108.6°/474u
+2104	soup565	-	72144	-	74130:1,73135:1,74132:2,72145:1,74131:2,73134:1	died-or-margin
+2105	soup566	-	98752	-	97600:3,101056:2,98752:2,99892:1,98750:3,101054:1	died-or-margin
+2106	soup567	-	95051	-	95048:1,96183:3,95050:2,93919:2,93921:1,92801:1	died-or-margin
+2107	soup568	-	91901	-	93026:3,89703:3,90789:3,91900:2,91901:1,91899:2	died-or-margin
+2108	soup569	-	97168	-	98318:2,97166:1,97168:3,98316:3,96033:2,96034:3	died-or-margin
+2109	soup570	-	82465	-	83526:3,82465:2,80379:1,81426:1,83525:3,82464:2	died-or-margin
+2110	soup571	-	31495	-	30855:1,32815:1,32812:2,31494:2,30209:3,32153:2	c0:bucket1@47.8°/471u c1:bucket0@237.6°/463u
+2111	soup572	-	114095	-	116591:2,111641:2,116593:3,115328:2,115330:3,116592:3	died-or-margin
+2112	soup573	-	81856	-	80813:1,81854:2,80814:2,83970:1,80815:1,81856:1	died-or-margin
+2113	soup574	-	99078	-	99080:1,99077:2,101392:3,100225:1,97925:2,97927:2	c0:bucket0@57.6°/464u c1:bucket1@168.6°/368u
+2114	soup575	-	73390	-	74382:1,72396:3,75377:1,72394:3,74381:3,74380:3	died-or-margin
+2115	soup576	-	83926	-	81813:3,83925:3,84994:2,82857:2,83928:1,84995:1	died-or-margin
+2116	soup577	-	94645	-	94649:2,92398:1,95772:2,96910:3,94645:3,93524:3	c0:bucket1@168.2°/391u c1:bucket1@288.0°/475u
+2117	soup578	-	76071	-	76069:1,75062:2,76071:2,77092:3,77093:2,74072:2	c0:bucket1@348.2°/474u c1:bucket1@108.0°/474u
+2118	soup579	-	84359	-	83296:1,85427:3,85430:1,86489:3,86488:1,84356:3	grower (55 cells, 11 comps)
+2119	soup580	-	45534	-	45532:2,43978:1,44758:1,44757:1,46316:1,45534:3	grower (68 cells, 12 comps)
+2120	soup581	-	112537	-	112538:2,111298:1,111310:1,112532:2,113767:1,112541:2	died-or-margin
+2121	soup582	-	88523	-	87429:1,87430:2,89619:3,87425:3,88529:3,89628:2	died-or-margin
+2122	soup583	-	112197	-	113430:1,112198:1,110962:1,114646:1,112196:3,110960:3	died-or-margin
+2123	soup584	-	86091	-	86091:1,88259:1,87173:2,87172:2,86093:1,85033:1	died-or-margin
+2124	soup585	-	51302	-	50467:1,51304:2,52133:3,52958:2,52134:2,51301:2	died-or-margin
+2125	soup586	-	121154	-	119865:2,122438:3,121155:1,122437:2,122439:1,121156:2	c0:bucket0@177.1°/307u
+2126	soup587	-	85029	-	86087:3,83957:1,86086:2,86088:3,85030:3,83959:2	died-or-margin
+2127	soup588	-	51905	-	51069:2,51903:2,51902:2,53574:1,52722:2,53573:3	c0:bucket0@237.3°/461u
+2128	soup589	-	117415	-	117414:2,118672:1,117415:1,119930:2,119929:1,117413:2	died-or-margin
+2129	soup590	-	64364	-	65303:2,63433:3,63430:3,63429:1,63432:1,64363:2	c0:bucket1@48.2°/472u c1:bucket1@168.1°/475u
+2130	soup591	-	98188	-	95908:2,99339:2,98186:3,95909:1,97049:2,95910:3	c0:bucket1@228.4°/383u c1:bucket1@347.9°/474u
+2131	soup592	-	85807	-	85808:2,84746:3,86881:1,83677:1,86880:3,84742:1	c0:bucket0@177.0°/400u c1:bucket1@287.8°/469u
+2132	soup593	-	92373	-	90170:3,91266:3,93506:3,91261:3,94617:1,92385:1	c0:bucket1@108.7°/440u c1:bucket0@117.5°/383u c2:bucket0@237.3°/463u c3:bucket0@236.2°/465u c4:bucket1@227.9°/440u c5:bucket1@288.5°/472u
+2133	soup594	-	116406	-	115153:2,118910:1,116417:3,115164:3,116405:1,118759:1	c0:bucket0@116.9°/465u
+2134	soup595	-	91757	-	92873:2,93992:1,89559:1,90645:3,90644:1,93993:1	died-or-margin
+2135	soup596	-	89339	-	89340:3,88244:2,87158:3,91541:1,90433:3,91540:2	died-or-margin
+2136	soup597	-	111772	-	109328:3,113003:1,113002:3,111775:2,110533:3,113004:3	c0:bucket1@228.1°/474u c1:bucket1@348.4°/374u c2:bucket0@57.9°/396u c3:bucket1@168.1°/476u c4:bucket1@168.5°/475u
+2137	soup598	-	108625	-	108624:3,109842:1,108625:1,106230:2,107439:3,108629:1	grower (53 cells, 11 comps)
+2138	soup599	-	41646	-	42392:1,42391:3,40898:3,40166:3,40899:3,40167:2	c0:bucket0@236.9°/465u c1:bucket0@357.1°/463u
+2139	soup600	-	42676	-	43428:3,41176:3,42678:3,41912:3,41175:2,41178:3	died-or-margin
+2140	soup601	-	82456	-	83508:3,81408:2,80369:1,82446:3,82456:1,84572:3	c0:bucket1@168.8°/431u
+2141	soup602	-	95668	-	93414:3,97939:1,97941:3,95670:3,93416:2,93417:2	died-or-margin
+2142	soup603	-	84667	-	84666:3,84668:1,82536:1,86799:1,85737:3,86797:2	died-or-margin
+2143	soup604	-	123434	-	123432:2,126024:1,123433:3,120867:1,120869:2,122156:3	died-or-margin
+2144	soup605	-	107087	-	107087:1,107086:1,105882:2,105883:3,104691:2,108279:2	died-or-margin
+2145	soup606	-	58437	-	56670:3,59306:3,59309:2,59308:2,60213:1,60215:1	c0:bucket1@107.4°/473u c1:bucket0@356.9°/465u
+2146	soup607	-	102502	-	103679:3,102502:1,102503:1,101322:1,102501:2,102504:2	c0:bucket1@48.5°/468u c1:bucket1@167.1°/362u
+2147	soup608	-	94427	-	96691:2,94424:2,93314:1,95563:2,92184:1,93312:2	died-or-margin
+2148	soup609	-	40860	-	39404:3,42353:1,41607:2,40860:3,41610:2,40861:2	died-or-margin
+2149	soup610	-	95676	-	94540:3,95677:3,95674:2,96809:1,93425:1,94538:2	c0:bucket1@48.1°/473u c1:bucket0@237.1°/463u
+2150	soup611	-	89557	-	87369:1,91756:2,90644:3,89559:1,89557:2,91757:3	died-or-margin
+2151	soup612	-	103371	-	101015:1,104545:2,101017:3,105733:2,102190:3,105734:3	grower (92 cells, 16 comps)
+2152	soup613	-	118187	-	119432:2,118188:1,120713:1,120715:3,116933:1,119433:1	c0:bucket0@58.1°/310u c1:bucket1@168.1°/472u
+2153	soup614	-	119554	-	118307:3,118310:3,117050:1,118308:2,120839:3,119556:2	c0:bucket1@347.9°/474u
+2154	soup615	-	54057	-	54905:3,52360:2,54050:3,53198:3,53197:1,54922:3	c0:bucket1@167.5°/473u
+2155	soup616	-	94312	-	94314:2,92063:3,95437:2,92061:2,92064:1,94310:1	c0:short(4) c1:short(4) c2:bucket1@288.2°/472u c3:bucket0@57.2°/384u c4:bucket0@57.7°/407u c5:bucket0@176.5°/464u
+2156	soup617	-	114298	-	116784:1,115554:2,114298:1,113092:3,113069:3,114287:1	c0:bucket1@108.1°/474u c1:bucket1@287.0°/375u
+2157	soup618	-	53260	-	52422:3,53262:2,54120:1,51593:3,52419:2,53261:3	died-or-margin
+2158	soup619	-	122011	-	119443:3,123292:2,123289:2,119444:2,122010:1,124579:1	died-or-margin
+2159	soup620	-	106928	-	106929:3,108120:2,106926:3,106928:1,105725:1,109330:3	c0:bucket0@296.8°/464u c1:bucket0@176.9°/462u c2:bucket1@108.1°/473u c3:bucket1@288.0°/476u
+2160	soup621	-	79794	-	77743:3,77745:2,79795:3,78754:2,79794:3,77744:3	died-or-margin
+2161	soup622	-	102996	-	102998:3,100648:3,105360:3,102996:3,100646:1,101820:2	died-or-margin
+2162	soup623	-	63545	-	61715:3,61716:3,62621:1,64473:2,63547:2,62620:2	died-or-margin
+2163	soup624	-	84324	-	86457:3,82197:3,84325:3,84323:3,85395:2,83259:1	grower (51 cells, 9 comps)
+2164	soup625	-	85370	-	83233:2,84296:2,84299:3,85371:2,83234:1,85372:1	c0:bucket1@348.5°/461u c1:bucket1@48.2°/418u c2:bucket1@47.5°/474u c3:bucket0@118.0°/459u c4:too-big(rho 5)@167.9°/474u c5:too-big(rho 5)@167.9°/474u
+2165	soup626	-	33998	-	34680:2,33327:3,33996:3,33328:2,34679:1,34678:1	died-or-margin
+2166	soup627	-	107682	-	108873:3,107681:3,107684:1,107680:1,105283:1,107683:3	died-or-margin
+2167	soup628	-	78468	-	78473:1,78469:3,79504:3,76434:1,77464:2,79499:1	c0:bucket0@177.3°/426u c1:bucket1@348.2°/476u
+2168	soup629	-	57040	-	56173:1,55315:3,57038:1,57043:1,58804:3,57040:3	died-or-margin
+2169	soup630	-	47396	-	47396:1,46601:2,45819:2,48206:3,45818:3,48203:2	died-or-margin
+2170	soup631	-	83428	-	83430:1,85565:1,82365:1,82368:1,84492:1,84493:3	c0:bucket0@117.7°/463u c1:bucket1@227.9°/474u
+2171	soup632	-	83172	-	82119:2,84237:2,84235:3,85310:3,81082:1,82118:1	died-or-margin
+2172	soup633	-	52690	-	53545:3,51038:1,53547:2,53546:3,51874:2,53544:1	c0:bucket1@227.8°/471u
+2173	soup634	-	55423	-	55422:1,57154:2,55429:2,54568:2,54490:1,56288:1	died-or-margin
+2174	soup635	-	108884	-	111329:1,110104:3,110103:1,106491:2,108884:1,108882:3	c0:bucket1@108.0°/474u c1:bucket1@347.9°/345u
+2175	soup636	-	31945	-	32608:2,30656:3,33275:1,31944:2,31953:1,31303:2	died-or-margin
+2176	soup637	-	87640	-	85496:2,87641:2,88740:3,85495:1,89839:1,86560:1	c0:bucket1@287.8°/475u c1:bucket0@356.9°/462u
+2177	soup638	-	108623	-	111057:3,107436:3,108620:1,108623:3,107431:2,108621:1	c0:bucket0@117.7°/374u c1:bucket1@347.8°/471u c2:bucket0@356.9°/464u c3:bucket0@176.7°/342u c4:bucket1@288.2°/472u
+2178	soup639	-	106924	-	109326:1,106925:1,109324:1,105722:2,106923:2,108115:2	died-or-margin
+2179	soup640	-	33611	-	33066:1,32282:2,33610:3,34286:1,33611:2,33067:1	c0:bucket1@168.0°/474u
+2180	soup641	-	54463	-	54464:1,54465:1,53595:3,55318:1,53596:2,54461:1	c0:bucket1@227.8°/471u c1:bucket0@116.9°/464u
+2181	soup642	-	123525	-	120968:3,122250:2,123526:2,123523:3,123527:1,120966:1	died-or-margin
+2182	soup643	-	104738	-	104737:2,104740:1,104738:1,105933:3,107133:3,103556:2	c0:bucket1@48.4°/397u c1:bucket1@167.5°/473u
+2183	soup644	-	82612	-	84742:2,82613:1,82612:3,83677:2,80531:1,82611:1	c0:bucket1@168.1°/423u c1:bucket0@298.0°/462u
+2184	soup645	-	38082	-	38811:3,39537:2,38083:3,38084:2,38808:2,38809:3	died-or-margin
+2185	soup646	-	78234	-	76193:3,77214:1,78234:3,78235:3,76194:3,76195:1	c0:short(0) c1:short(0) c2:short(0) c3:bucket1@48.1°/473u c4:bucket1@287.4°/474u c5:bucket0@177.2°/463u
+2186	soup647	-	83448	-	81351:1,82385:3,83448:3,84510:2,83449:2,84511:3	died-or-margin
+2187	soup648	-	99719	-	98573:3,100872:1,98574:2,98571:3,98572:2,99721:2	died-or-margin
+2188	soup649	-	89773	-	90865:2,90863:3,89771:1,91965:2,91966:1,87579:1	c0:bucket0@356.3°/384u c1:bucket1@227.9°/474u c2:bucket1@47.7°/400u
+2189	soup650	-	78344	-	76302:3,79371:1,79372:2,80411:3,77329:3,78345:1	grower (46 cells, 8 comps)
+2190	soup651	-	84763	-	86903:2,84765:3,85828:1,84766:1,85829:3,83698:2	c0:bucket0@57.8°/464u c1:bucket1@107.4°/473u c2:bucket1@348.2°/472u
+2191	soup652	-	50972	-	49322:1,50143:1,50974:3,51804:2,51801:1,51805:1	c0:bucket1@48.5°/474u c1:bucket0@56.8°/463u
+2192	soup653	-	99240	-	96945:2,99239:1,100387:2,99241:2,101559:3,99238:2	died-or-margin
+2193	soup654	-	47229	-	48036:1,45658:3,46441:3,46439:1,47227:3,47230:1	c0:bucket0@357.1°/463u c1:bucket1@47.9°/474u c2:bucket1@167.9°/474u
+2194	soup655	-	82438	-	82440:1,82439:2,81399:2,80360:3,80353:2,83500:2	died-or-margin
+2195	soup656	-	39934	-	39207:3,41408:1,39926:1,39934:2,40659:3,40661:3	c0:bucket0@57.2°/463u c1:bucket1@288.6°/474u
+2196	soup657	-	49940	-	50762:1,51595:2,51597:2,49941:2,49942:3,49938:1	c0:bucket0@118.0°/459u c1:bucket0@236.9°/462u c2:bucket1@348.1°/475u
+2197	soup658	-	81107	-	82141:3,83197:2,81106:1,79019:1,81108:1,80063:2	c0:bucket1@47.4°/422u c1:bucket1@288.5°/475u
+2198	soup659	-	65393	-	65392:2,64452:2,66327:3,66326:2,65396:1,66325:2	died-or-margin
+2199	soup660	-	82979	-	82980:1,80895:3,84049:2,80896:1,82978:2,82977:2	c0:bucket0@297.4°/418u c1:bucket1@168.6°/474u
+2200	soup661	-	57225	-	55493:1,56344:1,57222:3,56348:1,58107:2,56347:1	died-or-margin
+2201	soup662	-	88197	-	88193:3,88197:2,88191:2,89288:2,90389:3,87113:1	died-or-margin
+2202	soup663	-	88956	-	90055:3,88955:2,87854:3,88957:3,86771:2,86772:1	c0:bucket0@177.9°/468u
+2203	soup664	-	56959	-	56086:1,56957:2,55229:3,56958:1,56088:1,57838:3	c0:bucket1@108.1°/475u c1:bucket1@347.8°/471u
+2204	soup665	-	97558	-	99851:2,97557:2,97556:2,96418:1,98709:2,96419:2	died-or-margin
+2205	soup666	-	100030	-	102383:1,100029:1,100032:1,100031:2,100028:1,101200:2	died-or-margin
+2206	soup667	-	40290	-	38848:1,39573:3,39571:3,40290:2,40289:1,41037:3	c0:bucket1@48.1°/473u c1:bucket0@117.8°/464u
+2207	soup668	-	32991	-	32325:1,32324:2,33654:1,33653:3,32993:2,34324:3	c0:bucket1@168.2°/476u c1:bucket1@348.2°/475u
+2208	soup669	-	63436	-	65310:2,63437:2,62514:1,63438:1,61610:3,63434:2	c0:bucket1@227.4°/473u c1:bucket0@116.6°/457u c2:bucket0@117.3°/460u c3:bucket1@228.5°/475u
+2209	soup670	-	65189	-	64257:1,66121:1,67068:1,66122:3,65189:1,65191:3	c0:bucket0@177.2°/465u c1:bucket1@288.6°/474u c2:bucket1@348.2°/476u
+2210	soup671	-	68814	-	66912:3,66911:2,69787:1,68814:2,66913:1,67855:3	c0:bucket1@168.2°/472u c1:bucket1@347.9°/472u
+2211	soup672	-	78316	-	78316:1,76271:3,79341:3,78319:3,79343:3,77303:2	c0:bucket1@48.5°/473u
+2212	soup673	-	41549	-	41548:3,40794:2,42286:2,43052:1,42289:1,40064:3	died-or-margin
+2213	soup674	-	120149	-	120150:1,120149:1,117625:1,117628:3,118886:3,118884:3	grower (52 cells, 9 comps)
+2214	soup675	-	86452	-	85389:1,84319:3,85390:2,85391:1,87534:2,87532:3	c0:bucket0@237.6°/467u c1:bucket1@348.4°/451u c2:bucket0@57.8°/464u c3:bucket0@176.6°/465u
+2215	soup676	-	96791	-	97931:1,94523:3,97932:2,99083:2,96793:1,97933:1	died-or-margin
+2216	soup677	-	95554	-	93330:1,93305:1,97828:1,96687:3,96686:1,95554:2	died-or-margin
+2217	soup678	-	76739	-	78774:3,77764:3,75723:3,76739:3,74715:3,75720:1	died-or-margin
+2218	soup679	-	81519	-	83619:1,81520:3,82556:3,83620:3,81519:1,82558:3	grower (56 cells, 10 comps)
+2219	soup680	-	69668	-	69668:3,70632:3,69672:2,68698:1,69665:1,70631:3	died-or-margin
+2220	soup681	-	46250	-	47030:2,46919:2,45460:2,46250:3,46131:1,44686:2	died-or-margin
+2221	soup682	-	58772	-	59655:3,60559:2,58772:3,59656:1,58771:1,60560:2	c0:bucket0@177.4°/464u c1:bucket1@227.8°/471u c2:bucket0@357.3°/462u c3:bucket1@47.4°/473u
+2222	soup683	-	65263	-	64326:1,66193:3,63393:2,65263:3,64324:3,67144:3	c0:bucket0@177.6°/464u c1:bucket1@108.2°/476u c2:bucket0@236.9°/462u c3:bucket1@288.5°/474u
+2223	soup684	-	44921	-	44921:2,44922:3,43379:3,46482:2,44144:3,44920:1	died-or-margin
+2224	soup685	-	39926	-	39928:3,39207:3,39197:1,40650:1,40655:3,39203:3	c0:bucket1@288.1°/473u c1:bucket1@348.2°/472u
+2225	soup686	-	98624	-	99771:3,96335:2,98626:1,97470:2,99772:2,98624:3	died-or-margin
+2226	soup687	-	77988	-	79000:1,76964:2,76963:3,80043:3,78999:2,80044:1	c0:bucket0@296.9°/462u
+2227	soup688	-	61097	-	59284:1,61099:2,61095:3,61097:3,60188:3,62004:3	c0:bucket0@56.6°/459u c1:bucket1@48.1°/473u c2:bucket0@177.1°/463u c3:bucket1@287.8°/471u
+2228	soup689	-	101753	-	102929:1,102931:2,101751:3,102933:1,101752:1,99424:2	died-or-margin
+2229	soup690	-	98465	-	97317:1,99613:2,99610:3,98464:3,99614:3,98465:1	c0:bucket1@107.8°/475u c1:bucket1@228.1°/406u
+2230	soup691	-	44742	-	44740:1,44744:2,46301:1,46302:2,43205:2,44742:3	died-or-margin
+2231	soup692	-	75131	-	77166:2,76144:2,76145:2,74138:2,76146:2,77165:1	died-or-margin
+2232	soup693	-	100741	-	101914:2,101913:1,101916:3,100742:1,100740:3,103087:1	c0:bucket0@57.0°/463u c1:bucket1@288.6°/420u c2:bucket0@297.6°/362u
+2233	soup694	-	40917	-	40180:2,40182:2,40917:3,42408:2,40179:2,41662:3	died-or-margin
+2234	soup695	-	108667	-	108669:2,107479:3,108667:2,107477:3,106271:1,109880:2	c0:bucket0@117.2°/465u
+2235	soup696	-	76577	-	74563:2,75562:1,77603:1,75563:2,76577:3,77605:3	c0:bucket0@56.7°/465u c1:bucket1@288.1°/473u
+2236	soup697	-	106169	-	103799:3,108565:1,106169:1,104975:1,106171:2,107372:2	died-or-margin
+2237	soup698	-	69562	-	69564:1,69563:3,67640:1,70530:2,69561:1,68607:1	died-or-margin
+2238	soup699	-	60925	-	62738:3,61825:3,60919:2,62744:2,60927:3,59120:3	died-or-margin
+2239	soup700	-	64558	-	63631:3,62706:3,64558:2,63628:1,66437:3,63630:2	died-or-margin
+2240	soup701	-	57980	-	59741:2,58857:3,57981:1,57980:1,59742:2,59743:2	died-or-margin
+2241	soup702	-	33859	-	33860:1,32521:3,33185:1,33187:1,33184:2,33186:1	c0:bucket0@356.8°/466u c1:bucket1@47.9°/474u c2:bucket1@168.2°/469u c3:short(2) c4:short(2)
+2242	soup703	-	59965	-	59964:1,60866:1,61780:1,59065:2,59965:3,59064:1	died-or-margin
+2243	soup704	-	43231	-	41719:1,43242:3,42478:1,43231:1,43224:3,43990:2	died-or-margin
+2244	soup705	-	50596	-	49775:3,51431:2,50597:1,51434:1,49774:3,50595:2	c0:bucket0@116.9°/462u c1:bucket0@297.0°/462u
+2245	soup706	-	75031	-	75031:3,76043:2,74044:3,73049:1,74047:3,74046:1	c0:bucket1@287.5°/473u c1:bucket1@287.5°/472u c2:bucket0@356.8°/437u c3:bucket1@48.0°/447u c4:bucket1@168.3°/476u
+2246	soup707	-	72585	-	73574:3,73575:1,73576:1,70629:1,74575:3,71601:1	c0:bucket1@167.9°/474u c1:bucket0@57.6°/464u c2:bucket1@228.3°/448u c3:bucket1@48.6°/474u c4:bucket0@297.3°/461u
+2247	soup708	-	63759	-	63761:1,62839:2,65633:3,64690:2,65634:1,62840:1	c0:bucket1@107.9°/474u
+2248	soup709	-	66390	-	67330:3,64512:1,66391:3,67331:2,64511:1,65455:3	c0:bucket0@357.6°/463u c1:bucket0@117.2°/463u
+2249	soup710	-	100521	-	102871:1,101693:3,99374:3,100522:2,99373:3,101696:2	died-or-margin
+2250	soup711	-	82170	-	81135:3,82169:2,82171:1,83230:1,83229:2,81138:3	c0:bucket1@108.5°/474u c1:bucket1@228.0°/475u
+2251	soup712	-	32962	-	32371:1,32370:3,32963:3,33625:1,32300:3,32381:1	c0:bucket1@168.3°/474u c1:short(5) c2:short(5) c3:bucket1@48.1°/474u c4:bucket0@56.9°/462u
+2252	soup713	-	44268	-	44270:1,44266:1,42750:1,45046:3,43499:2,45047:2	c0:bucket0@117.3°/461u c1:bucket0@236.8°/463u
+2253	soup714	-	79318	-	81405:2,79313:1,77283:3,79319:2,80353:2,79318:3	died-or-margin
+2254	soup715	-	73752	-	72762:2,73752:1,72756:1,71773:3,74738:1,74736:2	died-or-margin
+2255	soup716	-	112467	-	114921:2,110009:2,112468:2,114922:1,111233:2,112467:2	died-or-margin
+2256	soup717	-	85950	-	87032:1,84892:3,83824:3,88111:3,85949:3,87031:1	grower (80 cells, 12 comps)
+2257	soup718	-	51521	-	50686:3,52351:2,49865:2,51521:2,51523:2,52349:3	died-or-margin
+2258	soup719	-	121001	-	122286:3,122285:2,121001:2,122287:1,118464:2,119715:2	c0:bucket1@109.0°/352u c1:bucket1@348.3°/470u
+2259	soup720	-	53652	-	52802:3,51983:2,52806:1,54522:3,52805:2,54524:1	died-or-margin
+2260	soup721	-	35535	-	34175:3,36943:1,36241:1,34174:2,34856:3,34861:3	died-or-margin
+2261	soup722	-	51441	-	51443:3,50603:3,51442:3,51441:1,50605:2,52271:3	grower (76 cells, 13 comps)
+2262	soup723	-	97027	-	94766:3,98166:3,97026:2,97029:3,98167:2,99319:1	grower (193 cells, 33 comps)
+2263	soup724	-	121008	-	119721:2,118473:3,122292:3,119722:1,121008:3,123570:3	grower (65 cells, 11 comps)
+2264	soup725	-	90876	-	88689:2,90875:1,91978:1,91977:2,93107:1,90878:1	died-or-margin
+2265	soup726	-	69941	-	68968:2,71880:2,71882:1,70903:1,68012:3,69942:2	died-or-margin
+2266	soup727	-	120567	-	118044:2,121854:2,119279:1,120566:1,119280:1,120565:1	died-or-margin
+2267	soup728	-	46574	-	46573:2,45793:1,47370:3,48180:3,48179:2,46576:3	died-or-margin
+2268	soup729	-	65766	-	65765:1,66703:3,65766:1,64824:3,63895:2,65768:3	c0:bucket1@48.3°/471u c1:bucket1@168.1°/473u c2:bucket0@236.9°/464u c3:bucket1@288.2°/472u
+2269	soup730	-	94540	-	92301:1,96809:1,93423:2,94542:1,93427:2,93426:3	c0:bucket1@347.5°/473u c1:bucket0@117.6°/386u c2:bucket1@227.9°/474u
+2270	soup731	-	109263	-	110469:1,106864:3,111709:1,108056:3,111710:2,109264:1	died-or-margin
+2271	soup732	-	108230	-	107039:1,107036:1,105832:3,107038:2,108230:3,109433:3	c0:bucket1@348.2°/438u c1:bucket0@357.7°/376u c2:bucket0@237.2°/464u c3:bucket0@116.6°/427u c4:bucket0@177.0°/464u
+2272	soup733	-	99669	-	99668:2,98522:1,99670:2,97373:3,100822:2,102005:1	c0:bucket1@168.9°/473u c1:bucket0@56.8°/463u
+2273	soup734	-	67139	-	67141:3,67139:3,67140:2,68089:2,67138:1,69048:1	c0:bucket1@167.9°/474u
+2274	soup735	-	69152	-	70123:2,68190:3,68191:2,69153:1,69152:1,70125:2	c0:bucket0@177.0°/463u
+2275	soup736	-	37867	-	38601:1,37867:2,37858:3,38579:3,39308:2,38590:2	died-or-margin
+2276	soup737	-	76432	-	75415:2,76432:3,77462:1,75414:1,77460:2,78466:2	c0:bucket1@287.9°/474u
+2277	soup738	-	93395	-	93393:3,92272:2,94510:2,91160:2,94514:1,92271:2	died-or-margin
+2278	soup739	-	33508	-	33511:3,34863:1,34179:2,33510:3,32177:2,33507:3	died-or-margin
+2279	soup740	-	49634	-	49635:2,48023:2,48022:1,48836:1,48021:3,50459:2	c0:bucket1@287.9°/474u c1:bucket1@48.1°/474u
+2280	soup741	-	60683	-	61599:2,59782:2,59783:3,59781:1,60681:3,61597:2	c0:bucket1@47.7°/472u
+2281	soup742	-	38269	-	37558:3,38271:1,36850:2,37560:3,38268:1,38270:2	c0:bucket0@356.9°/462u c1:bucket1@287.9°/474u
+2282	soup743	-	118011	-	118011:1,116754:3,115491:3,118012:3,115492:1,119241:2	grower (91 cells, 14 comps)
+2283	soup744	-	57979	-	57981:3,57980:1,57977:2,57090:2,58854:2,57092:2	c0:bucket0@176.9°/464u c1:bucket1@48.2°/472u
+2284	soup745	-	85993	-	86000:2,88155:2,84942:3,85994:1,84934:1,84941:1	c0:bucket1@47.9°/474u c1:bucket1@287.4°/419u
+2285	soup746	-	90779	-	89693:2,91889:1,90779:3,90777:2,89691:2,89692:2	died-or-margin
+2286	soup747	-	32126	-	33455:2,32125:1,32787:2,30830:3,33457:1,31472:2	c0:bucket1@47.8°/473u c1:bucket0@117.3°/464u
+2287	soup748	-	78949	-	77937:2,78950:3,78949:3,77935:1,79991:3,76914:3	died-or-margin
+2288	soup749	-	40597	-	41351:2,39873:2,40598:3,40599:2,39871:3,39145:3	died-or-margin
+2289	soup750	-	69942	-	69942:1,70904:1,69943:1,68968:3,68970:2,70905:3	grower (101 cells, 19 comps)
+2290	soup751	-	66141	-	66142:2,67084:3,65207:3,66143:2,66144:3,65210:3	died-or-margin
+2291	soup752	-	73282	-	73282:3,75270:1,72286:3,72285:1,73283:3,73284:1	grower (46 cells, 7 comps)
+2292	soup753	-	31217	-	31216:1,29928:3,31861:3,31862:2,31218:1,30573:1	c0:bucket1@107.7°/477u c1:bucket0@177.3°/462u c2:bucket1@228.0°/473u c3:bucket0@296.4°/467u
+2293	soup754	-	71445	-	70476:1,72433:2,71449:3,70474:1,72429:3,71448:1	grower (38 cells, 7 comps)
+2294	soup755	-	30864	-	30225:3,30866:1,32159:2,30864:1,30218:1,30865:2	died-or-margin
+2295	soup756	-	111964	-	114413:2,111966:3,114411:2,111965:3,113192:1,110724:1	died-or-margin
+2296	soup757	-	43956	-	45510:3,43958:2,44736:1,43198:1,43955:3,44734:2	died-or-margin
+2297	soup758	-	106784	-	107981:3,104400:2,104401:1,106786:1,106782:3,106783:1	c0:bucket1@227.7°/397u c1:bucket1@108.0°/474u
+2298	soup759	-	82395	-	81357:1,82393:1,83453:2,84517:2,82394:1,82395:2	died-or-margin
+2299	soup760	-	77634	-	76605:1,78644:1,78649:3,77630:1,79682:3,76611:1	c0:bucket1@227.9°/434u
+2300	soup761	-	92938	-	94065:1,95187:3,91817:2,92942:2,92945:2,90708:2	c0:bucket1@47.5°/394u c1:bucket0@237.0°/462u
+2301	soup762	-	62416	-	64268:2,61512:3,62417:1,63339:2,62415:3,61510:3	c0:bucket1@108.7°/472u c1:bucket1@348.2°/472u
+2302	soup763	-	64514	-	66394:1,65458:2,64513:2,63584:1,65459:1,66392:2	died-or-margin
+2303	soup764	-	58218	-	59991:2,59092:2,58216:2,58218:3,57339:3,58219:2	died-or-margin
+2304	soup765	-	38449	-	38448:1,37732:3,39905:3,37033:3,39177:1,38451:3	c0:bucket1@108.2°/472u c1:bucket0@357.3°/464u
+2305	soup766	-	75949	-	76969:2,75949:2,73952:1,77993:1,74932:3,76967:2	died-or-margin
+2306	soup767	-	48138	-	46534:2,47327:1,48947:2,46535:3,48138:3,48945:1	died-or-margin
+2307	soup768	-	89717	-	88617:1,88619:3,87522:1,90807:2,87521:3,87524:2	grower (135 cells, 21 comps)
+2308	soup769	-	110046	-	110040:1,112503:1,111267:3,110046:3,108835:2,107640:2	died-or-margin
+2309	soup770	-	38650	-	37223:2,37929:1,40105:3,37927:1,38649:3,39379:1	died-or-margin
+2310	soup771	-	110816	-	109600:3,110816:2,108393:1,110815:1,112048:1,113280:3	c0:bucket0@357.9°/468u c1:bucket0@297.3°/463u c2:bucket0@117.7°/380u c3:bucket1@169.0°/440u
+2311	soup772	-	39817	-	39091:3,39818:3,39816:1,39815:3,40539:3,39094:3	grower (52 cells, 10 comps)
+2312	soup773	-	102440	-	101262:1,100091:2,101260:3,101259:3,100094:2,102439:3	died-or-margin
+2313	soup774	-	51383	-	51384:1,52217:2,50553:2,52219:3,50550:1,51382:1	died-or-margin
+2314	soup775	-	117318	-	116068:1,118575:1,118574:3,114813:3,117318:2,117317:3	c0:bucket0@116.7°/465u c1:bucket1@228.8°/340u c2:bucket0@357.7°/464u c3:bucket1@348.5°/474u
+2315	soup776	-	43776	-	43013:1,43778:1,43014:1,43016:1,43015:1,43776:2	died-or-margin
+2316	soup777	-	51409	-	50573:3,52241:1,50575:1,50571:2,50574:1,53072:3	c0:bucket2@48.2°/470u c1:bucket2@48.2°/470u c2:bucket0@297.6°/464u c3:bucket1@288.6°/474u c4:bucket1@168.2°/476u
+2317	soup778	-	83550	-	82492:3,83550:1,82489:1,83552:3,81452:2,82491:1	c0:bucket1@107.6°/445u
+2318	soup779	-	42918	-	43679:3,41418:1,42158:3,42917:3,43678:1,43675:1	c0:bucket0@176.6°/459u c1:bucket1@287.8°/471u c2:bucket0@297.3°/464u c3:bucket1@348.1°/472u
+2319	soup780	-	78587	-	76551:1,77583:2,76552:1,78590:1,80666:2,79627:2	died-or-margin
+2320	soup781	-	70715	-	72674:3,69752:1,70714:2,70713:1,71690:1,71688:3	c0:too-big(rho 5)@168.2°/472u c1:NOT-CERTIFIED(1494 states, 15 errors, deaths)@177.2°/468u c2:bucket0@116.9°/464u c3:bucket1@288.1°/473u c4:bucket1@48.6°/474u c5:bucket1@348.0°/460u
+2321	soup782	-	90542	-	89453:1,92769:2,91653:1,90542:3,88362:1,89454:2	died-or-margin
+2322	soup783	-	104687	-	104686:2,102338:3,104688:3,102339:3,103509:1,105881:2	c0:bucket0@296.9°/464u c1:bucket1@48.3°/394u
+2323	soup784	-	108557	-	108557:3,108559:1,109769:1,107367:1,108555:2,106163:3	c0:bucket0@57.6°/464u c1:bucket1@107.9°/390u
+2324	soup785	-	47814	-	47815:2,47010:3,46226:2,48624:3,46224:3,48621:1	died-or-margin
+2325	soup786	-	111009	-	109787:3,108577:1,113475:1,111008:2,111010:3,112241:2	c0:bucket1@287.4°/473u
+2326	soup787	-	82666	-	82668:3,83730:3,82666:2,83728:2,82663:2,81625:2	died-or-margin
+2327	soup788	-	73227	-	72238:3,75218:1,74225:1,72239:3,71255:1,71254:1	c0:bucket1@48.2°/472u c1:bucket1@167.5°/473u
+2328	soup789	-	94854	-	94854:2,95985:2,97114:1,94858:2,92603:1,94857:3	died-or-margin
+2329	soup790	-	47759	-	47759:2,49366:2,46168:3,47760:3,48570:1,47761:2	died-or-margin
+2330	soup791	-	46853	-	46855:1,47653:2,46854:2,45280:2,46070:3,46851:1	c0:bucket0@177.7°/463u c1:bucket1@228.3°/472u c2:bucket0@116.9°/462u
+2331	soup792	-	85568	-	85570:1,84497:3,85568:1,87713:3,87711:2,86630:2	c0:bucket0@297.1°/463u c1:bucket1@168.2°/472u
+2332	soup793	-	116762	-	116763:1,115500:1,115497:2,116762:1,115499:2,114258:3	c0:bucket1@168.3°/470u
+2333	soup794	-	114061	-	114060:1,116557:2,111609:2,111607:1,112842:1,115299:1	died-or-margin
+2334	soup795	-	78760	-	78759:3,77748:2,79800:3,79801:3,78760:2,76724:3	died-or-margin
+2335	soup796	-	121836	-	120549:3,124395:1,123111:1,120550:1,123110:3,119259:2	grower (56 cells, 8 comps)
+2336	soup797	-	68474	-	69433:3,67514:3,68476:1,66569:3,66567:3,69435:2	grower (60 cells, 10 comps)
+2337	soup798	-	112053	-	112053:2,110821:2,113283:2,112051:1,109607:3,114505:3	died-or-margin
+2338	soup799	-	85848	-	85850:2,86919:1,84782:2,86923:1,88002:2,84780:3	c0:bucket0@116.7°/465u
+2339	soup800	-	120054	-	120053:3,117534:1,121339:2,118791:3,117533:3,120052:3	c0:bucket1@168.5°/474u c1:bucket0@296.8°/320u
+2340	soup801	-	62192	-	60380:3,61287:3,61286:3,61285:2,62190:1,62194:1	c0:bucket1@228.6°/474u c1:bucket0@116.6°/465u
+2341	soup802	-	118478	-	118478:3,115967:2,119726:1,117224:1,118477:1,117222:1	died-or-margin
+2342	soup803	-	44019	-	45577:1,44023:3,43258:1,44798:1,45575:2,44019:2	died-or-margin
+2343	soup804	-	82101	-	84218:2,81062:2,83159:3,81067:3,81061:2,81068:1	c0:bucket0@236.8°/463u c1:bucket1@348.2°/425u
+2344	soup805	-	123105	-	124389:2,125690:2,123107:3,123104:1,123106:1,124388:2	c0:bucket1@47.7°/310u c1:bucket1@167.7°/478u
+2345	soup806	-	54885	-	55733:2,54883:1,54023:1,54020:1,54021:2,55734:2	died-or-margin
+2346	soup807	-	117568	-	116324:1,118833:1,120091:2,116322:2,117567:2,116323:2	died-or-margin
+2347	soup808	-	105122	-	107521:2,103950:1,102763:3,103949:2,105123:1,105121:2	c0:bucket0@356.8°/463u
+2348	soup809	-	43982	-	42458:1,43982:3,43222:3,45538:1,42457:2,45536:3	c0:bucket0@57.2°/461u
+2349	soup810	-	51526	-	51523:3,51526:2,53189:3,51527:3,53190:1,50692:2	c0:bucket1@108.2°/475u c1:bucket0@357.2°/465u
+2350	soup811	-	72896	-	72898:1,70927:3,71904:1,72897:3,71903:3,73890:2	c0:bucket1@227.9°/474u c1:bucket1@348.2°/472u c2:bucket0@357.6°/463u c3:bucket1@47.8°/471u
+2351	soup812	-	51228	-	50395:2,51225:2,50396:3,52059:3,51227:1,51229:3	c0:bucket1@48.0°/475u c1:bucket1@108.1°/473u
+2352	soup813	-	113578	-	112349:2,112346:2,113576:2,114805:2,113577:3,112348:2	died-or-margin
+2353	soup814	-	104083	-	106459:1,102906:3,102902:2,104084:2,102901:2,104083:1	died-or-margin
+2354	soup815	-	99057	-	99059:2,99056:2,96766:1,97906:2,101371:1,100204:2	died-or-margin
+2355	soup816	-	106166	-	104970:1,103795:1,104972:2,104971:3,103796:2,106166:2	died-or-margin
+2356	soup817	-	66659	-	67607:2,66659:3,66660:1,68573:3,64779:3,66656:3	c0:bucket1@48.2°/472u
+2357	soup818	-	36553	-	35853:3,36555:3,35850:1,35160:1,36552:1,37260:1	c0:bucket0@356.6°/459u
+2358	soup819	-	64734	-	64732:3,65678:2,66612:1,63803:2,65680:3,65677:2	c0:bucket0@357.1°/464u c1:bucket0@176.6°/459u
+2359	soup820	-	83477	-	82415:3,85611:1,84540:2,83479:3,85612:2,83478:2	died-or-margin
+2360	soup821	-	103952	-	106319:1,103950:2,101591:2,103953:2,106318:2,102765:1	died-or-margin
+2361	soup822	-	57008	-	57010:1,57009:3,58771:2,57892:2,55281:2,57889:3	c0:bucket1@107.8°/471u
+2362	soup823	-	41510	-	42250:2,43008:2,41508:2,42246:2,40026:3,40754:3	died-or-margin
+2363	soup824	-	58920	-	57162:2,58928:1,58045:2,60709:2,58039:2,59722:1	died-or-margin
+2364	soup825	-	100814	-	100815:3,98516:3,98514:1,99660:2,101995:1,99659:1	died-or-margin
+2365	soup826	-	93052	-	91924:1,91925:1,93051:3,93052:2,94173:1,91926:1	c0:bucket1@287.4°/473u c1:bucket1@228.3°/476u c2:bucket1@47.8°/412u c3:bucket0@176.6°/465u
+2366	soup827	-	49240	-	48439:2,47627:1,49241:3,50887:2,49242:3,50889:1	died-or-margin
+2367	soup828	-	54789	-	53067:1,56503:1,55642:2,54791:2,56505:1,54789:2	died-or-margin
+2368	soup829	-	87848	-	88946:3,85702:2,88949:2,88947:3,87848:3,87849:3	died-or-margin
+2369	soup830	-	110306	-	110304:1,107891:1,107890:2,107889:1,109093:3,110308:1	died-or-margin
+2370	soup831	-	113830	-	113829:2,112602:3,112603:3,112601:3,115066:2,113828:2	died-or-margin
+2371	soup832	-	77324	-	75284:1,78340:3,77323:3,76296:1,78338:2,76295:3	c0:bucket1@48.6°/474u
+2372	soup833	-	42399	-	41658:2,43920:2,42401:1,40913:1,41649:1,42400:3	c0:bucket1@287.8°/471u c1:bucket1@348.2°/472u
+2373	soup834	-	81068	-	80020:2,81067:2,81068:3,78980:1,80027:2,81071:2	died-or-margin
+2374	soup835	-	48106	-	48107:3,49717:1,47299:3,48106:2,49718:2,46507:3	died-or-margin
+2375	soup836	-	83679	-	83679:3,84751:3,83686:1,81575:1,83675:2,81581:3	grower (81 cells, 11 comps)
+2376	soup837	-	88057	-	89159:1,88056:1,88058:3,90253:1,86979:2,89161:3	died-or-margin
+2377	soup838	-	61638	-	61640:1,60723:2,61639:1,59823:2,59824:2,62540:3	died-or-margin
+2378	soup839	-	71224	-	71223:1,70261:1,72207:3,69288:3,72209:2,73197:1	c0:bucket1@348.5°/475u c1:bucket0@356.9°/462u c2:bucket1@107.4°/473u c3:bucket1@108.1°/437u c4:bucket1@107.4°/461u c5:bucket0@237.3°/462u
+2379	soup840	-	37308	-	38016:3,36607:2,37309:2,35901:3,38744:2,36605:1	c0:bucket1@108.5°/474u c1:bucket1@227.9°/474u
+2380	soup841	-	67361	-	67363:1,68318:1,66420:1,65482:2,67361:2,67360:1	died-or-margin
+2381	soup842	-	66247	-	64377:1,68150:2,65317:2,65315:2,67195:2,66247:2	died-or-margin
+2382	soup843	-	103951	-	106319:2,105126:1,103949:3,102764:3,106316:1,105124:3	c0:bucket0@58.0°/459u c1:bucket1@348.1°/474u
+2383	soup844	-	38107	-	38113:3,39559:2,38833:3,36700:2,36707:3,37395:3	died-or-margin
+2384	soup845	-	94288	-	94286:1,95413:2,92037:2,93167:1,93166:1,92040:2	died-or-margin
+2385	soup846	-	46927	-	47727:1,47728:1,45350:1,45351:3,46926:2,46927:1	c0:bucket1@48.6°/474u c1:bucket1@108.8°/475u
+2386	soup847	-	31837	-	31834:3,31840:2,31196:1,31195:1,31190:2,31835:1	c0:bucket0@296.8°/463u
+2387	soup848	-	95589	-	97866:2,96726:3,93340:2,93342:3,95589:1,93341:2	c0:bucket0@116.9°/372u c1:bucket1@227.9°/472u
+2388	soup849	-	37439	-	37440:1,38147:1,36035:2,36739:2,36036:1,38878:2	died-or-margin
+2389	soup850	-	62389	-	64241:2,63312:3,61482:1,64240:3,60571:2,63310:2	died-or-margin
+2390	soup851	-	78590	-	79628:1,79627:1,76555:3,78592:1,80668:2,78587:3	died-or-margin
+2391	soup852	-	78408	-	79438:2,78409:1,76372:2,77401:3,79440:1,77398:1	c0:bucket0@237.6°/463u
+2392	soup853	-	46953	-	46163:1,46953:2,47756:2,48564:1,47758:1,48565:1	died-or-margin
+2393	soup854	-	40360	-	38910:1,41846:1,39636:2,41106:3,40357:3,40361:3	c0:bucket0@357.3°/461u c1:bucket0@237.4°/464u
+2394	soup855	-	70952	-	70947:3,70953:1,71935:2,69990:3,69996:2,71925:2	c0:bucket1@168.3°/476u
+2395	soup856	-	81141	-	81140:1,83236:3,81142:3,80099:2,80097:3,80100:2	c0:bucket1@288.3°/471u
+2396	soup857	-	117978	-	119211:2,119212:1,116724:2,116725:2,117979:1,120499:1	died-or-margin
+2397	soup858	-	50980	-	50140:3,51941:3,49329:3,50979:1,51793:3,52636:3	died-or-margin
+2398	soup859	-	68145	-	66244:2,68142:1,69105:2,68147:3,67189:1,70080:2	died-or-margin
+2399	soup860	-	59762	-	59763:1,58874:2,59760:2,59762:1,61581:2,58875:1	died-or-margin
+2400	soup861	-	32480	-	32480:3,31824:2,31178:2,33817:2,33148:2,33147:1	c0:bucket1@107.9°/472u
+2401	soup862	-	35603	-	35602:2,34243:3,34244:3,37016:3,34927:3,36306:2	died-or-margin
+2402	soup863	-	79209	-	79209:3,80254:3,80252:1,77169:2,78188:2,78186:3	c0:bucket0@297.0°/463u c1:bucket1@347.4°/473u c2:bucket1@227.9°/474u
+2403	soup864	-	122436	-	123714:1,121154:1,119864:3,121151:1,125012:2,121152:2	c0:bucket1@48.2°/472u c1:bucket1@347.2°/470u
+2404	soup865	-	42705	-	43454:1,43455:1,41201:1,42705:2,42706:2,41938:3	died-or-margin
+2405	soup866	-	66347	-	66346:2,66349:1,67289:1,65413:1,66347:1,65414:2	died-or-margin
+2406	soup867	-	91490	-	89290:3,92602:1,90387:2,90388:2,91488:2,90386:3	died-or-margin
+2407	soup868	-	72322	-	72322:3,70373:3,73318:3,72324:2,70375:3,71338:2	died-or-margin
+2408	soup869	-	56628	-	57509:2,58396:2,56625:3,56626:1,58391:1,57514:3	c0:bucket1@47.8°/475u c1:bucket1@228.5°/472u
+2409	soup870	-	62265	-	62267:3,62263:3,63188:2,62266:3,62265:1,63190:1	c0:bucket1@48.1°/473u c1:bucket1@108.2°/472u c2:bucket1@227.5°/472u c3:bucket1@168.0°/474u
+2410	soup871	-	48175	-	48978:3,48176:2,48979:2,48980:2,48177:2,46572:2	died-or-margin
+2411	soup872	-	75664	-	74662:2,76679:3,75663:2,76677:1,73664:2,73666:2	died-or-margin
+2412	soup873	-	119901	-	121190:2,118644:1,117388:1,118647:3,117390:2,119900:2	died-or-margin
+2413	soup874	-	46990	-	47792:2,45416:2,46991:1,47793:3,45415:2,45417:3	c0:bucket1@167.8°/472u c1:bucket0@297.9°/468u
+2414	soup875	-	60448	-	59534:2,59532:1,60450:3,59531:1,58662:2,60449:2	died-or-margin
+2415	soup876	-	55102	-	53380:2,55958:3,53381:1,55104:2,55957:3,56826:3	died-or-margin
+2416	soup877	-	106796	-	107993:1,109193:2,109194:2,104411:1,105594:1,109195:1	died-or-margin
+2417	soup878	-	96600	-	98896:3,96602:3,96599:1,95468:1,95470:1,95469:1	died-or-margin
+2418	soup879	-	104506	-	105694:3,102150:1,105691:3,106893:2,104507:2,103330:2	died-or-margin
+2419	soup880	-	63010	-	61187:2,63938:3,63008:1,63011:1,62092:2,62094:3	c0:bucket1@167.8°/470u c1:bucket1@227.9°/474u
+2420	soup881	-	56272	-	57145:2,57143:2,54559:1,55415:2,56270:1,55413:1	died-or-margin
+2421	soup882	-	55612	-	53894:2,55613:2,53896:1,55612:2,55610:2,54760:3	c0:bucket1@347.2°/470u c1:bucket0@57.2°/464u
+2422	soup883	-	96005	-	98287:1,93743:3,96007:3,98285:3,94875:1,97136:1	c0:bucket0@237.4°/464u c1:bucket0@237.6°/463u c2:bucket0@117.8°/464u c3:bucket0@356.7°/441u c4:bucket0@57.2°/465u
+2423	soup884	-	64913	-	64921:1,63992:1,65861:2,64914:3,64915:3,63985:3	died-or-margin
+2424	soup885	-	47778	-	46975:2,49387:2,46189:2,49388:1,46187:3,48587:2	died-or-margin
+2425	soup886	-	92049	-	89853:2,90943:2,89850:2,93174:3,93176:3,92047:3	died-or-margin
+2426	soup887	-	71651	-	69714:1,72634:3,70678:3,72636:1,73628:1,69715:3	c0:bucket1@168.5°/474u c1:bucket0@237.3°/461u c2:bucket1@107.5°/472u
+2427	soup888	-	39150	-	39149:1,39152:3,38421:2,40601:3,39875:2,37704:3	died-or-margin
+2428	soup889	-	104219	-	105403:1,104221:2,103040:1,105402:2,104218:1,101865:2	died-or-margin
+2429	soup890	-	72701	-	74687:1,71715:2,70738:1,72700:3,72702:1,72703:2	died-or-margin
+2430	soup891	-	113819	-	116303:3,113818:3,111362:1,115053:2,112592:3,112593:3	c0:bucket1@228.0°/474u c1:bucket1@347.5°/340u
+2431	soup892	-	102044	-	103223:3,100863:1,103221:1,103220:3,100865:2,103222:2	c0:bucket1@168.2°/473u c1:bucket0@237.1°/357u
+2432	soup893	-	106595	-	105400:2,104215:2,105398:2,108990:2,107789:3,106594:2	died-or-margin
+2433	soup894	-	114459	-	113237:1,115703:1,115705:2,113238:1,113239:2,114457:2	died-or-margin
+2434	soup895	-	67198	-	65323:3,67200:3,65321:3,67196:2,67199:3,67198:3	died-or-margin
+2435	soup896	-	86408	-	85347:2,88583:2,87485:1,85346:3,84271:3,85345:2	died-or-margin
+2436	soup897	-	90079	-	87883:2,91177:1,88984:3,87881:2,91176:1,90080:3	c0:bucket1@347.9°/474u c1:bucket0@297.2°/465u
+2437	soup898	-	122716	-	122715:3,121443:2,125304:3,120155:1,124004:1,121440:3	c0:bucket1@227.8°/473u c1:bucket1@107.7°/471u
+2438	soup899	-	58066	-	56305:1,58939:3,56308:1,57180:1,58936:3,58069:1	c0:bucket0@297.3°/462u c1:bucket0@117.1°/463u
+2439	soup900	-	74499	-	74501:2,73502:1,73505:1,75495:2,75494:1,73503:1	died-or-margin
+2440	soup901	-	98766	-	98763:3,97614:3,98767:3,97611:2,98766:3,98768:3	died-or-margin
+2441	soup902	-	120141	-	121429:3,121428:1,120143:1,118879:3,122703:2,121427:3	grower (76 cells, 14 comps)
+2442	soup903	-	110854	-	110853:1,112088:3,110855:1,110854:3,113318:2,113319:1	died-or-margin
+2443	soup904	-	84205	-	85278:3,84053:2,86169:3,82982:3,85280:1,85279:1	c0:bucket1@227.7°/456u c1:bucket1@107.5°/473u
+2444	soup905	-	80382	-	80382:1,81426:1,80384:3,82466:2,81430:1,81429:2	c0:bucket1@228.5°/474u
+2445	soup906	-	81270	-	81268:2,81269:3,82302:3,80225:3,80227:2,82304:2	died-or-margin
+2446	soup907	-	113185	-	113187:1,111957:1,113185:2,115651:1,115650:2,113184:2	died-or-margin
+2447	soup908	-	80013	-	77961:2,77966:1,81060:3,80013:2,82094:1,78967:1	c0:bucket0@297.2°/442u c1:bucket1@168.6°/474u
+2448	soup909	-	119196	-	121769:2,117961:1,120482:1,119195:3,121770:2,121771:1	c0:bucket1@47.7°/322u c1:bucket0@176.8°/463u
+2449	soup910	-	109868	-	109869:1,109866:2,107466:1,109868:2,112324:2,108656:3	c0:bucket1@47.5°/473u c1:bucket1@288.2°/472u
+2450	soup911	-	58293	-	59165:2,58290:1,59164:3,59167:1,56530:3,58293:2	c0:bucket1@108.1°/473u
+2451	soup912	-	100140	-	98994:3,97845:1,98998:3,100140:2,98993:1,101300:1	grower (392 cells, 64 comps)
+2452	soup913	-	66379	-	65442:2,65441:1,66379:3,68274:2,67317:3,64501:1	died-or-margin
+2453	soup914	-	92758	-	90530:1,90531:1,91644:2,92758:2,91646:1,92760:3	grower (51 cells, 9 comps)
+2454	soup915	-	86254	-	87335:3,84120:2,85194:2,87337:2,86252:1,85193:1	died-or-margin
+2455	soup916	-	49772	-	49772:3,48158:2,49771:2,50594:3,48962:1,48960:2	c0:bucket1@48.5°/474u c1:bucket0@176.9°/462u c2:bucket1@288.0°/476u c3:bucket1@287.5°/473u
+2456	soup917	-	63010	-	62096:1,61188:3,61190:1,63010:2,63938:1,62094:1	c0:bucket0@116.9°/462u c1:bucket1@47.9°/474u
+2457	soup918	-	116394	-	116393:2,113907:2,116396:1,115141:3,117645:2,118898:3	died-or-margin
+2458	soup919	-	57470	-	57470:3,57468:1,55723:2,57471:1,56587:1,56590:3	grower (75 cells, 14 comps)
+2459	soup920	-	69668	-	69665:2,68699:3,69668:2,68696:3,69667:2,68695:1	c0:bucket0@176.6°/465u c1:bucket1@48.3°/471u
+2460	soup921	-	43492	-	44261:3,44260:3,42743:2,41976:1,43493:3,42746:3	died-or-margin
+2461	soup922	-	40722	-	40719:2,42215:2,40722:2,40724:3,41476:2,41474:1	died-or-margin
+2462	soup923	-	44504	-	44503:2,45274:2,44504:2,46063:2,46062:2,45277:1	died-or-margin
+2463	soup924	-	48532	-	48531:1,48532:2,50155:2,47723:2,47722:1,50153:3	died-or-margin
+2464	soup925	-	41189	-	41189:3,41191:3,40440:1,42688:2,41924:2,40442:2	c0:bucket0@237.8°/464u
+2465	soup926	-	70856	-	69891:3,72823:2,70854:3,71832:3,70857:3,71833:2	died-or-margin
+2466	soup927	-	59311	-	58441:1,60216:2,59309:3,59311:1,60215:2,61127:3	c0:bucket1@48.2°/472u
+2467	soup928	-	53783	-	54643:3,55499:1,53776:3,52919:3,54642:1,53777:1	grower (108 cells, 19 comps)
+2468	soup929	-	39781	-	40506:3,39060:2,40508:1,39056:1,39059:1,39782:3	died-or-margin
+2469	soup930	-	59176	-	59178:3,58305:3,58304:3,59177:2,60985:2,60984:2	died-or-margin
+2470	soup931	-	39800	-	39077:3,40528:3,41276:3,39076:2,38346:3,40524:2	died-or-margin
+2471	soup932	-	47410	-	47412:3,46614:3,48218:3,45831:1,46612:3,48219:3	c0:bucket1@108.0°/473u c1:bucket1@227.4°/473u
+2472	soup933	-	113475	-	112242:3,111009:1,111012:1,114694:2,111010:1,113476:2	c0:bucket1@108.2°/378u c1:bucket1@167.9°/339u
+2473	soup934	-	115140	-	113904:1,117643:3,112679:3,116390:2,115142:3,113905:2	c0:bucket1@288.3°/441u c1:bucket0@177.3°/461u c2:bucket0@297.6°/332u c3:bucket1@48.2°/472u
+2474	soup935	-	93541	-	94662:2,92416:3,93540:2,94663:1,95785:1,95787:3	c0:bucket1@48.1°/473u c1:bucket1@107.5°/473u c2:bucket1@347.9°/474u c3:bucket1@348.5°/474u c4:bucket1@227.9°/386u c5:bucket0@237.4°/455u
+2475	soup936	-	100577	-	100579:1,102926:1,102927:1,101745:3,102928:3,101750:1	c0:bucket1@168.0°/473u c1:bucket1@227.4°/473u
+2476	soup937	-	121740	-	123018:3,120455:2,121740:2,120453:1,124303:2,123020:3	died-or-margin
+2477	soup938	-	50247	-	51077:2,50249:3,49424:3,48625:2,49422:2,48624:2	died-or-margin
+2478	soup939	-	118398	-	120931:3,119647:3,117141:2,119645:1,119648:3,120933:2	c0:bucket0@116.4°/310u c1:bucket0@297.2°/461u
+2479	soup940	-	101215	-	101217:3,102396:1,103564:1,101213:1,100045:3,102395:2	died-or-margin
+2480	soup941	-	72681	-	74667:3,71696:1,70720:3,72679:1,73670:2,70719:3	c0:bucket0@236.5°/464u c1:bucket1@108.1°/473u
+2481	soup942	-	63355	-	63355:2,63357:2,65222:3,62433:2,61529:2,64289:1	died-or-margin
+2482	soup943	-	121672	-	122951:3,119107:1,124236:2,124049:1,121486:2,122750:2	c0:bucket1@108.6°/474u
+2483	soup944	-	39235	-	40690:3,39237:3,38508:2,40689:2,38509:3,39234:1	died-or-margin
+2484	soup945	-	83239	-	82181:1,83240:3,85374:2,85375:2,82178:1,83242:3	c0:bucket1@347.9°/464u c1:bucket1@108.5°/472u
+2485	soup946	-	101981	-	103155:2,101981:1,101983:2,100798:3,101982:2,101980:2	died-or-margin
+2486	soup947	-	98827	-	98829:3,97677:2,101134:3,97679:1,97675:3,99964:1	c0:bucket0@56.3°/359u c1:bucket1@168.2°/471u c2:bucket1@167.9°/474u
+2487	soup948	-	75492	-	74494:1,76505:3,75494:2,73497:3,74495:1,75493:2	c0:bucket0@117.6°/464u c1:bucket1@107.5°/473u c2:bucket1@108.2°/472u c3:bucket1@168.3°/472u c4:bucket0@357.6°/463u c5:bucket1@348.2°/472u
+2488	soup949	-	66146	-	66146:3,64277:3,67089:2,64279:1,66148:2,65215:2	died-or-margin
+2489	soup950	-	77821	-	76797:3,76798:2,75780:2,78836:3,76799:2,78835:2	died-or-margin
+2490	soup951	-	55704	-	55706:3,55703:1,55702:2,53993:1,53994:2,55705:1	c0:bucket0@177.4°/463u c1:bucket1@288.2°/472u
+2491	soup952	-	56849	-	58612:2,57732:2,55981:1,56847:3,57731:3,57734:3	died-or-margin
+2492	soup953	-	42731	-	41226:3,43480:1,42729:2,41228:2,41963:2,43477:3	died-or-margin
+2493	soup954	-	46121	-	45334:1,46907:2,46121:3,47708:3,46906:1,47707:2	c0:short(0) c1:short(0) c2:bucket1@108.0°/474u c3:bucket1@228.2°/476u c4:bucket0@296.8°/465u c5:bucket1@348.1°/472u
+2494	soup955	-	65847	-	64903:3,67737:1,67738:2,66790:3,66787:3,67735:2	c0:bucket0@117.0°/463u c1:bucket0@237.6°/464u
+2495	soup956	-	111926	-	114373:3,111928:3,111927:3,110686:3,113153:3,110688:3	died-or-margin
+2496	soup957	-	30955	-	29669:3,31597:3,30956:1,29667:1,30311:3,29668:2	c0:bucket0@56.9°/462u c1:bucket0@296.9°/466u
+2497	soup958	-	62790	-	60969:2,60971:3,62789:3,62788:2,63716:2,62791:1	c0:bucket0@297.3°/462u c1:bucket1@167.5°/473u c2:bucket1@228.1°/479u
+2498	soup959	-	37410	-	37410:3,36708:3,37409:2,38847:3,38115:2,36010:2	died-or-margin
+2499	soup960	-	47074	-	45500:1,47879:1,46288:2,46289:2,48692:2,47076:2	died-or-margin
+2500	soup961	-	34599	-	33923:2,33248:2,35270:2,35968:1,33924:1,34597:3	died-or-margin
+2501	soup962	-	123472	-	124774:1,123470:2,122192:1,122194:3,120911:1,126063:1	died-or-margin
+2502	soup963	-	71458	-	70488:2,71461:1,72443:2,72446:3,70487:3,69521:2	died-or-margin
+2503	soup964	-	60741	-	58943:3,60743:2,59839:3,58942:2,59840:1,60742:2	c0:bucket1@228.1°/473u
+2504	soup965	-	54221	-	54225:3,55936:3,52518:1,54221:1,55080:2,55077:1	grower (47 cells, 8 comps)
+2505	soup966	-	56200	-	57955:2,54486:1,55348:3,57951:2,56197:1,56200:3	died-or-margin
+2506	soup967	-	91754	-	93989:1,92868:3,90640:3,92870:3,89555:1,92871:1	c0:bucket1@168.6°/475u c1:bucket1@48.2°/472u
+2507	soup968	-	101578	-	99257:1,100408:3,103938:2,100409:3,100411:1,102753:3	c0:bucket1@168.5°/411u c1:bucket1@288.3°/476u
+2508	soup969	-	107968	-	106775:2,105575:3,107967:3,110381:1,109170:1,109171:1	c0:bucket0@117.8°/461u c1:bucket1@47.6°/473u
+2509	soup970	-	63497	-	61673:1,63497:3,62575:1,63496:1,64432:1,65369:1	died-or-margin
+2510	soup971	-	42197	-	41458:1,42196:3,42957:2,41455:1,42955:2,42199:2	c0:bucket1@348.0°/476u c1:bucket1@48.5°/472u
+2511	soup972	-	116875	-	116877:2,118128:1,119370:1,118127:2,114366:1,118126:2	died-or-margin
+2512	soup973	-	97156	-	98302:1,97158:2,97155:3,98304:2,97153:2,99448:1	died-or-margin
+2513	soup974	-	93874	-	91644:2,93875:1,96134:3,92756:3,93874:3,95005:2	c0:bucket0@116.6°/465u c1:bucket0@297.7°/380u
+2514	soup975	-	51069	-	49414:1,51070:1,50236:1,50238:2,51071:3,50237:2	c0:bucket1@288.3°/474u
+2515	soup976	-	40239	-	38790:3,39517:3,39518:1,40240:1,40977:2,40239:2	grower (63 cells, 12 comps)
+2516	soup977	-	67625	-	66679:3,67623:1,66680:3,65743:2,67627:2,66678:1	c0:bucket1@348.1°/472u
+2517	soup978	-	115820	-	113354:2,117075:1,118336:2,113355:1,118337:3,118338:3	died-or-margin
+2518	soup979	-	56287	-	58043:1,56287:2,56286:3,57158:1,56289:2,54572:1	died-or-margin
+2519	soup980	-	62402	-	64253:1,64252:1,62403:2,61495:3,63321:3,61497:3	c0:bucket1@227.8°/473u c1:bucket1@48.5°/474u
+2520	soup981	-	102729	-	102727:1,102730:1,103912:3,103911:2,105084:2,101551:2	c0:bucket0@356.9°/462u
+2521	soup982	-	52487	-	52489:1,51662:1,51659:1,53332:2,51666:2,53329:1	died-or-margin
+2522	soup983	-	51330	-	52990:3,52165:2,50496:2,51332:1,52988:2,52163:1	died-or-margin
+2523	soup984	-	56562	-	56561:2,54845:1,55693:3,58323:3,57442:2,55691:1	c0:bucket0@116.8°/463u c1:bucket1@228.0°/475u
+2524	soup985	-	86747	-	87828:2,86749:2,87829:2,88928:3,88929:2,87827:2	died-or-margin
+2525	soup986	-	42418	-	43942:1,43184:1,42419:1,40928:3,42417:3,43182:1	died-or-margin
+2526	soup987	-	48854	-	49653:2,50479:2,48852:2,50477:1,48854:1,49656:2	died-or-margin
+2527	soup988	-	116646	-	119140:2,116648:3,117900:3,116647:1,114146:1,119141:2	c0:bucket1@167.8°/475u c1:bucket0@56.7°/388u
+2528	soup989	-	32595	-	33064:3,31921:1,32584:1,31739:2,32583:1,33936:2	died-or-margin
+2529	soup990	-	82635	-	82635:2,82632:2,83700:3,84765:1,80555:2,84767:3	died-or-margin
+2530	soup991	-	54048	-	53196:2,54052:2,54913:2,54046:1,54915:3,53190:2	died-or-margin
+2531	soup992	-	57840	-	56960:3,59602:1,57837:1,56957:3,59601:3,58717:1	c0:bucket1@107.9°/474u c1:bucket1@228.5°/474u c2:bucket0@237.3°/461u c3:bucket1@348.0°/474u c4:bucket1@347.9°/474u c5:bucket0@356.9°/462u
+2532	soup993	-	66854	-	67799:2,68759:3,66853:3,64969:3,64970:3,65908:2	died-or-margin
+2533	soup994	-	33835	-	33165:2,32500:2,34508:2,33838:1,33835:3,32496:2	died-or-margin
+2534	soup995	-	79418	-	77379:1,80461:2,79419:3,78387:3,77377:3,78389:2	c0:bucket0@297.4°/464u
+2535	soup996	-	37889	-	39208:2,37891:2,38609:3,38479:1,36478:3,37890:1	died-or-margin
+2536	soup997	-	49257	-	50076:1,47643:3,50075:2,49256:1,47646:3,50078:3	died-or-margin
+2537	soup998	-	42432	-	40940:1,41684:3,43198:1,43956:1,42430:2,41685:3	grower (40 cells, 7 comps)
+2538	soup999	-	60222	-	58444:2,60222:1,61129:2,59314:2,60220:3,61131:3	died-or-margin

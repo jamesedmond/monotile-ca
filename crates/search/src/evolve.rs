@@ -376,6 +376,7 @@ pub fn run(p: &EvolveParams) {
         stratification: Some(Stratification::PerClass),
         tables: genome,
         table_rule: None,
+        table_rules: Vec::new(),
         neighbourhood: p.neighbourhood,
         // The *resolved* seed (an empty input means the 1-ball, expanded
         // inside the arena) — `p.seed_cells` may be empty and would make
