@@ -8,7 +8,7 @@ Spectre_** (James Edmond, 2026) and its companion interactive essay:
   https://offlattice.org/monotile/essay/
 - **Paper**: [arXiv:2609.22579](https://arxiv.org/abs/2609.22579) (nlin.CG), "Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre"
 - **Certificates paper**: "Certificates of Immortality for Gliders on the Hat and Spectre Tilings" (James Edmond, 2026; arXiv identifier to be added on posting) — the gliders proved immortal on every tiling of the hull, with exact heading and speed bounds; see [Certificates of immortality](#certificates-of-immortality) below
-- **Archived release**: v1.1.0 (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247)); v1.0.0, the state of the first paper: [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248)
+- **Archived release**: v1.1.0, [doi:10.5281/zenodo.23963284](https://doi.org/10.5281/zenodo.23963284) (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247)); v1.0.0, the state of the first paper: [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248)
 
 The hat and spectre monotiles (discovered 2023) tile the plane only
 aperiodically. This project ran the first systematic cellular-automaton
