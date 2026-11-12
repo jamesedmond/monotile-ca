@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Monotile Glider Census</title>
+  <meta name="description" content="Thirty-two travelling objects certified under four cellular automaton rules on the hat and spectre tilings, each replayable." />
+  <link rel="canonical" href="https://offlattice.org/monotile/census/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The Monotile Glider Census" />
+  <meta property="og:description" content="Thirty-two travelling objects certified under four cellular automaton rules on the hat and spectre tilings, each replayable." />
+  <meta property="og:url" content="https://offlattice.org/monotile/census/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="https://offlattice.org/">Off Lattice</a> · <a href="../essay/">Gliders on the Hat and Spectre Tilings</a> · Glider census</p>
+
+    <h1>The glider census</h1>
+    <p class="subtitle">thirty-two travelling objects under four rules</p>
+
+    <p>
+      The discovery paper (<a href="https://arxiv.org/abs/2609.22579" target="_blank" rel="noopener">arXiv:2609.22579</a>, with an
+      <a href="../essay/">interactive essay</a>) found a glider under each of four rules: three
+      rules on the hat tiling, called hat A's, hat B's and hat C's after their gliders, and one
+      rule on the spectre tiling. The certificate paper (<i>Certificates of Immortality for
+      Gliders on the Hat and Spectre Tilings</i>, arXiv link to follow) proves that those gliders
+      travel forever, by giving each one a certificate. The census asks what else the four rules
+      carry.
+    </p>
+    <p>
+      It launched 13,153 small seeds under the four rules and ran the same proof on every
+      travelling object that settled out of them. Thirty-two objects have certificates. Each
+      one flies in a live viewer on the pages below.
+    </p>
+
+    <div id="census-table" class="cx-scroll"></div>
+    <p class="cx-caption">
+      Each number is the count of situations in an object's certificate, which is how the census
+      names it, and links to the object's viewer. A prime marks a second object with the same
+      count.
+    </p>
+
+    <h2>The pages</h2>
+    <ul class="cx-pages">
+      <li>
+        <a href="singles/">Single gliders</a>
+        <span>Seventeen gliders. Hat A's and hat B's rules carry the same five in different
+        alphabets, and hat C's rule carries five of its own.</span>
+      </li>
+      <li>
+        <a href="convoys/">Convoys</a>
+        <span>Fifteen larger objects: pairs of gliders flying in formation, pairs that lock
+        together, and gliders that carry a few extra cells.</span>
+      </li>
+      <li>
+        <a href="second-lane/">The second spectre lane family</a>
+        <span>The spectre rule's two gliders leave one seed 9° apart, towards the major and
+        minor corners of the ball around it.</span>
+      </li>
+      <li>
+        <a href="showers/">Showers and ash</a>
+        <span>Seeds that burst into many gliders, and one under hat C's rule that is still
+        launching them after 1,500 generations.</span>
+      </li>
+    </ul>
+
+    <h2>How the census was made</h2>
+    <p>
+      <b>Seeds.</b> Under each rule the census took three tiles of every tile class, spread
+      across a patch of radius 384. At each tile it tried every two-tile seed: the tile and a
+      neighbour that shares an edge with it, in each of the nine combinations of the three live
+      states. That is 2,538 seeds for each hat rule and 1,539 for the spectre rule. To these it
+      added 1,000 random seeds per rule, each of six cells in random states close to a random
+      tile.
+    </p>
+    <p>
+      <b>Settling.</b> Each seed ran for 150 generations. By then 9,195 of the seeds had died
+      out or run into the edge of the patch. Another 632 had too many live cells or too many
+      separate pieces to follow one at a time. These are the <a href="showers/">showers</a>:
+      562 under hat C's rule and 70 under the spectre rule. The other 3,326 had launched one or
+      more separate travelling objects.
+    </p>
+    <p>
+      <b>Certifying.</b> Each travelling object was followed for up to 300 generations. The
+      procedure of the certificate paper collects every situation the object passes through, where a
+      situation is the pattern together with the tiles around it. It then checks every way the
+      tiling can continue ahead of each situation. If the rule always takes a situation in the
+      set to another situation in the set, and the pattern never dies, the set is a certificate
+      and the object travels forever. The certificate also gives a window that contains the
+      object's long-run heading and a lower bound on its speed.
+    </p>
+    <p>
+      <b>Naming.</b> Two objects are the same only if their certificates are the same set of
+      situations. Objects that look alike can therefore be different objects. Objects are
+      named by the size of their certificates.
+    </p>
+
+    <h2>What the census found</h2>
+    <ul>
+      <li>
+        Hat A's and hat B's rules carry the same five single gliders. Remove the state-3 cells
+        of a hat A glider and rename its other two states, and it becomes the matching hat B
+        glider, situation for situation. The 638 formation pairs of the two rules match in the
+        same way.
+      </li>
+      <li>
+        Hat C's five gliders are not hat A's under any renaming of states.
+      </li>
+      <li>
+        Every hat object has the same certified heading window to within 0.0003° and the same
+        speed bound. The spectre rule has two families of directions, 9° apart.
+      </li>
+      <li>
+        No pair flies in file. The two gliders of every formation pair travel side by side or
+        in echelon.
+      </li>
+      <li>
+        Bound pairs were found only under hat A's rule, and gliders with passengers only under
+        hat B's.
+      </li>
+    </ul>
+
+    <h2>What the census does not show</h2>
+    <ul>
+      <li>
+        The seeds were small. Larger seeds, or seeds built by hand, may launch objects that are
+        not listed here.
+      </li>
+      <li>
+        Only the four rules of the discovery paper were tried.
+      </li>
+      <li>
+        An object is listed only if its certificate closed. Inside a shower the gliders are too
+        close together to follow one at a time, and some fragments could not be certified.
+        Under hat C's rule 88 such fragments were two gliders travelling together. None of them
+        certified, so the census cannot say whether hat C's rule has a formation pair.
+      </li>
+      <li>
+        Showers are not certified as a whole, and objects that stay in one place, such as the
+        small oscillators of hat C's rule, are not in the table. The
+        <a href="showers/">showers page</a> follows a few showers and one oscillator.
+      </li>
+      <li>
+        The counts of launches on the object pages come from a smaller first pass, of 188 seeds
+        per hat rule and 114 for the spectre rule. They depend on the choice of seeds.
+      </li>
+      <li>
+        A certificate is a proof about one object. The census is a search: an empty cell in the
+        table means that the search found no such object, and the rule may still have one.
+      </li>
+    </ul>
+
+    <h2>All thirty-two objects</h2>
+    <div id="census-list" class="cx-scroll"></div>
+
+    <h2>Data and code</h2>
+    <p>
+      Every viewer has a button that downloads the record it is replaying and shows the command
+      that replays it. The records, the census tables and the code are in the public repository,
+      <a href="https://github.com/jamesedmond/monotile-ca" target="_blank" rel="noopener">github.com/jamesedmond/monotile-ca</a>:
+    </p>
+    <ul>
+      <li><code>results/certificates/census3/</code> holds the census tables, one row per seed with what it launched, and the logs of the runs.</li>
+      <li><code>results/certificates/census-objects.jsonl</code> and <code>census-seeds.jsonl</code> hold the records the viewers fly. <code>census-two-lanes.jsonl</code> and <code>census-showers.jsonl</code> hold the records of the second-lane and showers pages.</li>
+      <li><code>results/certificates/census-certificates.tsv</code> lists, for each of the 32 objects, the command that rebuilds its certificate from its record, and the certificate's situation count, heading window, speed bound and signature. A rebuild takes about a minute once the atlas of the tiling has been generated. <code>crates/certify/census/rebuild_certificates.py</code> runs all 32 and compares them with the table.</li>
+      <li><code>results/certificates/*.json</code> are the certificates published with the certificate paper, among them those of the discovery paper's gliders and of the second spectre glider.</li>
+      <li><code>crates/certify</code> is the certificate procedure. Its <code>census</code> command regenerates the census tables.</li>
+    </ul>
+  </main>
+  <script type="module" src="../src/census/index.ts"></script>
+</body>
+</html>

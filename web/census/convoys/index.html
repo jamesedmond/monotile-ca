@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convoys — The Monotile Glider Census</title>
+  <meta name="description" content="Formation pairs, bound pairs and gliders with passengers on the hat and spectre tilings." />
+  <link rel="canonical" href="https://offlattice.org/monotile/census/convoys/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Convoys — The Monotile Glider Census" />
+  <meta property="og:description" content="Formation pairs, bound pairs and gliders with passengers on the hat and spectre tilings." />
+  <meta property="og:url" content="https://offlattice.org/monotile/census/convoys/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="https://offlattice.org/">Off Lattice</a> · <a href="../../essay/">Gliders on the Hat and Spectre Tilings</a> · <a href="../">Glider census</a> · Convoys</p>
+
+    <h1>Convoys</h1>
+    <p class="subtitle">formation pairs, bound pairs and gliders with passengers</p>
+
+    <p>
+      The census found fifteen travelling objects that are larger than a single glider. Each one
+      is certified in the same way as the single gliders: a finite set of situations, and on
+      every terrain the tiling can present the rule takes each situation to another live
+      situation in the set. Each one therefore travels forever, in the single gliders' direction and at their
+      speed.
+    </p>
+    <p>
+      Are these objects gliders that happen to fly close together, or larger objects that are
+      joined? To find out, every state of each object was split into its
+      connected pieces, and each piece was looked up in the certificates of the single gliders.
+      Both answers are right, for different objects, and there is a third kind in between.
+    </p>
+    <p>
+      The number on each tab is the number of situations in the object's certificate, which is how
+      the census names it. Each viewer flies the selected object in a sliding window for as long
+      as it stays on screen. The heading in the corner of a viewer is measured in that record's
+      own frame, so the same lane can show headings that differ by a multiple of 60°.
+    </p>
+
+    <h2>Formation pairs</h2>
+    <p>
+      Eight objects are two known gliders flying in formation on parallel rows. In four of the
+      pairs the second glider is about 8 units behind the first
+      and 18 to its side. In the other four the two are level, or a few units from level. The
+      two gliders are apart in most of their states and touch at intervals. While they touch,
+      their cells cannot be divided into two known glider patterns; afterwards the same two
+      gliders separate again.
+    </p>
+    <p>
+      None of the eight is under hat C's rule. That rule's <a href="../showers/">showers</a>
+      throw out gliders in twos, but none of those pairs could be certified, so the census
+      cannot say whether hat C's rule has a formation pair.
+    </p>
+    <div id="cv-formation"></div>
+
+    <h2>Bound pairs</h2>
+    <p>
+      Two objects under hat A's rule are pairs of gliders that are joined into one connected
+      pattern for much of their cycle: the 441 in 87% of its states and the 561 in 58%. In many
+      of those states the joined pattern, of eight to fourteen cells, has no single glider's
+      pattern inside it.
+      For the rest of the cycle the pair is two intact gliders, which then join again.
+    </p>
+    <div id="cv-bound"></div>
+
+    <h2>Gliders with passengers</h2>
+    <p>
+      Five objects are a known glider with four or five extra cells attached
+      behind it, in every state. The attached cells are never a glider by themselves. The object
+      keeps the single glider's lane and speed. The census found them only under hat B's rule.
+    </p>
+    <div id="cv-passengers"></div>
+  </main>
+  <script type="module" src="../../src/census/convoys.ts"></script>
+</body>
+</html>

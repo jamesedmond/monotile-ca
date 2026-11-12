@@ -49,7 +49,14 @@ export interface FlightOptions {
   reproduce?: string;
 }
 
-export function mountFlightPanel(container: HTMLElement, opts: FlightOptions): void {
+/** Handle returned by mountFlightPanel: swap the record the panel is
+ *  flying without creating a second canvas (one WebGL context serves
+ *  any number of objects, shown one at a time). */
+export interface FlightHandle {
+  load(next: Partial<FlightOptions>): void;
+}
+
+export function mountFlightPanel(container: HTMLElement, opts: FlightOptions): FlightHandle {
   container.classList.add('essay-panel', 'flight-panel');
   container.innerHTML = `
     <div class="ep-stage">
@@ -81,13 +88,13 @@ export function mountFlightPanel(container: HTMLElement, opts: FlightOptions): v
   speedInput.value = String(opts.speed ?? 10);
   speedVal.textContent = speedInput.value;
   zoomInput.value = String(opts.zoomLevel ?? 0.8);
-  q('.ep-caption').innerHTML = opts.caption ?? '';
   const repro = q<HTMLDetailsElement>('.ep-repro');
-  if (opts.reproduce && !opts.kiosk) {
-    repro.querySelector('pre')!.textContent = opts.reproduce;
-  } else {
-    repro.hidden = true;
-  }
+  const applyText = (): void => {
+    q('.ep-caption').innerHTML = opts.caption ?? '';
+    repro.hidden = !opts.reproduce || !!opts.kiosk;
+    if (opts.reproduce) repro.querySelector('pre')!.textContent = opts.reproduce;
+  };
+  applyText();
   if (opts.kiosk) {
     q('.ep-bar').style.display = 'none';
     q('.ep-caption').style.display = 'none';
@@ -267,7 +274,7 @@ export function mountFlightPanel(container: HTMLElement, opts: FlightOptions): v
     hopHeadings = [];
     shownDecimals = 1;
     fitter.reset();
-    renderer?.clearRetired();
+    renderer?.clearWindows();
     worker = new Worker(new URL('./flight-worker.ts', import.meta.url), { type: 'module' });
     worker.onmessage = (e: MessageEvent<WorkerOut>) => {
       const msg = e.data;
@@ -390,4 +397,16 @@ export function mountFlightPanel(container: HTMLElement, opts: FlightOptions): v
     }
   });
   observer.observe(container);
+
+  return {
+    load(next: Partial<FlightOptions>): void {
+      Object.assign(opts, next);
+      applyText();
+      if (!started) return; // not yet scrolled into view: start() will fly the new record
+      loading.style.display = '';
+      loading.textContent = 'loading the tiling…';
+      if (failed) setPlaying(opts.autoplay ?? false); // a failed flight paused itself
+      spawn();
+    },
+  };
 }

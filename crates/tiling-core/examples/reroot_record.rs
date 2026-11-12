@@ -18,7 +18,18 @@
 //! is nearest `select-heading`) become the seed that is re-rooted — a
 //! record that starts with a settled object at generation 0.
 //!
-//! Usage: reroot_record <in.jsonl> <out.jsonl> [radius=48] [horizon=2500] [source-radius=128] [snapshot-gen=0] [select-heading]
+//! With `gather-rings` > 0 the selected component is joined by every other
+//! component that has a cell within that many graph steps of it, so a convoy (two gliders a
+//! few tiles apart, which are separate components in most generations) is
+//! taken whole and everything else on the patch is dropped. With
+//! `select-distance` the component is chosen nearest the point at that
+//! distance (geometry units) along the heading, for a seed that sends
+//! several objects the same way. An output of `-` lists the snapshot's
+//! components (cells, direction and distance from the seed) and writes
+//! nothing.
+//!
+//! Usage: reroot_record <in.jsonl> <out.jsonl|-> [radius=48] [horizon=2500] [source-radius=128] [snapshot-gen=0]
+//!                      [select-heading] [gather-rings=0] [select-distance]
 
 use std::collections::{BTreeSet, HashMap};
 
@@ -46,6 +57,9 @@ fn main() {
     let source_radius: u32 = args.next().map_or(128, |a| a.parse().expect("source radius"));
     let snapshot_gen: u64 = args.next().map_or(0, |a| a.parse().expect("snapshot generation"));
     let select_heading: Option<f64> = args.next().map(|a| a.parse().expect("select heading"));
+    let gather_rings: u32 = args.next().map_or(0, |a| a.parse().expect("gather rings"));
+    let select_distance: Option<f64> = args.next().map(|a| a.parse().expect("select distance"));
+    let list_only = output == "-";
 
     let text = std::fs::read_to_string(&input).expect("read input");
     let mut out = String::new();
@@ -66,7 +80,8 @@ fn main() {
             let state = engine.state();
             let mut live: Vec<u32> = (0..source.graph.cells()).filter(|&c| state[c as usize] != 0).collect();
             assert!(!live.is_empty(), "record {i}: nothing alive at generation {snapshot_gen}");
-            if let Some(h) = select_heading {
+            if select_heading.is_some() || list_only {
+                let h = select_heading.unwrap_or(0.0);
                 // Vertex-connected components (the patch graph is the record's
                 // neighbourhood); pick the one whose centroid direction from
                 // the original seed's centroid is nearest the requested heading.
@@ -108,25 +123,78 @@ fn main() {
                     comp.sort_unstable();
                     comps.push(comp);
                 }
-                let best = comps
-                    .iter()
-                    .min_by(|a, b| {
-                        let dir = |comp: &Vec<u32>| {
-                            let n = comp.len() as f64;
-                            let (sx, sy) = comp.iter().map(|&c| centroid(c)).fold((0.0, 0.0), |(a, b), (x, y)| (a + x, b + y));
-                            let ang = (sy / n - seed_c.1).atan2(sx / n - seed_c.0).to_degrees();
-                            let d = (ang - h).rem_euclid(360.0);
+                // Each component's offset from the seed: (dx, dy).
+                let offset = |comp: &Vec<u32>| {
+                    let n = comp.len() as f64;
+                    let (sx, sy) = comp.iter().map(|&c| centroid(c)).fold((0.0, 0.0), |(a, b), (x, y)| (a + x, b + y));
+                    (sx / n - seed_c.0, sy / n - seed_c.1)
+                };
+                if list_only {
+                    println!("record {i}: generation {snapshot_gen}, {} components:", comps.len());
+                    for comp in &comps {
+                        let (dx, dy) = offset(comp);
+                        println!(
+                            "  {:3} cells at {:7.2}°, {:7.1} units from the seed",
+                            comp.len(),
+                            dy.atan2(dx).to_degrees().rem_euclid(360.0),
+                            dx.hypot(dy)
+                        );
+                    }
+                    continue;
+                }
+                // Mismatch: angular distance from the heading, or with
+                // select-distance the distance from the target point.
+                let miss = |comp: &Vec<u32>| {
+                    let (dx, dy) = offset(comp);
+                    match select_distance {
+                        Some(r) => (dx - r * h.to_radians().cos()).hypot(dy - r * h.to_radians().sin()),
+                        None => {
+                            let d = (dy.atan2(dx).to_degrees() - h).rem_euclid(360.0);
                             d.min(360.0 - d)
-                        };
-                        dir(a).partial_cmp(&dir(b)).unwrap()
-                    })
-                    .expect("components");
+                        }
+                    }
+                };
+                let best = comps.iter().min_by(|a, b| miss(a).partial_cmp(&miss(b)).unwrap()).expect("components");
+                let mut chosen = best.clone();
+                if gather_rings > 0 {
+                    // Every live cell within `gather_rings` graph steps of the
+                    // selected component (breadth-first through all cells).
+                    let mut dist: HashMap<u32, u32> = best.iter().map(|&c| (c, 0)).collect();
+                    let mut frontier = best.clone();
+                    for d in 1..=gather_rings {
+                        let mut next = Vec::new();
+                        for &x in &frontier {
+                            for &y in source.graph.neighbours(x) {
+                                if let std::collections::hash_map::Entry::Vacant(slot) = dist.entry(y) {
+                                    slot.insert(d);
+                                    next.push(y);
+                                }
+                            }
+                        }
+                        frontier = next;
+                    }
+                    // Whole components only: a component with any cell in
+                    // range is taken entire, never cut.
+                    chosen = comps
+                        .iter()
+                        .filter(|comp| comp.iter().any(|c| dist.contains_key(c)))
+                        .flatten()
+                        .copied()
+                        .collect();
+                    chosen.sort_unstable();
+                }
                 println!(
-                    "record {i}: generation {snapshot_gen}, {} components; selected {} cells nearest heading {h}°",
+                    "record {i}: generation {snapshot_gen}, {} components; selected {} cells nearest heading {h}°{}{}",
                     comps.len(),
-                    best.len()
+                    best.len(),
+                    select_distance.map_or(String::new(), |r| format!(" at {r} units")),
+                    if gather_rings > 0 {
+                        format!("; {} cells with every component within {gather_rings} rings", chosen.len())
+                    } else {
+                        String::new()
+                    }
                 );
-                live = best.clone();
+                live = chosen;
             }
             record.initial_states = live.iter().map(|&c| state[c as usize]).collect();
             record.initial_cells = live;
@@ -220,5 +288,7 @@ fn main() {
         out.push_str(&serde_json::to_string(&rerooted).unwrap());
         out.push('\n');
     }
-    std::fs::write(&output, out).expect("write output");
+    if !list_only {
+        std::fs::write(&output, out).expect("write output");
+    }
 }

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Single gliders — The Monotile Glider Census</title>
+  <meta name="description" content="The seventeen single gliders the census found under four rules on the hat and spectre tilings." />
+  <link rel="canonical" href="https://offlattice.org/monotile/census/singles/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Single gliders — The Monotile Glider Census" />
+  <meta property="og:description" content="The seventeen single gliders the census found under four rules on the hat and spectre tilings." />
+  <meta property="og:url" content="https://offlattice.org/monotile/census/singles/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="https://offlattice.org/">Off Lattice</a> · <a href="../../essay/">Gliders on the Hat and Spectre Tilings</a> · <a href="../">Glider census</a> · Single gliders</p>
+
+    <h1>Single gliders</h1>
+    <p class="subtitle">seventeen gliders under four rules</p>
+
+    <p>
+      The <a href="https://arxiv.org/abs/2609.22579" target="_blank" rel="noopener">discovery paper</a> found a glider under each of four rules. The census launched thousands
+      of small seeds under the same rules and certified the single gliders that settled out of
+      them. There are seventeen.
+    </p>
+    <p>
+      Most of them are hard to tell apart by eye. Under one rule the gliders have the same few
+      states in similar arrangements, and they travel in the same directions at the same speed.
+      The census tells them apart by their certificates. A certificate is a finite set of
+      situations, each a pattern with the tiles around it, and two gliders are the same object
+      only if their sets of situations coincide.
+    </p>
+    <p>
+      The number on each tab is the number of situations in the certificate. Each viewer flies
+      the selected glider in a sliding window for as long as it stays on screen. The heading in
+      the corner of a viewer is measured in that record's own frame, so the same lane can show
+      headings that differ by a multiple of 60°.
+    </p>
+
+    <h2>Hat A's rule</h2>
+    <p>
+      Five gliders. The 381 is the discovery paper's hat A. The 380 is launched twice as often and
+      shares no situation with it. The 257, the 256 and the 127 are close relatives: with four
+      rings of tiles kept around the pattern their certificates run together into one set of 630
+      situations, and with five rings they separate.
+    </p>
+    <div id="cv-hatA"></div>
+
+    <h2>Hat B's rule</h2>
+    <p>
+      The same five gliders in another alphabet. Take any of hat A's five, remove its state-3
+      cells and rename its other two states, and every situation becomes a situation of the
+      matching glider under hat B's rule, with every transition carried over. The two rules were
+      found by separate searches and have different tables, of eight rows and four.
+    </p>
+    <div id="cv-hatB"></div>
+
+    <h2>Hat C's rule</h2>
+    <p>
+      Five gliders, and none of them is one of hat A's in another alphabet: no renaming of
+      states, with or without removing cells, turns a situation of one into a situation of the
+      other.
+    </p>
+    <div id="cv-hatC"></div>
+
+    <h2>The spectre rule</h2>
+    <p>
+      Two gliders, on two families of lanes about 9° apart. The discovery paper gave the spectre
+      tiling a single compass offset; that offset holds for its glider, and the second glider
+      has another. <a href="../second-lane/">The second lane family</a> has its own page, which
+      follows one seed that launches both gliders.
+    </p>
+    <div id="cv-spectre"></div>
+  </main>
+  <script type="module" src="../../src/census/singles.ts"></script>
+</body>
+</html>

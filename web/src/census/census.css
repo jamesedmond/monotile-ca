@@ -1,0 +1,104 @@
+/* Census pages: the essay's palette and panels, plus the object viewer. */
+.crumb { color: var(--dim); font-size: 0.9rem; margin: 0 0 2rem; }
+.crumb a { color: var(--dim); }
+.crumb a:hover { color: var(--accent); }
+.draft-banner {
+  border: 1px dashed var(--edge);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  color: var(--dim);
+  font: 12px ui-monospace, Menlo, monospace;
+  margin: 0 0 2rem;
+}
+
+.cv { margin: 1.5rem 0 3rem; }
+.cv-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; align-items: baseline; }
+.cv-group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem; }
+.cv-rule { color: var(--dim); font-size: 0.82rem; margin-right: 0.3rem; }
+.cv-tabs button {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--edge);
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+  font: 13px ui-monospace, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.cv-tabs button:hover:not(:disabled) { border-color: var(--accent); }
+.cv-tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cv-tabs button[aria-selected='true'] { background: var(--accent); border-color: var(--accent); color: #14100a; }
+.cv-tabs button:disabled { color: #4d5461; border-style: dashed; cursor: default; }
+.cv .essay-panel { margin-top: 1rem; margin-bottom: 1rem; }
+.cv-detail h3 { margin: 1.2rem 0 0.1rem; color: #fff; font-size: 1.1rem; }
+.cv-kind { margin: 0 0 0.8rem; color: var(--dim); font-size: 0.95rem; }
+.cv-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 0.6rem 1.5rem;
+  margin: 0;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+}
+.cv-facts dt { color: var(--dim); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.cv-facts dd { margin: 0.1rem 0 0; font-variant-numeric: tabular-nums; }
+.cv-facts code { font-size: 0.85rem; color: var(--dim); }
+.cv-note { color: var(--text); font-size: 0.95rem; }
+
+/* The second-lane page: a square stage for the two-glider panel, the
+   drawn ball figure and the two-column table. */
+.ep-square .ep-stage { aspect-ratio: 1; }
+.lane-figure { margin: 2rem -1.25rem; }
+@media (min-width: 50rem) { .lane-figure { margin: 2rem -2.5rem; } }
+.lane-figure svg { display: block; width: 100%; height: auto; }
+.lane-figure text { font-family: ui-monospace, Menlo, monospace; }
+.lane-figure figcaption { margin: 0.6rem 1.25rem 0; color: var(--dim); font-size: 0.88rem; }
+@media (min-width: 50rem) { .lane-figure figcaption { margin: 0.6rem 2.5rem 0; } }
+.lane-figure figcaption b { color: var(--text); }
+.lane-table { overflow-x: auto; margin: 1.5rem 0; }
+.lane-table table { border-collapse: collapse; width: 100%; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.lane-table th, .lane-table td { text-align: left; padding: 0.45rem 0.8rem 0.45rem 0; border-bottom: 1px solid var(--edge); vertical-align: baseline; }
+.lane-table thead th { color: var(--dim); font-size: 0.78rem; font-weight: normal; letter-spacing: 0.04em; text-transform: uppercase; }
+.lane-table tbody th { color: var(--dim); font-weight: normal; }
+
+/* The index: kinds against rules, the page list and the full list. */
+.todo { color: #e0a85e; font: 0.85em ui-monospace, Menlo, monospace; }
+.cx-scroll { overflow-x: auto; margin: 1.8rem 0 0.4rem; }
+.cx-scroll table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.cx-matrix th, .cx-matrix td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem 0.7rem 0; border-bottom: 1px solid var(--edge); }
+.cx-matrix thead th { color: var(--dim); font-size: 0.78rem; font-weight: normal; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+.cx-matrix tbody th { font-weight: normal; font-size: 0.95rem; min-width: 8.5rem; }
+.cx-matrix tbody th a { color: var(--text); }
+.cx-matrix tbody th a:hover { color: var(--accent); }
+.cx-matrix td { min-width: 7.5rem; }
+.cx-count { color: var(--dim); font: 12px ui-monospace, Menlo, monospace; margin-left: 0.25rem; }
+.cx-chip {
+  display: inline-block;
+  margin: 0 0.3rem 0.3rem 0;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--edge);
+  border-radius: 5px;
+  color: var(--text);
+  font: 13px ui-monospace, Menlo, monospace;
+  text-decoration: none;
+}
+.cx-chip:hover { border-color: var(--accent); color: var(--accent); }
+.cx-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cx-none { color: #5d6573; font-size: 0.85rem; font-style: italic; }
+.cx-caption { color: var(--dim); font-size: 0.88rem; margin-top: 0.4rem; }
+.cx-pages { list-style: none; padding: 0; margin: 1rem 0; }
+.cx-pages li { padding: 0.7rem 0; border-bottom: 1px solid var(--edge); }
+.cx-pages li:first-child { border-top: 1px solid var(--edge); }
+.cx-pages a { display: block; font-size: 1.1rem; }
+.cx-pages span { display: block; color: var(--dim); font-size: 0.95rem; }
+.cx-list { font-size: 0.92rem; }
+.cx-list th, .cx-list td { text-align: left; vertical-align: baseline; padding: 0.35rem 0.9rem 0.35rem 0; border-bottom: 1px solid var(--edge); }
+.cx-list thead th { color: var(--dim); font-size: 0.78rem; font-weight: normal; letter-spacing: 0.04em; text-transform: uppercase; }
+.cx-list .cx-kind th { color: #fff; font-weight: normal; padding-top: 1.1rem; border-bottom-color: #3a4152; }
+.cx-list td:first-child a { font: 13px ui-monospace, Menlo, monospace; }
+.cx-list td:nth-child(2), .cx-list td:nth-child(4), .cx-list td:nth-child(5) { white-space: nowrap; }
+.cx-list td:nth-child(3) { color: var(--dim); min-width: 16rem; }
+
+/* Long file paths in running text must wrap on a phone. */
+main code { overflow-wrap: anywhere; }

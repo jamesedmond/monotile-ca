@@ -28,9 +28,9 @@ SPEC2_EXACT = 57.1700     # second family, net displacement of the public 10^6-g
 # Theorem 2 intervals, mod 60 (Table 2 quotes them mod 30; the hat's and the spectre glider's lanes
 # lie in the first half-turn of each spoke pair).
 HAT_INT = (45.4895, 45.6084)          # hat A, hat B, captured, hat C (both), wake, s33-on-hat
-WORM_INT = (45.4895, 45.6086)         # Trevorrow's worm
-SPEC1_INT = (47.7448, 48.1373)        # spectre glider
-SPEC2_INT = (56.9589, 57.5125)        # second family
+WORM_INT = (45.4895, 45.6087)         # Trevorrow's worm
+SPEC1_INT = (47.7448, 48.1374)        # spectre glider
+SPEC2_INT = (56.9589, 57.5126)        # second family
 
 FLIGHTS = {
     "hat": [

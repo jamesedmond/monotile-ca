@@ -253,10 +253,17 @@ export class Renderer {
     this.retiredLineFade = Math.min(this.retiredFillFade + (this.retiredFillFade > 0 ? 0.2 : 0), 1);
   }
 
-  /** Drop all retired windows (relaunch). */
-  clearRetired(): void {
+  /** Drop all retired windows and the live one (relaunch). Without the
+   *  live window gone, the next flight's first setPatch would be preceded
+   *  by a retireCurrent that keeps the old flight's last window on screen,
+   *  placed in the new flight's frame. */
+  clearWindows(): void {
     for (const w of this.retired) this.dispose(w);
     this.retired.length = 0;
+    if (this.current) {
+      this.dispose(this.current);
+      this.current = null;
+    }
   }
 
   /** Upload patch geometry + per-cell dead-tint color table (RGBA, 4 bytes/cell)

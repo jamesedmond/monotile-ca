@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The second spectre lane family — The Monotile Glider Census</title>
+  <meta name="description" content="Two gliders under one rule on the spectre tiling leave one seed 9° apart, towards the major and minor corners of the ball around it." />
+  <link rel="canonical" href="https://offlattice.org/monotile/census/second-lane/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The second spectre lane family — The Monotile Glider Census" />
+  <meta property="og:description" content="Two gliders under one rule on the spectre tiling leave one seed 9° apart, towards the major and minor corners of the ball around it." />
+  <meta property="og:url" content="https://offlattice.org/monotile/census/second-lane/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="https://offlattice.org/">Off Lattice</a> · <a href="../../essay/">Gliders on the Hat and Spectre Tilings</a> · <a href="../">Glider census</a> · <a href="../singles/">Single gliders</a> · Second lane family</p>
+
+    <h1>The second spectre lane family</h1>
+    <p class="subtitle">two gliders from one seed, 9° apart</p>
+
+    <p>
+      The <a href="https://arxiv.org/abs/2609.22579" target="_blank" rel="noopener">discovery paper</a>'s spectre glider travels in one of six directions, 48.014° plus a
+      multiple of 60°. The census found a second glider under the same rule that travels in one
+      of six other directions, 57.170° plus a multiple of 60°. Each direction of the second
+      family is 9.156° from a direction of the first, always on the same side. The census names
+      the two gliders by the number of situations in their certificates: the first is the 2,542
+      and the second is the 1,454.
+    </p>
+    <p>
+      Of the 2,539 seeds the census launched under the spectre rule, 401 launch gliders of both
+      families. Sixty of those send a glider of each family along neighbouring lanes, and two
+      of the sixty leave nothing else behind. This page follows one of the two, a random seed of
+      six cells.
+    </p>
+
+    <h2>One seed, two gliders</h2>
+    <p>
+      The viewer runs the seed for 180 generations. In this record's frame the 2,542 leaves on
+      the 288° lane and the 1,454 on the 297° lane.
+    </p>
+    <div id="two-lanes" class="ep-square"></div>
+
+    <h2>The ball around the seed</h2>
+    <p>
+      On a tiling, distance can be counted in steps, where one step goes from a tile to a tile
+      that shares an edge with it. The tiles within <i>n</i> steps of a starting tile are the
+      ball of radius <i>n</i> around it, and the tiles exactly <i>n</i> steps away are its ring
+      <i>n</i>.
+    </p>
+    <p>
+      Both gliders advance one ring every two generations. They part 35 generations after the
+      seed, and from generation 100 to generation 500 the farthest tile of the 2,542 is never
+      behind the farthest tile of the 1,454 and never more than three rings ahead of it. At any
+      generation the two gliders are therefore on the outline of nearly the same ball.
+    </p>
+    <p>
+      A large ball on the spectre tiling is not round. Its outline has six major corners and six
+      minor corners, with each minor corner about 9° past a major one. The 2,542 travels towards
+      a major corner and the 1,454 towards the minor corner next to it.
+    </p>
+    <figure id="ball-figure" class="lane-figure"></figure>
+    <p>
+      A major corner is farther from the seed than a minor corner, so in the same number of
+      generations the 2,542 covers more ground. In this run it moves
+      <span data-speed="2542">1.584</span> units per generation and the 1,454 moves
+      <span data-speed="1454">1.549</span>. A unit is the length of a spectre's edge.
+    </p>
+
+    <h2>The two families in numbers</h2>
+    <div class="lane-table">
+      <table>
+        <thead>
+          <tr><th></th><th>first family</th><th>second family</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>glider</th><td><a href="../singles/#spectre-2542">2,542 situations</a></td><td><a href="../singles/#spectre-1454">1,454 situations</a></td></tr>
+          <tr><th>heading over a flight of a million rings</th><td>48.014° + <i>k</i>·60°</td><td>57.170° + <i>k</i>·60°</td></tr>
+          <tr><th>certified heading window, mod 30°</th><td>17.7448° – 18.1374°</td><td>26.9589° – 27.5126°</td></tr>
+          <tr><th>certified speed, units per generation</th><td>≥ 1.5807</td><td>≥ 1.5441</td></tr>
+          <tr><th>speed in this run, units per generation</th><td data-speed="2542">1.584</td><td data-speed="1454">1.549</td></tr>
+          <tr><th>corner of the radius-384 ball</th><td>47.97° + <i>k</i>·60°</td><td>57.14° + <i>k</i>·60°</td></tr>
+          <tr><th>census seeds that launch it, of 2,539</th><td>684</td><td>505</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>What is proved and what is measured</h2>
+    <p>
+      Each glider's certificate proves that it travels forever and that its long-run heading
+      lies inside the window in the table. The two windows do not overlap, so the two families
+      are proved to be different directions.
+    </p>
+    <p>
+      The match between the lanes and the corners of the ball is measured. On a ball of radius
+      384 the corners sit within 0.05° of the lanes. There is no proof that a glider's lane must
+      be a corner of the ball.
+    </p>
+    <p>
+      The hat tiling's ball has one kind of corner, and every hat glider in the census travels
+      towards it.
+    </p>
+  </main>
+  <script type="module" src="../../src/census/second-lane.ts"></script>
+</body>
+</html>

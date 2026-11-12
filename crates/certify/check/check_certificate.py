@@ -467,7 +467,9 @@ def main():
         print(
             "cocycle: rotation violations {rotation_violations}, unreached {unreached}; reference cycle length {cycle_len}, "
             "displacement {cycle_disp:.6f}, heading {heading:.6f}; along [{mu_par[0]:.6f}, {mu_par[1]:.6f}]; "
-            "perpendicular [{mu_perp[0]:.9f}, {mu_perp[1]:.9f}]; window [{window[0]:.4f}, {window[1]:.4f}]".format(**c)
+            "perpendicular [{mu_perp[0]:.9f}, {mu_perp[1]:.9f}]; window [{wlo:.4f}, {whi:.4f}] (rounded outward)".format(
+                wlo=math.floor(c["window"][0] * 1e4) / 1e4, whi=math.ceil(c["window"][1] * 1e4) / 1e4, **c
+            )
         )
     ok = not failures
     print("VERDICT:", "PASS — closed, death-free, transitions exactly as listed" if ok else f"FAIL ({len(failures)} problems)")

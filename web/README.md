@@ -79,10 +79,17 @@ npx wrangler pages deploy site --project-name offlattice --branch staging  # pre
 npx wrangler pages deploy site --project-name offlattice                   # PRODUCTION
 ```
 
-`results/index.html` (the glider census gallery, unpublished until the
-certificate paper) is served by `npm run dev` at `/monotile/results/` but is
-left out of `npm run build` unless `MONOTILE_RESULTS_PAGE=1` is set, so the
-routine deploy above cannot publish it by accident. It carries `noindex`.
+The glider census (`census/`: index, singles, convoys, second lane, showers)
+is part of the build and lands at `offlattice.org/monotile/census/`; the
+certificate paper links it. `results/index.html` (an older private gallery
+that the census pages replace) is served by `npm run dev` at
+`/monotile/results/` but is left out of `npm run build` unless
+`MONOTILE_RESULTS_PAGE=1` is set, so the routine deploy above cannot publish
+it by accident. It carries `noindex`.
+
+The rsync above deletes whatever `dist/` does not contain, including
+`paper.pdf`; either rebuild the PDF as shown or add `--exclude paper.pdf` to
+keep the one that is live.
 
 Staging serves at https://staging.offlattice.pages.dev/monotile/essay/
 (plus a per-deploy hash URL); production only moves when deploying

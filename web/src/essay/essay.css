@@ -66,6 +66,11 @@ footer {
   color: var(--text);
   border-left-color: var(--accent);
 }
+.rail a.nav-extra, .toc a.nav-extra {
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--edge);
+}
 .soon {
   font: 10px ui-monospace, Menlo, monospace;
   color: var(--dim);

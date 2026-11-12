@@ -30,14 +30,20 @@ export function mountNav(): void {
       return `<a${current} href="${href(slug, s.slug)}" title="${s.blurb}">${num}${s.title}${soon}</a>`;
     }).join('');
 
+  // Pages that follow the essay without being sections of it: listed
+  // after the sections, unnumbered, and left out of the prev/next pager.
+  const up = slug === '' ? '../' : '../../';
+  const extras =
+    `<a class="nav-extra" href="${up}census/" title="Thirty-two certified travelling objects under the essay's four rules, each replayable.">Glider census</a>`;
+
   const rail = document.createElement('nav');
   rail.className = 'rail';
-  rail.innerHTML = `<div class="rail-head">Gliders on the<br/>Hat &amp; Spectre</div>${links()}`;
+  rail.innerHTML = `<div class="rail-head">Gliders on the<br/>Hat &amp; Spectre</div>${links()}${extras}`;
   document.body.prepend(rail);
 
   const toc = document.createElement('details');
   toc.className = 'toc';
-  toc.innerHTML = `<summary>Contents</summary><div>${links()}</div>`;
+  toc.innerHTML = `<summary>Contents</summary><div>${links()}${extras}</div>`;
   main.prepend(toc);
 
   const pager = document.createElement('div');
@@ -50,8 +56,7 @@ export function mountNav(): void {
   main.append(pager);
 
   // Site-wide colophon. The paper PDF lives one level above essay/
-  // (offlattice.org/monotile/paper.pdf).
-  const up = slug === '' ? '../' : '../../';
+  // (offlattice.org/monotile/paper.pdf), as does the census.
   const foot = document.createElement('footer');
   foot.className = 'colophon';
   foot.innerHTML =

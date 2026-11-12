@@ -260,20 +260,21 @@ on every tiling of the hull and bounds its heading and speed exactly (the compan
 paper *Certificates of Immortality for Gliders on the Hat and Spectre Tilings*,
 2026). The files are `results/certificates/*.json`; the `certify` crate builds,
 checks and reads them (`cargo run --release -p certify -- cocycle <file>` prints the
-numbers below; the independent checker is `crates/certify/check/check_certificate.py`).
+numbers below, every bound rounded outward to four decimals; the independent checker is
+`crates/certify/check/check_certificate.py`).
 
 | object | certificate | situations / transitions | reference cycle | heading window (mod 60) | speed ≥ |
 |---|---|---|---|---|---|
-| hat A (s21) | `hat-A-s21-k4-R9.json` | 381 / 1,089 | 26 gens, 55.749 u | [45.4895°, 45.6084°], 0.1188° | 2.1397 u/gen |
-| hat B (s22) | `hat-B-s22-k4-R10.json` | 381 / 1,340 | 26, 55.749 | same | 2.1397 |
-| captured object (s21, lane 345) | `hat-A-lane345-capture-k4-R9.json` | 630 / 1,621 (three gliders glued at k = 4: 257, 256, 127) | 26, 55.749 | same | 2.1397 |
-| hat C, 105° glider (s23) | `hat-C-s23-lane105-k4-R11.json` | 257 / 801 | 26, 55.749 | same | 2.1397 |
-| hat C, 345° pair (s23) | `hat-C-s23-lane345a/b-k4-R11.json` | 381 / 1,582 (identical sets) | 26, 55.749 | same | 2.1397 |
-| spectre glider (s33) | `spectre-s33-lane108-k4-R9.json` | 2,542 / 7,089 | 182 gens, 288.031 u | [47.7448°, 48.1373°], 0.3925° | 1.5807 |
-| spectre, second family (s33) | `spectre-second-lane177-k4-R11.json` | 1,454 / 5,675 | 18 gens, 27.796 u | [56.9589°, 57.5125°], 0.5536° | 1.5442 |
-| Trevorrow's worm | `hat-worms-trevorrow-k4-R9.json` | 326 / 644 | 42 gens, 89.867 u | [45.4895°, 45.6086°], 0.1191° | 2.1397 |
-| Gabbay's wake traveller | `hat-wake-gabbay-k4-R9.json` | 134 / 449 | 26, 55.749 | [45.4895°, 45.6084°], 0.1188° | 2.1397 |
-| s33 on the hat | `hat-s33-k4-R9.json` | 380 / 1,072 | 26, 55.749 | same | 2.1397 |
+| hat A (s21) | `hat-A-s21-k4-R9.json` | 381 / 1,089 | 26 gens, 55.749 u | [45.4895°, 45.6084°], 0.1189° | 2.1396 u/gen |
+| hat B (s22) | `hat-B-s22-k4-R10.json` | 381 / 1,340 | 26, 55.749 | same | 2.1396 |
+| captured object (s21, lane 345) | `hat-A-lane345-capture-k4-R9.json` | 630 / 1,621 (three gliders glued at k = 4: 257, 256, 127) | 26, 55.749 | same | 2.1396 |
+| hat C, 105° glider (s23) | `hat-C-s23-lane105-k4-R11.json` | 257 / 801 | 26, 55.749 | same | 2.1396 |
+| hat C, 345° pair (s23) | `hat-C-s23-lane345a/b-k4-R11.json` | 381 / 1,582 (identical sets) | 26, 55.749 | same | 2.1396 |
+| spectre glider (s33) | `spectre-s33-lane108-k4-R9.json` | 2,542 / 7,089 | 182 gens, 288.031 u | [47.7448°, 48.1374°], 0.3926° | 1.5807 |
+| spectre, second family (s33) | `spectre-second-lane177-k4-R11.json` | 1,454 / 5,675 | 18 gens, 27.796 u | [56.9589°, 57.5126°], 0.5537° | 1.5441 |
+| Trevorrow's worm | `hat-worms-trevorrow-k4-R9.json` | 326 / 644 | 42 gens, 89.867 u | [45.4895°, 45.6087°], 0.1192° | 2.1396 |
+| Gabbay's wake traveller | `hat-wake-gabbay-k4-R9.json` | 134 / 449 | 26, 55.749 | [45.4895°, 45.6084°], 0.1189° | 2.1396 |
+| s33 on the hat | `hat-s33-k4-R9.json` | 380 / 1,072 | 26, 55.749 | same | 2.1396 |
 
 Every hat object shares hat A's cocycle numbers: the corridor is the tiling's. Hat B is hat A's
 mechanism in another alphabet (its entry above); the others are distinct objects on the same
@@ -323,7 +324,7 @@ Three hat gliders not found by our search, certified by the same pipeline unchan
 - Found by the census of two-tile seeds under the spectre rule s33 (`certify census`), not by the
   earlier paper's search; the record is line 9 of `results/certificates/census-seeds.jsonl`.
 - Certificate: 1,454 situations / 5,675 transitions at R = 11, reference cycle 18 generations and
-  27.796 u, window [116.9589°, 117.5125°] (0.5536° wide), speed ≥ 1.5442 u/gen. Population 4–8.
+  27.796 u, window [116.9589°, 117.5126°] (0.5537° wide), speed ≥ 1.5441 u/gen. Population 4–8.
 - Flight: `results/flights/spectre-second-lane177-1M.csv`, a million generations in the sliding
   window, net heading 177.16995°; the family sits 9.156° from the glider's (48.0138° mod 60).
 

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Showers and ash — The Monotile Glider Census</title>
+  <meta name="description" content="Census seeds on the hat and spectre tilings that burst into many gliders, and one that is still launching them after 1,500 generations." />
+  <link rel="canonical" href="https://offlattice.org/monotile/census/showers/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-0.5 -0.5 5.5 6.2'%3E%3Cpolygon points='4.5,0 3.5,0 3,0.87 1.5,0 0,0.87 0.5,1.74 0,2.6 1.5,3.47 1.5,5.2 2.5,5.2 3,4.33 3.5,3.47 3,2.6 4.5,1.74' fill='none' stroke='%23f0b24a' stroke-width='0.28' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:site_name" content="Off Lattice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Showers and ash — The Monotile Glider Census" />
+  <meta property="og:description" content="Census seeds on the hat and spectre tilings that burst into many gliders, and one that is still launching them after 1,500 generations." />
+  <meta property="og:url" content="https://offlattice.org/monotile/census/showers/" />
+  <meta property="og:image" content="https://offlattice.org/monotile/essay-assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="https://offlattice.org/">Off Lattice</a> · <a href="../../essay/">Gliders on the Hat and Spectre Tilings</a> · <a href="../">Glider census</a> · Showers and ash</p>
+
+    <h1>Showers and ash</h1>
+    <p class="subtitle">seeds that do not settle into a few gliders</p>
+
+    <p>
+      Most census seeds die, or launch a few gliders that fly apart. After 150
+      generations the census set aside every seed that had too many live cells or too many
+      separate pieces to follow one at a time. There were 562 of them among the 3,538 seeds
+      under hat C's rule and 70 among the 2,539 under the spectre rule. Hat A's and hat B's
+      rules had none.
+    </p>
+    <p>
+      This page follows some of those seeds further. A shower is not one object, so nothing
+      here is certified as a whole. Each viewer runs a seed on the tiles around it, and in the
+      first three every tile that a piece has passed over stays tinted.
+    </p>
+
+    <h2>A burst</h2>
+    <p>
+      The simplest shower is a burst: the seed breaks into gliders, they fly apart, and nothing
+      else happens. Of the 70 spectre showers, 34 are bursts. Each has between 7 and 21 pieces,
+      the same number at generation 600 as at generation 300, and nothing left near the seed.
+    </p>
+    <div id="shower-spectre-ten" class="ep-square"></div>
+
+    <h2>Pieces that make more pieces</h2>
+    <p>
+      In the other spectre showers the number of pieces goes on rising after the seed has gone,
+      and the new pieces appear far from it. Of the 70 spectre showers, 35 gained more than two
+      pieces between generations 300 and 600. The largest had 289 pieces at generation 600.
+    </p>
+    <p>
+      In the run below, the piece travelling left is not one of the certified objects. At about
+      generation 130 it forks: it sheds several gliders, of both the rule's kinds, and carries
+      on along its lane. Followed alone for 2,630 generations it forked eleven times, 252
+      generations apart except for one gap of 220, and was still travelling at the end. The
+      same kind of object appears in 29 of the 70 spectre showers.
+    </p>
+    <div id="shower-spectre-cascade" class="ep-square"></div>
+
+    <h2>A shower that does not stop</h2>
+    <p>
+      Hat C's showers are different. The place where the seed was stays active and goes on
+      launching gliders. Every ninth one of the 562, which is 63 showers, was followed for 600
+      generations. In 58 of them there were still live cells within 40 steps of the seed at
+      generation 600, and only 4 were bursts that had finished.
+    </p>
+    <p>
+      The seed below is two tiles. Followed for 1,500 generations on a larger patch, it has
+      3,402 live cells in 408 pieces at the end and is still launching, at about one new piece
+      every three generations. Whether it ever stops is not known.
+    </p>
+    <div id="shower-hatC" class="ep-square"></div>
+
+    <h2>Ash</h2>
+    <p>
+      Not everything at the site travels. Some pieces are small oscillators that stay where
+      they are. The census certified 23 of them under hat C's rule, each a closed set of two to
+      ten situations, so on their own they last forever. At the site of a shower gliders run
+      into them.
+    </p>
+    <div id="shower-hatC-site" class="ep-square"></div>
+
+    <h2>Open questions</h2>
+    <ul>
+      <li>Whether any of hat C's long showers ever stops. The longest run here is 1,500 generations.</li>
+      <li>How a site keeps going. The site has been watched and its pieces counted, but the collisions have not been analysed.</li>
+      <li>Whether the spectre rule's forking traveller goes on forever. It has been followed through eleven forks and has no certificate.</li>
+      <li>Whether hat A's and hat B's rules can shower from larger seeds. None of their 7,076 census seeds did.</li>
+    </ul>
+  </main>
+  <script type="module" src="../../src/census/showers.ts"></script>
+</body>
+</html>

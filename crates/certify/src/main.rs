@@ -1893,16 +1893,19 @@ fn main() {
             );
             for o in objects.iter().filter(|o| o.keys.len() >= min) {
                 let c = &o.cocycle;
+                // Bounds rounded outward, as in `cocycle`.
+                let down = |x: f64| (x * 1e4).floor() / 1e4;
+                let up = |x: f64| (x * 1e4).ceil() / 1e4;
                 let motion = match c.heading {
                     Some(h) => format!(
                         "window [{:.4}°, {:.4}°] (mod 30 [{:.4}°, {:.4}°], width {:.4}°; reference cycle {:.4}°), speed ≥ {:.4}, lock {}",
-                        c.window.0,
-                        c.window.1,
-                        c.window.0.rem_euclid(30.0),
-                        c.window.1.rem_euclid(30.0),
-                        c.window.1 - c.window.0,
+                        down(c.window.0),
+                        up(c.window.1),
+                        down(c.window.0.rem_euclid(30.0)),
+                        up(c.window.1.rem_euclid(30.0)),
+                        up(c.window.1) - down(c.window.0),
                         h,
-                        c.along.0,
+                        down(c.along.0),
                         if c.rotation_violations == 0 && c.unreached == 0 { "yes" } else { "NO" }
                     ),
                     None => format!("LOOPER/OSCILLATOR (reference cycle length {} has zero displacement)", c.cycle_len),
@@ -2057,16 +2060,23 @@ fn main() {
             // Every cycle's direction lies within this window about the
             // reference heading (conservative: perpendicular extremes over
             // the smallest along-speed); so does every long trajectory's.
+            // Printed to four decimals rounded outward (lower ends and the
+            // speed down, upper ends up), so every printed figure is itself a
+            // valid bound; the width is that of the printed window.
             if mu_par > 0.0 {
                 let lo = mu_perp_min.min(0.0).atan2(mu_par).to_degrees();
                 let hi = mu_perp_max.max(0.0).atan2(mu_par).to_degrees();
+                let down = |x: f64| (x * 1e4).floor() / 1e4;
+                let up = |x: f64| (x * 1e4).ceil() / 1e4;
+                let (wlo, whi) = (down(heading + lo), up(heading + hi));
                 println!(
-                    "rigorous heading window: [{:.4}°, {:.4}°] (mod 30: [{:.4}°, {:.4}°]), width {:.4}°; speed ≥ {mu_par:.4} units/generation along it",
-                    heading + lo,
-                    heading + hi,
-                    (heading + lo).rem_euclid(30.0),
-                    (heading + hi).rem_euclid(30.0),
-                    hi - lo
+                    "rigorous heading window: [{:.4}°, {:.4}°] (mod 30: [{:.4}°, {:.4}°]), width {:.4}°; speed ≥ {:.4} units/generation along it",
+                    wlo,
+                    whi,
+                    down((heading + lo).rem_euclid(30.0)),
+                    up((heading + hi).rem_euclid(30.0)),
+                    whi - wlo,
+                    down(mu_par)
                 );
             }
             // Exact version: translations as elements of Z[ζ12], rotations

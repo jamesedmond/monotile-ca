@@ -26,6 +26,9 @@ export interface PanelOptions {
   loopAtGeneration?: number;
   /** Pause before looping, in milliseconds. */
   loopPauseMs?: number;
+  /** Spend the loop pause on the last generation (then restart)
+   *  instead of on the initial state. */
+  loopHoldEnd?: boolean;
   /** Follow the live-cell centroid instead of showing the whole patch. */
   follow?: boolean;
   /** Zoom multiple relative to the whole-patch fit (with follow). */
@@ -51,6 +54,13 @@ export interface PanelOptions {
   /** Cross-radius overlay: highlight a two-cell band at each of these
    *  graph distances — the verification radii, drawn on the board. */
   rings?: number[];
+  /** Path overlay: tint every cell that has been live since the run
+   *  began, so each object leaves its path on the board. Cleared on
+   *  restart. Not combined with lightCone. */
+  trail?: boolean;
+  /** Frame this box instead of the whole patch: [minX, minY, maxX,
+   *  maxY] in world units relative to the root cell's centroid. */
+  view?: [number, number, number, number];
   /** Caption HTML rendered under the canvas. */
   caption?: string;
   /** Filename for the record download. */
@@ -104,6 +114,10 @@ export function deadColors(classInfo: ClassInfo[], cellClasses: Uint16Array, cel
   return out;
 }
 
+/** Dead-tile colour of a visited cell under the `trail` overlay: a dim
+ *  amber, well below the live amber and well above the ground. */
+const TRAIL_TINT = [96, 68, 30];
+
 export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): void {
   container.classList.add('essay-panel');
   container.innerHTML = `
@@ -154,11 +168,34 @@ export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): voi
   let stepAcc = 0;
   let lastTime = performance.now();
   let loopPauseUntil = 0;
+  let restartPending = false;
   let fitZoom = 1;
   let coneDistances: Uint32Array = new Uint32Array(0);
   let coneBase: Uint8Array = new Uint8Array(0);
   let coneSeedMax = 0;
   let lastConeGen = -1;
+  let trailBase: Uint8Array = new Uint8Array(0);
+  let visited: Uint8Array = new Uint8Array(0);
+  let trailGen = 0;
+  let trailDirty = false;
+
+  /** Mark the cells live now as visited (a restart clears the marks). */
+  const markTrail = (): void => {
+    if (!universe) return;
+    const gen = universe.generation();
+    if (gen < trailGen) {
+      visited.fill(0);
+      trailDirty = true;
+    }
+    trailGen = gen;
+    const state = new Uint8Array(wasmMemory().buffer, universe.statePtr(), cellCount);
+    for (let c = 0; c < cellCount; c++) {
+      if (state[c] !== 0 && visited[c] === 0) {
+        visited[c] = 1;
+        trailDirty = true;
+      }
+    }
+  };
 
   playBtn.textContent = playing ? '⏸' : '▶';
 
@@ -300,18 +337,39 @@ export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): voi
     const dt = Math.min((now - lastTime) / 1000, 0.25);
     lastTime = now;
     if (playing && now >= loopPauseUntil) {
-      stepAcc += dt * Number(speedInput.value);
-      const n = Math.floor(stepAcc);
-      stepAcc -= n;
-      if (n > 0) universe.step(n);
-      if (opts.loopAtGeneration && universe.generation() >= opts.loopAtGeneration) {
-        loopPauseUntil = now + (opts.loopPauseMs ?? 1200);
-        universe.restartFromInitial();
-        // Show the initial state during the pause; snap the camera home.
+      const restart = (): void => {
+        universe!.restartFromInitial();
+        // Snap the camera home.
         fitter.reset();
         clusterAt = null;
         const home = activeCentroid();
-        if (opts.follow && home) renderer.centerOn(home[0], home[1]);
+        if (opts.follow && home) renderer!.centerOn(home[0], home[1]);
+      };
+      if (restartPending) {
+        restartPending = false;
+        restart();
+      } else {
+        stepAcc += dt * Number(speedInput.value);
+        const n = Math.floor(stepAcc);
+        stepAcc -= n;
+        if (opts.trail) {
+          // One generation at a time, so no visited cell is skipped.
+          for (let i = 0; i < n; i++) {
+            universe.step(1);
+            markTrail();
+            if (opts.loopAtGeneration && universe.generation() >= opts.loopAtGeneration) break;
+          }
+        } else if (n > 0) {
+          universe.step(n);
+        }
+        if (opts.loopAtGeneration && universe.generation() >= opts.loopAtGeneration) {
+          loopPauseUntil = now + (opts.loopPauseMs ?? 1200);
+          if (opts.loopHoldEnd) {
+            restartPending = true; // hold the last generation through the pause
+          } else {
+            restart(); // show the initial state during the pause
+          }
+        }
       }
     }
     renderer.updateState(new Uint8Array(wasmMemory().buffer, universe.statePtr(), cellCount));
@@ -328,6 +386,17 @@ export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): voi
         }
       }
       renderer.updateColors(tinted);
+    }
+    if (opts.trail) {
+      markTrail();
+      if (trailDirty) {
+        trailDirty = false;
+        const tinted = trailBase.slice();
+        for (let c = 0; c < cellCount; c++) {
+          if (visited[c] !== 0) tinted.set(TRAIL_TINT, c * 4);
+        }
+        renderer.updateColors(tinted);
+      }
     }
     genEl.textContent = String(gen);
     popEl.textContent = String(universe.population());
@@ -395,6 +464,10 @@ export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): voi
       cellCount,
     );
     renderer.setStates(universe.states());
+    if (opts.trail) {
+      trailBase = baseColors;
+      visited = new Uint8Array(cellCount);
+    }
     if (opts.lightCone !== undefined) {
       coneDistances = new Uint32Array(universe.cellDistances());
       coneBase = baseColors;
@@ -439,6 +512,9 @@ export function mountEssayPanel(container: HTMLElement, opts: PanelOptions): voi
     } else if (opts.focus) {
       renderer.zoom = fitZoom * opts.focus.zoom;
       renderer.centerOn(centroids[2 * opts.focus.cell], centroids[2 * opts.focus.cell + 1]);
+    } else if (opts.view) {
+      const [x0, y0, x1, y1] = opts.view;
+      renderer.fitBounds(centroids[0] + x0, centroids[1] + y0, centroids[0] + x1, centroids[1] + y1);
     }
     loading.remove();
     new ResizeObserver(() => renderer?.resize()).observe(canvas);
