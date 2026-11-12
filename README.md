@@ -6,6 +6,8 @@ Spectre_** (James Edmond, 2026) and its companion interactive essay:
 
 - **Essay** (every figure live, every record replayable in the browser):
   https://offlattice.org/monotile/essay/
+- **Glider census** (thirty-two certified travelling objects, each flying in a live viewer):
+  https://offlattice.org/monotile/census/
 - **Paper**: [arXiv:2609.22579](https://arxiv.org/abs/2609.22579) (nlin.CG), "Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre"
 - **Certificates paper**: "Certificates of Immortality for Gliders on the Hat and Spectre Tilings" (James Edmond, 2026; arXiv identifier to be added on posting) — the gliders proved immortal on every tiling of the hull, with exact heading and speed bounds; see [Certificates of immortality](#certificates-of-immortality) below
 - **Archived release**: v1.1.0, [doi:10.5281/zenodo.23963284](https://doi.org/10.5281/zenodo.23963284) (all versions: [doi:10.5281/zenodo.22836247](https://doi.org/10.5281/zenodo.22836247)); v1.0.0, the state of the first paper: [doi:10.5281/zenodo.22836248](https://doi.org/10.5281/zenodo.22836248)
@@ -36,12 +38,15 @@ crates/certify       certificates of immortality: the legal-ball atlas by
                      the census; crates/certify/check/ holds the independent
                      Python checker and the transducer cross-check
 crates/ui-wasm       wasm-bindgen shim exposing the engine to the browser
-web/                 the interactive essay and research playground
+web/                 the interactive essay, the glider census pages and the
+                     research playground
 results/             every committed result record (JSONL), including
                      results/flights/ — seeds, decimated telemetry, and
                      final checkpoints of the million-ring flights;
                      results/certificates/ — the ten certificates, the
-                     atlas and geometry audit logs, the census tables;
+                     atlas and geometry audit logs, the census tables, the
+                     census objects' records and the table of commands
+                     that rebuild their certificates;
                      results/rules/ — rules from outside our search, as data
 GLIDERS.md           the object compendium: exact rule, seed, and measured
                      properties of every mobile object
@@ -125,6 +130,22 @@ cargo run --release -p certify -- relabel results/certificates/hat-A-s21-k4-R9.j
 The spectre and the radius-10/11 certificates need the matching atlas
 (`atlas spectre 9`, `atlas hat 10`, `atlas hat 11`, `atlas spectre 11`);
 the stratified Worms certificate takes `--strata 1:1` on the checker.
+
+The census of the certificates paper found 32 certified travelling objects
+(https://offlattice.org/monotile/census/). Their certificates are not
+stored. `results/certificates/census-certificates.tsv` lists, for each
+object, the `certify closure` command that rebuilds its certificate from a
+record in this repository, and what the certificate contains: situation
+count, heading window, speed bound and signature. A rebuild takes about a
+minute once the two radius-11 atlases exist. The driver generates the
+atlases if they are missing (a few minutes each), runs all 32 commands and
+compares each result with the table:
+
+```sh
+cargo build --release -p certify
+python3 crates/certify/census/rebuild_certificates.py            # --check also runs the independent checker on each
+```
+
 Rules from outside our search run as data: `results/rules/*.json` through
 `cargo run --release -p tiling-core --example table_soups`, and
 Trevorrow's HatLife Worms through `--example worms_hatlife`, which checks
