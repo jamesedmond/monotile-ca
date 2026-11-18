@@ -46,7 +46,12 @@
       "identifier": "arXiv:2609.22579",
       "relation": "isSupplementTo",
       "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "arXiv:2611.17569",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Companion papers: arXiv:2609.22579 (nlin.CG), \"Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre\"; and \"Certificates of Immortality for Gliders on the Hat and Spectre Tilings\" (2026, arXiv identifier to be added on posting)."
+  "notes": "Companion papers: arXiv:2609.22579 (nlin.CG), \"Gliders on Aperiodic Monotilings: Cellular Automata on the Hat and Spectre\"; and arXiv:2611.17569 (nlin.CG), \"Certificates of Immortality for Gliders on the Hat and Spectre Tilings\"."
 }

@@ -47,3 +47,17 @@ preferred-citation:
       description: "arXiv preprint (nlin.CG)"
   notes: "Preprint, arXiv:2609.22579. Journal version to follow."
   url: "https://arxiv.org/abs/2609.22579"
+references:
+  - type: article
+    title: "Certificates of Immortality for Gliders on the Hat and Spectre Tilings"
+    authors:
+      - family-names: Edmond
+        given-names: James
+        orcid: "https://orcid.org/0009-0009-0005-4299"
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2611.17569"
+        description: "arXiv preprint (nlin.CG)"
+    notes: "Preprint, arXiv:2611.17569."
+    url: "https://arxiv.org/abs/2611.17569"
